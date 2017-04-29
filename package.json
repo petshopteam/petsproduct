@@ -1,0 +1,31 @@
+{
+  "name": "optimizedhtml",
+  "version": "2.0.0",
+  "description": "OptimizedHTML - Start HTML Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "petshop.ru",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cache": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-less": "^3.3.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "magnific-popup": "latest",
+    "node-bourbon": "latest",
+    "vinyl-ftp": "latest"
+  }
+}
