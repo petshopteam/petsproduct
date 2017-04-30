@@ -1,91 +1,169 @@
-var gulp           = require('gulp'),
-		gutil          = require('gulp-util'),
-		less           = require('gulp-less'),
-		browserSync    = require('browser-sync'),
-		concat         = require('gulp-concat'),
-		uglify         = require('gulp-uglify'),
-		cleanCSS       = require('gulp-clean-css'),
-		rename         = require('gulp-rename'),
-		del            = require('del'),
-		imagemin       = require('gulp-imagemin'),
-		cache          = require('gulp-cache'),
-		autoprefixer   = require('gulp-autoprefixer'),
-		notify         = require("gulp-notify");
+'use strict';
 
-// Compile Scripts
-gulp.task('scripts', function() {
-	return gulp.src([
+// ////////////////////////////////////////////////
+//
+// GULP СБОРКА ДЛЯ ВЕРСТКИ САЙТОВ
+//
+// // /////////////////////////////////////////////
 
-		'app/libs/jquery/dist/jquery.min.js',
-		'app/js/common.js' //всегда в конце
+/*----------------------------------------
+	PLUGINS
+----------------------------------------*/
 
-		])
-	.pipe(concat('scripts.min.js'))
-	.pipe(uglify())
-	.pipe(gulp.dest('app/js'))
-	.pipe(browserSync.reload({stream: true}));
-});
+var gulp = require('gulp'),
+	// РАБОТАЕМ С ПРОИЗВОДИТЕЛЬНОСТЬЮ СБОРКИ
+	gulpLoadPlugins = require('gulp-load-plugins'),
+	$ = gulpLoadPlugins(),
+	gulpIf = require('gulp-if'),
 
-// Compile Less
-gulp.task('less', function () {
-gulp.src('app/less/main.less')
-// gulp.src('app/less/**/*.less')
-.pipe(less())
-.pipe(autoprefixer({
-	browsers: ['last 6 versions'],
-	cascade: false
-}))
-.pipe(concat('main.css'))
-.pipe(cleanCSS())   
-.pipe(rename({suffix: ".min"}))
-.pipe(gulp.dest('app/css'))
-.pipe(browserSync.stream());
-});
+	browserSync = require('browser-sync'),
+	reload = browserSync.reload,
+	plumber = require('gulp-plumber');
 
-// Browser-sync serve task
-gulp.task('serve', ['less', 'scripts'], function() {
+/*----------------------------------------
+	PATHS
+----------------------------------------*/
+var paths = require('./gulp/paths');
+console.log($);
+
+// ПОДКЛЮЧАЕМ ОТДЕЛЬНО TASKS
+function lazyRequireTask(taskName, path, options) {
+	options = options || {};
+	options.taskName = taskName;
+	gulp.task(taskName, function(callback) {
+	var task = require(path).call(this, options);
+
+	return task(callback);
+	});
+}
+
+/*----------------------------------------
+	BROWSER SYNC
+----------------------------------------*/
+
+gulp.task('server', ['less', 'html'], function() {
 	browserSync.init({
-			server: "app",
-			notify: false
-    });
-
-  gulp.watch("app/less/**/*.less", ['less']);
-	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['scripts']);
-  gulp.watch("app/*.html").on('change', browserSync.reload);
-});
-
-// Imagemin task
-gulp.task('imagemin', function() {
-	return gulp.src('app/img/**/*')
-	.pipe(cache(imagemin()))
-	// .pipe(imagemin())
-	.pipe(gulp.dest('dist/img'));
+		server: "./build",
+		port: 4201
+	});
 });
 
 
-// Build task
-gulp.task('build', ['removedist', 'imagemin', 'less', 'scripts'], function() {
+gulp.task('watch-html', ['html'], function () {
+	browserSync.reload();
+});
+/*----------------------------------------
+	HTML
+----------------------------------------*/
 
-	var buildFiles = gulp.src([
-		'app/*.html',
-		'app/.htaccess',
-		]).pipe(gulp.dest('dist'));
-
-	var buildCss = gulp.src([
-		'app/css/main.min.css',
-		]).pipe(gulp.dest('dist/css'));
-
-	var buildJs = gulp.src([
-		'app/js/scripts.min.js',
-		]).pipe(gulp.dest('dist/js'));
-
-	var buildFonts = gulp.src([
-		'app/fonts/**/*',
-		]).pipe(gulp.dest('dist/fonts'));
-
+lazyRequireTask('html', './gulp/tasks/html', {
+	src: paths.html.src,
+	dest: paths.html.dest
 });
 
-gulp.task('removedist', function() { return del.sync('dist'); });
-gulp.task('clearcache', function () { return cache.clearAll(); });
 
-gulp.task('default', ['serve']);
+/*----------------------------------------
+	STYLES
+----------------------------------------*/
+
+// less
+lazyRequireTask('less', './gulp/tasks/less', {
+	src: paths.less.app,
+	dest: paths.less.dest
+});
+
+
+/*----------------------------------------
+	JS
+----------------------------------------*/
+
+gulp.task('watch-js', ['js'], function () {
+	browserSync.reload();
+});
+
+lazyRequireTask('js', './gulp/tasks/js', {
+	src: paths.js.app,
+	dest: paths.js.dest,
+	minDest: paths.js.dest
+});
+
+
+
+//minify js files
+// lazyRequireTask('js:min', './gulp/tasks/minjs', {
+// 	src: paths.js.minSrc,
+// 	dest: paths.js.minDest
+// });
+
+/*----------------------------------------
+	SPRITE PNG FILES
+----------------------------------------*/
+
+gulp.task('jsMinSync', function () {
+	return gulp.src('src/js/minifier/**/*.js')
+		.pipe(plumber())
+		.pipe(gulp.dest('build/js/'))
+		.pipe(browserSync.stream());
+});
+
+/*----------------------------------------
+	MINIFY IMAGES
+----------------------------------------*/
+
+lazyRequireTask('image:min', './gulp/tasksimages', {
+	src: paths.images.src,
+	dest: paths.images.dest
+});
+
+
+/*----------------------------------------
+	MINIFY IMAGES in UPLOADS
+----------------------------------------*/
+
+lazyRequireTask('min:uploads', './gulp/tasksimages', {
+	src: 'srcimages/uploads/*',
+	dest: 'build/uploads/'
+});
+
+
+
+gulp.task('watch', function () {
+		// less
+	gulp.watch('src/less/**/*.less', ['less']);
+	// html
+	gulp.watch(['src/html/**/*.html'], ['watch-html']);
+	// js
+	gulp.watch("src/js/**/*.js", ['watch-js']);
+	// images
+	gulp.watch("srcimages/*", ['image:min']);
+	gulp.watch("srcimages/uploads/*", ['min:uploads']);
+	// svg
+	gulp.watch('src/svg/*.svg', ['svg']).on('change', function(event){
+		if (event.type === 'deleted') {
+			$.remember.forget('svg', event.path);
+		}
+	});
+	gulp.watch('src/svg/**/*.svg', ['svg:base']);
+	// png
+	gulp.watch('srcimages/sprite/*.png', ['sprite']);
+});
+
+
+/*----------------------------------------
+	ZIP FILES
+----------------------------------------*/
+// lazyRequireTask('zip', './gulp/tasks/zip', {
+// 	src: paths.allDev,
+// 	dest: paths.tempDir
+// });
+
+/*----------------------------------------
+	FTP
+----------------------------------------*/
+// lazyRequireTask('ftp', './gulp/tasks/ftp', {
+// 	src: paths.allDev
+// });
+
+
+
+gulp.task('default', ['js','server','watch']);

@@ -1,0 +1,82 @@
+/* ==========================================================================
+   GLOBAL STYLES
+   ===========================================================================*/
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div,p,ul,section,article,main,h1,h2,h3,h4,h5,h6 {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+html{
+	font-size: 100%;
+	height: 100%;
+}
+
+body {
+	font-size: 16px;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 100%;
+	min-height: 100vh;
+	font-family: @geometria-medium;
+}
+
+ul {
+	li {
+		list-style: none;
+	}
+}
+
+// classic clearfix
+.clearfix {
+	clear: both;
+	&:after {
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}
+
+// images
+img.responsive,
+video.responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+//containers
+
+.container-offset {
+	max-width: 1920px;
+}
+
+//help classes
+
+.tac {
+	text-align: center;
+}
+
+.tal {
+	text-align: left;
+}
+
+.tar {
+	text-align: right;
+}
+
+/* end global*/

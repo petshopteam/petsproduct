@@ -1,0 +1,14 @@
+/* MIXINS */
+
+// @font-face mixin.
+// usage: .font-face(Roboto Slab, RobotoSlab-Bold, bold);
+.font-face(@family, @filename: @family, @weight: normal, @style: normal){
+  @font-face{
+    font-family: "@{family}";
+    src: url('../fonts/@{filename}.woff') format('woff');
+    src: url('../fonts/@{filename}.woff2') format('woff2');
+    font-weight: @weight;
+    font-style: @style;
+  }
+}
+
