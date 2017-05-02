@@ -1,11 +1,85 @@
 //main-topline
 
 .main-topline {
-
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  
+  .col-xs-2 {
+    background: lightgoldenrodyellow;
+  }
 }
 
-.col-xs-1 {
-  background: red;
-  height: 30px;
-  border: 1px solid black;
+.main-topline__city {
+  padding-top: 8px;
+  position: relative;
+}
+
+.main-topline__change-city {
+  position: relative;
+  padding-right: 22px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 1px;
+    background: black;
+    top: 55%;
+    right: 6px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 1px;
+    background: black;
+    top: 55%;
+    right: 1px;
+    transform: rotate(-45deg);
+  }
+}
+
+.main-topline__phone {
+  position: relative;
+  padding-right: 14px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    background: black;
+    width: 1px;
+    height: 35px;
+    top: 0;
+    right: 0;
+  }
+}
+
+.main-topline__phone-time {
+  font-size: 10px;
+}
+
+.main-topline__user {
+  position: relative;
+  padding-top: 8px;
+}
+
+.main-topline__user-login {
+  position: relative;
+  padding-left: 30px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background: url(../images/lock.png) no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    top: -2px;
+    left: 0;
+  }
 }

@@ -35,9 +35,43 @@
 
 <body>
 
+	<!-- main topline -->
 	@@include('global/topline.html')
 
-	<header class="main-head"></header>
+	<!-- header -->
+	<header class="main-head">
+		<div class="container">
+			<div class="row tar">
+				<!--main-logo-->
+				<div class="col-lg-3">
+
+						<a class="main-head__logo" href="./">
+							<object class="main-head__logo-img" data="/images/pets-logo.svg" type="image/svg+xml" style="width: 65%;"></object>
+						</a>
+				</div>
+				<!--main-navigation-->
+				<div class="col-lg-9 col-lg-offset-6">
+					<nav class="main-navigation">
+						<ul class="main-navigation__list">
+							<li class="main-navigation__item"><a href="#">Каталог</a></li>
+							<li class="main-navigation__item"><a href="#">Акции</a></li>
+							<li class="main-navigation__item"><a href="#">Партнеры</a></li>
+							<li class="main-navigation__item"><a href="#">Новости</a></li>
+							<li class="main-navigation__item"><button class="btn btn_red">Оставить заявку</button></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<h1 class="main-head__title">Оптовая доставка товаров для животных по всей России</h1>
+					<h2 class="main-head__subtitle">Для юридических лиц и питомников</h2>
+					<button class="main-head__btn btn btn_more">Подробнее</button>
+
+				</div>
+			</div>
+		</div>
+	</header>
 
 	<!-- footer -->
 	<!-- @@include('global/footer.html') -->
