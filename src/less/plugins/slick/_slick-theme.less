@@ -179,3 +179,37 @@
         }
     }
 }
+
+//main-suppliers slider styles
+.main-suppliers__slider .slick-prev,
+.main-suppliers__slider .slick-next {
+    background: transparent;
+    width: 50px;
+    height: 50px;
+
+    &::before {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+        content: '<';
+        color: black;
+        opacity: 0.7;
+        background: transparent;
+    }
+}
+
+.slick-next.slick-disabled:before, .slick-prev.slick-disabled:before {
+    opacity: 0.2;
+}
+
+.main-suppliers__slider .slick-prev {
+    left: -50px;
+}
+
+.main-suppliers__slider .slick-next {
+    right: -10px;
+
+    &::before {
+        content: '>';
+    }
+}

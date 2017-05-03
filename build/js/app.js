@@ -4789,11 +4789,19 @@ if ( $.ajaxPrefilter ) {
 // 	SLIDER (slick
 // ----------------------------------------*/
 
+    //main-carousel
     $('.main-carousel__slider').slick({
         dots: true,
         infinite: true,
         speed: 300
 	});
+
+	//suppliers-slider
+    $('.main-suppliers__slider').slick({
+        infinite: false,
+        slidesToShow: 6,
+        slidesToScroll: 1
+    });
 
 // /*----------------------------------------
 // 	SLIDER ARTICLE
