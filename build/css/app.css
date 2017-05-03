@@ -1338,7 +1338,7 @@ hr
 
     position: relative;
 
-    padding: 0 20px;
+    padding: 0 18px;
 
     text-transform: uppercase;
 
@@ -1373,7 +1373,7 @@ hr
 
     content: '';
 
-    background: url(../images/arrow-right_red.svg) no-repeat center;
+    background: url(../images/icons/arrow-right_red.svg) no-repeat center;
     background-size: contain;
 }
 
@@ -1529,11 +1529,6 @@ h1
     padding-bottom: 10px;
 }
 
-.main-topline .col-xs-2
-{
-    background: lightgoldenrodyellow;
-}
-
 .main-topline__city
 {
     position: relative;
@@ -1633,7 +1628,7 @@ h1
 
     content: '';
 
-    background: url(../images/lock.png) no-repeat center;
+    background: url(../images/icons/header-lock.svg) no-repeat center;
     background-size: contain;
 }
 
@@ -1658,7 +1653,8 @@ h1
     width: 230px;
     height: 85px;
 
-    background: #fff;
+    background: #fff url(../images/icons/logo-grey.svg) no-repeat center;
+    background-size: 65%;
 }
 
 .main-head__logo-img
@@ -1724,6 +1720,43 @@ h1
 .main-head__btn
 {
     margin-bottom: 200px;
+}
+
+.main-carousel
+{
+    margin-bottom: 20px;
+
+    background: #d3e6d9;
+}
+
+.main-carousel__slide
+{
+    position: relative;
+}
+
+.main-carousel__slide p
+{
+    position: absolute;
+    left: 13%;
+}
+
+.main-carousel__title
+{
+    font-size: 42px;
+    font-weight: 700;
+
+    top: 100px;
+
+    text-transform: uppercase;
+}
+
+.main-carousel__subtitle
+{
+    font-family: 'Rubik Medium', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+
+    top: 160px;
 }
 
 /* Slider */
@@ -1862,7 +1895,7 @@ h1
 
 .slick-loading .slick-list
 {
-    background: #fff url('ajax-loader.gif') center center no-repeat;
+    background: #fff url('../images/ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
@@ -1873,8 +1906,8 @@ h1
     font-weight: normal;
     font-style: normal;
 
-    src: url('fonts/slick.eot');
-    src: url('fonts/slick.eot?#iefix') format('embedded-opentype'), url('fonts/slick.woff') format('woff'), url('fonts/slick.ttf') format('truetype'), url('fonts/slick.svg#slick') format('svg');
+    src: url('../fonts/slick/slick.eot');
+    src: url('../fonts/slick/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick/slick.woff') format('woff'), url('../fonts/slick/slick.ttf') format('truetype'), url('../fonts/slick/slick.svg#slick') format('svg');
 }
 
 /* Arrows */
@@ -1886,12 +1919,13 @@ h1
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    z-index: 10;
+    bottom: -16px;
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 32px;
     padding: 0;
 
     cursor: pointer;
@@ -1903,6 +1937,8 @@ h1
     border: none;
     outline: none;
     background: transparent;
+    background: #fff url(../images/icons/arrow-right.svg) no-repeat center;
+    background-size: 45%;
 }
 
 .slick-prev:hover,
@@ -1910,9 +1946,9 @@ h1
 .slick-prev:focus,
 .slick-next:focus
 {
+    opacity: .5;
     color: transparent;
     outline: none;
-    background: transparent;
 }
 
 .slick-prev:hover:before,
@@ -1929,11 +1965,15 @@ h1
     opacity: .25;
 }
 
+.slick-prev
+{
+    background-image: url(../images/icons/arrow-left.svg);
+}
+
 .slick-prev:before,
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
     line-height: 1;
 
     opacity: .75;
@@ -1945,7 +1985,7 @@ h1
 
 .slick-prev
 {
-    left: -25px;
+    right: 250px;
 }
 
 .slick-prev[dir='rtl']
@@ -1966,7 +2006,7 @@ h1
 
 .slick-next
 {
-    right: -25px;
+    right: 220px;
 }
 
 .slick-next[dir='rtl']
@@ -1995,7 +2035,8 @@ h1
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: 6px;
+    left: -28%;
 
     display: block;
 

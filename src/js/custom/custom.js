@@ -104,50 +104,14 @@
 	// });
 
 // /*----------------------------------------
-// 	SLIDER
+// 	SLIDER (slick
 // ----------------------------------------*/
-// 	$('.carousel').slick({
-// 		infinite: false,
-// 		dots: true,
-// 		arrows: false,
-// 		slidesToShow: 1,
-// 		slidesToScroll: 1
-// 	});
-//
-// 	$('.carousel-photos').slick({
-// 		infinite: false,
-// 		dots: false,
-// 		arrows: true,
-// 		slidesToShow: 3,
-// 		slidesToScroll: 1,
-// 		focusOnSelect: true,
-// 		initialSlide: 1,
-// 		centerMode: true,
-// 		variableWidth: true,
-// 		appendArrows: $('.arrows-box'),
-// 		 responsive: [
-//     {
-//       breakpoint: 980,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-// 				centerMode: false,
-// 				variableWidth: false,
-//       }
-//     },
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-// 				centerMode: false,
-// 				variableWidth: false,
-// 				dots: true,
-// 				arrows: false,
-//       }
-//     },
-//   ]
-// });
+
+    $('.main-carousel__slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300
+	});
 
 // /*----------------------------------------
 // 	SLIDER ARTICLE
