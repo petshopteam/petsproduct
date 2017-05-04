@@ -2,4 +2,50 @@
   PAGINATION
    ===========================================================================*/
 
+.pagination {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+  &__left {
+    float: left;
+    padding-left: 25px;
+  }
+  &__right {
+    float: right;
+  }
+  &__left-list {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  &__left-item {
+    display: inline-block;
+    margin-right: 5px;
+    &.active a {
+      color: @red;
+    }
+  }
+
+  &__right-list {
+    float: right;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  &__right-item {
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+    &.active a {
+      color: @red;
+    }
+  }
+
+  &__right-arrow {
+    bottom: 3px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+
 /* end pagination */

@@ -22,6 +22,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png" /> -->
 
 		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+		<script src="../js/app.js"></script>
 		<!-- <meta name="viewport" content='width=1200' /> -->
 		<!-- title -->
 
@@ -35,13 +36,225 @@
 
 <body>
 
+	<!-- main topline -->
 	@@include('global/topline.html')
 
-	<header class="main-head"></header>
+	<!-- header -->
+	<header class="main-head">
+		<div class="container">
+			<div class="row tar">
+				<!--main-logo-->
+				<div class="col-lg-3">
+					<a class="main-head__logo" href="./"></a>
+				</div>
+				<!--main-navigation-->
+				<div class="col-lg-11 col-lg-offset-5">
+					<nav class="main-navigation">
+						<ul class="main-navigation__list">
+							<li class="main-navigation__item"><a href="catalog.html">Каталог</a></li>
+							<li class="main-navigation__item"><a href="#">Акции</a></li>
+							<li class="main-navigation__item"><a href="#">Партнеры</a></li>
+							<li class="main-navigation__item"><a href="#">Новости</a></li>
+							<li class="main-navigation__item"><button class="btn btn_red">Оставить заявку</button></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<h1 class="main-head__title">Оптовая доставка товаров для животных по всей России</h1>
+					<h2 class="main-head__subtitle">Для юридических лиц и питомников</h2>
+					<button class="main-head__btn btn btn_more">Подробнее</button>
+				</div>
+			</div>
+		</div>
+	</header>
 
-	<!-- footer -->
-	<!-- @@include('global/footer.html') -->
+	<section class="main-carousel">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-15">
+					<div class="main-carousel__slider">
+						<!--slide-1-->
+						<div class="main-carousel__slide main-carousel__slide-1">
+							<img src="images/main-slider/main-slide-1.jpg" width="100%" alt="slide-1">
+							<p class="main-carousel__title">Новинка!</p>
+							<p class="main-carousel__subtitle">Корма супер премиум класса <br> из Испании для собак и кошек</p>
+						</div>
+						<!--slide-2-->
+						<div class="main-carousel__slide main-carousel__slide-2">
+							<img src="images/main-slider/main-slide-1.jpg" width="100%" alt="slide-2">
+							<p class="main-carousel__title">Новинка!</p>
+							<p class="main-carousel__subtitle">Корма супер премиум класса <br> из Испании для собак и кошек</p>
+						</div>
+						<!--slide-3-->
+						<div class="main-carousel__slide main-carousel__slide-3">
+							<img src="images/main-slider/main-slide-1.jpg" width="100%" alt="slide-3">
+							<p class="main-carousel__title">Новинка!</p>
+							<p class="main-carousel__subtitle">Корма супер премиум класса <br> из Испании для собак и кошек</p>
+						</div>
+						<!--slide-4-->
+						<div class="main-carousel__slide main-carousel__slide-4">
+							<img src="images/main-slider/main-slide-1.jpg" width="100%" alt="slide-4">
+							<p class="main-carousel__title">Новинка!</p>
+							<p class="main-carousel__subtitle">Корма супер премиум класса <br> из Испании для собак и кошек</p>
+						</div>
+						<!--slide-5-->
+						<div class="main-carousel__slide main-carousel__slide-5">
+							<img src="images/main-slider/main-slide-1.jpg" width="100%" alt="slide-5">
+							<p class="main-carousel__title">Новинка!</p>
+							<p class="main-carousel__subtitle">Корма супер премиум класса <br> из Испании для собак и кошек</p>
+						</div>
+						<!--slide-6-->
+						<div class="main-carousel__slide main-carousel__slide-6">
+							<img src="images/main-slider/main-slide-1.jpg" width="100%" alt="slide-6">
+							<p class="main-carousel__title">Новинка!</p>
+							<p class="main-carousel__subtitle">Корма супер премиум класса <br> из Испании для собак и кошек</p>
+						</div>
+						<!--slide-7-->
+						<div class="main-carousel__slide main-carousel__slide-7">
+							<img src="images/main-slider/main-slide-1.jpg" width="100%" alt="slide-7">
+							<p class="main-carousel__title">Новинка!</p>
+							<p class="main-carousel__subtitle">Корма супер премиум класса <br> из Испании для собак и кошек</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<section class="main-about">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-8">
+					<div class="main-about__company">
+						<p class="main-about__company-title tal">
+							О компании
+						</p>
+						<p class="main-about__company-text">
+							В настоящий моментГруппа компаний «Пет-Продукт» - крупнейший поставщик зоотоваров в России.
+							Мы предлагаем широкий ассортимент товаров от ведущих мировых производителей: сухие и влажные
+							корма
+							для кошек и собак, пищевые добавки, витамины, груминг, парфюмерию, средства по уходу,
+							аксессуары, игрушки.
+						</p>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="main-about__feature">
+						<p class="main-about__feature-title">90 автомобилей</p>
+						<p class="main-about__feature-text">Для ежедневной доставки</p>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="main-about__feature">
+						<p class="main-about__feature-title">15 грузовиков
+						</p>
+						<p class="main-about__feature-text">Для перевозки крупногабаритных заказов</p>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="main-about__feature">
+						<p class="main-about__feature-title">5000 м<sup>2</sup><br> площадь склада </p>
+						<p class="main-about__feature-text">Весь товар хранится в надлежащих условиях</p>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="main-about__feature">
+						<p class="main-about__feature-title">Качество</p>
+						<p class="main-about__feature-text">Мы тщательно следим за сроком годности и товарным видом продукции</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="main-suppliers">
+		<div class="container">
+			<div class="row">
+				<p class="main-suppliers__title">Официальный поставщик кормов</p>
+				<div class="col-lg-15">
+					<div class="main-suppliers__slider">
+						<!--slide-1-->
+						<div class="main-suppliers__slide main-suppliers__slide-1">
+							<a href="#"><img src="images/suppliers-slider/main-supplier-1.png" class="img-responsive" alt="slide-4"></a>
+						</div>
+						<!--slide-2-->
+						<div class="main-suppliers__slide main-suppliers__slide-2">
+							<a href="#"><img src="images/suppliers-slider/main-supplier-2.png" alt="slide-4"></a>
+						</div>
+						<!--slide-3-->
+						<div class="main-suppliers__slide main-suppliers__slide-3">
+							<a href="#"><img src="images/suppliers-slider/main-supplier-3.png" alt="slide-4"></a>
+						</div>
+						<!--slide-4-->
+						<div class="main-suppliers__slide main-suppliers__slide-4">
+							<a href="#"><img src="images/suppliers-slider/main-supplier-4.png" alt="slide-4"></a>
+						</div>
+						<!--slide-5-->
+						<div class="main-suppliers__slide main-suppliers__slide-5">
+							<a href="#"><img src="images/suppliers-slider/main-supplier-5.png" alt="slide-4"></a>
+						</div>
+						<!--slide-6-->
+						<div class="main-suppliers__slide main-suppliers__slide-6">
+							<a href="#"><img src="images/suppliers-slider/main-supplier-6.png" alt="slide-4"></a>
+						</div>
+						<!--slide-7-->
+						<div class="main-suppliers__slide main-suppliers__slide-7">
+							<a href="#"><img src="images/suppliers-slider/main-supplier-7.png" alt="slide-4"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="last-news">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10">
+					<p class="last-news__title">Последние новости</p>
+				</div>
+				<div class="col-xs-5 tar">
+					<a href="#" class="last-news__read-all">Читать все</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-5">
+					<div class="last-news__article clearfix">
+						<a href="#"><img src="images/last-news__article-1.jpg" alt="news-article-1" class="last-news__image img-responsive"></a>
+						<span class="last-news__date">31.01.2017</span>
+						<a href="#"><span class="last-news__category">Новинки</span></a>
+						<p class="last-news__subtitle"><a href="#">Новинка! Профессиональные ресчески TANGLE ANGEL</a></p>
+						<a class="last-news__read-more">Читать далее</a>
+					</div>
+				</div>
+				<div class="col-xs-5">
+					<div class="last-news__article clearfix">
+						<a href="#"><img src="images/last-news__article-2.jpg" alt="news-article-1" class="last-news__image img-responsive"></a>
+						<span class="last-news__date">31.01.2017</span>
+						<a href="#"><span class="last-news__category">События</span></a>
+						<p class="last-news__subtitle"><a href="#"># КИБЕРПОНЕДЕЛЬНИК
+							в #ПЕТПРОДУКТ</a></p>
+						<a class="last-news__read-more">Читать далее</a>
+					</div>
+				</div>
+				<div class="col-xs-5">
+					<div class="last-news__article clearfix">
+						<a href="#"><img src="images/last-news__article-3.jpg" alt="news-article-1" class="last-news__image img-responsive"></a>
+						<span class="last-news__date">31.01.2017</span>
+						<a href="#"><span class="last-news__category">Новинки</span></a>
+						<p class="last-news__subtitle"><a href="#">Новинка в ассортименте <br>
+							ТМ GO! NaturalHolistic!</a></p>
+						<a class="last-news__read-more">Читать далее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	 <!--footer-->
+	 @@include('global/footer.html')
 
 	<!-- scripts (скрипты проекта) -->
 	@@include('global/scripts.html')

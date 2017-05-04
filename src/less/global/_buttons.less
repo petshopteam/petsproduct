@@ -2,6 +2,39 @@
    BUTTONS
    ===========================================================================*/
 
+//main order button
+.btn {
+  position: relative;
+  border: none;
+  padding: 0 18px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 38px;
+  font-weight: bold;
+}
 
+.btn_red {
+  background-color: @red;
+  color: @white;
+}
+
+.btn_more {
+  color: @red;
+  background: @white;
+  padding: 0 20px;
+  padding-right: 44px;
+  
+  &::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/arrow-right_red.svg) no-repeat center;
+    background-size: contain;
+    top: 25%;
+    right: 13px;
+  }
+}
 
 /* end buttons*/

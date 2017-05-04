@@ -1,11 +1,70 @@
 //main-topline
 
 .main-topline {
-
+  font-family: @geometria;
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: -10px;
 }
 
-.col-xs-1 {
-  background: red;
-  height: 30px;
-  border: 1px solid black;
+.main-topline__city {
+  padding-top: 8px;
+  position: relative;
+}
+
+.main-topline__change-city {
+  position: relative;
+  padding-right: 0px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 14px;
+    top: 3px;
+    right: -20px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAWklEQVQYV2N0cHBQ+Pfv734mpr+BBw4cu8CABuztbef//8/wgREkDuUEMDH9dURWjCwOVohNMbpmuEJkxYyMDAf+/2dwQLYBRSE+Z2AoBCkGefDAgQMPkP0FAO0/QTlNBS3WAAAAAElFTkSuQmCC") no-repeat center;
+  }
+}
+
+.main-topline__phone {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    background: black;
+    width: 1px;
+    height: 35px;
+    top: 0;
+    right: -16px;
+  }
+}
+
+.main-topline__phone-time {
+  font-size: 10px;
+}
+
+.main-topline__user {
+  position: relative;
+  padding-top: 8px;
+}
+
+.main-topline__user-login {
+  position: relative;
+  padding-left: 37px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background: url(../images/icons/header-lock.svg) no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    top: -2px;
+    left: 10px;
+  }
 }

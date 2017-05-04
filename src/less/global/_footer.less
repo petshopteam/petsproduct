@@ -2,5 +2,112 @@
 	 FOOTER
 	 ========================================================================== */
 
+.main-foot {
+  background: @lightblack;
+  color: @white;
+  padding-top: 79px;
+  border-top: 4px solid @red;
+
+  a {
+    color: @white;
+  }
+
+  &__logo {
+    width: 224px;
+    height: 83px;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 66px;
+  }
+
+  &__list {
+    li {
+      margin-bottom: 15px;
+
+      a {
+        position: relative;
+        display: inline-block;
+        font-family: @rubik;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  &__list_last {
+    li {
+      a {
+        padding-left: 40px;
+        &::before {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 27px;
+          height: 23px;
+        }
+      }
+    }
+  }
+
+  &__price {
+    a {
+      &::before {
+        background: url(../images/icons/footer-1.svg) no-repeat center;
+        background-size: 80%;
+      }
+    }
+
+  }
+
+  &__tel {
+    a:first-child {
+      margin-bottom: 0;
+      &::before {
+        top: 10px;
+        background: url(../images/icons/footer-2.svg) no-repeat center;
+        background-size: 80%;
+      }
+    }
+  }
+
+  &__email {
+    a {
+      &::before {
+        background: url(../images/icons/footer-3.svg) no-repeat center;
+        background-size: 80%;
+      }
+    }
+  }
+  
+  //  copyright
+  &__copyright {
+    background: #000000;
+    color: @white;
+    height: 30px;
+    margin-top: 50px;
+  }
+
+  &__copy-text {
+    font-family: @rubik;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 2px 0;
+
+    &:first-child {
+      padding-right: 10px;
+      border-right: 1px solid @white;
+    }
+    &:last-child {
+      padding-left: 10px;
+    }
+  }
+}
 
 /* end footer */
