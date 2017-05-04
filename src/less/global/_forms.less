@@ -1,6 +1,88 @@
 /*----------------------------------------
 	FORM
 ----------------------------------------*/
+//форма на странице каталога
+.brand-filter {
+  &__form {
 
+  }
+  &__search {
+    width: 230px;
+    height: 38px;
+    padding: 13px 14px 11px 12px;
+    border-radius: 2px;
+    border: 1px solid #dfdfdf;
+    color: #bababa;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  &__list {
+
+  }
+  &__item {
+    padding: 4px;
+    padding-bottom: 12px;
+    &:hover {
+      background: @grey;
+    }
+    
+    input[type=checkbox] {
+      opacity: 0;
+      width: 19px;
+      height: 19px;
+      position: relative;
+      top: 4px;
+      left: 1px;
+    }
+    label {
+      position: relative;
+      padding-left: 20px;
+      font-family: @rubik;
+      font-size: 14px;
+      top: 2px;
+      cursor: pointer;
+
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: -2px;
+        left: -22px;
+        width: 19px;
+        height: 19px;
+        border-radius: 2px;
+        border: 1px solid #bababa;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        /* Style for "Прямоуголь" */
+        width: 13px;
+        height: 13px;
+        top: 1px;
+        left: -19px;
+        border-radius: 2px;
+        background-color: #e0552f;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+//стилизация input по клику (checked)
+.brand-filter__item {
+  input[type=checkbox]:checked + label::after {
+    opacity: 1;
+  }
+  input[type=checkbox]:checked + label::before {
+    border-color: @red;
+  }
+  input[type=checkbox]:checked + label {
+    font-weight: bold;
+  }
+}
 
 /* end forms */

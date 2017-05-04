@@ -2,90 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ef0f512-f42b-4a73-8843-bf41647a6382" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/fonts/geometria-bold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/fonts/geometria-bold.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/fonts/geometria-light.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/fonts/geometria-light.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/fonts/geometria-medium.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/fonts/geometria-medium.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/fonts/rubik-light.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/fonts/rubik-light.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/fonts/rubik-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/fonts/rubik-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/read-more.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/last-news__article-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/last-news__article-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/last-news__article-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/main-head-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/main-slider/main-slide-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/suppliers-slider/main-supplier-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/suppliers-slider/main-supplier-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/suppliers-slider/main-supplier-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/suppliers-slider/main-supplier-4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/suppliers-slider/main-supplier-5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/suppliers-slider/main-supplier-6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/suppliers-slider/main-supplier-7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/catalog.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/aboutcomp1.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/aboutcomp2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/aboutcomp3.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/aboutcomp4.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/arrow-left.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/arrow-right.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/arrow-right_red.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/contacts1.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/contacts2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/contacts3.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/coop1.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/coop2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/coop3.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/coop4.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/footer-1.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/footer-2.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/footer-3.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/header-lock.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/logo-grey.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/logo-white.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/map-pin-brand.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/images/icons/map-pin-contacts.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/html/catalog.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/plugins/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/less/global/_breadcrumbs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/less/pages/_catalog.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/less/pages/_index.less" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/fonts/geometriabold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/fonts/geometriabold.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/fonts/geometriaitalic.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/fonts/geometriaitalic.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/fonts/geometrialight.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/fonts/geometrialight.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/fonts/geometriamedium.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/fonts/geometriamedium.woff2" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/app.css" afterPath="$PROJECT_DIR$/build/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/app.min.css" afterPath="$PROJECT_DIR$/build/css/app.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/app.js" afterPath="$PROJECT_DIR$/build/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/app.min.js" afterPath="$PROJECT_DIR$/build/js/app.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/global/footer.html" afterPath="$PROJECT_DIR$/src/html/global/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/global/topline.html" afterPath="$PROJECT_DIR$/src/html/global/topline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/index.html" afterPath="$PROJECT_DIR$/src/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app.js" afterPath="$PROJECT_DIR$/src/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/custom/custom.js" afterPath="$PROJECT_DIR$/src/js/custom/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/app.less" afterPath="$PROJECT_DIR$/src/less/app.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/bootstrap-grid/_bootstrap-grid.less" afterPath="$PROJECT_DIR$/src/less/bootstrap-grid/_bootstrap-grid.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_buttons.less" afterPath="$PROJECT_DIR$/src/less/global/_buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_fonts.less" afterPath="$PROJECT_DIR$/src/less/global/_fonts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_footer.less" afterPath="$PROJECT_DIR$/src/less/global/_footer.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_global.less" afterPath="$PROJECT_DIR$/src/less/global/_global.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_pagination.less" afterPath="$PROJECT_DIR$/src/less/global/_pagination.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_topline.less" afterPath="$PROJECT_DIR$/src/less/global/_topline.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_typography.less" afterPath="$PROJECT_DIR$/src/less/global/_typography.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/helpers/_mixins.less" afterPath="$PROJECT_DIR$/src/less/helpers/_mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/helpers/_variables.less" afterPath="$PROJECT_DIR$/src/less/helpers/_variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/plugins/slick/_slick-theme.less" afterPath="$PROJECT_DIR$/src/less/plugins/slick/_slick-theme.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/plugins/slick/config.rb" afterPath="$PROJECT_DIR$/src/less/plugins/slick/config.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/catalog.html" afterPath="$PROJECT_DIR$/src/html/catalog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_forms.less" afterPath="$PROJECT_DIR$/src/less/global/_forms.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_catalog.less" afterPath="$PROJECT_DIR$/src/less/pages/_catalog.less" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -103,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="catalog.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="catalog.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/html/catalog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="268" column="71" lean-forward="false" selection-start-line="268" selection-start-column="71" selection-end-line="268" selection-end-column="71" />
+            <state relative-caret-position="146">
+              <caret line="87" column="59" lean-forward="true" selection-start-line="87" selection-start-column="59" selection-end-line="87" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -116,17 +35,27 @@
       <file leaf-file-name="_catalog.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/less/pages/_catalog.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+            <state relative-caret-position="178">
+              <caret line="114" column="3" lean-forward="true" selection-start-line="114" selection-start-column="3" selection-end-line="114" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_pagination.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_forms.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/less/global/_forms.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_pagination.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/less/global/_pagination.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="196">
               <caret line="44" column="16" lean-forward="true" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
               <folding />
             </state>
@@ -245,9 +174,10 @@
         <option value="$PROJECT_DIR$/src/less/pages/_index.less" />
         <option value="$PROJECT_DIR$/src/less/global/_footer.less" />
         <option value="$PROJECT_DIR$/src/less/helpers/_variables.less" />
-        <option value="$PROJECT_DIR$/src/less/pages/_catalog.less" />
-        <option value="$PROJECT_DIR$/src/html/catalog.html" />
         <option value="$PROJECT_DIR$/src/less/global/_pagination.less" />
+        <option value="$PROJECT_DIR$/src/less/pages/_catalog.less" />
+        <option value="$PROJECT_DIR$/src/less/global/_forms.less" />
+        <option value="$PROJECT_DIR$/src/html/catalog.html" />
       </list>
     </option>
   </component>
@@ -626,12 +556,12 @@
       <workItem from="1493795487529" duration="53000" />
       <workItem from="1493795821731" duration="28458000" />
       <workItem from="1493882536265" duration="8000" />
-      <workItem from="1493882570523" duration="22741000" />
+      <workItem from="1493882570523" duration="26938000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78210000" />
+    <option name="totallyTimeSpent" value="82407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="468" width="1920" height="612" extended-state="0" />
@@ -669,13 +599,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/less/global/_typography.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/helpers/_variables.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1011,26 +934,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/global/_pagination.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="44" column="16" lean-forward="true" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/global/_forms.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/pages/_catalog.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        <state relative-caret-position="178">
+          <caret line="114" column="3" lean-forward="true" selection-start-line="114" selection-start-column="3" selection-end-line="114" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/html/catalog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="268" column="71" lean-forward="false" selection-start-line="268" selection-start-column="71" selection-end-line="268" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/global/_pagination.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="44" column="16" lean-forward="true" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+        <state relative-caret-position="146">
+          <caret line="87" column="59" lean-forward="true" selection-start-line="87" selection-start-column="59" selection-end-line="87" selection-end-column="59" />
           <folding />
         </state>
       </provider>
