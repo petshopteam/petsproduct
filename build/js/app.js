@@ -4796,6 +4796,13 @@ if ( $.ajaxPrefilter ) {
         speed: 300
 	});
 
+    //main-carousel
+    $('.main-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 300
+	});
+
 	//suppliers-slider
     $('.main-suppliers__slider').slick({
         infinite: false,

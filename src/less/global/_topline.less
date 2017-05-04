@@ -1,11 +1,12 @@
 //main-topline
 
 .main-topline {
+  font-family: @geometria;
   display: inline-block;
   width: 100%;
   font-size: 14px;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
 }
 
 .main-topline__city {
@@ -15,34 +16,21 @@
 
 .main-topline__change-city {
   position: relative;
-  padding-right: 22px;
-
-  &::before {
-    position: absolute;
-    content: '';
-    width: 8px;
-    height: 1px;
-    background: black;
-    top: 55%;
-    right: 6px;
-    transform: rotate(45deg);
-  }
+  padding-right: 0px;
 
   &::after {
     position: absolute;
     content: '';
-    width: 8px;
-    height: 1px;
-    background: black;
-    top: 55%;
-    right: 1px;
-    transform: rotate(-45deg);
+    width: 14px;
+    height: 14px;
+    top: 3px;
+    right: -20px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAWklEQVQYV2N0cHBQ+Pfv734mpr+BBw4cu8CABuztbef//8/wgREkDuUEMDH9dURWjCwOVohNMbpmuEJkxYyMDAf+/2dwQLYBRSE+Z2AoBCkGefDAgQMPkP0FAO0/QTlNBS3WAAAAAElFTkSuQmCC") no-repeat center;
   }
 }
 
 .main-topline__phone {
   position: relative;
-  padding-right: 14px;
 
   &::after {
     position: absolute;
@@ -51,7 +39,7 @@
     width: 1px;
     height: 35px;
     top: 0;
-    right: 0;
+    right: -16px;
   }
 }
 
@@ -66,7 +54,7 @@
 
 .main-topline__user-login {
   position: relative;
-  padding-left: 30px;
+  padding-left: 37px;
 
   &::before {
     position: absolute;
@@ -76,6 +64,6 @@
     width: 20px;
     height: 20px;
     top: -2px;
-    left: 0;
+    left: 10px;
   }
 }

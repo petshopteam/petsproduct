@@ -4,6 +4,7 @@
   background: url(../images/main-head-bg.jpg) no-repeat center top;
   background-size: cover;
   margin-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .main-head__logo {
@@ -31,7 +32,7 @@
 }
 
 .main-navigation__list {
-  padding-right: 20px;
+  padding-right: 50px;
 }
 
 .main-navigation__item {
@@ -40,7 +41,7 @@
   margin-right: 20px;
 
   a {
-    font-family: @geometria-bold;
+    font-family: @geometria;
     font-size: 18px;
     line-height: 48px;
     text-transform: uppercase;
@@ -72,7 +73,7 @@
 
 .main-carousel {
   background: @green;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .main-carousel__slide {
@@ -80,22 +81,22 @@
 
   p {
     position: absolute;
-    left: 13%;
+    left: 20%;
   }
 }
 
 .main-carousel__title {
   text-transform: uppercase;
-  font-size: 42px;
+  font-size: 53px;
   font-weight: 700;
-  top: 100px;
+  top: 36%;
 }
 
 .main-carousel__subtitle {
-  font-family: @rubik-medium;
-  font-size: 17px;
+  font-family: @rubik;
+  font-size: 20px;
   font-weight: 400;
-  top: 160px;
+  top: 52%;
 }
 
 //main-about section
@@ -118,11 +119,11 @@
   font-weight: 700;
   line-height: 60px;
   color: @white;
-  margin-bottom: 47px;
+  margin-bottom: 20px;
 }
 
 .main-about__company-text {
-  font-family: @rubik-medium;
+  font-family: @rubik;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -148,7 +149,7 @@
 }
 
 .main-about__feature-title {
-  font-family: @geometria-medium;
+  font-family: @geometria;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -156,14 +157,29 @@
 }
 
 .main-about__feature-text {
-  font-family: @rubik-medium;
+  font-family: @rubik;
   font-size: 14px;
   font-weight: 400;
 }
 
 //main suppliers section
 .main-suppliers {
+  position: relative;
   padding-bottom: 98px;
+
+  & > .container {
+    position: relative;
+    padding-top: 60px;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 3px;
+      background: @red;
+    }
+  }
 }
 
 .main-suppliers__title {
@@ -171,10 +187,11 @@
   font-weight: 700;
   line-height: 60px;
   margin-bottom: 43px;
+  margin-left: 80px;
 }
 
 .main-suppliers__slider {
-  padding-left: 14px;
+  padding-left: 6%;
 }
 
 .main-suppliers__slide {
@@ -208,7 +225,7 @@
 
   & > .container {
     background: @lightgreen;
-    padding: 63px 71px 70px 71px;
+    padding: 30px 65px 60px 90px;
     margin-bottom: 100px;
   }
 
@@ -230,6 +247,7 @@
   &__article {
     background: @white;
     max-width: 320px;
+    box-shadow: 0 0 4px rgba(36, 36, 35, 0.2);
   }
 
   &__image {
