@@ -2060,6 +2060,222 @@ h1
     border-color: #e0552f;
 }
 
+.stores
+{
+    width: 100%;
+    max-width: 1917px;
+    margin: 0 auto;
+
+    background: #f1f1f1;
+}
+
+.stores__title
+{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 60px;
+
+    margin-bottom: 40px;
+}
+
+.stores__current-region
+{
+    font-family: Geometria;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+
+    display: inline-block;
+
+    margin-top: 16px;
+    padding-bottom: 3px;
+
+    color: #242423;
+    border-bottom: 1px solid #242423;
+}
+
+.stores__type-select
+{
+    font-family: Geometria;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+
+    text-transform: uppercase;
+}
+
+.stores__type-select.active
+{
+    padding: 10px 15px;
+    padding-bottom: 11px;
+
+    color: #fff;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    background-color: #e0552f;
+}
+
+.stores__search
+{
+    margin-top: 40px;
+}
+
+.stores__search-window
+{
+    font-size: 14px;
+
+    width: 100%;
+    padding: 8px 40px 7px 13px;
+
+    border: 1px solid #dfdfdf;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    background-color: #fff;
+}
+
+.stores__map
+{
+    position: relative;
+}
+
+.stores__points
+{
+    padding: 50px 50px 60px 60px;
+}
+
+.stores__stores-list
+{
+    overflow-x: hidden;
+
+    max-height: 400px;
+    margin-top: 30px;
+}
+
+.stores__stores-list::-webkit-scrollbar-button
+{
+    width: 6px;
+    height: 0;
+
+    background-image: url('');
+    background-repeat: no-repeat;
+}
+
+.stores__stores-list::-webkit-scrollbar-track
+{
+    background-color: #dfdfdf;
+    -webkit-box-shadow: 0 0 3px #dfdfdf inset;
+            box-shadow: 0 0 3px #dfdfdf inset;
+}
+
+.stores__stores-list::-webkit-scrollbar-thumb
+{
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background-color: #bababa;
+    background-image: url('https://yraaa.ru/_pu/24/59610063.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-box-shadow: 0 1px 1px #fff inset;
+            box-shadow: 0 1px 1px #fff inset;
+}
+
+.stores__stores-list::-webkit-resizer
+{
+    width: 7px;
+    height: 0;
+
+    background-image: url('');
+    background-repeat: no-repeat;
+}
+
+.stores__stores-list::-webkit-scrollbar
+{
+    width: 2px;
+}
+
+.stores__stores-item
+{
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-bottom: 30px;
+}
+
+.stores__stores-item.active .stores__store-name
+{
+    color: #e0552f;
+    border-color: #e0552f;
+}
+
+.stores__store-name
+{
+    font-weight: bold;
+
+    display: inline-block;
+
+    margin-bottom: 5px;
+
+    border-bottom: 1px solid #242423;
+}
+
+.stores__store-address
+{
+    display: block;
+
+    margin-bottom: 3px;
+}
+
+.stores__store-district
+{
+    display: block;
+}
+
+.map-search
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.map-search__window
+{
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+
+    position: relative;
+    top: 10px;
+    right: 10px;
+
+    width: 300px;
+    height: 38px;
+    padding: 12px 35px 11px 14px;
+
+    border: 1px solid #e0552f;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    background-color: #fff;
+}
+
+.map-search__button
+{
+    position: absolute;
+    top: 22px;
+    right: 22px;
+
+    width: 14px;
+    height: 14px;
+
+    border: none;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABR0lEQVQ4T5WSQVKDQBBF/090zwUk
+    lRvEKnCb5AZJ0H1yAzmB3sB4AjlASOIJZE+q5AZaxL3sCbQ1yOCEYiOroadfd//fQxjfx2xk9XoXSxJjgBaIhJDXq80hMvPUmTpwvHUmItwBsNpJAI
+    KiyP3hPsn0XQV+3bmjssRbDUUAn8kyQ4mxkPd1PLDDeHUGpp6roImqbF62i5Iy1WNT6er3L78BZEWRD81xGhkL50HIRxBrexP7lcZam+oY2WE87dCH
+    rhzW+t4FSAZhfN0Fpt7NDJAdIHs7PMwbV1PPVaNapgazgPZARPzB9rBuwKPWAGSkzLUBtf4nAMu2B80eU8/ZAZypampsAmpno7O9Clb2Ng7OHoD6qT
+    vrvelpI4pElau/VSu46WhqUoaJiHU6nRK9nnThLkG8aLgT7HJWxf5g2f8L1C8pz/PPH9s7pF8s+DzxAAAAAElFTkSuQmCC') no-repeat center;
+    background-size: cover;
+}
+
 .main-page .main-head
 {
     position: relative;
@@ -2774,222 +2990,6 @@ h1
     text-align: center;
 
     color: #242423;
-}
-
-.stores
-{
-    width: 100%;
-    max-width: 1917px;
-    margin: 0 auto;
-
-    background: #f1f1f1;
-}
-
-.stores__title
-{
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 60px;
-
-    margin-bottom: 40px;
-}
-
-.stores__current-region
-{
-    font-family: Geometria;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 24px;
-
-    display: inline-block;
-
-    margin-top: 16px;
-    padding-bottom: 3px;
-
-    color: #242423;
-    border-bottom: 1px solid #242423;
-}
-
-.stores__type-select
-{
-    font-family: Geometria;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-
-    text-transform: uppercase;
-}
-
-.stores__type-select.active
-{
-    padding: 10px 15px;
-    padding-bottom: 11px;
-
-    color: #fff;
-    -webkit-border-radius: 2px;
-            border-radius: 2px;
-    background-color: #e0552f;
-}
-
-.stores__search
-{
-    margin-top: 40px;
-}
-
-.stores__search-window
-{
-    font-size: 14px;
-
-    width: 100%;
-    padding: 8px 40px 7px 13px;
-
-    border: 1px solid #dfdfdf;
-    -webkit-border-radius: 2px;
-            border-radius: 2px;
-    background-color: #fff;
-}
-
-.stores__map
-{
-    position: relative;
-}
-
-.stores__points
-{
-    padding: 50px 50px 60px 60px;
-}
-
-.stores__stores-list
-{
-    overflow-x: hidden;
-
-    max-height: 400px;
-    margin-top: 30px;
-}
-
-.stores__stores-list::-webkit-scrollbar-button
-{
-    width: 6px;
-    height: 0;
-
-    background-image: url('');
-    background-repeat: no-repeat;
-}
-
-.stores__stores-list::-webkit-scrollbar-track
-{
-    background-color: #dfdfdf;
-    -webkit-box-shadow: 0 0 3px #dfdfdf inset;
-            box-shadow: 0 0 3px #dfdfdf inset;
-}
-
-.stores__stores-list::-webkit-scrollbar-thumb
-{
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    background-color: #bababa;
-    background-image: url('https://yraaa.ru/_pu/24/59610063.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-box-shadow: 0 1px 1px #fff inset;
-            box-shadow: 0 1px 1px #fff inset;
-}
-
-.stores__stores-list::-webkit-resizer
-{
-    width: 7px;
-    height: 0;
-
-    background-image: url('');
-    background-repeat: no-repeat;
-}
-
-.stores__stores-list::-webkit-scrollbar
-{
-    width: 2px;
-}
-
-.stores__stores-item
-{
-    font-family: 'Rubik', Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-
-    margin-bottom: 30px;
-}
-
-.stores__stores-item.active .stores__store-name
-{
-    color: #e0552f;
-    border-color: #e0552f;
-}
-
-.stores__store-name
-{
-    font-weight: bold;
-
-    display: inline-block;
-
-    margin-bottom: 5px;
-
-    border-bottom: 1px solid #242423;
-}
-
-.stores__store-address
-{
-    display: block;
-
-    margin-bottom: 3px;
-}
-
-.stores__store-district
-{
-    display: block;
-}
-
-.map-search
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.map-search__window
-{
-    font-family: 'Rubik', Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-
-    position: relative;
-    top: 10px;
-    right: 10px;
-
-    width: 300px;
-    height: 38px;
-    padding: 12px 35px 11px 14px;
-
-    border: 1px solid #e0552f;
-    -webkit-border-radius: 2px;
-            border-radius: 2px;
-    background-color: #fff;
-}
-
-.map-search__button
-{
-    position: absolute;
-    top: 22px;
-    right: 22px;
-
-    width: 14px;
-    height: 14px;
-
-    border: none;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABR0lEQVQ4T5WSQVKDQBBF/090zwUk
-    lRvEKnCb5AZJ0H1yAzmB3sB4AjlASOIJZE+q5AZaxL3sCbQ1yOCEYiOroadfd//fQxjfx2xk9XoXSxJjgBaIhJDXq80hMvPUmTpwvHUmItwBsNpJAI
-    KiyP3hPsn0XQV+3bmjssRbDUUAn8kyQ4mxkPd1PLDDeHUGpp6roImqbF62i5Iy1WNT6er3L78BZEWRD81xGhkL50HIRxBrexP7lcZam+oY2WE87dCH
-    rhzW+t4FSAZhfN0Fpt7NDJAdIHs7PMwbV1PPVaNapgazgPZARPzB9rBuwKPWAGSkzLUBtf4nAMu2B80eU8/ZAZypampsAmpno7O9Clb2Ng7OHoD6qT
-    vrvelpI4pElau/VSu46WhqUoaJiHU6nRK9nnThLkG8aLgT7HJWxf5g2f8L1C8pz/PPH9s7pF8s+DzxAAAAAElFTkSuQmCC') no-repeat center;
-    background-size: cover;
 }
 
 /* Slider */
