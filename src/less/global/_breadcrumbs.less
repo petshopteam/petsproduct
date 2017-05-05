@@ -4,8 +4,8 @@
   &__item {
     display: inline-block;
     margin-right: 20px;
-    padding-right: 30px;
-    border-right: 2px solid @red;
+    padding-left: 30px;
+    border-left: 2px solid #242423;
 
     a {
       font-weight: bold;
@@ -16,7 +16,10 @@
       color: @red;
     }
   }
+  &__item:first-child {
+    border-left: none;
+  }
   &__item:last-child {
-    border-right: none;
+    border-color: @red;
   }
 }
