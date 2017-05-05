@@ -1,27 +1,43 @@
 /*----------------------------------------
 	FORM
 ----------------------------------------*/
-//форма на странице каталога
-.brand-filter {
-  &__form {
 
-  }
+//форма на странице каталога
+
+//brand filter
+.brand-filter {
+
   &__search {
+    position: relative;
+  }
+  &__search-window {
     width: 230px;
     height: 38px;
-    padding: 13px 14px 11px 12px;
+    padding: 13px 30px 11px 12px;
     border-radius: 2px;
     border: 1px solid #dfdfdf;
-    color: #bababa;
+    color: @lightblack;
     font-family: Rubik;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
     margin-bottom: 15px;
   }
-  &__list {
-
+  &__search-button {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background: transparent url(../images/icons/search.png) no-repeat center;
+    top: 11px;
+    right: 2px;
   }
+
+  &__list {
+    overflow-x: hidden;
+    max-height: 450px;
+  }
+
   &__item {
     padding: 4px;
     padding-bottom: 12px;
@@ -37,11 +53,13 @@
       top: 4px;
       left: 1px;
     }
+
     label {
       position: relative;
       padding-left: 20px;
       font-family: @rubik;
       font-size: 14px;
+      color: #686868;
       top: 2px;
       cursor: pointer;
 
@@ -70,10 +88,49 @@
       }
     }
   }
+
+//  стилизация полосы прокрутки
+  ::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:6px;
+    height:0px
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #dfdfdf;
+    box-shadow:0px 0px 3px #dfdfdf inset;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #bababa;
+    box-shadow:0px 1px 1px #fff inset;
+    background-image:url('https://yraaa.ru/_pu/24/59610063.png');
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+
+  ::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:7px;
+    height:0px
+  }
+
+  ::-webkit-scrollbar{
+    width: 2px;
+  }
+
 }
 
-//стилизация input по клику (checked)
-.brand-filter__item {
+// .pet-filter наследует стили у .brand-filter
+.pet-filter:extend(.brand-filter all){}
+
+
+//стилизация input brand-filter и pet-filter
+.brand-filter__item, .pet-filter__item {
   input[type=checkbox]:checked + label::after {
     opacity: 1;
   }
@@ -82,7 +139,9 @@
   }
   input[type=checkbox]:checked + label {
     font-weight: bold;
+    color: #242423;
   }
 }
+
 
 /* end forms */

@@ -1484,7 +1484,14 @@ hr
 	FORM
 ----------------------------------------*/
 
-.brand-filter__search
+.brand-filter__search,
+.pet-filter__search
+{
+    position: relative;
+}
+
+.brand-filter__search-window,
+.pet-filter__search-window
 {
     font-family: Rubik;
     font-size: 14px;
@@ -1494,26 +1501,51 @@ hr
     width: 230px;
     height: 38px;
     margin-bottom: 15px;
-    padding: 13px 14px 11px 12px;
+    padding: 13px 30px 11px 12px;
 
-    color: #bababa;
+    color: #242423;
     border: 1px solid #dfdfdf;
     -webkit-border-radius: 2px;
             border-radius: 2px;
 }
 
-.brand-filter__item
+.brand-filter__search-button,
+.pet-filter__search-button
+{
+    position: absolute;
+    top: 11px;
+    right: 2px;
+
+    width: 15px;
+    height: 15px;
+
+    border: none;
+    background: transparent url(../images/icons/search.png) no-repeat center;
+}
+
+.brand-filter__list,
+.pet-filter__list
+{
+    overflow-x: hidden;
+
+    max-height: 450px;
+}
+
+.brand-filter__item,
+.pet-filter__item
 {
     padding: 4px;
     padding-bottom: 12px;
 }
 
-.brand-filter__item:hover
+.brand-filter__item:hover,
+.pet-filter__item:hover
 {
     background: #f1f1f1;
 }
 
-.brand-filter__item input[type=checkbox]
+.brand-filter__item input[type=checkbox],
+.pet-filter__item input[type=checkbox]
 {
     position: relative;
     top: 4px;
@@ -1525,7 +1557,8 @@ hr
     opacity: 0;
 }
 
-.brand-filter__item label
+.brand-filter__item label,
+.pet-filter__item label
 {
     font-family: 'Rubik', Helvetica, sans-serif;
     font-size: 14px;
@@ -1536,9 +1569,12 @@ hr
     padding-left: 20px;
 
     cursor: pointer;
+
+    color: #686868;
 }
 
-.brand-filter__item label::before
+.brand-filter__item label::before,
+.pet-filter__item label::before
 {
     position: absolute;
     top: -2px;
@@ -1554,7 +1590,8 @@ hr
             border-radius: 2px;
 }
 
-.brand-filter__item label::after
+.brand-filter__item label::after,
+.pet-filter__item label::after
 {
     position: absolute;
     top: 1px;
@@ -1572,19 +1609,71 @@ hr
     background-color: #e0552f;
 }
 
-.brand-filter__item input[type=checkbox]:checked + label::after
+.brand-filter ::-webkit-scrollbar-button,
+.pet-filter ::-webkit-scrollbar-button
+{
+    width: 6px;
+    height: 0;
+
+    background-image: url('');
+    background-repeat: no-repeat;
+}
+
+.brand-filter ::-webkit-scrollbar-track,
+.pet-filter ::-webkit-scrollbar-track
+{
+    background-color: #dfdfdf;
+    -webkit-box-shadow: 0 0 3px #dfdfdf inset;
+            box-shadow: 0 0 3px #dfdfdf inset;
+}
+
+.brand-filter ::-webkit-scrollbar-thumb,
+.pet-filter ::-webkit-scrollbar-thumb
+{
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background-color: #bababa;
+    background-image: url('https://yraaa.ru/_pu/24/59610063.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-box-shadow: 0 1px 1px #fff inset;
+            box-shadow: 0 1px 1px #fff inset;
+}
+
+.brand-filter ::-webkit-resizer,
+.pet-filter ::-webkit-resizer
+{
+    width: 7px;
+    height: 0;
+
+    background-image: url('');
+    background-repeat: no-repeat;
+}
+
+.brand-filter ::-webkit-scrollbar,
+.pet-filter ::-webkit-scrollbar
+{
+    width: 2px;
+}
+
+.brand-filter__item input[type=checkbox]:checked + label::after,
+.pet-filter__item input[type=checkbox]:checked + label::after
 {
     opacity: 1;
 }
 
-.brand-filter__item input[type=checkbox]:checked + label::before
+.brand-filter__item input[type=checkbox]:checked + label::before,
+.pet-filter__item input[type=checkbox]:checked + label::before
 {
     border-color: #e0552f;
 }
 
-.brand-filter__item input[type=checkbox]:checked + label
+.brand-filter__item input[type=checkbox]:checked + label,
+.pet-filter__item input[type=checkbox]:checked + label
 {
     font-weight: bold;
+
+    color: #242423;
 }
 
 /* end forms */
@@ -2486,17 +2575,20 @@ h1
     background: #e0552f;
 }
 
-.brand-filter
+.brand-filter,
+.pet-filter
 {
     margin-bottom: 40px;
 }
 
-.brand-filter__title
+.brand-filter__title,
+.pet-filter__title
 {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
 
+    margin-top: 45px;
     margin-bottom: 20px;
 
     text-transform: uppercase;
@@ -2513,6 +2605,7 @@ h1
     font-weight: 700;
     line-height: 24px;
 
+    margin-top: 0;
     margin-bottom: 20px;
 
     text-transform: uppercase;
