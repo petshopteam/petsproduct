@@ -1,4 +1,4 @@
-// Page 2 (catalog)
+// Page 6 (article) and Page 6_2 (article with slider)
 
 //header styles
 .article-page {
@@ -72,12 +72,13 @@
     width: 100%;
     height: auto;
     margin-top: 20px;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
   }
   &__subtitle {
     font-size: 16px;
     font-weight: bold;
     line-height: 24px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
   &__text {
@@ -161,5 +162,44 @@
       background: url(../images/icons/arrow-right.svg) no-repeat center;
       background-size: contain;
     }
+  }
+}
+
+// Article_2 (with slider) styles
+
+.article-item {
+  &__slider {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: @grey;
+    padding: 50px 57px 50px 49px;
+  }
+  &__slide {
+    position: relative;
+  }
+  &__slide-image {
+    
+  }
+  &__slide-text {
+    width: 30%;
+    position: absolute;
+    font-family: @rubik;
+    font-size: 14px;
+    line-height: 20px;
+    top: 50%;
+    right: 5%;
+  }
+  &__slide-counter {
+    position: absolute;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: @red;
+    padding: 8px 9px 6px 9px;
+    top: 0px;
+    right: 0px;
   }
 }

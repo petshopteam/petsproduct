@@ -128,6 +128,29 @@
         slidesToScroll: 1
     });
 
+    // article-item__slider
+    $('.article-item__slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+  		autoplaySpeed: 2000
+	});
+
+	// var articleCounter = $('.article-item__slider .article-item__counter');
+	// var currentSlide = $('.article-item__slider').slick('slickCurrentSlide') + 1;
+	// var articleCounter = $('.article-item__counter');
+
+	// // кнопка "next"
+	// $('.article-item__slider .slick-next').click( function(){
+	// 	articleCounter.html(currentSlide + 1);
+	// });
+	// // кнопка "prev"
+	// $('.article-item__slider .slick-prev').click( function(){
+	// 	articleCounter.html(currentSlide - 1);
+
 // /*----------------------------------------
 // 	SLIDER ARTICLE
 // ----------------------------------------*/
