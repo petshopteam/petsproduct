@@ -1,0 +1,165 @@
+// Page 2 (catalog)
+
+//header styles
+.article-page {
+
+  .main-topline {
+    background: @grey;
+  }
+  
+  .main-head {
+    background: @white;
+    margin: 0;
+  }
+
+  .main-navigation {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .main-navigation__item a {
+    color: @lightblack;
+  }
+
+  .main-head__logo {
+    background: @grey url(../images/icons/logo-grey.svg) no-repeat center;
+    background-size: 65%;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 50px;
+  }
+
+  .pagination {
+    margin-bottom: 60px;
+  }
+
+}
+
+//main styles
+
+/* стили фильтров страницы находятся в forms.less */
+
+//article-item
+
+.article-item {
+  margin-left: 20px;
+  margin-top: -10px;
+  margin-bottom: 45px;
+
+  &__title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+  &__date {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  &__theme {
+    position: relative;
+    border-radius: 1px;
+    border: 1px solid @red;
+    font-size: 10px;
+    color: @red;
+    padding: 1px 5px;
+    padding-bottom: 2px;
+    top: -3px;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+  &__subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-family: @rubik;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  &__list {
+    padding-left: 40px;
+    border-left: 3px solid @red;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  // price and social blocks
+  &__price {
+    float: left;
+    color: @white;
+    background: @red;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 22px 20px 19px 18px;
+  }
+  &__social {
+    float: right;
+    margin-top: 18px;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: 52px;
+      height: 30px;
+
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// article-pagination block
+
+.article-pagination {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: 20px;
+
+  &__prev {
+    position: relative;
+    float: left;
+    padding-left: 30px;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 15px;
+      top: 7px;
+      left: 0;
+      background: url(../images/icons/arrow-left.svg) no-repeat center;
+      background-size: contain;
+    }
+  }
+  &__next {
+    position: relative;
+    float: right;
+    padding-right: 30px;
+    margin-bottom: 70px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 15px;
+      top: 7px;
+      right: 0;
+      background: url(../images/icons/arrow-right.svg) no-repeat center;
+      background-size: contain;
+    }
+  }
+}
