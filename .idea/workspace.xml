@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ef0f512-f42b-4a73-8843-bf41647a6382" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/html/actions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/less/pages/_actions.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/app.css" afterPath="$PROJECT_DIR$/build/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/app.min.css" afterPath="$PROJECT_DIR$/build/css/app.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/app.less" afterPath="$PROJECT_DIR$/src/less/app.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_forms.less" afterPath="$PROJECT_DIR$/src/less/global/_forms.less" />
-    </list>
+    <list default="true" id="0ef0f512-f42b-4a73-8843-bf41647a6382" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -460,12 +452,12 @@
       <workItem from="1493795821731" duration="28458000" />
       <workItem from="1493882536265" duration="8000" />
       <workItem from="1493882570523" duration="26996000" />
-      <workItem from="1493967716293" duration="27651000" />
+      <workItem from="1493967716293" duration="27755000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110116000" />
+    <option name="totallyTimeSpent" value="110220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="0" />
