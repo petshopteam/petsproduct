@@ -3004,6 +3004,11 @@ h1
     border-left: 3px solid #e0552f;
 }
 
+.brand-page .brand-production .col-lg-15 > .brand-production__item:nth-child(4n)
+{
+    margin-right: 0;
+}
+
 .brand-page .brand-production__title
 {
     font-size: 36px;
@@ -3017,8 +3022,6 @@ h1
 {
     float: left;
 
-    width: 270px;
-    height: 270px;
     margin-right: 30px;
     margin-bottom: 30px;
 
@@ -3041,7 +3044,8 @@ h1
 {
     font-size: 16px;
     font-weight: bold;
-    line-height: 60px;
+
+    margin-bottom: 15px;
 
     text-align: center;
 
