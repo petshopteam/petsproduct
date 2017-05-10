@@ -1313,6 +1313,10 @@ hr
 
     position: relative;
 
+    display: inline-block;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 0 18px;
 
     text-transform: uppercase;
@@ -1349,6 +1353,26 @@ hr
     content: '';
 
     background: url(../images/icons/arrow-right_red.svg) no-repeat center;
+    background-size: contain;
+}
+
+.btn_load
+{
+    padding-left: 50px;
+}
+
+.btn_load::before
+{
+    position: absolute;
+    top: 9px;
+    left: 20px;
+
+    width: 20px;
+    height: 19px;
+
+    content: '';
+
+    background: url(../images/icons/load.png) no-repeat center;
     background-size: contain;
 }
 
@@ -3597,6 +3621,101 @@ h1
     text-transform: uppercase;
 
     background: #e0552f;
+}
+
+.partners-page .main-topline
+{
+    background: #f1f1f1;
+}
+
+.partners-page .main-head
+{
+    margin: 0;
+
+    background: #fff;
+}
+
+.partners-page .main-navigation
+{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.partners-page .main-navigation__item a
+{
+    color: #242423;
+}
+
+.partners-page .main-head__logo
+{
+    background: #f1f1f1 url(../images/icons/logo-grey.svg) no-repeat center;
+    background-size: 65%;
+}
+
+.partners-page .breadcrumbs
+{
+    margin-bottom: 50px;
+}
+
+.partners-page .pagination
+{
+    margin-bottom: 60px;
+}
+
+.partners__title
+{
+    margin-bottom: 40px;
+}
+
+.partners__subtitle
+{
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-bottom: 40px;
+    padding: 0 14%;
+}
+
+.partners__item
+{
+    position: relative;
+
+    margin-right: 30px;
+    margin-bottom: 50px;
+    padding: 20px 20px;
+    padding: 10%;
+    padding-top: 0;
+    padding-bottom: 20px;
+
+    text-align: center;
+}
+
+.partners__item:hover
+{
+    background: #f1f1f1;
+}
+
+.partners__image
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.partners .col-lg-5:nth-child(3n) > .partners__item
+{
+    margin-right: 0;
+}
+
+.partners .col-lg-5:nth-child(3n) > .partners__item .partners__image
+{
+    width: 90%;
+}
+
+.partners .btn_load
+{
+    margin-top: 20px;
+    margin-bottom: 90px;
 }
 
 /* Slider */

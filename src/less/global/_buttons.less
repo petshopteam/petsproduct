@@ -5,6 +5,8 @@
 //main order button
 .btn {
   position: relative;
+  display: inline-block;
+  box-sizing: border-box;
   border: none;
   padding: 0 18px;
   border-radius: 3px;
@@ -34,6 +36,20 @@
     background-size: contain;
     top: 25%;
     right: 13px;
+  }
+}
+
+.btn_load {
+  padding-left: 50px;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 19px;
+    left: 20px;
+    top: 9px;
+    background: url(../images/icons/load.png) no-repeat center;
+    background-size: contain;
   }
 }
 
