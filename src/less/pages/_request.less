@@ -1,4 +1,4 @@
-// Page 2 (catalog)
+// Page 8 (request)
 
 //header styles
 .request-page {
@@ -58,6 +58,16 @@
       font-size: 14px;
       font-family: @rubik;
     }
+    &_arrow {
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      background: url(../images/icons/read-more.png) no-repeat -2px center;
+      background-size: cover;
+      transform: rotate(-90deg);
+      top: 40px;
+      right: 50px;
+    }
   }
   // form
   &__form-block {
@@ -75,26 +85,36 @@
     margin-bottom: 10px;
   }
   &__input {
+    height: 38px;
     width: 100%;
     display: block;
     margin-bottom: 30px;
     font-size: 14px;
-    padding: 14px 30px 11px 14px;
+    line-height: 24px;
     border-radius: 2px;
     border: 1px solid #dfdfdf;
+    padding: 0 15px;
   }
   &__input_big {
-
+    min-height: 115px;
+    max-height: 400px;
+    max-width: 100%;
+  }
+  &__input_file {
+    border: 1px dottet @red;
   }
   &__select {
+    height: 38px;
     width: 100%;
     display: block;
     font-size: 14px;
-    padding: 14px 30px 11px 14px;
+    line-height: 24px;
     font-family: @rubik;
     background: none;
     border-radius: 2px;
     border: 1px solid #dfdfdf;
+    margin-bottom: 30px;
+    padding: 0 15px;
   }
   &__submit-block {
     margin-bottom: 90px;
@@ -140,6 +160,7 @@
   }
 }
 
+// Стилизация чекбокса отправки формы
 .request__check:checked + .request__check-label::after {
   opacity: 1;
 }
