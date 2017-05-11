@@ -1376,6 +1376,29 @@ hr
     background-size: contain;
 }
 
+.btn_back
+{
+    padding-right: 45px;
+
+    color: #fff;
+    background-color: #bababa;
+}
+
+.btn_back::after
+{
+    position: absolute;
+    top: 11px;
+    right: 13px;
+
+    width: 20px;
+    height: 15px;
+
+    content: '';
+
+    background: url(../images/icons/arrow-right_white.svg) no-repeat center;
+    background-size: cover;
+}
+
 /* end buttons*/
 
 /* ==========================================================================
@@ -3933,6 +3956,32 @@ h1
     float: right;
 
     margin-left: 20px;
+}
+
+.request__done
+{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 8%;
+    padding: 8%;
+
+    text-align: center;
+
+    border: 2px solid #efefef;
+}
+
+.request__done-image
+{
+    margin-bottom: 9%;
+}
+
+.request__done-text
+{
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+
+    margin-bottom: 12%;
 }
 
 .request__check:checked + .request__check-label::after
