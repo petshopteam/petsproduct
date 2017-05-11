@@ -4688,102 +4688,16 @@ if ( $.ajaxPrefilter ) {
 
 /*========== TRANSITION SCROLL ==============*/
 
-	//  $('.scroll').on("click", function(e){
-	// 		e.preventDefault();
-	// 		var anchor = $(this);
-	// 		$('html, body').stop().animate({
-	// 			 scrollTop: $(anchor.attr('href')).offset().top
-	// 		}, 1000);
-	//  });
 
 
 /*========== MOBILE MENU ==============*/
 
 
-	// var openMenu = $('.open-top-menu'),
-	// 	closeMenu = $('.close-top-menu'),
-	// 	menu = $('.top-menu');
-	// openMenu.on('click', function(event) {
-	// 	event.preventDefault();
-	// 	menu.addClass('open');
-	// 	$('body').addClass('menu-open');
-	// });
-	// closeMenu.on('click', function(event) {
-	// 	event.preventDefault();
-	// 	menu.removeClass('open');
-	// 	$('body').removeClass('menu-open');
-	// });
-	//
-	// var bottomMenu = $('.open-bottom-menu'),
-	// 	closeBottom = $('.close-bottom-menu'),
-	// 	menuBottom = $('.menu-bottom');
-	// bottomMenu.on('click', function(event) {
-	// 	event.preventDefault();
-	// 	menuBottom.addClass('open');
-	// 	$('body').addClass('menu-open');
-	// });
-	// closeBottom.on('click', function(event) {
-	// 	event.preventDefault();
-	// 	menuBottom.removeClass('open');
-	// 	$('body').removeClass('menu-open');
-	// });
-
 
  /*----------------------------------------
  	MODAL
  ----------------------------------------*/
-	// var trigger = $('.gp-trigger'),
-	// 		modal = $('.gp-modal'),
-	// 		overlay = $('.gp-overlay'),
-	// 		close = $ ('.gp-close');
-	//
-	// function removeModal(e){
-	// 	e.preventDefault();
-	// 	modal.removeClass('gp-show')
-	// 	overlay.removeClass('opened');
-	// 	$('body').removeClass('open-modal');
-	// 	setTimeout(function() {
-	// 		$('.modals-wrap').removeClass('open-modal');
-	// 	}, 400);
-	//
-	// };
-	//
-	// function openModal(e){
-	// 	e.preventDefault();
-	// 	$('.modals-wrap').addClass('open-modal');
-	// 	$('body').addClass('open-modal');
-	//
-	// 	var id = $(this).attr('data-modal');
-	// 	$('#' + id + '.gp-modal').toggleClass('gp-show').find('.gp-overlay').addClass('opened');
-	//
-	// 	//условие для modal-thanks
-	// 	if ($('#modal-thanks').hasClass('gp-show')) {
-	// 		setTimeout(function() {
-	// 			modal.removeClass('gp-show')
-	// 			overlay.removeClass('opened');
-	// 			$('body').removeClass('open-modal');
-	// 			setTimeout(function() {
-	// 				$('.modals-wrap').removeClass('open-modal');
-	// 			}, 400);
-	// 		}, 3000);
-	// 	}
-	//
-	// };
-	//
-	// trigger.on('click', openModal);
-	// close.on('click',removeModal);
-	// overlay.on('click',removeModal);
-	//
-	// $(document).keyup(function(event){
-	// 	if (event.keyCode == 27) {
-	// 		modal.removeClass('gp-show')
-	// 		overlay.removeClass('opened');
-	// 		$('body').removeClass('open-modal');
-	// 		setTimeout(function() {
-	// 			$('.modals-wrap').removeClass('open-modal');
-	// 		}, 400);
-	// 	}
-	// });
+	
 
 // /*----------------------------------------
 // 	SLIDER (slick
@@ -4821,48 +4735,38 @@ if ( $.ajaxPrefilter ) {
   		autoplaySpeed: 2000
 	});
 
-	// var articleCounter = $('.article-item__slider .article-item__counter');
-	// var currentSlide = $('.article-item__slider').slick('slickCurrentSlide') + 1;
-	// var articleCounter = $('.article-item__counter');
-
-	// // кнопка "next"
-	// $('.article-item__slider .slick-next').click( function(){
-	// 	articleCounter.html(currentSlide + 1);
-	// });
-	// // кнопка "prev"
-	// $('.article-item__slider .slick-prev').click( function(){
-	// 	articleCounter.html(currentSlide - 1);
-
 // /*----------------------------------------
 // 	SLIDER ARTICLE
 // ----------------------------------------*/
 
-// $('.section-slider').slick({
-// 		infinite: false,
-// 		dots: true,
-// 		arrows: false,
-// 		slidesToShow: 1,
-// 		slidesToScroll: 1
-// });
-//
-// $('.section10-img').slick({
-// 		infinite: false,
-// 		dots: true,
-// 		arrows: false,
-// 		slidesToShow: 1,
-// 		slidesToScroll: 1
-// });
+
 /*----------------------------------------
-	SIDEBAR ACCORDION
+	VACANCY SLIDER TOGGLE
 ----------------------------------------*/
+
+// $('.vacancy__head-link').on("click", function(event){
+// 	event.preventDefault();
+// 	$(this).toggleClass('clicked');
+// 	$(this).parents('.vacancy__item').slideToggle('400');
+// });
+
+// Работает! Доделать утром!
+$('.vacancy__item-head').on("click", function(event){
+	event.preventDefault();
+	$(this).toggleClass('clicked');
+	$(this).parents('.vacancy__item').children().find('.vacancy__item-body').slideToggle('400');
+});
+
 // $('.toggle-accordion').on("click", function(event){
 // 	event.preventDefault();
 // 	$(this).toggleClass('clicked');
 // 	$(this).siblings('.accordion').slideToggle('400');
 // });
+
 /*----------------------------------------
-	SIDEBAR ACCORDION CITY
+	VACANCY SLIDER TOGGLE
 ----------------------------------------*/
+
 // $('.toggle-accordion-bottom').on("click", function(event){
 // 	event.preventDefault();
 // 	$(this).toggleClass('clicked');

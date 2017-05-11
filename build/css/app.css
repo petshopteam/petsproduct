@@ -4172,6 +4172,154 @@ h1
     margin-bottom: 15px;
 }
 
+.vacancy-page .main-head
+{
+    margin: 0;
+
+    background: url(../images/vacancy-bg.jpg) no-repeat top;
+}
+
+.vacancy-page .main-navigation
+{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.vacancy-page .breadcrumbs
+{
+    margin-bottom: 50px;
+
+    color: #fff;
+}
+
+.vacancy-page .pagination
+{
+    margin-bottom: 60px;
+}
+
+.vacancy-page .main-head__title
+{
+    margin-bottom: 150px;
+}
+
+.vacancy
+{
+    padding-top: 70px;
+}
+
+.vacancy__title
+{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 50px;
+
+    margin-bottom: 60px;
+}
+
+.vacancy__text
+{
+    font-family: 'Rubik', Helvetica, sans-serif;
+
+    margin-bottom: 60px;
+}
+
+.vacancy__button_last
+{
+    margin-bottom: 300px;
+}
+
+.vacancy__item-head
+{
+    position: relative;
+
+    width: 100%;
+    height: 77px;
+    padding: 25px 50px 0 50px;
+
+    background-color: #f1f1f1;
+}
+
+.vacancy__head-title
+{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+
+    color: #e0552f;
+}
+
+.vacancy__head-link
+{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+
+    width: 34px;
+    height: 34px;
+
+    -webkit-transition: -webkit-transform .3s ease;
+            transition: -webkit-transform .3s ease;
+            transition:         transform .3s ease;
+            transition:         transform .3s ease, -webkit-transform .3s ease;
+
+    background: #e0552f url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAABzElEQVRYR2N8EKr/n2EQAMZRh6DFwmiIoCfL0RAZDRFCRdVoGhmeaYSRi4dBvHIKA8N/BoaXHTkM/799IZQUcMqTnUaY+AQZxCsmM7Cp6IAN/3XnCsPLjlyGf5/ek+UYshzCLCDMIF4zk4FVTgXF0t+P7jC8bEln+PvhLcmOIdkhzEJiDBINcxlYJGTBln3Zuw5M8zgHgek/Lx4zvGhIZvj77hVJjiHJISDLJernMDALi4Mt+bxtGcO7BV1gtlBCGQOvVxSY/fftS4YXjSlgRxELiHYIKBrEq6czMAuKgs3+uH4uw4flk1HsEYjMZeAPTIY45v1rhpetmQyg6CIGEOUQNiUtBvGqqQygBAoCH5ZNZPi4YT5W8/kDEhkEovLBcqCE+7Itm+HXvWsE3ULQIexq+mBHgLIqCLyb287weedKvAbzuoczCCVXgtWAsjTIMT9vXcSrh6BD5BYcZmDk4mVg+PeP4e2MRoYvBzYS9B048Tr4Mwhn1DMwMDEx/P/2meFRgi1lDuG28WQQTqsFO+LrsZ1EOQKmiNvag0E4vY7h7axmhq9HtlPmEJJspkAxwaihwGyStI46BD24RkNkNEQIZaHRNDKaRgilEQCiAMxJgWoZ1gAAAABJRU5ErkJggg==') no-repeat center;
+    background-size: cover;
+}
+
+.vacancy__head-link.clicked
+{
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+.vacancy__item-body
+{
+    position: relative;
+
+    padding: 15px 100px 100px 50px;
+
+    border: 1px solid #ececec;
+    border-top: none;
+}
+
+.vacancy__item-title
+{
+    font-weight: bold;
+
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.vacancy__item-list
+{
+    margin-bottom: 35px;
+}
+
+.vacancy__item-list li
+{
+    font-size: 16px;
+    line-height: 27px;
+
+    position: relative;
+
+    padding-left: 25px;
+}
+
+.vacancy__item-list li::before
+{
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    width: 7px;
+    height: 7px;
+
+    content: '';
+
+    background: #e0552f;
+}
+
 /* Slider */
 
 .slick-slider
