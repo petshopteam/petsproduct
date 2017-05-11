@@ -1528,7 +1528,7 @@ hr
 /* end footer */
 
 /*----------------------------------------
-	FORM
+	FORMS
 ----------------------------------------*/
 
 .brand-filter__search,
@@ -3987,6 +3987,189 @@ h1
 .request__check:checked + .request__check-label::after
 {
     opacity: 1;
+}
+
+.aboutcompany-page .main-head
+{
+    margin: 0;
+
+    background: url(../images/aboutcompany-bg.jpg) no-repeat top;
+}
+
+.aboutcompany-page .main-navigation
+{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.aboutcompany-page .breadcrumbs
+{
+    margin-bottom: 50px;
+
+    color: #fff;
+}
+
+.aboutcompany-page .pagination
+{
+    margin-bottom: 60px;
+}
+
+.aboutcompany-page .main-head__title
+{
+    margin-bottom: 150px;
+}
+
+.company-features
+{
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.company-feature
+{
+    margin-bottom: 50px;
+}
+
+.company-feature__image
+{
+    width: 69px;
+    height: 87px;
+}
+
+.company-feature__title
+{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.company-feature__text
+{
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.distribution
+{
+    padding-top: .3%;
+
+    background: #f1f1f1;
+}
+
+.distribution__title
+{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.distribution__item
+{
+    width: 350px;
+    height: 420px;
+    margin-bottom: 60px;
+}
+
+.distribution__item:hover .distribution__image
+{
+    background: #f1f1f1;
+}
+
+.distribution__image
+{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    background: #fff;
+    -webkit-box-shadow: 0 0 4px rgba(36, 36, 35, .2);
+            box-shadow: 0 0 4px rgba(36, 36, 35, .2);
+}
+
+.distribution__item-title
+{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.distribution__text
+{
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.distribution__item_big
+{
+    width: 471px;
+    height: 600px;
+}
+
+.distribution__image_big
+{
+    height: 471px;
+}
+
+.details
+{
+    margin-top: 80px;
+    margin-bottom: 85px;
+}
+
+.details__left
+{
+    width: 100%;
+    height: 382px;
+    padding: 10%;
+    padding-bottom: 0;
+
+    background-color: #686868;
+}
+
+.details__left-title
+{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 50px;
+
+    margin-bottom: 20px;
+
+    color: #fff;
+}
+
+.details__left-link
+{
+    font-size: 16px;
+    font-weight: bold;
+
+    display: inline-block;
+
+    text-decoration: underline;
+
+    color: #fff;
+}
+
+.details__right
+{
+    width: 100%;
+    height: 382px;
+    padding-top: 60px;
+
+    border-top: 3px solid #e0552f;
+}
+
+.details__right-text
+{
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-size: 16px;
+
+    margin-bottom: 15px;
 }
 
 /* Slider */
