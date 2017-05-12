@@ -1,0 +1,57 @@
+// Page 404 (error)
+
+.error-page {
+
+  //стили для header
+  .main-topline {
+    background: @grey;
+  }
+
+  .main-head {
+    background: @white;
+    margin: 0;
+  }
+
+  .main-navigation {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .main-navigation__item a {
+    color: @lightblack;
+  }
+
+  .main-head__logo {
+    background: @grey url(../images/icons/logo-grey.svg) no-repeat center;
+    background-size: 65%;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 50px;
+  }
+}
+
+// main styles
+
+.main-error {
+  padding-top: 10%;
+  padding-bottom: 13%;
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  &__info {
+    margin-left: 5%;
+  }
+  &__title {
+    margin-top: 5%;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}

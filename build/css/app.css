@@ -4552,7 +4552,7 @@ h1
 .registration .container
 {
     margin-bottom: 90px;
-    padding: 60px 3% 50px 3%;
+    padding: 60px 3% 50px 5%;
 
     background-color: #dfdfdf;
 }
@@ -4636,6 +4636,73 @@ h1
 .registration__button
 {
     margin-top: 70px;
+}
+
+.error-page .main-topline
+{
+    background: #f1f1f1;
+}
+
+.error-page .main-head
+{
+    margin: 0;
+
+    background: #fff;
+}
+
+.error-page .main-navigation
+{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.error-page .main-navigation__item a
+{
+    color: #242423;
+}
+
+.error-page .main-head__logo
+{
+    background: #f1f1f1 url(../images/icons/logo-grey.svg) no-repeat center;
+    background-size: 65%;
+}
+
+.error-page .breadcrumbs
+{
+    margin-bottom: 50px;
+}
+
+.main-error
+{
+    padding-top: 10%;
+    padding-bottom: 13%;
+}
+
+.main-error__image
+{
+    width: 100%;
+    height: auto;
+}
+
+.main-error__info
+{
+    margin-left: 5%;
+}
+
+.main-error__title
+{
+    font-size: 36px;
+
+    margin-top: 5%;
+    margin-bottom: 30px;
+}
+
+.main-error__text
+{
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
 }
 
 /* Slider */
