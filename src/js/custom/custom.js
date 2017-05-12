@@ -78,6 +78,17 @@ $('.vacancy__item-head').on('click', function(event){
 // });
 
 /*----------------------------------------
+	HELP PAGE on lick effects
+----------------------------------------*/
+
+$('.help__left-title').on('click', function(event){
+	event.preventDefault();
+	$('.help__left-title').removeClass('active');
+	$(this).toggleClass('active');
+});
+
+
+/*----------------------------------------
 	SLIDER TOGGLE
 ----------------------------------------*/
 
