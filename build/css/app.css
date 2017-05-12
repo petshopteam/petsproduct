@@ -4351,6 +4351,83 @@ h1
     text-decoration: underline;
 }
 
+.contacts-page .main-topline
+{
+    background: #f1f1f1;
+}
+
+.contacts-page .main-head
+{
+    margin: 0;
+
+    background: #fff;
+}
+
+.contacts-page .main-navigation
+{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.contacts-page .main-navigation__item a
+{
+    color: #242423;
+}
+
+.contacts-page .main-head__logo
+{
+    background: #f1f1f1 url(../images/icons/logo-grey.svg) no-repeat center;
+    background-size: 65%;
+}
+
+.contacts-page .breadcrumbs
+{
+    margin-bottom: 50px;
+}
+
+.contacts__map
+{
+    width: 100%;
+    height: auto;
+    margin-bottom: 80px;
+}
+
+.contacts__bottom
+{
+    margin-bottom: 80px;
+}
+
+.contacts__item
+{
+    height: 184px;
+    padding: 35px 50px 40px 50px;
+
+    background: #f1f1f1;
+}
+
+.contacts__item-image
+{
+    width: 27px;
+    height: 34px;
+    margin-bottom: 10px;
+}
+
+.contacts__item-title
+{
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+}
+
+.contacts__item-text
+{
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-size: 14px;
+}
+
 /* Slider */
 
 .slick-slider
