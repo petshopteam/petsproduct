@@ -4744,17 +4744,13 @@ if ( $.ajaxPrefilter ) {
 	VACANCY SLIDER TOGGLE
 ----------------------------------------*/
 
-// $('.vacancy__head-link').on("click", function(event){
-// 	event.preventDefault();
-// 	$(this).toggleClass('clicked');
-// 	$(this).parents('.vacancy__item').slideToggle('400');
-// });
+$('.vacancy__item-body').css('display', 'none');
 
-// Работает! Доделать утром!
-$('.vacancy__item-head').on("click", function(event){
+$('.vacancy__item-head').on('click', function(event){
 	event.preventDefault();
-	$(this).toggleClass('clicked');
 	$(this).parents('.vacancy__item').children().find('.vacancy__item-body').slideToggle('400');
+	$(this).parents('.vacancy__item').children().find('.vacancy__head-link, .vacancy__head-title').toggleClass('clicked');
+	$(this).toggleClass('no-margin');
 });
 
 // $('.toggle-accordion').on("click", function(event){
@@ -4764,7 +4760,7 @@ $('.vacancy__item-head').on("click", function(event){
 // });
 
 /*----------------------------------------
-	VACANCY SLIDER TOGGLE
+	SLIDER TOGGLE
 ----------------------------------------*/
 
 // $('.toggle-accordion-bottom').on("click", function(event){
