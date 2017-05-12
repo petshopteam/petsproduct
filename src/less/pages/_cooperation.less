@@ -1,0 +1,139 @@
+// Page 12 (cooperation)
+
+//header styles
+.cooperation-page {
+  
+  .main-head {
+    background: url(../images/cooperation-bg.jpg) no-repeat top;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .main-navigation {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .breadcrumbs {
+    margin-bottom: 50px;
+    color: @white;
+  }
+
+  .pagination {
+    margin-bottom: 60px;
+  }
+
+  .main-head__title {
+    margin-bottom: 100px;
+  }
+
+  .main-head__feature-image {
+    width: 95px;
+    height: 83px;
+    margin-bottom: 10px;
+  }
+
+  .main-head__feature-text {
+    color: @white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+}
+
+//main styles
+
+.cooperation {
+  padding-top: 70px;
+  padding-bottom: 80px;
+
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 80px;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  &__item {
+    margin-left: 10px;
+    padding-left: 15px;
+    border-left: 3px solid @red;
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__item-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  &__item-text {
+    font-size: 14px;
+    font-family: @rubik;
+  }
+}
+
+.registration {
+  
+  .container {
+    background-color: #dfdfdf;
+    padding: 60px 3% 50px 3%;
+    margin-bottom: 90px;
+  }
+  &__title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 80px;
+  }
+  &__item {
+    float: left;
+    position: relative;
+    width: 30%;
+    text-align: center;
+    margin-right: 5%;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 59px;
+      height: 1px;
+      background-color: #2d2d2d;
+      top: 40px;
+      right: -3%;
+    }
+  }
+  &__item_last {
+    margin-right: 0;
+    &::after {
+      display: none;
+    }
+  }
+  &__item-number {
+    float: left;
+    width: 20%;
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    background-color: #686868;
+    color: @white;
+    padding-top: 10px;
+    font-size: 51px;
+    font-weight: bold;
+  }
+  &__item-text {
+    float: left;
+    width: 55%;
+    margin-left: 20px;
+    text-align: left;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__button {
+    margin-top: 70px;
+  }
+}
