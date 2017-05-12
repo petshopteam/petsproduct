@@ -4967,6 +4967,7 @@ h1
 .write-us .request__input_big
 {
     min-height: 240px;
+    max-height: 800px;
 }
 
 /* Slider */
