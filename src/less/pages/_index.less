@@ -319,9 +319,161 @@
       height: 24px;
     }
   }
-
-
 }
 
 
 
+// modal windows
+
+.modal-window {
+  background: rgba(0, 0, 0, 0.5);
+  color: #12485a;
+  display: none;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  overflow-y: scroll;
+  z-index: 9999;
+}
+
+.window-container {
+  text-align: center;
+  background: #ffffff;
+  display: block;
+  margin: 3% auto;
+  padding-top: 50px;
+  padding-bottom: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 320px;
+  z-index: 9999;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  text-align: center;
+
+  h3 {
+    font-family: $umedium;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 26px;
+    height: auto;
+    margin-bottom: 36px;
+  }
+
+  input[type=text] {
+    box-sizing: border-box;
+    width: 280px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: 2px solid #42c8f4;
+    padding: 20px 18px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    color: #326070;
+
+    &.error {
+        border-color: red;
+      }
+  }
+
+  .form-submit {
+    box-sizing: border-box;
+    width: 280px;
+    height: 60px;
+    background: #42c8f4;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 17px;
+    transition: all 0.2s;
+
+    &:hover {
+      background: #12485a;
+    }
+  }
+
+  .form-policy {
+    font-size: 12px;
+    line-height: 14px;
+    font-family: $ulight;
+    text-decoration: underline;
+  }
+}
+
+.animation {
+-webkit-transform:  scale(0.5);
+-moz-transform:  scale(0.5);
+-ms-transform:  scale(0.5);
+transform:  scale(0.5);
+}
+.visible {
+opacity: 1;
+-webkit-transform:  scale(1);
+-moz-transform:  scale(1);
+-ms-transform:  scale(1);
+transform:  scale(1);
+}
+
+.btn-close {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  border: none;
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  outline: none;
+  transform: rotate(45deg);
+  top: 20px;
+  right: 20px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 4px;
+    background: #d0dade;
+    transform: rotate(-90deg);
+    top: 6px;
+    left: 0px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 4px;
+    background: #d0dade;
+    transform: rotate(0deg);
+    top: 6px;
+    left: 0px;
+  }
+}
+
+#fixedForm label.error {
+  top: 230px;
+  left: 20px;
+}
+
+#fixedForm label#tel-error {
+  top: 340px;
+}
+
+//can't scroll
+body.freezed {
+  overflow: hidden;
+}
+
+// .modal-window {
+//   display: none;
+// }

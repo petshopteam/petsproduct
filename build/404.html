@@ -40,11 +40,21 @@
 	<!-- main topline -->
 	<div class="main-topline">
 		<div class="container">
-			<div class="row tal">
+			<div class="row tar">
 				<div class="col-xs-2 col-xs-offset-9">
 					<!--city-->
 					<div class="main-topline__city">
-						<a class="main-topline__change-city text-bold">Санкт-Петербург</a>
+						<a class="main-topline__change-city text-bold open_modal" href="#modalCity">Санкт-Петербург</a>
+						<!-- modal window -->
+						<div class="modal-city tac modal_div" id="modalCity">
+							<p class="modal-city__title">
+								Ваш город Санкт-Петербург?
+							</p>
+							<a class="modal-city__no btn btn_no">нет</a>
+							<a class="modal-city__yes btn btn_red">да</a>
+						</div>
+						<div id="overlay" class="overlay-light"></div>
+						<!-- end modal -->
 					</div>
 				</div>
 				<div class="col-xs-2">
@@ -64,6 +74,8 @@
 			</div>
 		</div>
 	</div>
+
+
 
 	<section class="main-error">
 		<div class="container">
