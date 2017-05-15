@@ -139,10 +139,16 @@
 					</div>
 
 					<!-- item-1 -->
-					<div class="brand-production__item">
-						<img src="images/products/almo-nature/green-label.png" alt="Green Label">
-						<p class="brand-production__label">Green Label</p>
-					</div>
+					
+						<div class="brand-production__item">
+							<a href="#modalBrand1" class="open_modal_dark">
+							<img src="images/products/almo-nature/green-label.png" alt="Green Label">
+							<p class="brand-production__label">Green Label</p>
+							</a>
+						</div>
+					
+					
+
 					<!-- item-2 -->
 					<div class="brand-production__item">
 						<img src="images/products/almo-nature/orange-label.png" alt="Orange Label">
@@ -193,6 +199,44 @@
 			</div>
 		</div>
 	</main>
+
+	<!-- modal window -->
+
+	<div class="modal-brand modal_div" id="modalBrand1">
+        <div class="container-offset">
+            <a class="modal-change-city__close modal_close">X</a>
+            <div class="row">
+            	<div class="col-lg-6">
+            		<div class="modal-brand__left tac">
+            			<img src="images/products/almo-nature/classic.png" width="100%" alt="#">
+            		</div>
+            	</div>
+            	<div class="col-lg-9">
+            		<div class="mobile-brand__right tal">
+            			<p class="modal-brand__title">Линейка Classic</p>
+            			<p class="modal-brand__subtitle">Консервы ждя собак и кошек</p>
+            			<p class="modal-brand__text">
+            				Консервы Almo Nature Classic содержат 75-55% (для кошек) и 50%(для собак) высококачественного мяса или рыбы, приготовленных в собственном бульоне- именно такой простой и естественный состав привлекает домашних любимцев.
+            			</p>
+            			<ul class="modal-brand__list">
+            				<li>Натуральные продукты, подходящие даже для потребления человеком:</li>
+            				<li>Свежевыловленная морская рыба</li>
+            				<li>Настоящее мясо животных свободного выгула (курица, говядина, телятина) – 			без гормонов и антибиотиков</li>
+            				<li>Механическая обработка продуктов, с большой осторожностью, без 					применения химикатов во избежание потери питательных веществ</li>
+            				<li>Консервирование продукта происходит в его собственном бульоне – с целью 			сохранения питательных веществ и первоначального вкуса</li>
+            				<li>Без добавок, будь то химические или какие-либо другие ингредиенты, тем не 			менее – излюбленный всеми кошками продукт, за свою простоту и подлинность.</li>
+            			</ul>
+            		</div>
+            	</div>
+            </div>
+            <div class="row">
+            	<button class="btn btn_back-rev modal_close">Назад</button>
+            </div>
+            	
+        </div>
+    </div>
+
+	<!-- // modal window -->
 
 	<!--stores-->
 	@@include('global/stores.html')

@@ -2,7 +2,18 @@
    MODALS
    ===========================================================================*/
 
-// TOPLINE
+
+.modal_div {
+  position: fixed;
+  top: 10%;
+  z-index: 100;
+  display: none;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
 // modal-city
 
@@ -11,15 +22,15 @@
   width: 327px;
   height: 161px;
   background: red;
-  /* Style for "Прямоуголь" */
   box-shadow: 0 1px 5px 1px rgba(24, 24, 23, 0.5);
   border: 1px solid #bababa;
   background-color: #ffffff;
   top: 35px;
+  margin: 0;
   padding-top: 30px;
   padding-bottom: 15px;
-  z-index: 10;
   display: none;
+  overflow-y: visible;
 
   &__title {
     color: #0e0c07;
@@ -38,19 +49,232 @@
     content: '';
     width: 27px;
     height: 12px;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAMCAYAAACTB8Z2AAAB8ElEQVQ4T5WUW4+iQBCFT6uooIZRZ5X18mh8Mvr7/RNeXiQmPpjs6LBGAyMCIsKmKmnDkrl2UulEoL4+p04rkiRJ8MGK45if0E51v9+55Ce5XA75fB60p+ujfiILk41ol0WA2+3GFYYhXl7+QIgcOp0OisUiFEXhkmCCCSG40usBSwuUEKkmCAJcr1dcLhfsdjtUKhVWSr8RUNM0lEollMvlh0IJSwMZlgWlLQvDKzzPh+M42O/36PV6GAwGrHq1WuFwOMAwDOi6DlVVGVooFBiaVSfiOH7MTM6GdrKMTu55Ho7HI06nE4bDIbrd7n/WbDYbbLdbtFot1Ot1aBoBywwkW9NAhmVto7mQdb7vwbL+MnA8HnOz9xZZa5omGo0Gms0mKyRL5RwJyEqjKGKYtI7UBIEP1/Xw+rrn000mE27w2SLli8UC1WqVVco5UoBkcEQYhgmBoihi23zfx9ubA8uyoOtPGI1GbMl3luu6mM1m3LzdbqNWq/EMqdhS13UTApF1ZJttOzz0fr/PQcjG9ysoHXg+n4OCZRi/oWkVqGoJilKEsCwrIRC9RFacz+d3g/AVJP2c7uVyuYTj2Hh+/sVXhWYoTNNkmG3b/O/wWRB+AqQcUGgoPHQtCCim0ylHnwb7nSD8BEjv0rVYr9f82T9XNVcP+Xo7VwAAAABJRU5ErkJggg==') no-repeat center;
+    background: red url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAMCAYAAACTB8Z2AAAB8ElEQVQ4T5WUW4+iQBCFT6uooIZRZ5X18mh8Mvr7/RNeXiQmPpjs6LBGAyMCIsKmKmnDkrl2UulEoL4+p04rkiRJ8MGK45if0E51v9+55Ce5XA75fB60p+ujfiILk41ol0WA2+3GFYYhXl7+QIgcOp0OisUiFEXhkmCCCSG40usBSwuUEKkmCAJcr1dcLhfsdjtUKhVWSr8RUNM0lEollMvlh0IJSwMZlgWlLQvDKzzPh+M42O/36PV6GAwGrHq1WuFwOMAwDOi6DlVVGVooFBiaVSfiOH7MTM6GdrKMTu55Ho7HI06nE4bDIbrd7n/WbDYbbLdbtFot1Ot1aBoBywwkW9NAhmVto7mQdb7vwbL+MnA8HnOz9xZZa5omGo0Gms0mKyRL5RwJyEqjKGKYtI7UBIEP1/Xw+rrn000mE27w2SLli8UC1WqVVco5UoBkcEQYhgmBoihi23zfx9ubA8uyoOtPGI1GbMl3luu6mM1m3LzdbqNWq/EMqdhS13UTApF1ZJttOzz0fr/PQcjG9ysoHXg+n4OCZRi/oWkVqGoJilKEsCwrIRC9RFacz+d3g/AVJP2c7uVyuYTj2Hh+/sVXhWYoTNNkmG3b/O/wWRB+AqQcUGgoPHQtCCim0ylHnwb7nSD8BEjv0rVYr9f82T9XNVcP+Xo7VwAAAABJRU5ErkJggg==') no-repeat center;
+    background-size: cover;
     top: -12px;
     left: 120px;
   }
 }
 
-.overlay {
+// change-city modal
+.modal-change-city {
+  display: none;
+  width: 718px;
+  max-height: 325px;
+  box-shadow: 0 8px 87px 9px rgba(24, 24, 23, 0.75);
+  background-color: #ffffff;
+  padding: 0 60px 50px 60px;
 
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+
+  &__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  }
+
+  &__form {
+
+  }
+
+  &__input {
+    height: 38px;
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 2px;
+    border: 1px solid #dfdfdf;
+    padding: 0 15px;
+    font-family: @rubik;
+    font-weight: bold;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    
+    input[type=radio] {
+      opacity: 0;
+      width: 19px;
+      height: 19px;
+      position: relative;
+      top: 4px;
+      left: 1px;
+    }
+
+    label {
+      position: relative;
+      padding-left: 20px;
+      font-family: @rubik;
+      font-size: 14px;
+      color: #686868;
+      top: 2px;
+      cursor: pointer;
+
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: -2px;
+        left: -22px;
+        width: 19px;
+        height: 19px;
+        border-radius: 2px;
+        border: 1px solid #bababa;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        /* Style for "Прямоуголь" */
+        width: 13px;
+        height: 13px;
+        top: 1px;
+        left: -19px;
+        border-radius: 2px;
+        background-color: #e0552f;
+        opacity: 0;
+      }
+    }
+  }
 }
 
-//MODAL WINDOW STYLES
+//стилизация input
+.modal-change-city__item {
+  input[type=radio]:checked + label::after {
+    opacity: 1;
+  }
+  input[type=radio]:checked + label::before {
+    border-color: @red;
+  }
+  input[type=radio]:checked + label {
+    font-weight: bold;
+    color: #242423;
+  }
+}
 
-.overlay-light {
+// modal-vacancy
+.modal-vacancy {
+  display: none;
+  max-width: 700px;
+  left: 30%;
+  z-index: 10;
+  background: @white;
+  padding: 48px 100px 48px 100px;
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+    margin-bottom: 40px;
+  }
+
+  .request__form-block {
+    border: none;
+    padding: 0;
+  }
+
+  &__agree {
+    margin-bottom: 45px;
+  }
+
+  .request__submit, .request__clear {
+    float: none;
+  }
+  .request__submit {
+    margin-right: 20px;
+  }
+}
+
+
+// modal brand
+.modal-brand {
+  display: none;
+  left: 20%;
+  background: @white;
+  box-shadow: 0 8px 87px 9px rgba(24, 24, 23, 0.75);
+  width: 1100px;
+  padding: 45px 40px 50px 40px;
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 14px;
+    font-family: @rubik;
+    margin-bottom: 20px;
+  }
+  &__list {
+    margin-bottom: 30px;
+    li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 14px;
+      line-height: 20px;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 7px;
+        height: 7px;
+        background: @red;
+        top: 8px;
+        left: 0;
+      }
+    }
+  }
+}
+
+// article slider modal
+
+.modal-article {
+  position: fixed;
+  width: 960px;
+  height: 699px;
+  left: 30%;
+  top: 5%;
+  background: @white;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+
+  &__slider {
+    padding: 50px;
+  }
+  &__slide {
+    img {
+      width: 860px;
+      height: 599px;
+    }
+  }
+  .slick-prev {
+    right: 52.5%;
+    bottom: -3%;
+    }
+  .slick-next {
+    right: 47.5%;
+    bottom: -3%;
+  }
+}
+
+
+// overlays
+
+.overlay {
   background: transparent;
   color: #12485a;
   display: none;
@@ -59,8 +283,23 @@
   left: 0;
   top: 0;
   position: fixed;
-  overflow-y: scroll;
-  z-index: 9;
+  overflow-y: auto;
+  z-index: 99;
+
+  &_dark {
+    background: rgba(0,0,0,0.6);
+    color: #12485a;
+    display: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 99;
+  }
 }
 
-/* end modals */
+.overlay-dark:extend(.overlay-light){
+  background-color: #181817;
+}

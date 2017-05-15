@@ -139,7 +139,7 @@
 
 							<!-- Откликнуться -->
 							<div class="row tar">
-								<a href="#" class="vacancy__button btn btn_red">Откликнуться</a>
+								<a href="#modalVacancy" class="vacancy__button btn btn_red open_modal_dark">Откликнуться</a>
 							</div>
 						</div>
 					</div>
@@ -197,7 +197,7 @@
 
 							<!-- Откликнуться -->
 							<div class="row tar">
-								<a href="#" class="vacancy__button btn btn_red">Откликнуться</a>
+								<a href="#modalVacancy" class="vacancy__button btn btn_red open_modal_dark">Откликнуться</a>
 							</div>
 						</div>
 					</div>
@@ -214,6 +214,60 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- modal window -->
+    <div class="modal-vacancy modal_div" id="modalVacancy">
+        <div class="container-offset">
+            <a class="modal-change-city__close modal_close">X</a>
+            <div class="row tac">
+            	<p class="modal-vacancy__title">Отклик на вакансию</p>
+            </div>
+            <div class="row">
+            	<form action="#" class="request__form">
+			<div class="request__form-block clearfix">
+				<div class="col-lg-15">
+					<label for="" class="request__label">Как вас зовут?</label>
+					<input type="text" class="request__input" placeholder="Фамилия имя и Отчество">
+				</div>	
+				<div class="col-lg-5">
+					<label for="" class="request__label">Дата рождения</label>
+					<input type="text" class="request__input" placeholder="дд. мм. гггг">
+				</div>
+				<div class="col-lg-10">
+					<label for="" class="request__label">Место проживания</label>
+					<input type="text" class="request__input" placeholder="Название города  или региона">
+				</div>	
+				<div class="col-lg-15">
+					<label for="" class="request__label">Контактный номер телефона</label>
+					<input type="text" class="request__input" placeholder="+7 ( ___ )  ___  -  __ - __">
+				</div>
+				<div class="col-lg-15">
+					<label for="" class="request__label">Прикрепить резюме</label>
+					<input type="file" class="request__input" placeholder="Прикрепить файл">
+				</div>	
+				<div class="col-lg-15">
+					<label for="" class="request__label">Сопроводительное письмо</label>
+					<textarea type="text" class="request__input request__input_big" placeholder="Текст письма"></textarea>
+				</div>
+			</div>
+				<div class="col-lg-15">
+					<div class="modal-vacancy__agree">
+						<input id="requestCheck" type="checkbox" checked class="request__check">
+						<label for="requestCheck" class="request__check-label">Я согласен с условиями передачи информации</label>	
+					</div>
+				</div>
+				<div class="col-lg-15">
+					<div class="modal-vacancy__buttons tac">
+						<button class="request__submit btn btn_red">Отправить</button>
+						<button class="request__clear btn">Очистить</button>
+					</div>
+					
+				</div>
+            	</form>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
 
 	
 

@@ -69,6 +69,15 @@
   }
 }
 
+.btn_back-rev:extend(.btn_back all){
+  padding-right: 18px;
+  padding-left: 45px;
+  &::after {
+    right: 87px;
+    transform: rotate(180deg);
+  }
+}
+
 .btn_more-red {
   background-color: @red;
   color: @white;

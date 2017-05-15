@@ -50,10 +50,11 @@
 							<p class="modal-city__title">
 								Ваш город Санкт-Петербург?
 							</p>
-							<a class="modal-city__no btn btn_no">нет</a>
+							<a class="modal-city__no btn btn_no open_modal_dark" href="#modalChangeCity">нет</a>
 							<a class="modal-city__yes btn btn_red">да</a>
 						</div>
-						<div id="overlay" class="overlay-light"></div>
+						<div id="overlay" class="overlay"></div>
+						<div id="overlay_dark" class="overlay_dark"></div>
 						<!-- end modal -->
 					</div>
 				</div>
@@ -74,6 +75,67 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- change-city modal window -->
+	<div class="modal-change-city modal_div" id="modalChangeCity">
+		<div class="container-offset">
+			<a class="modal-change-city__close modal_close">X</a>
+			<form action="#" class="modal-change-city__form">
+				<div class="row">
+					<div class="col-lg-15">
+						<p class="modal-change-city__title">Выберите свой город</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="modal-change-city__item">
+							<input type="radio" checked name="changeCity" id="changeCity1">
+							<label for="changeCity1">Москва</label>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="modal-change-city__item">
+							<input type="radio" name="changeCity" id="changeCity2">
+							<label for="changeCity2">Казань</label>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="modal-change-city__item">
+							<input type="radio" name="changeCity" id="changeCity3">
+							<label for="changeCity3">Остальные регионы</label>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="modal-change-city__item">
+							<input type="radio" name="changeCity" id="changeCity4">
+							<label for="changeCity4">Санкт-Петербург</label>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="modal-change-city__item">
+							<input type="radio" name="changeCity" id="changeCity5">
+							<label for="changeCity5">Казань</label>
+						</div>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="col-lg-15">
+						<p class="modal-change-city__title">Или укажите в поле</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-10">
+						<input type="text" class="modal-change-city__input" placeholder="Введите название города">
+					</div>
+					<div class="col-lg-4 col-lg-offset-1">
+						<a href="#" type="submit" class="btn btn_red">Выбрать</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- end modal -->
 
 
 
@@ -173,10 +235,16 @@
 					</div>
 
 					<!-- item-1 -->
+
 					<div class="brand-production__item">
-						<img src="images/products/almo-nature/green-label.png" alt="Green Label">
-						<p class="brand-production__label">Green Label</p>
+						<a href="#modalBrand1" class="open_modal_dark">
+							<img src="images/products/almo-nature/green-label.png" alt="Green Label">
+							<p class="brand-production__label">Green Label</p>
+						</a>
 					</div>
+
+
+
 					<!-- item-2 -->
 					<div class="brand-production__item">
 						<img src="images/products/almo-nature/orange-label.png" alt="Orange Label">
@@ -227,6 +295,44 @@
 			</div>
 		</div>
 	</main>
+
+	<!-- modal window -->
+
+	<div class="modal-brand modal_div" id="modalBrand1">
+		<div class="container-offset">
+			<a class="modal-change-city__close modal_close">X</a>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="modal-brand__left tac">
+						<img src="images/products/almo-nature/classic.png" width="100%" alt="#">
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="mobile-brand__right tal">
+						<p class="modal-brand__title">Линейка Classic</p>
+						<p class="modal-brand__subtitle">Консервы ждя собак и кошек</p>
+						<p class="modal-brand__text">
+							Консервы Almo Nature Classic содержат 75-55% (для кошек) и 50%(для собак) высококачественного мяса или рыбы, приготовленных в собственном бульоне- именно такой простой и естественный состав привлекает домашних любимцев.
+						</p>
+						<ul class="modal-brand__list">
+							<li>Натуральные продукты, подходящие даже для потребления человеком:</li>
+							<li>Свежевыловленная морская рыба</li>
+							<li>Настоящее мясо животных свободного выгула (курица, говядина, телятина) – без гормонов и антибиотиков</li>
+							<li>Механическая обработка продуктов, с большой осторожностью, без применения химикатов во избежание потери питательных веществ</li>
+							<li>Консервирование продукта происходит в его собственном бульоне – с целью сохранения питательных веществ и первоначального вкуса</li>
+							<li>Без добавок, будь то химические или какие-либо другие ингредиенты, тем не менее – излюбленный всеми кошками продукт, за свою простоту и подлинность.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<button class="btn btn_back-rev modal_close">Назад</button>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- // modal window -->
 
 	<!--stores-->
 	<div class="stores">

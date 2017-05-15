@@ -49,10 +49,11 @@
 							<p class="modal-city__title">
 								Ваш город Санкт-Петербург?
 							</p>
-							<a class="modal-city__no btn btn_no">нет</a>
+							<a class="modal-city__no btn btn_no open_modal_dark" href="#modalChangeCity">нет</a>
 							<a class="modal-city__yes btn btn_red">да</a>
 						</div>
-						<div id="overlay" class="overlay-light"></div>
+						<div id="overlay" class="overlay"></div>
+						<div id="overlay_dark" class="overlay_dark"></div>
 						<!-- end modal -->
 					</div>
 				</div>
@@ -73,6 +74,67 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- change-city modal window -->
+	<div class="modal-change-city modal_div" id="modalChangeCity">
+		<div class="container-offset">
+			<a class="modal-change-city__close modal_close">X</a>
+			<form action="#" class="modal-change-city__form">
+				<div class="row">
+					<div class="col-lg-15">
+						<p class="modal-change-city__title">Выберите свой город</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="modal-change-city__item">
+							<input type="radio" checked name="changeCity" id="changeCity1">
+							<label for="changeCity1">Москва</label>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="modal-change-city__item">
+							<input type="radio" name="changeCity" id="changeCity2">
+							<label for="changeCity2">Казань</label>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="modal-change-city__item">
+							<input type="radio" name="changeCity" id="changeCity3">
+							<label for="changeCity3">Остальные регионы</label>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="modal-change-city__item">
+							<input type="radio" name="changeCity" id="changeCity4">
+							<label for="changeCity4">Санкт-Петербург</label>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="modal-change-city__item">
+							<input type="radio" name="changeCity" id="changeCity5">
+							<label for="changeCity5">Казань</label>
+						</div>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="col-lg-15">
+						<p class="modal-change-city__title">Или укажите в поле</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-10">
+						<input type="text" class="modal-change-city__input" placeholder="Введите название города">
+					</div>
+					<div class="col-lg-4 col-lg-offset-1">
+						<a href="#" type="submit" class="btn btn_red">Выбрать</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- end modal -->
 
 
 
@@ -133,10 +195,64 @@
 				<p class="vacancy__text">
 					К сожалению, сейчас нет открытых вакансий, но мы всегда ищем новых активных и интересных людей в нашу команду. Если хотите работать у нас напишите нам, и мы рассмотрим Ваше резюме.
 				</p>
-				<a href="#" class="vacancy__button vacancy__button_last btn btn_red">Откликнуться</a>
+				<a href="#modalVacancy" class="vacancy__button vacancy__button_last btn btn_red open_modal_dark">Откликнуться</a>
 			</div>
 		</div>
 	</section>
+
+	<!-- modal window -->
+	<div class="modal-vacancy modal_div" id="modalVacancy">
+		<div class="container-offset">
+			<a class="modal-change-city__close modal_close">X</a>
+			<div class="row tac">
+				<p class="modal-vacancy__title">Отклик на вакансию</p>
+			</div>
+			<div class="row">
+				<form action="#" class="request__form">
+					<div class="request__form-block clearfix">
+						<div class="col-lg-15">
+							<label for="" class="request__label">Как вас зовут?</label>
+							<input type="text" class="request__input" placeholder="Фамилия имя и Отчество">
+						</div>
+						<div class="col-lg-5">
+							<label for="" class="request__label">Дата рождения</label>
+							<input type="text" class="request__input" placeholder="дд. мм. гггг">
+						</div>
+						<div class="col-lg-10">
+							<label for="" class="request__label">Место проживания</label>
+							<input type="text" class="request__input" placeholder="Название города  или региона">
+						</div>
+						<div class="col-lg-15">
+							<label for="" class="request__label">Контактный номер телефона</label>
+							<input type="text" class="request__input" placeholder="+7 ( ___ )  ___  -  __ - __">
+						</div>
+						<div class="col-lg-15">
+							<label for="" class="request__label">Прикрепить резюме</label>
+							<input type="file" class="request__input" placeholder="Прикрепить файл">
+						</div>
+						<div class="col-lg-15">
+							<label for="" class="request__label">Сопроводительное письмо</label>
+							<textarea type="text" class="request__input request__input_big" placeholder="Текст письма"></textarea>
+						</div>
+					</div>
+					<div class="col-lg-15">
+						<div class="modal-vacancy__agree">
+							<input id="requestCheck" type="checkbox" checked class="request__check">
+							<label for="requestCheck" class="request__check-label">Я согласен с условиями передачи информации</label>
+						</div>
+					</div>
+					<div class="col-lg-15">
+						<div class="modal-vacancy__buttons tac">
+							<button class="request__submit btn btn_red">Отправить</button>
+							<button class="request__clear btn">Очистить</button>
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end modal -->
 
 
 
