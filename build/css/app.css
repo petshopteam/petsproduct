@@ -1319,6 +1319,8 @@ hr
             box-sizing: border-box;
     padding: 0 18px;
 
+    -webkit-transition: all .2s ease;
+            transition: all .2s ease;
     text-transform: uppercase;
 
     border: none;
@@ -1330,6 +1332,18 @@ hr
 {
     color: #fff;
     background-color: #e0552f;
+}
+
+.btn_red:hover
+{
+    color: #e0552f;
+    background: #fff;
+}
+
+.btn_request:hover
+{
+    color: #fff;
+    background-color: #c82f05;
 }
 
 .btn_more
@@ -1354,6 +1368,17 @@ hr
 
     background: url(../images/icons/arrow-right_red.svg) no-repeat center;
     background-size: contain;
+}
+
+.btn_more:hover
+{
+    color: #fff;
+    background: #e0552f;
+}
+
+.btn_more:hover::after
+{
+    background-image: url(../images/icons/arrow-right_white.svg);
 }
 
 .btn_load
@@ -1440,6 +1465,11 @@ hr
     background-size: cover;
 }
 
+.btn_more-red:hover::after
+{
+    background-image: url(../images/icons/arrow-right_red.svg);
+}
+
 .btn_no
 {
     padding-right: 18px;
@@ -1468,6 +1498,11 @@ hr
 .main-foot a
 {
     color: #fff;
+}
+
+.main-foot a:hover
+{
+    text-decoration: underline;
 }
 
 .main-foot__logo
@@ -1878,6 +1913,8 @@ a
 a:hover
 {
     text-decoration: none;
+
+    color: inherit;
 }
 
 html
@@ -2162,8 +2199,8 @@ video.responsive
 
 .modal-vacancy
 {
-    z-index: 10;
-    left: 30%;
+    top: 3%;
+    bottom: auto;
 
     display: none;
 
@@ -2207,7 +2244,8 @@ video.responsive
 
 .modal-brand
 {
-    left: 20%;
+    top: 3%;
+    bottom: auto;
 
     display: none;
 
@@ -2285,13 +2323,9 @@ video.responsive
     width: 960px;
     height: 699px;
     margin: auto;
+    padding: 50px;
 
     background: #fff;
-}
-
-.modal-article__slider
-{
-    padding: 50px;
 }
 
 .modal-article__slide img
@@ -2302,14 +2336,14 @@ video.responsive
 
 .modal-article .slick-prev
 {
-    right: 52.5%;
-    bottom: -3%;
+    right: 51%;
+    bottom: -12%;
 }
 
 .modal-article .slick-next
 {
-    right: 47.5%;
-    bottom: -3%;
+    right: 45%;
+    bottom: -12%;
 }
 
 .overlay
@@ -2477,6 +2511,11 @@ h1
     padding-right: 0;
 }
 
+.main-topline__change-city:hover
+{
+    text-decoration: underline;
+}
+
 .main-topline__change-city::after
 {
     position: absolute;
@@ -2496,6 +2535,11 @@ h1
     position: relative;
 
     text-align: center;
+}
+
+.main-topline__phone a:hover
+{
+    text-decoration: underline;
 }
 
 .main-topline__phone::after
@@ -2529,6 +2573,11 @@ h1
     position: relative;
 
     padding-left: 20px;
+}
+
+.main-topline__user-login:hover
+{
+    text-decoration: underline;
 }
 
 .main-topline__user-login::before

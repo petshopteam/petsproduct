@@ -14,11 +14,24 @@
   font-size: 16px;
   line-height: 38px;
   font-weight: bold;
+  transition: all 0.2s ease;
 }
 
 .btn_red {
   background-color: @red;
   color: @white;
+  &:hover {
+    background: @white;
+    color: @red;
+  }
+}
+
+//главная кнопка заявки
+.btn_request {
+  &:hover {
+    background-color: #c82f05;
+    color: @white;
+  }
 }
 
 .btn_more {
@@ -36,6 +49,14 @@
     background-size: contain;
     top: 25%;
     right: 13px;
+  }
+
+  &:hover {
+    color: @white;
+    background: @red;
+    &::after {
+      background-image: url(../images/icons/arrow-right_white.svg);
+    }
   }
 }
 
@@ -91,6 +112,11 @@
     height: 15px;
     right: 13px;
     top: 11px;
+  }
+  &:hover {
+    &::after {
+      background-image: url(../images/icons/arrow-right_red.svg);
+    }
   }
 }
 
