@@ -4827,14 +4827,16 @@ $('.vacancy__item-head').on('click', function(event){
 	$(this).toggleClass('no-margin');
 });
 
-// $('.toggle-accordion').on("click", function(event){
-// 	event.preventDefault();
-// 	$(this).toggleClass('clicked');
-// 	$(this).siblings('.accordion').slideToggle('400');
-// });
+/*----------------------------------------
+   HELP PAGE on click effects
+----------------------------------------*/
+    $('.main-topline__user-login').on('click', function(event){
+        event.preventDefault();
+        $(this).toggleClass('entered');
+    });
 
 /*----------------------------------------
-	HELP PAGE on lick effects
+	HELP PAGE on click effects
 ----------------------------------------*/
 
 $('.help__left-title').on('click', function(event){
@@ -4842,6 +4844,7 @@ $('.help__left-title').on('click', function(event){
 	$('.help__left-title').removeClass('active');
 	$(this).toggleClass('active');
 });
+
 
 
 /*----------------------------------------

@@ -20,6 +20,9 @@
   &__left-item {
     display: inline-block;
     margin-right: 5px;
+    &:hover a {
+      color: @red;
+    }
     &.active a {
       color: @red;
     }
@@ -34,16 +37,50 @@
     display: inline-block;
     position: relative;
     margin-right: 5px;
+    &:hover a {
+      color: @red;
+    }
     &.active a {
       color: @red;
     }
   }
 
+  &__left-arrow {
+    top: 7px;
+    left: -1px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/icons/arrow-right.svg) no-repeat center;
+    background-size: contain;
+    transform: rotate(180deg);
+    &.hidden {
+      display: none;
+    }
+    &:hover {
+      background-image: url(../images/icons/arrow-right_red.svg);
+    }
+    a {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+    }
+  }
+
   &__right-arrow {
-    bottom: 3px;
+    top: 5px;
     left: 5px;
     width: 15px;
     height: 15px;
+    background: url(../images/icons/arrow-right.svg) no-repeat center;
+    background-size: contain;
+    &:hover {
+      background-image: url(../images/icons/arrow-right_red.svg);
+    }
+    a {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+    }
   }
 }
 

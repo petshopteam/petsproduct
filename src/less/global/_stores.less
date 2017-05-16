@@ -23,17 +23,19 @@
     margin-top: 16px;
   }
   &__type-select {
-    font-family: Geometria;
+    position: relative;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
+    display: inline-block;
     &.active {
       color: @white;
       background-color: @red;
       border-radius: 2px;
       padding: 10px 15px;
       padding-bottom: 11px;
+      top: -8px;
     }
   }
   &__search {

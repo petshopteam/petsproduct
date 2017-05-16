@@ -8,6 +8,9 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: -10px;
+  a:hover {
+    color: inherit;
+  }
 }
 
 .main-topline__city {
@@ -73,7 +76,17 @@
     width: 20px;
     height: 20px;
     top: -3px;
-    left: -2px;
+    left: -5px;
+  }
+
+  &.entered {
+    color: @red;
+    &::before {
+      background-image: url(../images/icons/header-lock_open.svg);
+    }
+    &:hover {
+      color: @red;
+    }
   }
 }
 

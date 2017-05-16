@@ -3,6 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="0ef0f512-f42b-4a73-8843-bf41647a6382" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/cooperation.html" afterPath="$PROJECT_DIR$/build/cooperation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/app.css" afterPath="$PROJECT_DIR$/build/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/app.min.css" afterPath="$PROJECT_DIR$/build/css/app.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/help_3.html" afterPath="$PROJECT_DIR$/build/help_3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/request.html" afterPath="$PROJECT_DIR$/build/request.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/request_2.html" afterPath="$PROJECT_DIR$/build/request_2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/request_3.html" afterPath="$PROJECT_DIR$/build/request_3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/cooperation.html" afterPath="$PROJECT_DIR$/src/html/cooperation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/help_3.html" afterPath="$PROJECT_DIR$/src/html/help_3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/news.html" afterPath="$PROJECT_DIR$/src/html/news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/request.html" afterPath="$PROJECT_DIR$/src/html/request.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/request_2.html" afterPath="$PROJECT_DIR$/src/html/request_2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/request_3.html" afterPath="$PROJECT_DIR$/src/html/request_3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/custom/custom.js" afterPath="$PROJECT_DIR$/src/js/custom/custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_buttons.less" afterPath="$PROJECT_DIR$/src/less/global/_buttons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_forms.less" afterPath="$PROJECT_DIR$/src/less/global/_forms.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_global.less" afterPath="$PROJECT_DIR$/src/less/global/_global.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_pagination.less" afterPath="$PROJECT_DIR$/src/less/global/_pagination.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_stores.less" afterPath="$PROJECT_DIR$/src/less/global/_stores.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_topline.less" afterPath="$PROJECT_DIR$/src/less/global/_topline.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/helpers/_variables.less" afterPath="$PROJECT_DIR$/src/less/helpers/_variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_news.less" afterPath="$PROJECT_DIR$/src/less/pages/_news.less" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,14 +49,34 @@
     <favorites_list name="petsproduct" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.57527626">
+    <splitter split-orientation="horizontal" split-proportion="0.5650195">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="actions.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="actions.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/html/actions.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4734">
-                  <caret line="263" column="42" lean-forward="true" selection-start-line="263" selection-start-column="42" selection-end-line="263" selection-end-column="42" />
+                <state relative-caret-position="180">
+                  <caret line="272" column="24" lean-forward="true" selection-start-line="272" selection-start-column="24" selection-end-line="272" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/html/news.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="267">
+                  <caret line="304" column="69" lean-forward="false" selection-start-line="304" selection-start-column="69" selection-end-line="304" selection-end-column="69" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="custom.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/js/custom/custom.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="378">
+                  <caret line="152" column="39" lean-forward="false" selection-start-line="152" selection-start-column="39" selection-end-line="152" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -43,22 +85,52 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="_variables.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/less/helpers/_variables.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+                <state relative-caret-position="288">
+                  <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_404.less" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_404.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/less/pages/_404.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="162">
+                  <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_forms.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/less/global/_forms.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="353">
+                  <caret line="195" column="23" lean-forward="true" selection-start-line="195" selection-start-column="23" selection-end-line="195" selection-end-column="23" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_pagination.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/less/global/_pagination.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="137">
+                  <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_topline.less" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/less/global/_topline.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="673">
+                  <caret line="87" column="18" lean-forward="false" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -70,11 +142,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sots</find>
-      <find>arrow</find>
-      <find>dots</find>
-      <find>main-slid</find>
-      <find>geome</find>
       <find>geometria</find>
       <find>logo</find>
       <find>news</find>
@@ -100,6 +167,11 @@
       <find>Поиск по брендам</find>
       <find>stores__sear</find>
       <find>100%</find>
+      <find>theme-filter__theme</find>
+      <find>theme-filter</find>
+      <find>pagination</find>
+      <find>pagination__right</find>
+      <find>topline</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,14 +191,11 @@
         <option value="$PROJECT_DIR$/src/html/global/footer.html" />
         <option value="$PROJECT_DIR$/src/less/bootstrap-grid/_bootstrap-grid.less" />
         <option value="$PROJECT_DIR$/src/html/global/topline.html" />
-        <option value="$PROJECT_DIR$/src/js/custom/custom.js" />
         <option value="$PROJECT_DIR$/src/less/plugins/slick/_slick-theme.less" />
-        <option value="$PROJECT_DIR$/src/less/global/_topline.less" />
         <option value="$PROJECT_DIR$/src/less/global/_global.less" />
         <option value="$PROJECT_DIR$/src/html/global/breadcrumbs.html" />
         <option value="$PROJECT_DIR$/src/less/global/_footer.less" />
         <option value="$PROJECT_DIR$/src/less/helpers/_variables.less" />
-        <option value="$PROJECT_DIR$/src/less/global/_pagination.less" />
         <option value="$PROJECT_DIR$/src/html/catalog.html" />
         <option value="$PROJECT_DIR$/src/less/global/_breadcrumbs.less" />
         <option value="$PROJECT_DIR$/src/html/index.html" />
@@ -137,9 +206,13 @@
         <option value="$PROJECT_DIR$/src/less/global/_stores.less" />
         <option value="$PROJECT_DIR$/src/less/pages/_brand.less" />
         <option value="$PROJECT_DIR$/src/less/app.less" />
-        <option value="$PROJECT_DIR$/src/less/global/_forms.less" />
         <option value="$PROJECT_DIR$/src/html/actions.html" />
         <option value="$PROJECT_DIR$/src/less/pages/_actions.less" />
+        <option value="$PROJECT_DIR$/src/less/global/_forms.less" />
+        <option value="$PROJECT_DIR$/src/less/global/_pagination.less" />
+        <option value="$PROJECT_DIR$/src/html/news.html" />
+        <option value="$PROJECT_DIR$/src/js/custom/custom.js" />
+        <option value="$PROJECT_DIR$/src/less/global/_topline.less" />
       </list>
     </option>
   </component>
@@ -232,6 +305,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="petsproduct">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,8 +345,22 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
+              <option name="myItemId" value="petsproduct" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="petsproduct" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,11 +378,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="global" />
+              <option name="myItemId" value="custom" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -297,20 +399,9 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="petsproduct">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -417,35 +508,36 @@
       <workItem from="1493882570523" duration="26996000" />
       <workItem from="1493967716293" duration="27755000" />
       <workItem from="1494600923604" duration="563000" />
+      <workItem from="1494936285740" duration="2056000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110783000" />
+    <option name="totallyTimeSpent" value="112839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1745182" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16167024" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23831242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32608697" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328594" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,13 +551,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/less/global/_typography.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/helpers/_variables.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -621,13 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/custom/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="117" column="21" lean-forward="false" selection-start-line="117" selection-start-column="21" selection-end-line="117" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/global/_typography.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -649,25 +727,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/global/_topline.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/html/global/breadcrumbs.html" />
     <entry file="file://$PROJECT_DIR$/src/less/global/_footer.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/global/_pagination.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="44" column="16" lean-forward="true" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -751,16 +815,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/less/helpers/_variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/pages/_404.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="288">
+          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -773,14 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/global/_forms.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1555">
-          <caret line="178" column="0" lean-forward="true" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/pages/_actions.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -789,10 +837,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/pages/_404.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/global/_forms.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="195" column="23" lean-forward="true" selection-start-line="195" selection-start-column="23" selection-end-line="195" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/html/actions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4734">
-          <caret line="263" column="42" lean-forward="true" selection-start-line="263" selection-start-column="42" selection-end-line="263" selection-end-column="42" />
+        <state relative-caret-position="180">
+          <caret line="272" column="24" lean-forward="true" selection-start-line="272" selection-start-column="24" selection-end-line="272" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/global/_pagination.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/html/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="304" column="69" lean-forward="false" selection-start-line="304" selection-start-column="69" selection-end-line="304" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/custom/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="152" column="39" lean-forward="false" selection-start-line="152" selection-start-column="39" selection-end-line="152" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/global/_topline.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="87" column="18" lean-forward="false" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
           <folding />
         </state>
       </provider>
