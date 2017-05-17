@@ -62,11 +62,23 @@
       position: absolute;
       width: 34px;
       height: 34px;
-      background: url(../images/icons/read-more.png) no-repeat -2px center;
+      background: @red url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAABzElEQVRYR2N8EKr/n2EQAMZRh6DFwmiIoCfL0RAZDRFCRdVoGhmeaYSRi4dBvHIKA8N/BoaXHTkM/799IZQUcMqTnUaY+AQZxCsmM7Cp6IAN/3XnCsPLjlyGf5/ek+UYshzCLCDMIF4zk4FVTgXF0t+P7jC8bEln+PvhLcmOIdkhzEJiDBINcxlYJGTBln3Zuw5M8zgHgek/Lx4zvGhIZvj77hVJjiHJISDLJernMDALi4Mt+bxtGcO7BV1gtlBCGQOvVxSY/fftS4YXjSlgRxELiHYIKBrEq6czMAuKgs3+uH4uw4flk1HsEYjMZeAPTIY45v1rhpetmQyg6CIGEOUQNiUtBvGqqQygBAoCH5ZNZPi4YT5W8/kDEhkEovLBcqCE+7Itm+HXvWsE3ULQIexq+mBHgLIqCLyb287weedKvAbzuoczCCVXgtWAsjTIMT9vXcSrh6BD5BYcZmDk4mVg+PeP4e2MRoYvBzYS9B048Tr4Mwhn1DMwMDEx/P/2meFRgi1lDuG28WQQTqsFO+LrsZ1EOQKmiNvag0E4vY7h7axmhq9HtlPmEJJspkAxwaihwGyStI46BD24RkNkNEQIZaHRNDKaRgilEQCiAMxJgWoZ1gAAAABJRU5ErkJggg==') no-repeat center;
       background-size: cover;
-      transform: rotate(-90deg);
       top: 40px;
       right: 50px;
+      transition: transform 0.3s ease;
+      transform: rotate(180deg);
+      &.clicked {
+        transform: rotate(0deg);
+      }
+    }
+  }
+  &__hidden-subtitle {
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: margin 0.3s ease;
+    &.clicked {
+      margin-bottom: 0;
     }
   }
   // form
@@ -76,6 +88,13 @@
     padding: 45px;
     padding-bottom: 20px;
     margin-bottom: 50px;
+  }
+
+  &__hidden-block {
+
+    &.clicked {
+      //margin-bottom: 20px;
+    }
   }
 
   &__label {
@@ -129,13 +148,17 @@
     font-weight: bold;
     margin-left: 10px;
     padding-left: 35px;
+    &:active::before {
+      background: @red;
+    }
+    
     &::before {
       position: absolute;
       content: '';
       width: 20px;
       height: 20px;
-      background: @red;
       left: -10px;
+      border: 2px solid @red;
       border-radius: 2px;
     }
     &::after {
@@ -181,5 +204,9 @@
 // Стилизация чекбокса отправки формы
 .request__check:checked + .request__check-label::after {
   opacity: 1;
+}
+
+.request__check:checked + .request__check-label::before {
+  background: @red;
 }
 

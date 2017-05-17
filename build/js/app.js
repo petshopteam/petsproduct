@@ -4781,7 +4781,7 @@ if ( $.ajaxPrefilter ) {
     $('.main-suppliers__slider').slick({
         infinite: false,
         slidesToShow: 6,
-        slidesToScroll: 1
+        slidesToScroll: 6
     });
 
     // article-item__slider
@@ -4825,6 +4825,19 @@ $('.vacancy__item-head').on('click', function(event){
 	$(this).parents('.vacancy__item').children().find('.vacancy__item-body').slideToggle('400');
 	$(this).parents('.vacancy__item').children().find('.vacancy__head-link, .vacancy__head-title').toggleClass('clicked');
 	$(this).toggleClass('no-margin');
+});
+
+/*----------------------------------------
+	VACANCY SLIDER TOGGLE
+----------------------------------------*/
+
+$('.request__hidden-block').css('display', 'none');
+
+$('.request__hidden-subtitle').on('click', function(event){
+	event.preventDefault();
+	$('.request__hidden-block').slideToggle('400');
+    $('.request__subtitle_arrow').toggleClass('clicked');
+    $('.request__hidden-subtitle').toggleClass('clicked');
 });
 
 /*----------------------------------------

@@ -15,6 +15,7 @@
 @slick-opacity-default: 0.75;
 @slick-opacity-on-hover: 1;
 @slick-opacity-not-active: 0.25;
+@slick-opacity-not-active: 0.25;
 
 /* Slider */
 .slick-loading .slick-list{
@@ -58,9 +59,7 @@
     z-index: 10;
     &:hover, &:focus {
         outline: none;
-        //background: transparent;
-        opacity: 0.5;
-        color: transparent;
+        background-image: url(../images/icons/arrow-right_grey.svg);
         &:before {
             opacity: @slick-opacity-on-hover;
         }
@@ -72,6 +71,9 @@
 
 .slick-prev {
     background-image: url(../images/icons/arrow-left.svg);
+    &:hover, &:focus {
+        background-image: url(../images/icons/arrow-left_grey.svg);
+    }
 }
 
 .slick-prev:before, .slick-next:before {
@@ -191,26 +193,29 @@
         width: 50px;
         height: 50px;
         font-size: 40px;
-        content: '<';
-        color: black;
-        opacity: 0.7;
-        background: transparent;
+        content: '_';
+        opacity: 0.3;
+        background: url(../images/icons/arrow2_left.svg) no-repeat center;
+        background-size: cover;
+    }
+    &:hover::before {
+        opacity: 0.1;
     }
 }
 
 .slick-next.slick-disabled:before, .slick-prev.slick-disabled:before {
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 .main-suppliers__slider .slick-prev {
-    left: 10px;
+    left: -6%;
 }
 
 .main-suppliers__slider .slick-next {
-    right: -10px;
+    right: -6%;
 
     &::before {
-        content: '>';
+        background-image: url(../images/icons/arrow2_right.svg);
     }
 }
 

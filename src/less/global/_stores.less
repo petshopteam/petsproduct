@@ -21,6 +21,10 @@
     padding-bottom: 3px;
     border-bottom: 1px solid @lightblack;
     margin-top: 16px;
+    &:hover {
+      color: @red;
+      border-color: @red;
+    }
   }
   &__type-select {
     position: relative;
@@ -99,6 +103,10 @@
     font-size: 14px;
     line-height: 20px;
     font-family: @rubik;
+    cursor: pointer;
+    &:hover {
+      color: @red;
+    }
     &.active .stores__store-name {
       color: @red;
       border-color: @red;

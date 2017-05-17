@@ -18,8 +18,9 @@
   height: 85px;
   background: @white url(../images/icons/logo-grey.svg) no-repeat center;
   background-size: 65%;
+  border-radius: 0 0 2px 2px;
   top: 0;
-  left: 0;
+  left: 10px;
 }
 
 .main-head__logo-img {
@@ -83,6 +84,14 @@
 
 .main-head__btn {
   margin-bottom: 200px;
+  padding: 3px 72px 2px 30px;
+  &::after {
+    top: 11.5px;
+    right: 28px;
+    width: 26px;
+    height: 19px;
+    background-size: 95%;
+  }
 }
 
 
@@ -208,18 +217,21 @@
 }
 
 .main-suppliers__slider {
-  padding-left: 6%;
+  width: 90%;
+  padding-left: 2%;
+  margin: 0 auto;
 }
 
 .main-suppliers__slide {
   position: relative;
-  transition: transform 0.2s ease;
+  filter: grayscale(100%);
 
   &:hover {
-    transform: scale(0.9);
+    filter: grayscale(0%);
   }
 }
 
+//выравнивание картинок. убрать, когда будут картинки одного размера.
 .main-suppliers__slide-2 {
   top: 20px;
 }
@@ -254,16 +266,26 @@
 
   &__read-all {
     font-size: 16px;
-    font-weight: 600;
+    line-height: 48px;
+    font-weight: 500;
     line-height: 60px;
-    text-decoration: underline;
     color: @lightblack;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #242423;
+    &:hover {
+      color: inherit;
+      color: @red;
+      border-color: @red;
+    }
   }
   
   &__article {
     background: @white;
     max-width: 320px;
     box-shadow: 0 0 4px rgba(36, 36, 35, 0.2);
+    &:hover .last-news__subtitle {
+      color: @red;
+    }
   }
 
   &__image {
@@ -286,6 +308,10 @@
     font-size: 14px;
     padding: 0 8px;
     margin-right: 20px;
+    &:hover {
+      color: @white;
+      background: @red;
+    }
   }
 
   &__subtitle {
@@ -306,6 +332,9 @@
     color: @red;
     font-size: 14px;
     line-height: 24px;
+    &:hover {
+      color: @red;
+    }
 
     &::after {
       position: absolute;

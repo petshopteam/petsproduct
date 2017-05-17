@@ -28,27 +28,29 @@
 
   .breadcrumbs {
     margin-bottom: 50px;
+    margin-left: 0;
   }
 
   .pagination {
-    margin-bottom: 60px;
+    margin-bottom: 90px;
   }
 
 }
 
 //main styles
 
-.actions-filters {
-
+.aside-filters {
+  margin-top: -4px;
 }
 
 .time-filter {
+  padding-right: 30px;
   &__title {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
   &__select {
     width: 100%;
@@ -60,6 +62,7 @@
     line-height: 24px;
     height: 29px;
     margin-bottom: 50px;
+    padding-left: 10px;
   }
 }
 
@@ -88,7 +91,25 @@
 }
 
 
+//actions-list
+.actions-list {
+  margin-left: 30px;
+  margin-right: -10px;
+  margin-bottom: 25px;
+  padding-bottom: 30px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: 3px;
+    bottom: 0;
+    right: 0;
+    background: @red;
+  }
+}
 
+//actions item
 .actions-item {
   margin-bottom: 50px;
 
@@ -100,33 +121,42 @@
   &__text {
     float: right;
     width: 50%;
-    font-size: 18px;
+    font-size: 14px;
     background-color: #f1f1f1;
-    padding: 50px 35px 60px 36px;
+    padding: 50px 80px 60px 36px;
     height: 336px;
   }
 
   &__title {
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
   }
   &__date {
     color: #242428;
     font-family: @rubik;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+  }
+  &__date-number {
+    font-weight: 400;
   }
   &__article {
-    margin-bottom: 20px;
-
+    font-family: @rubik;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  &__article-number {
+    font-weight: 400;
   }
   &__info {
     color: #686868;
     font-family: @rubik;
     font-size: 14px;
     line-height: 20px;
+    font-weight: 400;
   }
 }
 

@@ -46,6 +46,10 @@
     li {
       a {
         padding-left: 40px;
+        cursor: auto;
+        &:hover {
+          text-decoration: none;
+        }
         &::before {
           position: absolute;
           content: '';
@@ -58,7 +62,7 @@
     }
   }
 
-  &__price {
+  &__address {
     a {
       &::before {
         background: url(../images/icons/footer-1.svg) no-repeat center;
