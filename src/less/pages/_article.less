@@ -43,7 +43,6 @@
 //article-item
 
 .article-item {
-  margin-left: 20px;
   margin-top: -10px;
   margin-bottom: 45px;
 
@@ -60,13 +59,18 @@
   }
   &__theme {
     position: relative;
+    display: inline-block;
     border-radius: 1px;
     border: 1px solid @red;
-    font-size: 10px;
+    font-size: 14px;
+    min-width: 86px;
     color: @red;
-    padding: 1px 5px;
-    padding-bottom: 2px;
+    padding: 0px 8px;
     top: -3px;
+    &:hover {
+      color: @white;
+      background: @red;
+    }
   }
   &__image {
     width: 100%;
@@ -76,7 +80,7 @@
   }
   &__subtitle {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 24px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -85,6 +89,8 @@
     font-family: @rubik;
     font-size: 14px;
     line-height: 20px;
+    color: #686868;
+    font-weight: 400;
     margin-bottom: 20px;
   }
   &__list {
@@ -93,6 +99,7 @@
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 20px;
+    color: #686868;
   }
 
   // price and social blocks
@@ -101,13 +108,18 @@
     color: @white;
     background: @red;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 24px;
     padding: 22px 20px 19px 18px;
+    &:hover {
+      color: @white;
+    }
   }
   &__social {
     float: right;
-    margin-top: 18px;
+    border: 2px solid #f1f1f1;
+    border-left: none;
+    padding: 16px 12px 15px 81px;
     li {
       display: inline-block;
       vertical-align: top;
@@ -121,15 +133,39 @@
       }
     }
   }
+  &__social_full {
+    width: 100%;
+    border-left: 2px solid #f1f1f1;
+    padding: 16px 12px 15px 0;
+    text-align: right;
+  }
 }
 
 // article-pagination block
 
 .article-pagination {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 30px;
-  margin-left: 20px;
+  margin-left: 0;
+
+  &__prev, &__next {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 84%;
+      height: 1px;
+      background: transparent;
+      bottom: 2px;
+    }
+    &:hover {
+      color: inherit;
+      &::after {
+        background: black;
+      }
+    }
+  }
 
   &__prev {
     position: relative;
@@ -145,14 +181,16 @@
       background: url(../images/icons/arrow-left.svg) no-repeat center;
       background-size: contain;
     }
+    &::after {
+      right: 0;
+    }
   }
   &__next {
     position: relative;
     float: right;
     padding-right: 30px;
     margin-bottom: 70px;
-
-    &::after {
+    &::before {
       position: absolute;
       content: '';
       width: 15px;
@@ -161,6 +199,9 @@
       right: 0;
       background: url(../images/icons/arrow-right.svg) no-repeat center;
       background-size: contain;
+    }
+    &::after {
+      left: 0;
     }
   }
 }
@@ -186,7 +227,7 @@
     font-size: 14px;
     line-height: 20px;
     top: 50%;
-    right: 5%;
+    right: 0%;
   }
   &__slide-counter {
     position: absolute;
