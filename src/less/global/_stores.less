@@ -4,6 +4,7 @@
   width: 100%;
   max-width: 1917px;
   margin: 0 auto;
+  padding-right: 60px;
 
   &__title {
     font-size: 36px;
@@ -33,6 +34,7 @@
     line-height: 24px;
     text-transform: uppercase;
     display: inline-block;
+    transition: color 0.2s ease;
     &.active {
       color: @white;
       background-color: @red;
@@ -40,6 +42,12 @@
       padding: 10px 15px;
       padding-bottom: 11px;
       top: -8px;
+      &:hover {
+        color: @white;
+      }
+    }
+    &:hover {
+      color: @red;
     }
   }
   &__search {
@@ -98,23 +106,44 @@
       width: 2px;
     }
   }
+
+  &__retail-list {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+
+  &__online-list {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+
   &__stores-item {
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 20px;
     font-family: @rubik;
+    color: #686868;
     cursor: pointer;
-    &:hover {
-      color: @red;
+    &.active {
+      color: #686868;
     }
     &.active .stores__store-name {
+      color: @red;
+      border-color: @red;
+    }
+    &:hover .stores__store-name {
       color: @red;
       border-color: @red;
     }
   }
   &__store-name {
     display: inline-block;
-    font-weight: bold;
+    font-weight: 400;
+    color: #242423;
     border-bottom: 1px solid @lightblack;
     margin-bottom: 5px;
   }

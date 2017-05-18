@@ -2,6 +2,15 @@
 	FORMS
 ----------------------------------------*/
 
+//global
+form {
+  //убираем placeholder при фокусе
+  :focus::-webkit-input-placeholder {color: transparent}
+  :focus::-moz-placeholder          {color: transparent}
+  :focus:-moz-placeholder           {color: transparent}
+  :focus:-ms-input-placeholder      {color: transparent}
+}
+
 //форма на странице каталога
 
 //brand filter
@@ -125,7 +134,6 @@
   ::-webkit-scrollbar{
     width: 2px;
   }
-
 }
 
 // .pet-filter наследует стили у .brand-filter
@@ -142,7 +150,7 @@
     border-color: @red;
   }
   input[type=checkbox]:checked + label {
-    font-weight: bold;
+    font-weight: 500;
     color: #242423;
   }
 }

@@ -53,13 +53,13 @@
     border: none;
     outline: none;
 
-    background: @white url(../images/icons/arrow-right.svg) no-repeat center;
+    background: @white url(../images/icons/arrow-right_grey.svg) no-repeat center;
     background-size: 45%;
 
     z-index: 10;
-    &:hover, &:focus {
+    &:hover {
         outline: none;
-        background-image: url(../images/icons/arrow-right_grey.svg);
+        background-image: url(../images/icons/arrow-right.svg);
         &:before {
             opacity: @slick-opacity-on-hover;
         }
@@ -70,9 +70,9 @@
 }
 
 .slick-prev {
-    background-image: url(../images/icons/arrow-left.svg);
-    &:hover, &:focus {
-        background-image: url(../images/icons/arrow-left_grey.svg);
+    background-image: url(../images/icons/arrow-left_grey.svg);
+    &:hover {
+        background-image: url(../images/icons/arrow-left.svg);
     }
 }
 
@@ -194,16 +194,19 @@
         height: 50px;
         font-size: 40px;
         content: '_';
-        opacity: 0.3;
         background: url(../images/icons/arrow2_left.svg) no-repeat center;
         background-size: cover;
+        opacity: 0.1;
     }
     &:hover::before {
-        opacity: 0.1;
+        opacity: 0.3;
     }
 }
 
 .slick-next.slick-disabled:before, .slick-prev.slick-disabled:before {
+    opacity: 0.1;
+}
+.slick-next.slick-disabled:focus:before, .slick-prev.slick-disabled:focus:before {
     opacity: 0.1;
 }
 

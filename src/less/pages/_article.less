@@ -125,12 +125,6 @@
       vertical-align: top;
       width: 52px;
       height: 30px;
-
-      a {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-      }
     }
   }
   &__social_full {
@@ -141,8 +135,54 @@
   }
 }
 
-// article-pagination block
+//social buttons (share)
+.social-link {
+  width: 52px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 2px;
+  padding-left: 5px;
+  background: @white no-repeat 15% center;
+  background-size: 40%;
+  border: 1px solid transparent;
+  transition: background 0.1s ease;
+}
+.social-vk {
+  background-image: url(../images/icons/social-vk.svg);
+  border-color: #436eab;
+  &:hover {
+    background-color: #436eab;
+    background-image: url(../images/icons/social-vk_hover.svg);
+  }
+}
+.social-fb {
+  background-image: url(../images/icons/social-fb.svg);
+  background-size: 18%;
+  border-color: #385c8e;
+  &:hover {
+    background-color: #385c8e;
+    background-image: url(../images/icons/social-fb_hover.svg);
+  }
+}
+.social-gplus {
+  background-image: url(../images/icons/social-gplus.svg);
+  border-color: #cc3732;
+  &:hover {
+    background-color: #cc3732;
+    background-image: url(../images/icons/social-gplus_hover.svg);
+  }
+}
+.social-tw {
+  background-image: url(../images/icons/social-tw.svg);
+  background-size: 35%;
+  border-color: #65bbf2;
+  &:hover {
+    background-color: #65bbf2;
+    background-image: url(../images/icons/social-tw_hover.svg);
+  }
+}
 
+// article-pagination block
 .article-pagination {
   font-size: 14px;
   font-weight: 500;

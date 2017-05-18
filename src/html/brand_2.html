@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv=Content-Type content="text/html;charset=UTF-8">
+    <title>Бренд</title>
+    <meta name="keywords" content="keywords">
+    <meta name="description" content="description ">
+    <!-- favicon -->
+    <!-- <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png" /> -->
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+    <script src="../js/app.js"></script>
+    <link rel="stylesheet" href="../less/app.less">
+    <!-- <meta name="viewport" content='width=1200' /> -->
+    <!-- title -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if IE]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <link href= "css/ie.css" rel= "stylesheet" media= "all" />
+    <![endif]-->
+</head>
+
+<body class="brand-page">
+
+<!-- main topline -->
+@@include('global/topline.html')
+
+<!-- header -->
+<header class="main-head">
+    <div class="container">
+        <div class="row tar">
+            <!--main-logo-->
+            <div class="col-lg-3">
+                <a class="main-head__logo" href="./"></a>
+            </div>
+            <!--main-navigation-->
+            <div class="col-lg-11 col-lg-offset-5">
+                <nav class="main-navigation">
+                    <ul class="main-navigation__list">
+                        <li class="main-navigation__item active"><a href="catalog.html">Каталог</a></li>
+                        <li class="main-navigation__item"><a href="#">Акции</a></li>
+                        <li class="main-navigation__item"><a href="#">Партнеры</a></li>
+                        <li class="main-navigation__item"><a href="#">Новости</a></li>
+                        <li class="main-navigation__item"><button class="btn btn_red">Оставить заявку</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- breadcrumbs -->
+<section class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a href="./">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="catalog.html">Каталог</a></li>
+            <li class="breadcrumbs__item active"><a href="#">Almo Nature</a></li>
+        </ul>
+    </div>
+</section>
+
+<main class="brand-content">
+    <div class="container">
+        <div class="row">
+            <div class="brand-info">
+                <div class="col-lg-4 col-lg-offset-1">
+                    <div class="brand-info__logo">
+                        <img src="images/brands/brand-1.png" alt="almo nature">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h1 class="brand-info__title">Almo Nature</h1>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1">
+                    <div class="brand-info__price">
+                        <form class="brand-info__form">
+                            <label class="brand-info__label" for="regionSelect">Скачать прайс лист</label>
+                            <select class="brand-info__region-select" name="brand-info__region-select" id="regionSelect" placeholder="Выберите регион">
+                                <option class="region-select-placeholder" value="">Выберите регион</option>
+                                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                <option value="Москва">Москва</option>
+                                <option value="Саратов">Саратов</option>
+                                <option value="Харьков">Харьков</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-13 col-lg-offset-1">
+                    <p class="brand-info__about_top">
+                        Компания Almo Nature была основана в Генуе в 2000 году. Almo Nature – первая компания, которая
+                        начала использовать полностью натуральные продукты для кошек и собак. Корм этой компании
+                        изготавливается с учетом потребностей домашних животных, с заботой об их здоровье и долголетии.
+                        Компания стремимся к использованию ингредиентов, обладающих самой высокой биологической и
+                        питательной ценностью: свежевыловленная морская рыба, настоящее мясо животных свободного выгула
+                        (курица, говядина, телятина) – без гормонов и антибиотиков. Продукция компании подвергается
+                        минимальной обработке и производится с учетом всех этических стандартов.
+                        <br><br>
+                        На сегодняшний момент продукция Almo Nature поступает на рынки Германии, Швейцарии, Франции,
+                        Канады, Великобритании через дочерние компании и эксклюзивных импортеров в Восточной и Северной
+                        Европе.
+                    </p>
+                    <br>
+                    <p class="brand-info__about_bottom">
+                        Все корма Almo Nature, проходят строжайший контроль качества на всех этапах производства,
+                        не менее строгий, чем при производстве продуктов для людей. Контроль качества включает
+                        в себя серию микробиологических, химических
+                        и физических анализов.
+                        <br><br>
+                        Almo Nature заботится обо всех живых существах. Благополучие животных – прерогатива
+                        компании, поэтому продукция не тестируется на животных.
+                        <br><br>
+                        Перед запуском продукта на рынок, компания предоставляет продукцию тем семьям по всей
+                        Европе, которые дали свое согласие на дегустацию нового корма для своих кошек и собак.
+                        Хозяева сами в домашних условиях угощают своих четвероногих друзей новинками,
+                        и те самостоятельно оценивают вкус, аромат и аппетитность.
+                    </p>
+                </div>
+            </div>
+
+            <div class="brand-production">
+                <div class="col-lg-15">
+                    <p class="brand-production__title tac">Продукция</p>
+                </div>
+
+                <!-- item-1 -->
+
+                <div class="brand-production__item">
+                    <a href="#modalBrand1" class="open_modal_dark">
+                        <img src="images/products/almo-nature/green-label.png" alt="Green Label">
+                        <p class="brand-production__label">Green Label</p>
+                    </a>
+                </div>
+
+
+
+                <!-- item-2 -->
+                <div class="brand-production__item">
+                    <img src="images/products/almo-nature/orange-label.png" alt="Orange Label">
+                    <p class="brand-production__label">Orange Label</p>
+                </div>
+                <!-- item-3 -->
+                <div class="brand-production__item">
+                    <img src="images/products/almo-nature/classic.png" alt="Classic">
+                    <p class="brand-production__label">Classic</p>
+                </div>
+                <!-- item-4 -->
+                <div class="brand-production__item">
+                    <img src="images/products/almo-nature/azul-label.png" alt="Azul Label">
+                    <p class="brand-production__label">Azul Label</p>
+                </div>
+                <!-- item-5 -->
+                <div class="brand-production__item">
+                    <img src="images/products/almo-nature/daily-menu.png" alt="Daily Menu">
+                    <p class="brand-production__label">Daily Menu</p>
+                </div>
+                <!-- item-6 -->
+                <div class="brand-production__item">
+                    <img src="images/products/almo-nature/legend.png" alt="Legend">
+                    <p class="brand-production__label">Legend</p>
+                </div>
+                <!-- item-7 -->
+                <div class="brand-production__item">
+                    <img src="images/products/almo-nature/functional-line.png" alt="Functional Line">
+                    <p class="brand-production__label">Functional Line</p>
+                </div>
+                <!-- item-8 -->
+                <div class="brand-production__item">
+                    <img src="images/products/almo-nature/alternative.png" alt="Alternative">
+                    <p class="brand-production__label">Alternative</p>
+                </div>
+                <!-- item-9 -->
+                <div class="brand-production__item">
+                    <img src="images/products/almo-nature/single-protein.png" alt="Single Protein">
+                    <p class="brand-production__label">Single Protein</p>
+                </div>
+                <!-- item-10 -->
+                <div class="brand-production__item">
+                    <img src="images/products/almo-nature/holistic.png" alt="Holistic">
+                    <p class="brand-production__label">Holistic</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- modal window -->
+
+<div class="modal-brand modal_div" id="modalBrand1">
+    <div class="container-offset">
+        <a class="modal-change-city__close modal_close"></a>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="modal-brand__left tac">
+                    <img src="images/products/almo-nature/classic.png" width="100%" alt="#">
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="mobile-brand__right tal">
+                    <p class="modal-brand__title">Линейка Classic</p>
+                    <p class="modal-brand__subtitle">Консервы ждя собак и кошек</p>
+                    <p class="modal-brand__text">
+                        Консервы Almo Nature Classic содержат 75-55% (для кошек) и 50%(для собак) высококачественного мяса или рыбы, приготовленных в собственном бульоне- именно такой простой и естественный состав привлекает домашних любимцев.
+                    </p>
+                    <ul class="modal-brand__list">
+                        <li>Натуральные продукты, подходящие даже для потребления человеком:</li>
+                        <li>Свежевыловленная морская рыба</li>
+                        <li>Настоящее мясо животных свободного выгула (курица, говядина, телятина) – 			без гормонов и антибиотиков</li>
+                        <li>Механическая обработка продуктов, с большой осторожностью, без 					применения химикатов во избежание потери питательных веществ</li>
+                        <li>Консервирование продукта происходит в его собственном бульоне – с целью 			сохранения питательных веществ и первоначального вкуса</li>
+                        <li>Без добавок, будь то химические или какие-либо другие ингредиенты, тем не 			менее – излюбленный всеми кошками продукт, за свою простоту и подлинность.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn btn_back-rev modal_close">Назад</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- // modal window -->
+
+<!--brand-banner-->
+@@include('global/brand-banner.html')
+
+<!--stores-->
+@@include('global/stores.html')
+
+<!--footer-->
+@@include('global/footer.html')
+
+<!-- scripts (скрипты проекта) -->
+@@include('global/scripts.html')
+
+</body>
+
+</html>

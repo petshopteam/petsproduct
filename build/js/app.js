@@ -4819,16 +4819,18 @@ if ( $.ajaxPrefilter ) {
 ----------------------------------------*/
 
 $('.vacancy__item-body').css('display', 'none');
+$('.vacancy__item-body.active').css('display', 'block');
 
 $('.vacancy__item-head').on('click', function(event){
 	event.preventDefault();
 	$(this).parents('.vacancy__item').children().find('.vacancy__item-body').slideToggle('400');
+    $(this).parents('.vacancy__item').children().find('.vacancy__item-body').toggleClass('active');
 	$(this).parents('.vacancy__item').children().find('.vacancy__head-link, .vacancy__head-title').toggleClass('clicked');
 	$(this).toggleClass('no-margin');
 });
 
 /*----------------------------------------
-	VACANCY SLIDER TOGGLE
+	REQUEST SLIDER TOGGLE
 ----------------------------------------*/
 
 $('.request__hidden-block').css('display', 'none');
@@ -4856,6 +4858,29 @@ $('.help__left-title').on('click', function(event){
 	event.preventDefault();
 	$('.help__left-title').removeClass('active');
 	$(this).toggleClass('active');
+});
+
+/*----------------------------------------
+   STORES Click effects
+----------------------------------------*/
+
+$('.stores__type-select').on('click', function(event){
+    event.preventDefault();
+    $('.stores__type-select').removeClass('active');
+    $(this).toggleClass('active');
+    $('.stores__online-list, .stores__retail-list').toggleClass('active');
+    //добавить проверку на .active у кнопки,
+    //чтобы нельзя было нажать уже нажатую кнопку
+});
+
+/*----------------------------------------
+   HELP_2 (состояние пользователя) Click effects
+----------------------------------------*/
+
+$('.help__left-list li').on('click', function(event){
+    event.preventDefault();
+    $('.help__left-list li').removeClass('active');
+    $(this).toggleClass('active');
 });
 
 
