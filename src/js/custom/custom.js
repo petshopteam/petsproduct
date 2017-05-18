@@ -201,6 +201,12 @@ $('.help__left-list li').on('click', function(event){
     $(this).toggleClass('active');
 });
 
+/*----------------------------------------
+   jQuery.formstyler plugin (form styling)
+----------------------------------------*/
+
+    //подключил плагин для проверки к инпутам на страницу .request
+    $('.pages-page select, option').styler();
 
 
 /*----------------------------------------
