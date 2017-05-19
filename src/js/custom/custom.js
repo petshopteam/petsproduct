@@ -172,10 +172,24 @@ $('.request__hidden-subtitle').on('click', function(event){
 	HELP PAGE on click effects
 ----------------------------------------*/
 
+//скрываю список "как сделать заказ" по умолчанию
+$('.help__left-list').css('display', 'none');
+
+//по клику на заголовок:
 $('.help__left-title').on('click', function(event){
 	event.preventDefault();
+	//убираю класс active всем остальным заголовкам
 	$('.help__left-title').removeClass('active');
+	//и добавляю его только тому, на который кликнули
 	$(this).toggleClass('active');
+
+});
+
+//по клику на первый пункт "как сделать заказ?"
+$('.help__left-title_order').on('click', function(event){
+    event.preventDefault();
+    //нахожу в соседних элементах класс .help__left-list и применяю метод slideToggle().
+    $(this).siblings('.help__left-list').slideToggle('400');
 });
 
 /*----------------------------------------
@@ -195,146 +209,126 @@ $('.stores__type-select').on('click', function(event){
    HELP_2 (состояние пользователя) Click effects
 ----------------------------------------*/
 
-$('.help__left-list li').on('click', function(event){
+$('.help__left-list a').on('click', function(event){
     event.preventDefault();
-    $('.help__left-list li').removeClass('active');
+    $('.help__left-list a').removeClass('active');
     $(this).toggleClass('active');
 });
 
-/*----------------------------------------
-   jQuery.formstyler plugin (form styling)
-----------------------------------------*/
-
-    //подключил плагин для проверки к инпутам на страницу .request
-    $('.pages-page select, option').styler();
 
 
 /*----------------------------------------
-	SLIDER TOGGLE
+   Topline city select modal styling
 ----------------------------------------*/
 
-// $('.toggle-accordion-bottom').on("click", function(event){
-// 	event.preventDefault();
-// 	$(this).toggleClass('clicked');
-// 	$('.accordion-bottom').slideToggle('400');
-// 	$("icon-angel-down").toggleClass("icon-angel-up");
-// 	if ($('.toggle-accordion-bottom').hasClass('clicked')) {
-// 		$(this).html("Скрыть все города <i class='icon-angel-down'></i>");
-// 	} else {
-// 		$(this).html("Показать все города <i class='icon-angel-down'></i>");
-// 	}
-// });
+$('select.modal-change-city__input').SumoSelect({search: true, searchText: 'Введите название города'});
 
-/*----------------------------------------
-	FANCYBOX
-----------------------------------------*/
-// jQuery(document).ready(function($) {
-// 	$('.fancybox').fancybox({
-// 		openEffect  : 'fade',
-// 		closeEffect : 'fade',
-// 		prevEffect : 'fade',
-// 		padding: 0,
-// 		closeClick:false,
-// 		tpl: {
-// 			closeBtn : '<a title="Close" class="fancybox-item fancybox-close" href="javascript:;"><span class="icon-menu-close">Закрыть</span></a>',
-// 			next: '<a title="Next" class="fancybox-nav fancybox-next" href="javascript:;"><i class="icon icon-next"></i></a>',
-// 			prev: '<a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><i class="icon icon-prev"></i></a>'
-// 		},
-// 		helpers : {
-// 			title : {
-// 				type : 'inside'
-// 			},
-// 			overlay : {
-// 				css : {
-// 					'background' : '#eeeeee'
-// 				}
-// 			},
-// 		}
-// 	});
-//
-// 		document.addEventListener('touchstart', function(event) {
-// 		start = event.changedTouches[0].pageX;
-// 	}, false);
-//
-// 	document.addEventListener('touchend', function(event) {
-// 		end = event.changedTouches[0].pageX;
-// 		if (start > (end + 100)) {
-// 			$('.fancybox-prev').trigger('click');
-// 		}else{
-// 			$('.fancybox-next').trigger('click');
-// 		}
-// 	}, false);
-// });
+//________________________________________
 
 
 /*----------------------------------------
-	FLEXMENU
+   jQuery.sumoselect plugin (form styling)
 ----------------------------------------*/
-// $('.flexmenu').flexMenu();
+
+$('select').SumoSelect();
+
+//________________________________________
+
+/*----------------------------------------
+   Hover effect on main nanigation
+----------------------------------------*/
+
+    $(function () {
+        var $menu = $("#menu");
+        $line = $("#line"),
+            $indicator = true,
+            $active = $menu.find(".active"),
+            default_pos = $active.offset().left - $menu.offset().left,
+            default_width = $active.outerWidth();
+
+        $line.css({left: default_pos,width: default_width});
+
+        $("#menu li.menu-hover").hover(function () {
+            if (this===$active.get(0)) return;
+            var self = $(this);
+            var diff = self.offset().left - $menu.offset().left;
+            $line.stop().animate({
+                width: self.outerWidth(),
+                left: diff
+            }, 300);
+        }, function () {
+            if (this===$active.get(0)) return;
+            $line.stop().animate({
+                width: default_width,
+                left: default_pos
+            },300);
+        });
+
+    });
+
+/*----------------------------------------
+   Help page slider animation
+----------------------------------------*/
+
+    $(document).ready(function() {
+        // var $element;
+        var topPos;
+        var newHeight;
+        var $mainNav = $('.menu-list');
+        var $active;
+
+        var $sliderLine = $('<div class="slider-line"></div>');
+        $mainNav.append($sliderLine);
+
+        initSliderLine();
+
+        function initSliderLine() {
+            $active = $mainNav.find('li.active');
+
+            $sliderLine
+                .height($active.height())
+                .css('top', $active.position().top)
+                .data('originalTop', $sliderLine.position().top)
+                .data('originalHeight', $sliderLine.height());
+        };
+
+        function changeSliderPosition(target) {
+            topPos = target.position().top;
+            newHeight = target.height();
+
+            $sliderLine.stop().animate({
+                'top': topPos,
+                'height': newHeight
+            })
+        };
+
+        $mainNav.on({
+            'click': function (evt) {
+                var $this = $(this);
+                changeSliderPosition($this);
+            },
+            'click': function (evt) {
+                $sliderLine.stop().animate({
+                    'top': $sliderLine.data('originalTop'),
+                    'height': $sliderLine.data('originalHeight')
+                })
+            },
+            'click': function (evt) {
+                var $this = $(this);
+
+                $mainNav.find('li').removeClass('active');
+                $this.addClass('active');
+
+                initSliderLine();
+            }
+        }, 'li');
+    });
+
+//________________________________________
 
 
-/*========== SEARCH ==============*/
-	// var searchToogle = $('#toggle-search'),
-	// 		searchForm= $('#search-form');
-	//
-	// 		searchToogle.on('click', function(e) {
-	// 			searchForm.addClass('active');
-	// 			setTimeout(function() {
-	// 				$('#toggle-search').attr('type','submit');
-	// 			}, 300 );
-	//
-	// 		});
-	//
-	// $(document).mouseup(function (e) {
-	// 			searchForm= $('#search-form');
-	// 		if (searchForm.has(e.target).length === 0){
-	// 			searchForm.removeClass('active');
-	// 			searchToogle.attr('type','button');
-	// 		}
-	// });
 
 
-/*========== VALIDATE ==============*/
-
-// $('#comment-form').validate({
-// 	rules: {
-// 		REVIEW_AUTHOR: {
-// 			required: true
-// 		},
-// 		REVIEW_TEXT: {
-// 			required: true
-// 		},
-// 		accept: {
-// 			required: true
-// 		}
-// 	},
-// 	messages:{
-// 		REVIEW_AUTHOR: {
-// 			required : "Заполните это поле"
-// 		},
-// 		REVIEW_TEXT: {
-// 			required: "Заполните это поле"
-// 		},
-// 		accept: {
-// 			required: ""
-// 		}
-// 	}
-// });
-//
-// $('#sub-form').validate({
-// 	rules: {
-// 		email_btn: {
-// 			required: true,
-// 			email: true
-// 		}
-// 	},
-// 	messages:{
-// 		email_btn: {
-// 			required : "Введите e-mail",
-// 			email: "Введите e-mail"
-// 		}
-// 	}
-// });
 
 
 })(jQuery);

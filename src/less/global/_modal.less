@@ -166,6 +166,14 @@
   border-color: @red;
 }
 
+.modal-change-city__form {
+  //возвращаем placeholder
+  :focus::-webkit-input-placeholder {color: #bababa;}
+  :focus::-moz-placeholder          {color: #bababa;}
+  :focus:-moz-placeholder           {color: #bababa;}
+  :focus:-ms-input-placeholder      {color: #bababa;}
+}
+
 //стилизация input
 .modal-change-city__item {
   input[type=radio]:checked + label::after {

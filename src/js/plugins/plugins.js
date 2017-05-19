@@ -4,6 +4,6 @@
 @@include('slick.js')
 @@include('flexmenu.js')
 @@include('jquery.validate.js')
-@@include('jquery.formstyler.min.js')
+@@include('jquery.sumoselect.js')
 
 /*END JQUERY PLUGINS*/

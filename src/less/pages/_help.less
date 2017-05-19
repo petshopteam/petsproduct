@@ -13,7 +13,6 @@
   }
 
   .main-navigation {
-    margin-top: 20px;
     margin-bottom: 40px;
   }
 
@@ -77,6 +76,7 @@
   &__left {
     margin-top: 10px;
   }
+
   &__right {
 
   }
@@ -86,14 +86,15 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 30px;
-    transition: all 0.3s, color 0.1s;
+    transition: all 0.5s ease, color 0.1s;
     &.active {
       color: @red;
       padding-left: 15px;
-      border-left: 3px solid @red;
+      //border-left: 3px solid @red;
     }
     &:hover {
       color: @red;
+      padding-left: 15px;
     }
   }
   &__left-text {
@@ -101,7 +102,7 @@
   }
   &__left-list {
     margin-bottom: 60px;
-    li {
+    a {
       display: block;
       color: #686868;
       font-family: @rubik;
@@ -212,3 +213,31 @@
     max-height: 800px;
   }
 }
+
+
+//left side slider start
+.menu-list {
+  position: relative;
+}
+.menu-list li {
+  position: relative;
+}
+.menu-list li:last-of-type {
+  margin-bottom: 0;
+}
+.menu-list a {
+  position: relative;
+  display: block;
+  //color: #fff;
+  //padding: 15px 25px;
+  //background: #000;
+  text-decoration: none;
+}
+.slider-line {
+  position: absolute;
+  left: 0;
+  width: 3px;
+  background: @red;
+  transition: top 0.4s ease;
+}
+//left side slider end

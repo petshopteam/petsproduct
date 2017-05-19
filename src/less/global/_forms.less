@@ -158,11 +158,14 @@ form {
 //Форма выбора региона на странице brand
 
 .brand-info__label {
+  position: relative;
+  display: inline-block;
+  top: -6px;
   color: #242423;
   font-size: 15px;
   font-weight: bold;
   line-height: 24px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .brand-info__region-select {
@@ -178,6 +181,12 @@ form {
   line-height: 24px;
 
   padding: 4px 30px 3px 14px;
+}
+
+.SumoSelect.sumo_brand-info__region-select {
+  margin-bottom: 0;
+  width: 50%;
+
 }
 
 .region-select-placeholder {

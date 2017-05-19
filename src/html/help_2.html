@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv=Content-Type content="text/html;charset=UTF-8">
-		<title>Акции</title>
+		<title>Помощь</title>
 		<meta name="keywords" content="keywords">
 		<meta name="description" content="description ">
 		<!-- favicon -->
@@ -48,19 +48,21 @@
 				<div class="col-lg-3">
 					<a class="main-head__logo" href="./"></a>
 				</div>
+
 				<!--main-navigation-->
 				<div class="col-lg-11 col-lg-offset-5">
 					<nav class="main-navigation">
-						<ul class="main-navigation__list">
-							<li class="main-navigation__item"><a href="catalog.html">Каталог</a></li>
-							<li class="main-navigation__item"><a href="#">Акции</a></li>
-							<li class="main-navigation__item"><a href="#">Партнеры</a></li>
-							<li class="main-navigation__item"><a href="#">Новости</a></li>
+						<ul id="menu" class="main-navigation__list">
+							<li class="active"><a href="#"></a></li>
+							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+							<li class="menu-hover main-navigation__item"><a href="#">Акции</a></li>
+							<li class="menu-hover main-navigation__item"><a href="#">Партнеры</a></li>
+							<li class="menu-hover main-navigation__item"><a href="#">Новости</a></li>
 							<li class="main-navigation__item"><button class="btn btn_red">Оставить заявку</button></li>
+							<li id="line"></li>
 						</ul>
 					</nav>
 				</div>
-			</div>
 		</div>
 	</header>
 
@@ -83,19 +85,27 @@
 				<div class="col-lg-4">
 					<aside class="help__left">
 
-						<a class="help__left-title">Как сделать заказ?</a>
+						<!--slider-->
+						<div class="slider-container">
+							<ul class="menu-list">
+								<li class="help__left-title help__left-title_order">
+									<a>Как сделать заказ?</a>
+								</li>
+								<ul class="help__left-list">
+									<a href="#">Новый пользователь</a></li>
+									<a href="#">Зарегистрированный пользователь</a></li>
+									<a href="#">Как получить логин и пароль?</a></li>
+								</ul>
+								<li class="help__left-title"><a href="catalog.html">Прайс листы</a></li>
+								<li class="help__left-title"><a href="catalog.html">Способы оплаты</a></li>
+								<li class="help__left-title"><a href="catalog.html">Доставка</a></li>
+								<li class="help__left-title active"><a href="catalog.html">Письмо директору</a></li>
+								<li class="help__left-title"><a href="catalog.html">Возврат товара</a></li>
+							</ul>
+						</div>
+						<!--slider-->
 
-						<ul class="help__left-list">
-							<li class="active"><a href="#">Новый пользователь</a></li>
-							<li><a href="#">Зарегистрированный пользователь</a></li>
-							<li><a href="#">Как получить логин и пароль?</a></li>
-						</ul>
-						
-						<a class="help__left-title">Прайс листы</a>
-						<a class="help__left-title">Способы оплаты</a>
-						<a class="help__left-title">Доставка</a>
-						<a class="help__left-title">Письмо директору</a>
-						<a class="help__left-title active">Возврат товара</a>
+
 
 					</aside>
 				</div>
