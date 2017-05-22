@@ -14,10 +14,11 @@
   }
 }
 
+//city
 .main-topline__city {
   padding-top: 8px;
   position: relative;
-  text-align: left;
+  padding-right: 10px;
   //media
   @media (max-width: @desktop) {
     text-align: right;
@@ -41,9 +42,10 @@
   }
 }
 
+//phone
 .main-topline__phone {
   position: relative;
-  text-align: center;
+  padding-right: 10px;
   a:hover {
     text-decoration: underline;
   }
@@ -54,14 +56,19 @@
     width: 1px;
     height: 35px;
     top: 0;
-    right: -8px;
+    right: -2px;
   }
+}
+
+.main-topline__phone-number {
+  font-weight: 700;
 }
 
 .main-topline__phone-time {
   font-size: 10px;
 }
 
+// user
 .main-topline__user {
   position: relative;
   padding-top: 8px;

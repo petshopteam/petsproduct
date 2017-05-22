@@ -20,7 +20,7 @@ form {
     position: relative;
   }
   &__search-window {
-    width: 230px;
+    width: 220px;
     height: 38px;
     padding: 13px 30px 11px 12px;
     border-radius: 2px;
@@ -39,7 +39,7 @@ form {
     border: none;
     background: transparent url(../images/icons/search.png) no-repeat center;
     top: 11px;
-    right: 2px;
+    right: 10px;
   }
 
   &__list {
@@ -48,12 +48,11 @@ form {
   }
 
   &__item {
-    padding: 4px;
-    padding-bottom: 12px;
+    padding-bottom: 5px;
     &:hover {
       background: @grey;
     }
-    
+
     input[type=checkbox] {
       opacity: 0;
       width: 19px;
@@ -150,7 +149,7 @@ form {
     border-color: @red;
   }
   input[type=checkbox]:checked + label {
-    font-weight: 500;
+    font-weight: 400;
     color: #242423;
   }
 }
@@ -174,13 +173,20 @@ form {
   border-radius: 2px;
   border: 1px solid #dfdfdf;
   background-color: #ffffff;
-
   font-family: Rubik;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-
   padding: 4px 30px 3px 14px;
+
+  .SumoSelect > p.CaptionCont {
+    min-height: 29px;
+    padding: 4px 4px 4px 15px;
+  }
+
+  .SumoSelect.open > .optWrapper {
+    top: 28px;
+  }
 }
 
 .SumoSelect.sumo_brand-info__region-select {

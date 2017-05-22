@@ -6,7 +6,7 @@
   .main-topline {
     background: @grey;
   }
-  
+
   .main-head {
     background: @white;
     margin: 0;
@@ -53,7 +53,7 @@
   }
   &__date {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
     margin-right: 10px;
   }
   &__theme {
@@ -65,6 +65,7 @@
     min-width: 86px;
     color: @red;
     padding: 0px 8px;
+    padding-left: 9px;
     top: -3px;
     &:hover {
       color: @white;
@@ -74,7 +75,7 @@
   &__image {
     width: 100%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 25px;
   }
   &__subtitle {
@@ -102,6 +103,9 @@
   }
 
   // price and social blocks
+  &__social-price {
+    position: relative;
+  }
   &__price {
     float: left;
     color: @white;
@@ -115,10 +119,12 @@
     }
   }
   &__social {
-    float: right;
+    position: absolute;
+    right: 0;
     border: 2px solid #f1f1f1;
     border-left: none;
     padding: 16px 12px 15px 81px;
+    text-align: right;
     li {
       display: inline-block;
       vertical-align: top;
@@ -130,7 +136,6 @@
     width: 100%;
     border-left: 2px solid #f1f1f1;
     padding: 16px 12px 15px 0;
-    text-align: right;
   }
 }
 

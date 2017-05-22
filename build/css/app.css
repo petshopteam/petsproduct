@@ -1637,7 +1637,7 @@ form :focus:-ms-input-placeholder
     font-weight: 300;
     line-height: 24px;
 
-    width: 230px;
+    width: 220px;
     height: 38px;
     margin-bottom: 15px;
     padding: 13px 30px 11px 12px;
@@ -1653,7 +1653,7 @@ form :focus:-ms-input-placeholder
 {
     position: absolute;
     top: 11px;
-    right: 2px;
+    right: 10px;
 
     width: 15px;
     height: 15px;
@@ -1673,8 +1673,7 @@ form :focus:-ms-input-placeholder
 .brand-filter__item,
 .pet-filter__item
 {
-    padding: 4px;
-    padding-bottom: 12px;
+    padding-bottom: 5px;
 }
 
 .brand-filter__item:hover,
@@ -1816,7 +1815,7 @@ form :focus:-ms-input-placeholder
 .brand-filter__item input[type=checkbox]:checked + label,
 .pet-filter__item input[type=checkbox]:checked + label
 {
-    font-weight: 500;
+    font-weight: 400;
 
     color: #242423;
 }
@@ -1852,6 +1851,17 @@ form :focus:-ms-input-placeholder
     -webkit-border-radius: 2px;
             border-radius: 2px;
     background-color: #fff;
+}
+
+.brand-info__region-select .SumoSelect > p.CaptionCont
+{
+    min-height: 29px;
+    padding: 4px 4px 4px 15px;
+}
+
+.brand-info__region-select .SumoSelect.open > .optWrapper
+{
+    top: 28px;
 }
 
 .SumoSelect.sumo_brand-info__region-select
@@ -2674,8 +2684,7 @@ h1
     position: relative;
 
     padding-top: 8px;
-
-    text-align: left;
+    padding-right: 10px;
 }
 
 .main-topline__change-city
@@ -2708,7 +2717,7 @@ h1
 {
     position: relative;
 
-    text-align: center;
+    padding-right: 10px;
 }
 
 .main-topline__phone a:hover
@@ -2720,7 +2729,7 @@ h1
 {
     position: absolute;
     top: 0;
-    right: -8px;
+    right: -2px;
 
     width: 1px;
     height: 35px;
@@ -2728,6 +2737,11 @@ h1
     content: '';
 
     background: black;
+}
+
+.main-topline__phone-number
+{
+    font-weight: 700;
 }
 
 .main-topline__phone-time
@@ -2799,6 +2813,8 @@ h1
 
 .breadcrumbs
 {
+    margin-top: 30px;
+    margin-bottom: 65px;
     margin-left: -10px;
 }
 
@@ -2829,7 +2845,7 @@ h1
 .breadcrumbs__item a
 {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .breadcrumbs__item a:hover
@@ -3302,11 +3318,6 @@ h1
     background: #e0552f;
 }
 
-.main-navigation .main-navigation__item:hover a
-{
-    color: #e0552f;
-}
-
 .main-head__title
 {
     margin-bottom: 30px;
@@ -3396,14 +3407,13 @@ p.main-carousel__subtitle
 
 .main-about
 {
-    padding-bottom: 5%;
+    padding-bottom: 80px;
 }
 
 .main-about__company
 {
     max-width: 590px;
-    max-height: 338px;
-    padding: 5% 3% 10% 6%;
+    padding: 50px 70px 70px 70px;
 
     text-align: center;
 
@@ -3433,6 +3443,16 @@ p.main-carousel__subtitle
     color: #fff;
 }
 
+.col-lg-8
+{
+    margin-right: 20px;
+}
+
+.col-lg-3
+{
+    width: 22%;
+}
+
 .main-about__feature
 {
     position: relative;
@@ -3446,11 +3466,11 @@ p.main-carousel__subtitle
 .main-about__feature::before
 {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 0;
 
     width: 3px;
-    height: 96%;
+    height: 88%;
 
     content: '';
 
@@ -3661,7 +3681,7 @@ p.main-carousel__subtitle
 .last-news__subtitle
 {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
 
     margin: 20px 23px 40px;
@@ -3673,7 +3693,7 @@ p.main-carousel__subtitle
 .last-news__read-more
 {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
 
     position: absolute;
@@ -3994,7 +4014,7 @@ body.freezed
 .brand-item__read-more
 {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
 
     position: absolute;
@@ -4120,9 +4140,20 @@ body.freezed
     margin-bottom: 80px;
 }
 
-.brand-info
+.brand-page .SumoSelect > p.CaptionCont
 {
-    margin-top: 50px;
+    min-height: 29px;
+    padding: 4px 4px 4px 15px;
+}
+
+.brand-page .SumoSelect.open > .optWrapper
+{
+    top: 28px;
+}
+
+.brand-page .breadcrumbs
+{
+    margin-bottom: 10px;
 }
 
 .brand-info__title
@@ -4256,6 +4287,18 @@ body.freezed
     margin-bottom: 90px;
 }
 
+.actions-page .SumoSelect > p.CaptionCont
+{
+    min-height: 29px;
+    padding: 4px;
+    padding-left: 15px;
+}
+
+.actions-page .SumoSelect.open > .optWrapper
+{
+    top: 28px;
+}
+
 .aside-filters
 {
     margin-top: -4px;
@@ -4335,7 +4378,6 @@ body.freezed
 
     margin-right: -10px;
     margin-bottom: 25px;
-    margin-left: 30px;
     padding-bottom: 30px;
 }
 
@@ -4466,6 +4508,24 @@ body.freezed
     margin-bottom: 60px;
 }
 
+.news-page .SumoSelect > p.CaptionCont
+{
+    min-height: 29px;
+    padding: 4px;
+    padding-left: 15px;
+}
+
+.news-page .SumoSelect.open > .optWrapper
+{
+    top: 28px;
+}
+
+.news-page .theme-filter__theme
+{
+    margin-right: 15px;
+    margin-bottom: 12px;
+}
+
 /* стили фильтров страницы находятся в forms.less */
 
 .news-list
@@ -4521,19 +4581,19 @@ body.freezed
 .news-item__date
 {
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 21px;
 }
 
 .news-item__theme
 {
-    font-size: 14px;
+    font-size: 12px;
 
     float: right;
 
     min-height: 19px;
     margin-right: 15px;
-    padding: 0 8px;
+    padding: 0 5px;
 
     color: #e0552f;
     border: 1px solid #e0552f;
@@ -4550,7 +4610,7 @@ body.freezed
 .news-item__title
 {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 24px;
 
     margin-top: 25px;
@@ -4560,7 +4620,7 @@ body.freezed
 .news-item__read-more
 {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 21px;
 
     position: relative;
@@ -4650,7 +4710,7 @@ body.freezed
 .article-item__date
 {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
 
     margin-right: 10px;
 }
@@ -4666,6 +4726,7 @@ body.freezed
 
     min-width: 86px;
     padding: 0 8px;
+    padding-left: 9px;
 
     color: #e0552f;
     border: 1px solid #e0552f;
@@ -4683,7 +4744,7 @@ body.freezed
 {
     width: 100%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 25px;
 }
 
@@ -4721,6 +4782,11 @@ body.freezed
     border-left: 3px solid #e0552f;
 }
 
+.article-item__social-price
+{
+    position: relative;
+}
+
 .article-item__price
 {
     font-size: 16px;
@@ -4742,9 +4808,12 @@ body.freezed
 
 .article-item__social
 {
-    float: right;
+    position: absolute;
+    right: 0;
 
     padding: 16px 12px 15px 81px;
+
+    text-align: right;
 
     border: 2px solid #f1f1f1;
     border-left: none;
@@ -4764,8 +4833,6 @@ body.freezed
 {
     width: 100%;
     padding: 16px 12px 15px 0;
-
-    text-align: right;
 
     border-left: 2px solid #f1f1f1;
 }
@@ -5400,7 +5467,7 @@ body.freezed
 
 .aboutcompany-page .breadcrumbs
 {
-    margin-bottom: 50px;
+    margin-top: 40px;
 
     color: #fff;
 }
@@ -5412,7 +5479,7 @@ body.freezed
 
 .aboutcompany-page .main-head__title
 {
-    margin-bottom: 150px;
+    margin-bottom: 110px;
 }
 
 .company-features
@@ -5858,7 +5925,7 @@ body.freezed
 .cooperation-page .main-head
 {
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 
     background: url(../images/cooperation-bg.jpg) no-repeat top;
 }
@@ -5882,7 +5949,8 @@ body.freezed
 
 .cooperation-page .main-head__title
 {
-    margin-bottom: 100px;
+    margin-top: 90px;
+    margin-bottom: 120px;
 }
 
 .cooperation-page .main-head__feature-image
@@ -8569,9 +8637,15 @@ p.CaptionCont.SelectBox span
         top: 20%;
     }
 
+    .main-about
+    {
+        padding-bottom: 5%;
+    }
+
     .main-about__company
     {
         margin-right: 2%;
+        padding: 5% 3% 10% 6%;
     }
 
     .main-about__company-text
@@ -8579,6 +8653,16 @@ p.CaptionCont.SelectBox span
         font-size: 14px;
 
         padding-right: 4%;
+    }
+
+    .col-lg-8
+    {
+        margin-right: 0;
+    }
+
+    .col-lg-3
+    {
+        width: 20%;
     }
 
     .last-news__article
