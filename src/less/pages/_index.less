@@ -1,10 +1,10 @@
 //main header
-
 //Фоновая картинка (только для header на главной)
+
 .main-page {
   .main-head {
     position: relative;
-    background: url(../images/main-head-bg.jpg) no-repeat center top;
+    background: url("../images/main-head-bg.jpg") no-repeat center top;
     background-size: cover;
     margin-bottom: 50px;
     padding-bottom: 30px;
@@ -21,6 +21,11 @@
   border-radius: 0 0 2px 2px;
   top: 0;
   left: 10px;
+  //media
+  @media (max-width: @desktop) {
+    width: 180px;
+    height: 70px;
+  }
 }
 
 .main-head__logo-img {
@@ -35,11 +40,20 @@
   position: relative;
   padding-top: 15px;
   margin-bottom: 150px;
+  //media
+  @media (max-width: @desktop) {
+    margin-bottom: 100px;
+  }
 }
 
 .main-navigation__list {
   position: relative;
   padding-right: 60px;
+  //media
+  @media (max-width: @desktop) {
+    padding-right: 0;
+    margin-right: -20px;
+  }
 }
 
 .main-navigation__item {
@@ -61,8 +75,6 @@
 .main-navigation .main-navigation__item.active a {
   color: @red;
 }
-
-
 //main navigations hover effects
 
 #menu li {
@@ -73,7 +85,7 @@
 #menu li#line {
   display: block;
   position: absolute;
-  content:'';
+  content: '';
   bottom: 0;
   left: 0;
   height: 3px;
@@ -85,15 +97,15 @@
 .main-navigation .main-navigation__item:hover a {
   color: @red;
 }
-
 //end
-
-
 
 .main-head__title {
   color: @white;
   margin-bottom: 30px;
-
+  // media
+  @media (max-width: @desktop) {
+    margin-left: 55px;
+  }
 }
 
 .main-head__subtitle {
@@ -102,11 +114,16 @@
   line-height: 36px;
   margin-bottom: 50px;
   font-weight: 300;
+  // media
+  @media (max-width: @desktop) {
+    margin-left: 55px;
+  }
 }
 
 .main-head__btn {
   margin-bottom: 200px;
   padding: 3px 72px 2px 30px;
+
   &::after {
     top: 11.5px;
     right: 28px;
@@ -114,12 +131,16 @@
     height: 19px;
     background-size: 95%;
   }
+  // media
+  @media (max-width: @desktop) {
+    margin-left: 55px;
+    margin-bottom: 100px;
+  }
 }
-
-
 //main carousel section
 
 .main-carousel {
+  position: relative;
   background: @green;
   margin-bottom: 60px;
 }
@@ -129,7 +150,24 @@
 
   p {
     position: absolute;
-    left: 20%;
+    left: 0;
+    right: 0;
+    top: 30%;
+    bottom: 0;
+    //media
+    @media (max-width: @desktop) {
+      left: 55px;
+    }
+  }
+
+  img {
+    position: relative;
+    width: 50%;
+    height: auto;
+    right: 0;
+    left: 36%;
+    margin-top: 4%;
+    margin-bottom: 6%;
   }
 }
 
@@ -137,28 +175,34 @@
   text-transform: uppercase;
   font-size: 53px;
   font-weight: 700;
-  top: 36%;
+  //media
+  @media (max-width: @desktop) {
+    top: 20%;
+  }
 }
 
-.main-carousel__subtitle {
+p.main-carousel__subtitle {
   font-family: @rubik;
   font-size: 20px;
   font-weight: 400;
-  top: 52%;
+  top: 55%;
 }
-
 //main-about section
 
 .main-about {
-  padding-bottom: 80px;
+  padding-bottom: 5%;
 }
 
 .main-about__company {
   text-align: center;
-  width: 590px;
-  height: 338px;
+  max-width: 590px;
+  max-height: 338px;
   background-color: #686868;
-  padding: 50px 65px 65px 70px;
+  padding: 5% 3% 10% 6%;
+  //media
+  @media (max-width: @desktop) {
+    margin-right: 2%;
+	}
 }
 
 .main-about__company-title {
@@ -176,6 +220,11 @@
   line-height: 24px;
   text-align: left;
   color: @white;
+  //media
+  @media (max-width: @desktop) {
+    font-size: 14px;
+    padding-right: 4%;
+	}
 }
 
 .main-about__feature {
@@ -184,7 +233,7 @@
   margin-top: 45px;
   margin-bottom: 40px;
   padding-left: 15px;
-  
+
   &::before {
     position: absolute;
     content: '';
@@ -209,8 +258,8 @@
   font-size: 14px;
   font-weight: 400;
 }
-
 //main suppliers section
+
 .main-suppliers {
   position: relative;
   padding-bottom: 98px;
@@ -218,11 +267,12 @@
   & > .container {
     position: relative;
     padding-top: 60px;
+
     &::before {
       position: absolute;
       content: '';
       top: 0;
-      left: 0;
+      left: 10px;
       width: 300px;
       height: 3px;
       background: @red;
@@ -242,6 +292,14 @@
   width: 90%;
   padding-left: 2%;
   margin: 0 auto;
+  img {
+    width: 80%;
+    height: auto;
+    //media
+    @media (max-width: @laptop) {
+      width: 70%;
+  	}
+  }
 }
 
 .main-suppliers__slide {
@@ -252,8 +310,8 @@
     filter: grayscale(0%);
   }
 }
-
 //выравнивание картинок. убрать, когда будут картинки одного размера.
+
 .main-suppliers__slide-2 {
   top: 20px;
 }
@@ -265,10 +323,11 @@
 .main-suppliers__slide-4 {
   top: 12px;
 }
-
 //barking heads
+
 .main-suppliers__slide-5 {
   opacity: 0.7;
+
   &:hover {
     opacity: 1;
   }
@@ -277,10 +336,9 @@
 .main-suppliers__slide-7 {
   top: 12px;
 }
-
 //last-news section
-.last-news {
 
+.last-news {
   & > .container {
     background: @lightgreen;
     padding: 30px 65px 60px 90px;
@@ -302,20 +360,27 @@
     color: @lightblack;
     padding-bottom: 1px;
     border-bottom: 1px solid #242423;
+
     &:hover {
       color: inherit;
       color: @red;
       border-color: @red;
     }
   }
-  
+
   &__article {
     background: @white;
     max-width: 320px;
+    min-height: 400px;
     box-shadow: 0 0 4px rgba(36, 36, 35, 0.2);
+
     &:hover .last-news__subtitle {
       color: @red;
     }
+    //media
+    @media (max-width: @desktop) {
+      min-height: 371px;
+  	}
   }
 
   &__image {
@@ -338,6 +403,7 @@
     font-size: 14px;
     padding: 0 8px;
     margin-right: 20px;
+
     &:hover {
       color: @white;
       background: @red;
@@ -349,19 +415,20 @@
     font-weight: 600;
     line-height: 24px;
     color: @lightblack;
-    margin: 0 23px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin: 20px 23px 40px;
+    margin-bottom: 0;
   }
 
   &__read-more {
-    float: right;
-    position: relative;
+    position: absolute;
+    right: 25px;
+    bottom: 0;
     padding-right: 38px;
     font-weight: 600;
     color: @red;
     font-size: 14px;
     line-height: 24px;
+
     &:hover {
       color: @red;
     }
@@ -370,18 +437,19 @@
       position: absolute;
       content: '';
       color: white;
-      background: url(../images/icons/read-more.png) no-repeat center;
+      background: url("../images/icons/read-more.png") no-repeat center;
       background-size: cover;
       top: 0;
       right: 0;
       width: 24px;
       height: 24px;
     }
+    //media
+    @media (max-width: @desktop) {
+      right: 10px;
+  	}
   }
 }
-
-
-
 // modal windows
 
 .modal-window {
@@ -402,10 +470,7 @@
   background: #ffffff;
   display: block;
   margin: 3% auto;
-  padding-top: 50px;
-  padding-bottom: 33px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 50px 20px 33px;
   width: 320px;
   z-index: 9999;
   opacity: 0;
@@ -434,13 +499,12 @@
     text-transform: uppercase;
     border: 2px solid #42c8f4;
     padding: 20px 18px;
-    padding-bottom: 20px;
     margin-bottom: 50px;
     color: #326070;
 
     &.error {
-        border-color: red;
-      }
+      border-color: red;
+    }
   }
 
   .form-submit {
@@ -469,17 +533,18 @@
 }
 
 .animation {
--webkit-transform:  scale(0.5);
--moz-transform:  scale(0.5);
--ms-transform:  scale(0.5);
-transform:  scale(0.5);
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
 }
+
 .visible {
-opacity: 1;
--webkit-transform:  scale(1);
--moz-transform:  scale(1);
--ms-transform:  scale(1);
-transform:  scale(1);
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .btn-close {
@@ -504,7 +569,7 @@ transform:  scale(1);
     background: #d0dade;
     transform: rotate(-90deg);
     top: 6px;
-    left: 0px;
+    left: 0;
   }
 
   &::after {
@@ -515,7 +580,7 @@ transform:  scale(1);
     background: #d0dade;
     transform: rotate(0deg);
     top: 6px;
-    left: 0px;
+    left: 0;
   }
 }
 
@@ -527,8 +592,8 @@ transform:  scale(1);
 #fixedForm label#tel-error {
   top: 340px;
 }
-
 //can't scroll
+
 body.freezed {
   overflow: hidden;
 }

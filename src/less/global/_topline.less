@@ -18,6 +18,10 @@
   padding-top: 8px;
   position: relative;
   text-align: left;
+  //media
+  @media (max-width: @desktop) {
+    text-align: right;
+  }
 }
 
 .main-topline__change-city {
@@ -61,6 +65,10 @@
 .main-topline__user {
   position: relative;
   padding-top: 8px;
+  //media
+  @media (max-width: @laptop) {
+    padding-top: 0;
+	}
 }
 
 .main-topline__user-login {
@@ -88,5 +96,21 @@
       color: @red;
     }
   }
+  //media
+  @media (max-width: @laptop) {
+    display: none;
+	}
 }
 
+.main-topline__user-login_small {
+  display: none;
+  position: relative;
+  width: 24px;
+  height: 33px;
+  background: url(../images/icons/header-lock.svg) no-repeat center;
+  background-size: contain;
+  //media
+  @media (max-width: @laptop) {
+    display: block;
+	}
+}

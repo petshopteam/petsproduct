@@ -1,81 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ef0f512-f42b-4a73-8843-bf41647a6382" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/less/plugins/formstyler/_formstyler.less" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/404.html" afterPath="$PROJECT_DIR$/build/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/aboutcompany.html" afterPath="$PROJECT_DIR$/build/aboutcompany.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/actions.html" afterPath="$PROJECT_DIR$/build/actions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/article.html" afterPath="$PROJECT_DIR$/build/article.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/article_2.html" afterPath="$PROJECT_DIR$/build/article_2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/brand.html" afterPath="$PROJECT_DIR$/build/brand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/brand_2.html" afterPath="$PROJECT_DIR$/build/brand_2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/catalog.html" afterPath="$PROJECT_DIR$/build/catalog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/contacts.html" afterPath="$PROJECT_DIR$/build/contacts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/cooperation.html" afterPath="$PROJECT_DIR$/build/cooperation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/app.css" afterPath="$PROJECT_DIR$/build/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/app.min.css" afterPath="$PROJECT_DIR$/build/css/app.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/help.html" afterPath="$PROJECT_DIR$/build/help.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/help_2.html" afterPath="$PROJECT_DIR$/build/help_2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/help_3.html" afterPath="$PROJECT_DIR$/build/help_3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index (copy).html" afterPath="$PROJECT_DIR$/build/index (copy).html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/app.js" afterPath="$PROJECT_DIR$/build/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/app.min.js" afterPath="$PROJECT_DIR$/build/js/app.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/news.html" afterPath="$PROJECT_DIR$/build/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/pages.html" afterPath="$PROJECT_DIR$/build/pages.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/partners.html" afterPath="$PROJECT_DIR$/build/partners.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/request.html" afterPath="$PROJECT_DIR$/build/request.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/request_2.html" afterPath="$PROJECT_DIR$/build/request_2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/request_3.html" afterPath="$PROJECT_DIR$/build/request_3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/request_4.html" afterPath="$PROJECT_DIR$/build/request_4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/vacancy.html" afterPath="$PROJECT_DIR$/build/vacancy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/vacancy_2.html" afterPath="$PROJECT_DIR$/build/vacancy_2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/404.html" afterPath="$PROJECT_DIR$/src/html/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/aboutcompany.html" afterPath="$PROJECT_DIR$/src/html/aboutcompany.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/actions.html" afterPath="$PROJECT_DIR$/src/html/actions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/article.html" afterPath="$PROJECT_DIR$/src/html/article.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/article_2.html" afterPath="$PROJECT_DIR$/src/html/article_2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/brand.html" afterPath="$PROJECT_DIR$/src/html/brand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/brand_2.html" afterPath="$PROJECT_DIR$/src/html/brand_2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/catalog.html" afterPath="$PROJECT_DIR$/src/html/catalog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/contacts.html" afterPath="$PROJECT_DIR$/src/html/contacts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/cooperation.html" afterPath="$PROJECT_DIR$/src/html/cooperation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/global/topline.html" afterPath="$PROJECT_DIR$/src/html/global/topline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/help.html" afterPath="$PROJECT_DIR$/src/html/help.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/help_2.html" afterPath="$PROJECT_DIR$/src/html/help_2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/help_3.html" afterPath="$PROJECT_DIR$/src/html/help_3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/index.html" afterPath="$PROJECT_DIR$/src/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/news.html" afterPath="$PROJECT_DIR$/src/html/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/pages.html" afterPath="$PROJECT_DIR$/src/html/pages.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/partners.html" afterPath="$PROJECT_DIR$/src/html/partners.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/request.html" afterPath="$PROJECT_DIR$/src/html/request.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/request_2.html" afterPath="$PROJECT_DIR$/src/html/request_2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/request_3.html" afterPath="$PROJECT_DIR$/src/html/request_3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/request_4.html" afterPath="$PROJECT_DIR$/src/html/request_4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/vacancy.html" afterPath="$PROJECT_DIR$/src/html/vacancy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/vacancy_2.html" afterPath="$PROJECT_DIR$/src/html/vacancy_2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/custom/custom.js" afterPath="$PROJECT_DIR$/src/js/custom/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/plugins/plugins.js" afterPath="$PROJECT_DIR$/src/js/plugins/plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/app.less" afterPath="$PROJECT_DIR$/src/less/app.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_forms.less" afterPath="$PROJECT_DIR$/src/less/global/_forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_global.less" afterPath="$PROJECT_DIR$/src/less/global/_global.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/global/_modal.less" afterPath="$PROJECT_DIR$/src/less/global/_modal.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_aboutcompany.less" afterPath="$PROJECT_DIR$/src/less/pages/_aboutcompany.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_actions.less" afterPath="$PROJECT_DIR$/src/less/pages/_actions.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_article.less" afterPath="$PROJECT_DIR$/src/less/pages/_article.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_brand.less" afterPath="$PROJECT_DIR$/src/less/pages/_brand.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_catalog.less" afterPath="$PROJECT_DIR$/src/less/pages/_catalog.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_contacts.less" afterPath="$PROJECT_DIR$/src/less/pages/_contacts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_cooperation.less" afterPath="$PROJECT_DIR$/src/less/pages/_cooperation.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_help.less" afterPath="$PROJECT_DIR$/src/less/pages/_help.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_index.less" afterPath="$PROJECT_DIR$/src/less/pages/_index.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_news.less" afterPath="$PROJECT_DIR$/src/less/pages/_news.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_partners.less" afterPath="$PROJECT_DIR$/src/less/pages/_partners.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_request.less" afterPath="$PROJECT_DIR$/src/less/pages/_request.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_vacancy.less" afterPath="$PROJECT_DIR$/src/less/pages/_vacancy.less" />
-    </list>
+    <list default="true" id="0ef0f512-f42b-4a73-8843-bf41647a6382" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -692,12 +618,12 @@
       <workItem from="1495002681650" duration="26082000" />
       <workItem from="1495091856837" duration="15328000" />
       <workItem from="1495111583552" duration="10791000" />
-      <workItem from="1495178125451" duration="25783000" />
+      <workItem from="1495178125451" duration="25864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200108000" />
+    <option name="totallyTimeSpent" value="200189000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1053" extended-state="0" />

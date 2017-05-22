@@ -1,7 +1,6 @@
 /* ==========================================================================
 	 FOOTER
 	 ========================================================================== */
-
 .main-foot {
   background: @lightblack;
   color: @white;
@@ -10,6 +9,7 @@
 
   a {
     color: @white;
+
     &:hover {
       text-decoration: underline;
     }
@@ -18,6 +18,11 @@
   &__logo {
     width: 224px;
     height: 83px;
+    //media
+    @media (max-width: @desktop) {
+      width: 149px;
+      height: 55px;
+    }
   }
 
   &__subtitle {
@@ -47,9 +52,11 @@
       a {
         padding-left: 40px;
         cursor: auto;
+
         &:hover {
           text-decoration: none;
         }
+
         &::before {
           position: absolute;
           content: '';
@@ -65,19 +72,19 @@
   &__address {
     a {
       &::before {
-        background: url(../images/icons/footer-1.svg) no-repeat center;
+        background: url("../images/icons/footer-1.svg") no-repeat center;
         background-size: 80%;
       }
     }
-
   }
 
   &__tel {
     a:first-child {
       margin-bottom: 0;
+
       &::before {
         top: 10px;
-        background: url(../images/icons/footer-2.svg) no-repeat center;
+        background: url("../images/icons/footer-2.svg") no-repeat center;
         background-size: 80%;
       }
     }
@@ -86,12 +93,11 @@
   &__email {
     a {
       &::before {
-        background: url(../images/icons/footer-3.svg) no-repeat center;
+        background: url("../images/icons/footer-3.svg") no-repeat center;
         background-size: 80%;
       }
     }
   }
-  
   //  copyright
   &__copyright {
     background: #000000;
@@ -106,15 +112,25 @@
     font-weight: 300;
     line-height: 30px;
     padding: 2px 0;
+    //media
+    @media (max-width: @desktop) {
+  		font-size: 10px;
+  	}
 
     &:first-child {
       padding-right: 10px;
       border-right: 1px solid @white;
     }
+
     &:last-child {
       padding-left: 10px;
     }
   }
+  //media
+  @media (max-width: @desktop) {
+    padding-top: 55px;
+  }
 }
+
 
 /* end footer */
