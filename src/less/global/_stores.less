@@ -5,13 +5,13 @@
   width: 100%;
   max-width: 1917px;
   margin: 0 auto;
-  padding-right: 60px;
 
   &__title {
     font-size: 36px;
     font-weight: 700;
     line-height: 60px;
     margin-bottom: 40px;
+    margin-left: -2px;
   }
 
   &__current-region {
@@ -72,15 +72,22 @@
 
   &__map {
     position: relative;
+    width: 100%;
+    height: auto;
+
+    iframe {
+      width: 100%;
+      min-height: 635px;
+    }
   }
 
   &__points {
-    padding: 50px 50px 0 60px;
+    padding: 50px 0 0 60px;
+    max-width: 720px;
   }
 
   &__stores-list {
     overflow-x: hidden;
-    max-width: 542px;
     max-height: 280px;
     //  стилизация полосы прокрутки
     &::-webkit-scrollbar-button {

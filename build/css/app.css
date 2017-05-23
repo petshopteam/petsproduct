@@ -3014,7 +3014,6 @@ h1
     width: 100%;
     max-width: 1917px;
     margin: 0 auto;
-    padding-right: 60px;
 
     background: #f1f1f1;
 }
@@ -3026,6 +3025,7 @@ h1
     line-height: 60px;
 
     margin-bottom: 40px;
+    margin-left: -2px;
 }
 
 .stores__current-region
@@ -3108,18 +3108,27 @@ h1
 .stores__map
 {
     position: relative;
+
+    width: 100%;
+    height: auto;
+}
+
+.stores__map iframe
+{
+    width: 100%;
+    min-height: 635px;
 }
 
 .stores__points
 {
-    padding: 50px 50px 0 60px;
+    max-width: 720px;
+    padding: 50px 0 0 60px;
 }
 
 .stores__stores-list
 {
     overflow-x: hidden;
 
-    max-width: 542px;
     max-height: 280px;
 }
 
@@ -3544,11 +3553,6 @@ p.main-carousel__subtitle
 .main-about .col-lg-8
 {
     margin-right: 20px;
-}
-
-.main-about .col-lg-3
-{
-    width: 22%;
 }
 
 .main-about__company
@@ -4073,6 +4077,7 @@ p.main-carousel__subtitle
 .catalog-page .breadcrumbs
 {
     margin-bottom: 50px;
+    margin-left: 0;
 }
 
 .catalog-page .pagination
@@ -4083,6 +4088,11 @@ p.main-carousel__subtitle
 .catalog-page .brand-filter__title
 {
     margin-top: 19px;
+}
+
+.catalog-page .catalog-brands
+{
+    padding-left: 40px;
 }
 
 .brand-item
@@ -4291,6 +4301,19 @@ p.main-carousel__subtitle
 {
     margin-top: 60px;
     margin-bottom: 80px;
+}
+
+.brand-info__label
+{
+    font-size: 16px;
+    font-weight: 500;
+
+    margin-right: 10px;
+}
+
+.brand-info .SumoSelect > p.CaptionCont
+{
+    padding: 2px 4px 2px 15px;
 }
 
 .brand-info__price
@@ -8061,7 +8084,7 @@ p.CaptionCont.SelectBox span
     }
 }
 
-@media (min-width: 992px)
+@media (min-width: 960px)
 {
     .col-md-1,
     .col-md-2,
@@ -8816,11 +8839,6 @@ p.CaptionCont.SelectBox span
         margin-right: 0;
     }
 
-    .main-about .col-lg-3
-    {
-        width: 20%;
-    }
-
     .main-about
     {
         padding-bottom: 5%;
@@ -8837,6 +8855,21 @@ p.CaptionCont.SelectBox span
         font-size: 14px;
 
         padding-right: 4%;
+    }
+
+    .main-about__feature-title
+    {
+        font-size: 16px;
+    }
+
+    .last-news > .container
+    {
+        padding-top: 50px;
+    }
+
+    .last-news__title
+    {
+        margin-bottom: 30px;
     }
 
     .last-news__article
