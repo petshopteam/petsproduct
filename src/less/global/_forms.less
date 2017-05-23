@@ -11,6 +11,19 @@ form {
   :focus:-ms-input-placeholder      {color: transparent}
 }
 
+// подсветка input при фокусе
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #bababa;
+}
+
+//подсветка select при фокусе
+.SumoSelect:focus > .CaptionCont {
+  border-color: #bababa;
+}
+
+
 //форма на странице каталога
 
 //brand filter
@@ -173,20 +186,13 @@ form {
   border-radius: 2px;
   border: 1px solid #dfdfdf;
   background-color: #ffffff;
+
   font-family: Rubik;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+
   padding: 4px 30px 3px 14px;
-
-  .SumoSelect > p.CaptionCont {
-    min-height: 29px;
-    padding: 4px 4px 4px 15px;
-  }
-
-  .SumoSelect.open > .optWrapper {
-    top: 28px;
-  }
 }
 
 .SumoSelect.sumo_brand-info__region-select {
@@ -229,6 +235,90 @@ form {
     }
   }
 }
+
+// стилизация ipput[type='file']
+
+.file_upload {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 38px;
+  line-height: 35px;
+  border: 1px dashed @red;
+  border-radius: 2px;
+  transition: box-shadow 0.1s linear;
+  font-family: @rubik;
+  font-weight: 300;
+  color: #bababa;
+  font-size: 14px;
+  padding-left: 14px;
+  margin-bottom: 30px;
+
+  .button {
+    float: right;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 8em;
+    /* example */
+    height: 100%;
+    text-align: center;
+    /* example */
+  }
+
+  & > mark,
+  .button {
+    display: block;
+    cursor: pointer;
+    /* example */
+  }
+
+  & > mark {
+    background: transparent;
+    /* example */
+    padding-left: 1em;
+    /* example */
+  }
+
+  & input[type=file] {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+  }
+
+  & input[type=file] {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+  }
+
+  // стили для кнопки при фокусе
+  &.focus {
+    // box-shadow: 0 0 5px rgba(0,30,255,0.4);
+  }
+  //стили для "загрузить файл"
+  & > button {
+    background: transparent;
+    transition: background 0.2s;
+    border: none;
+    color: #242423;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-decoration: underline;
+  }
+
+  &:hover > button {
+    //стили для ховера
+  }
+
+  &:active > button {
+    // стили для active
+  }
+}
+
+
+
+
 
 
 /* end forms */

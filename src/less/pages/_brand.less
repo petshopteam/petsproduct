@@ -1,7 +1,6 @@
-// Page 2 (catalog)
+// Brand-page styles
 
 .brand-page {
-
   //стили для header
   .main-topline {
     background: @grey;
@@ -28,7 +27,7 @@
   .brand-banner {
     margin-bottom: 80px;
   }
-
+  //стили для маленького select
   .SumoSelect > p.CaptionCont {
     min-height: 29px;
     padding: 4px 4px 4px 15px;
@@ -38,79 +37,84 @@
     top: 28px;
   }
 
+  .SumoSelect > .optWrapper > .options li.opt {
+    min-height: 29px;
+    padding: 4px 4px 4px 15px;
+  }
+
   .breadcrumbs {
     margin-bottom: 10px;
   }
 }
+//main styles
+.brand-info {
+  &__title {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
 
+  &__price {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 55px;
+    padding: 14px 13px 13px;
+    background: @grey;
+  }
 
-  //main styles
+  &__about_top {
+    color: #686868;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
 
-  .brand-info {
+  &__about_bottom {
+    color: #686868;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    padding-left: 20px;
+    border-left: 3px solid @red;
+    margin-bottom: 90px;
+  }
+}
 
-    &__title {
-      margin-top: 60px;
-      margin-bottom: 80px;
-    }
-    &__price {
-      font-size: 16px;
-      line-height: 24px;
-      margin-top: 55px;
-      padding: 14px 13px 13px 13px;
+.brand-production {
+  .col-lg-15 > .brand-production__item:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    float: left;
+    box-shadow: 0 0 4px rgba(36, 36, 35, 0.2);
+    background-color: @white;
+
+    &:hover {
       background: @grey;
     }
 
-    &__about_top {
-      color: #686868;
-      font-family: Rubik;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 24px;
-      margin-bottom: 40px;
-    }
-    &__about_bottom {
-      color: #686868;
-      font-family: Rubik;
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 20px;
-      padding-left: 20px;
-      border-left: 3px solid @red;
+    &:last-child {
       margin-bottom: 90px;
     }
   }
 
-  .brand-production {
-
-    .col-lg-15 > .brand-production__item:nth-child(4n) {
-      margin-right: 0;
-    }
-
-    &__title {
-      font-size: 36px;
-      font-weight: bold;
-      line-height: 60px;
-      margin-bottom: 60px;
-    }
-    &__item {
-      margin-right: 30px;
-      margin-bottom: 30px;
-      float: left;
-      box-shadow: 0 0 4px rgba(36, 36, 35, 0.2);
-      background-color: @white;
-      &:hover {
-        background: @grey;
-      }
-      &:last-child {
-        margin-bottom: 90px;
-      }
-
-    }
-    &__label {
-      color: #242423;
-      font-size: 16px;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 15px;
-    }
+  &__label {
+    color: #242423;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
   }
+}

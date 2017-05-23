@@ -1,5 +1,4 @@
-//main header
-//Фоновая картинка (только для header на главной)
+// Main-page styles
 
 .main-page {
   .main-head {
@@ -76,6 +75,7 @@
   color: @red;
 }
 //main navigations hover effects
+
 #menu li {
   position: relative;
   display: inline-block;
@@ -92,7 +92,6 @@
   padding: 0;
   background: @red;
 }
-
 // .main-navigation .main-navigation__item:hover a {
 //   color: @red;
 // }
@@ -190,22 +189,36 @@ p.main-carousel__subtitle {
 
 .main-about {
   padding-bottom: 80px;
+  // подгоняю сетку под макет
+  .col-lg-8 {
+    margin-right: 20px;
+    @media (max-width: @desktop) {
+      margin-right: 0;
+    }
+  }
+
+  .col-lg-3 {
+    width: 22%;
+    @media (max-width: @desktop) {
+      width: 20%;
+    }
+  }
   //media
   @media (max-width: @desktop) {
     padding-bottom: 5%;
-	}
+  }
 }
 
 .main-about__company {
   text-align: center;
   max-width: 590px;
   background-color: #686868;
-  padding: 50px 70px 70px 70px;
+  padding: 50px 70px 70px;
   //media
   @media (max-width: @desktop) {
     padding: 5% 3% 10% 6%;
     margin-right: 2%;
-	}
+  }
 }
 
 .main-about__company-title {
@@ -227,22 +240,7 @@ p.main-carousel__subtitle {
   @media (max-width: @desktop) {
     font-size: 14px;
     padding-right: 4%;
-	}
-}
-
-// подгоняю сетку под макет
-.col-lg-8 {
-  margin-right: 20px;
-  @media (max-width: @desktop) {
-    margin-right: 0;
-	}
-}
-
-.col-lg-3 {
-  width: 22%;
-  @media (max-width: @desktop) {
-    width: 20%;
-	}
+  }
 }
 
 .main-about__feature {
@@ -310,13 +308,14 @@ p.main-carousel__subtitle {
   width: 90%;
   padding-left: 2%;
   margin: 0 auto;
+
   img {
     width: 80%;
     height: auto;
     //media
     @media (max-width: @laptop) {
       width: 70%;
-  	}
+    }
   }
 }
 
@@ -344,7 +343,7 @@ p.main-carousel__subtitle {
 //barking heads
 
 .main-suppliers__slide-5 {
-  opacity: 0.7;
+  opacity: 0.5;
 
   &:hover {
     opacity: 1;
@@ -398,7 +397,7 @@ p.main-carousel__subtitle {
     //media
     @media (max-width: @desktop) {
       min-height: 371px;
-  	}
+    }
   }
 
   &__image {
@@ -433,8 +432,7 @@ p.main-carousel__subtitle {
     font-weight: 500;
     line-height: 24px;
     color: @lightblack;
-    margin: 20px 23px 40px;
-    margin-bottom: 0;
+    margin: 20px 23px 0;
   }
 
   &__read-more {
@@ -465,7 +463,7 @@ p.main-carousel__subtitle {
     //media
     @media (max-width: @desktop) {
       right: 10px;
-  	}
+    }
   }
 }
 // modal windows
@@ -609,9 +607,4 @@ p.main-carousel__subtitle {
 
 #fixedForm label#tel-error {
   top: 340px;
-}
-//can't scroll
-
-body.freezed {
-  overflow: hidden;
 }

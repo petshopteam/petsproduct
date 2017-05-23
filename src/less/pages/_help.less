@@ -1,12 +1,11 @@
-// Page 13 (help)
+// Help-page styles
 
 //header styles
 .help-page {
-
   .main-topline {
     background: @grey;
   }
-  
+
   .main-head {
     background: @white;
     margin: 0;
@@ -32,11 +31,8 @@
   .pagination {
     margin-bottom: 60px;
   }
-
 }
-
 //main styles
-
 .main-help {
   padding-bottom: 20px;
 
@@ -49,16 +45,19 @@
     margin-right: 5%;
     margin-bottom: 4%;
     height: auto;
-    padding: 8% 5% 0 5%;
+    padding: 8% 5% 0;
     box-shadow: 0 0 4px rgba(36, 36, 35, 0.2);
+
     &:nth-child(3n) {
       margin-right: 0;
     }
+
     &:hover {
       background: @grey;
       box-shadow: none;
     }
   }
+
   &__title {
     position: absolute;
     right: 0;
@@ -68,18 +67,14 @@
     font-weight: 500;
   }
 }
-
 // help_2 (возврат товара)
-
 .help {
-
   &__left {
     margin-top: 10px;
   }
 
-  &__right {
+  &__right {}
 
-  }
   &__left-title {
     display: block;
     font-size: 18px;
@@ -87,21 +82,24 @@
     text-transform: uppercase;
     margin-bottom: 30px;
     transition: all 0.5s ease, color 0.1s;
+
     &.active {
       color: @red;
       padding-left: 15px;
       //border-left: 3px solid @red;
     }
+
     &:hover {
-      color: @red;
+      // color: @red;
       padding-left: 15px;
     }
   }
-  &__left-text {
-    
-  }
+
+  &__left-text {}
+
   &__left-list {
     margin-bottom: 60px;
+
     a {
       display: block;
       color: #686868;
@@ -110,10 +108,12 @@
       font-size: 14px;
       padding-left: 15px;
       margin-bottom: 10px;
+
       &.active {
         color: #252525;
         text-decoration: underline;
       }
+
       &:hover {
         text-decoration: underline;
       }
@@ -123,17 +123,20 @@
   &__right-title {
     margin-bottom: 40px;
   }
+
   &__right-subtitle {
     font-family: @geometria;
     font-weight: bold;
     margin-bottom: 10px;
   }
+
   &__right-text {
     font-family: @rubik;
     font-size: 14px;
     color: #686868;
     margin-bottom: 20px;
   }
+
   &__right-list {
     margin-bottom: 30px;
 
@@ -143,6 +146,7 @@
       font-size: 14px;
       color: #686868;
       padding-left: 30px;
+
       &::before {
         position: absolute;
         content: '';
@@ -154,18 +158,21 @@
       }
     }
   }
+
   &__useful {
     width: 100%;
     border: 2px solid @grey;
     padding: 10px 20px 15px 25px;
     margin-bottom: 90px;
   }
+
   &__useful-title {
     display: inline-block;
     font-weight: bold;
     margin-right: 15px;
     line-height: 27px;
   }
+
   &__useful-button {
     position: relative;
     display: inline-block;
@@ -176,55 +183,58 @@
     top: 6px;
     background-size: cover;
   }
+
   &__useful-yes {
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAACj0lEQVRIS63VS0hUcRTH8e/v3kYMK+hBiY87JGKU0SJpEa1qkZqjURRBSNkighbVqkW0iMDA7LmINlEgRIRt0hml6DFEtYqCwCIrc65KhZCLHpY498QMZlbmo+a/vH/Oh3PP//z/R0yyrLxgHiH3HNhmxCABZ4n5RwQ2Xqgm8gxEpPAOUIR0GFMuWD3SXrUmLkwfjHg7gIs4wUq19D5NARbxmoCFivoV0wKtZslsgsEXiGtq9ff9CLYq7xKOctWaqJweWB2ux2wvRpFi/kA6u624DIbfYsEZxXqOTRm0Kq8I0YHskFp7To9mFwlvAIuRtGK197yeEmhbS7MY/HgXNItPiTLFGf4JereBYUX98r8d5i+nbNXhxZhdRZQQaLViieej2EZvGUk6QJuZobu/gKGcL2ruGEp9S4Mj7bEHdBzRTTK5RW19nWODLFKQD85LYOY42QVIN0lql9L1criEsQapgeHQUbW/+jbeL1llfgFuqPjPvWABRiOyJ7KI1wcMEFid2noeTXZz/rZv1YV1mM6nQANnraLd8X/F0mWr8moRFzMCWllZiLz+h5j1ZwasLJ6DO/QBtDMzYPoR8T4i7c8MGAlvB7tMEKzIEOi9x4gr5m/LFHgPeKyof+C/QVu/KIes7DcYDYolTqbALxhNOMEVhtxO3Ui8nWo/Ws3iRQTJVP/OIzm0XO3v0m2zGzgK5I5AA5id4LN7SvHurxOOiBpvDQH3cSnVdf/Z6OOQ7vRN+fMZdpcC6zAOYvTjWCPZX5vU3P/pd3jkmWsGShT1U3HpNe6QsprCPALnMNhOIAl2CxTH1IuCEOaUIGrB8nCoUIv/YEJwzPyYi2wbOOVgq0bK4gJdoBup0ijmd43N/jsvfCXFQbloIQAAAABJRU5ErkJggg==') no-repeat center;
     margin-right: 15px;
   }
+
   &__useful-no {
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAACzUlEQVRIS62VT0gUcRTHv292tzLqYCAldigjo6Sg6FQRWlGHri0Rgqjlzm8mlv4XJMgepEOnyj/zGxnNUgLZ8Fh6qZN0iDpEJYjYpWSLxqBakp1xXozsyjrsLqX+bjPvvc/v/d57v++PEFiaplUz83UApwBUA5gHkGLm1wDGFEUZNgzjRzAu9035BiHEYQCjRDTDzEPMPAnAIaKtAOoAnAAQAvAoHA53dHV1zQTBQeAEgEnbtqPJZDITdNZ1fcP8/HwjEd0gogrP8+4y84tIJDLR3d1t+/6LQFVV9xDRBwBHpJTjxY7k/29qalpXVlZ2NVua8qxvCkD7AjAej1c4jvMewKzrunWWZX0tBcy3xWKxylAoVMPM5wA0LgCFENcA3Eqn09sHBwfT/woL1N+v8csc8B6AA1LKo8uBZZNaAhz2uyil3LxiYCwW26soyjsiajAM48mKgaqqnlcU5b5hGBsB8IqBQogGf1Ajkcimzs7On6sBfAbAH9JDvb29zmoAM0TUYhjG0HJhS7oshPgDQJNSDiwXqKrqQQADRFROQogRAPuZ2b+f34NQ13WnLMv6XGizeDy+1nGcdv9SABgnombSdX0LMz9k5pMAlAKB/gl2Sim/5NtaW1trQqHQUwDbmPmmaZqmPyWL4hCNRtdUVVWtzw+am5urBzDCzLWmaX7M2XRd3+153itfmVzXPWtZ1qeCehjMTlXVMSIKSymP52yJRCKcSqXeAPht23Z9UOaW6GFARXYoijLFzKdN0/RHa2EJIa4AuENEtYZhTAeTKArUNO02M1+2bbsymUz6zwA0TSv3PG+aiHqklG2FGlUK+JyZU1LK5lygpmkPmPlMJpPZ1d/f/+u/gEKIUQDfpJSN2ez2MfNbZm4xTfNxsZktleEFZu4hojY/UwAdAKallMdKiUhRoP/eaJqWYOZLAMr88XEc52JfX99sqRv1F0x/RiUrLaonAAAAAElFTkSuQmCC') no-repeat center;
   }
 }
-
 // help_3 (письмо директору)
-
 .write-us {
-
   &__title {
     margin-bottom: 40px;
   }
+
   &__text {
     color: #242423;
     font-family: @rubik;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
-
   // настройки для формы письма директору
-  .request__clear, .request__submit {
+  .request__clear,
+  .request__submit {
     margin-top: 20px;
   }
+
   .request__form-block {
     border: 1px solid #c2c2c2;
     margin-bottom: 30px;
   }
+
   .request__input_big {
     min-height: 240px;
     max-height: 800px;
   }
 }
-
-
 //left side slider start
 .menu-list {
   position: relative;
 }
+
 .menu-list li {
   position: relative;
 }
+
 .menu-list li:last-of-type {
   margin-bottom: 0;
 }
+
 .menu-list a {
   position: relative;
   display: block;
@@ -233,6 +243,7 @@
   //background: #000;
   text-decoration: none;
 }
+
 .slider-line {
   position: absolute;
   left: 0;

@@ -57,6 +57,7 @@
       event.preventDefault(); // вырубaем стaндaртнoе пoведение
       modal.css("display", "none"); //прячем старые модалки
       overlay.css("display", "none"); //прячем старые оверлеи
+      $("body").css("overflow-y","hidden"); //запрещаем скролл
 
       var div = $(this).attr('href'); // вoзьмем стрoку с селектoрoм у кликнутoй ссылки
       overlay_dark.fadeIn(400, //пoкaзывaем oверлэй
@@ -77,10 +78,12 @@
           function() { // пoсле этoгo
             $(this).css('display', 'none');
             overlay_dark.fadeOut(400); // прячем пoдлoжку
+            $("body").css("overflow-y","auto"); //запрещаем скролл
           }
         );
     });
   });
+
 
 
   // /*----------------------------------------
@@ -328,6 +331,60 @@
       }
     }, 'li');
   });
+
+  /*----------------------------------------
+     Help page slider animation
+  ----------------------------------------*/
+  /* Решение взято с:
+  https://habrahabr.ru/post/189570/
+  */
+  var wrapper = $( ".file_upload" ),
+         inp = wrapper.find( "input" ),
+         btn = wrapper.find( "button" ),
+         lbl = wrapper.find( "div" );
+     btn.focus(function(){
+         inp.focus()
+     });
+     // Crutches for the :focus style:
+     inp.focus(function(){
+         wrapper.addClass( "focus" );
+     }).blur(function(){
+         wrapper.removeClass( "focus" );
+     });
+     // Yep, it works!
+    btn.add( lbl ).click(function(){
+        inp.click();
+    });
+    // Crutches for the :focus style:
+   btn.focus(function(){
+       wrapper.addClass( "focus" );
+   }).blur(function(){
+       wrapper.removeClass( "focus" );
+   });
+
+   var file_api = ( window.File && window.FileReader && window.FileList && window.Blob ) ? true : false;
+
+    inp.change(function(){
+        var file_name;
+        if( file_api && inp[ 0 ].files[ 0 ] )
+            file_name = inp[ 0 ].files[ 0 ].name;
+        else
+            file_name = inp.val().replace( "C:\\fakepath\\", '' );
+
+        if( ! file_name.length )
+            return;
+
+        if( lbl.is( ":visible" ) ){
+            lbl.text( file_name );
+            btn.text( "Файл загружен!" );
+        }else
+            btn.text( file_name );
+    }).change();
+
+    $( window ).resize(function(){
+    $( ".file_upload input" ).triggerHandler( "change" );
+});
+
 
   //________________________________________
 

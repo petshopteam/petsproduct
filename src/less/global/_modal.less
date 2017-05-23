@@ -13,6 +13,40 @@
   right: 0;
   bottom: 0;
   left: 0;
+
+  // стилизация полосы прокрутки
+  &::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:6px;
+    height:0px
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #dfdfdf;
+    box-shadow:0px 0px 3px #dfdfdf inset;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #bababa;
+    box-shadow:0px 1px 1px #fff inset;
+    background-image:url('https://yraaa.ru/_pu/24/59610063.png');
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+
+  &::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:7px;
+    height:0px
+  }
+
+  &::-webkit-scrollbar{
+    width: 5px;
+  }
 }
 
 // modal-city
@@ -31,7 +65,6 @@
   padding-top: 30px;
   padding-bottom: 15px;
   display: none;
-  overflow-y: visible;
 
   &__title {
     color: #0e0c07;
@@ -115,7 +148,7 @@
 
   &__item {
     margin-bottom: 20px;
-    
+
     input[type=radio] {
       opacity: 0;
       width: 19px;
@@ -192,14 +225,17 @@
 .modal-vacancy {
   display: none;
   max-width: 700px;
+  max-height: 100vh;
   background: @white;
   top: 3%;
   bottom: auto;
-  padding: 48px 100px 48px 100px;
+  padding: 48px 100px;
+  padding-bottom: 55px;
+  overflow-y: auto;
 
   &__title {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 27px;
     margin-bottom: 40px;
   }
@@ -313,7 +349,7 @@
   left: 0;
   top: 0;
   position: fixed;
-  overflow-y: auto;
+  overflow: auto;
   z-index: 99;
 
   &_dark {
@@ -325,7 +361,7 @@
     left: 0;
     top: 0;
     position: fixed;
-    overflow-y: auto;
+    overflow: auto;
     z-index: 99;
   }
 }

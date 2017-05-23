@@ -1,4 +1,4 @@
-// Page 2 (catalog)
+// Partners-page styles
 
 //header styles
 .partners-page {
@@ -6,7 +6,7 @@
   .main-topline {
     background: @grey;
   }
-  
+
   .main-head {
     background: @white;
     margin: 0;
@@ -51,12 +51,10 @@
   }
   &__item {
     position: relative;
-    height: 320px;
+    height: 340px;
     text-align: center;
     margin-right: 30px;
     margin-bottom: 50px;
-    padding: 20%;
-    padding-top: 10%;
     box-shadow: 0 0 4px rgba(36, 36, 35, 0.2);
     &:hover {
       background: @grey;
@@ -72,14 +70,12 @@
   }
 
   &__image {
+    width: 90%;
   }
 
   // remove margins for every third item
   .col-lg-5:nth-child(3n) > .partners__item {
     margin-right: 0;
-    .partners__image {
-      width: 90%;
-    }
   }
 
   .btn_load {

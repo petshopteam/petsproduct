@@ -1,10 +1,8 @@
-// Page 10 (vacancy)
+// Vacancy-page styles
 
-//header styles
 .vacancy-page {
-  
   .main-head {
-    background: url(../images/vacancy-bg.jpg) no-repeat top;
+    background: url("../images/vacancy-bg.jpg") no-repeat top;
     margin: 0;
   }
 
@@ -24,15 +22,12 @@
   .main-head__title {
     margin-bottom: 150px;
   }
-
 }
 
-//main styles
+// main styles
 
-// empty vacancy styles
-
+// Empty vacancy
 .vacancy {
-
   padding-top: 70px;
 
   &__title {
@@ -41,27 +36,26 @@
     line-height: 50px;
     margin-bottom: 60px;
   }
+
   &__text {
     font-family: @rubik;
     margin-bottom: 60px;
     margin-right: 12%;
     margin-left: 13%;
   }
+
   &__button_last {
     margin-bottom: 300px;
   }
 }
 
-// vacancy styles
-
+// Available vacancy
 .vacancy {
+  &__item {}
 
-  &__item {
-
-  }
   &__item-head {
     position: relative;
-    padding: 25px 50px 0px 50px;
+    padding: 25px 50px 0;
     width: 100%;
     height: 77px;
     background-color: #f1f1f1;
@@ -69,54 +63,69 @@
     margin-bottom: 20px;
     box-shadow: 0 0 4px rgba(36, 36, 35, 0.2);
     transition: margin 0.2s;
+
     &.no-margin {
       margin-bottom: 0;
       box-shadow: none;
     }
   }
+
   &__head-title {
     font-size: 18px;
     font-weight: bold;
     line-height: 27px;
+
     &.clicked {
       color: @red;
     }
   }
+
   &__head-link {
     position: absolute;
     width: 34px;
     height: 34px;
     right: 50px;
-    top: 20px;  
-    background: @red url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAABzElEQVRYR2N8EKr/n2EQAMZRh6DFwmiIoCfL0RAZDRFCRdVoGhmeaYSRi4dBvHIKA8N/BoaXHTkM/799IZQUcMqTnUaY+AQZxCsmM7Cp6IAN/3XnCsPLjlyGf5/ek+UYshzCLCDMIF4zk4FVTgXF0t+P7jC8bEln+PvhLcmOIdkhzEJiDBINcxlYJGTBln3Zuw5M8zgHgek/Lx4zvGhIZvj77hVJjiHJISDLJernMDALi4Mt+bxtGcO7BV1gtlBCGQOvVxSY/fftS4YXjSlgRxELiHYIKBrEq6czMAuKgs3+uH4uw4flk1HsEYjMZeAPTIY45v1rhpetmQyg6CIGEOUQNiUtBvGqqQygBAoCH5ZNZPi4YT5W8/kDEhkEovLBcqCE+7Itm+HXvWsE3ULQIexq+mBHgLIqCLyb287weedKvAbzuoczCCVXgtWAsjTIMT9vXcSrh6BD5BYcZmDk4mVg+PeP4e2MRoYvBzYS9B048Tr4Mwhn1DMwMDEx/P/2meFRgi1lDuG28WQQTqsFO+LrsZ1EOQKmiNvag0E4vY7h7axmhq9HtlPmEJJspkAxwaihwGyStI46BD24RkNkNEQIZaHRNDKaRgilEQCiAMxJgWoZ1gAAAABJRU5ErkJggg==') no-repeat center;
+    top: 20px;
+    background: @red url( 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAABzElEQVRYR2N8EKr/n2EQAMZRh6DFwmiIoCfL0RAZDRFCRdVoGhmeaYSRi4dBvHIKA8N/BoaXHTkM/799IZQUcMqTnUaY+AQZxCsmM7Cp6IAN/3XnCsPLjlyGf5/ek+UYshzCLCDMIF4zk4FVTgXF0t+P7jC8bEln+PvhLcmOIdkhzEJiDBINcxlYJGTBln3Zuw5M8zgHgek/Lx4zvGhIZvj77hVJjiHJISDLJernMDALi4Mt+bxtGcO7BV1gtlBCGQOvVxSY/fftS4YXjSlgRxELiHYIKBrEq6czMAuKgs3+uH4uw4flk1HsEYjMZeAPTIY45v1rhpetmQyg6CIGEOUQNiUtBvGqqQygBAoCH5ZNZPi4YT5W8/kDEhkEovLBcqCE+7Itm+HXvWsE3ULQIexq+mBHgLIqCLyb287weedKvAbzuoczCCVXgtWAsjTIMT9vXcSrh6BD5BYcZmDk4mVg+PeP4e2MRoYvBzYS9B048Tr4Mwhn1DMwMDEx/P/2meFRgi1lDuG28WQQTqsFO+LrsZ1EOQKmiNvag0E4vY7h7axmhq9HtlPmEJJspkAxwaihwGyStI46BD24RkNkNEQIZaHRNDKaRgilEQCiAMxJgWoZ1gAAAABJRU5ErkJggg==') no-repeat center;
     background-size: cover;
     transition: transform 0.3s ease;
     transform: rotate(180deg);
+
     &.clicked {
       transform: rotate(0deg);
     }
   }
+
   &__item-body {
     position: relative;
-    padding: 15px 100px 100px 50px;
+    padding: 15px 100px 50px 50px;
     border: 1px solid #ececec;
     border-top: none;
+
     &.active {
       margin-bottom: 50px;
     }
   }
+
   &__item-title {
-    font-weight: bold;
+    font-weight: 500;
+    color: #242423;
     margin-top: 35px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
+
   &__item-list {
     margin-bottom: 35px;
+
     li {
       position: relative;
+      font-family: @rubik;
+      font-weight: 400;
+      font-size: 14px;
+      color: #686868;
       padding-left: 25px;
-      font-size: 16px;
       line-height: 27px;
+
       &::before {
         position: absolute;
         content: '';
@@ -124,18 +133,21 @@
         height: 7px;
         background: @red;
         left: 0;
-        top: 5px;
+        top: 10px;
       }
-    } 
+    }
   }
+
   &__no-vacancy {
     font-weight: bold;
     margin-top: 45px;
     margin-bottom: 80px;
+
     a {
       display: inline-block;
       margin-left: 5px;
       position: relative;
+
       &::after {
         position: absolute;
         content: '';
@@ -145,13 +157,14 @@
         left: 0;
         background-color: #403f3f;
       }
+
       &:hover {
         color: @red;
       }
+
       &:hover::after {
         background-color: @red;
       }
     }
   }
 }
-

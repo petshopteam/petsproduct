@@ -96,11 +96,11 @@
 			<form action="#" class="request__form">
 
 				<!-- first form-block -->
-				<div class="request__form-block clearfix">	
+				<div class="request__form-block clearfix">
 					<div class="col-lg-7">
 						<label for="" class="request__label">Название организации</label>
 						<input type="text" class="request__input" placeholder="Краткое наименование организации">
-					</div>	
+					</div>
 					<div class="col-lg-7 col-lg-offset-1">
 						<label for="" class="request__label">Имя контактного лица</label>
 						<input type="text" class="request__input" placeholder="Фамилия Имя Отчество">
@@ -136,7 +136,7 @@
 						<div class="request__subtitle request__hidden-subtitle">
 							<p class="request__subtitle_top">Данные питомника</p>
 							<p class="request__subtitle_bottom">
-								Заполняя эти поля Вы ускорите работу менеджера по заключению договора о сотрудничистве 
+								Заполняя эти поля Вы ускорите работу менеджера по заключению договора о сотрудничистве
 							</p>
 							<a href="#" class="request__subtitle_arrow"></a>
 						</div>
@@ -161,12 +161,18 @@
 					</div>
 					<div class="col-lg-7 col-lg-offset-1">
 						<label for="" class="request__label">Прикрепить копию сертификата</label>
-						<input type="file" class="request__input">
+						<!-- file upload input -->
+						<div class="file_upload">
+							<span class="file_upload__text">Перетащите или</span>
+							<button type="button">загрузите файл</button>
+							<div>Файл не выбран</div>
+							<input type="file">
+						</div>
 					</div>
 				</div>
-				
-				
-				
+
+
+
 
 				<div class="request__submit-block clearfix">
 					<input id="requestCheck" type="checkbox" checked class="request__check">
@@ -180,7 +186,7 @@
 		</div>
 	</section>
 
-	
+
 
 	 <!--footer-->
 	 @@include('global/footer.html')

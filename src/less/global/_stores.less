@@ -1,4 +1,5 @@
 //stores (где купить)
+
 .stores {
   background: @grey;
   width: 100%;
@@ -12,6 +13,7 @@
     line-height: 60px;
     margin-bottom: 40px;
   }
+
   &__current-region {
     display: inline-block;
     color: @lightblack;
@@ -22,11 +24,13 @@
     padding-bottom: 3px;
     border-bottom: 1px solid @lightblack;
     margin-top: 16px;
+
     &:hover {
       color: @red;
       border-color: @red;
     }
   }
+
   &__type-select {
     position: relative;
     font-size: 16px;
@@ -35,24 +39,28 @@
     text-transform: uppercase;
     display: inline-block;
     transition: color 0.2s ease;
+
     &.active {
       color: @white;
       background-color: @red;
       border-radius: 2px;
-      padding: 10px 15px;
-      padding-bottom: 11px;
+      padding: 10px 15px 11px;
       top: -8px;
+
       &:hover {
         color: @white;
       }
     }
+
     &:hover {
       color: @red;
     }
   }
+
   &__search {
-    margin-top: 40px;
+    margin-top: 20px;
   }
+
   &__search-window {
     width: 100%;
     border-radius: 2px;
@@ -61,54 +69,57 @@
     font-size: 14px;
     padding: 8px 40px 7px 13px;
   }
+
   &__map {
     position: relative;
   }
-  &__points {
-    padding: 50px 50px 60px 60px;
-  }
-  &__stores-list {
-    margin-top: 30px;
-    overflow-x: hidden;
-    max-height: 400px;
 
+  &__points {
+    padding: 50px 50px 0 60px;
+  }
+
+  &__stores-list {
+    overflow-x: hidden;
+    max-width: 542px;
+    max-height: 280px;
     //  стилизация полосы прокрутки
     &::-webkit-scrollbar-button {
-      background-image:url('');
-      background-repeat:no-repeat;
-      width:6px;
-      height:0px
+      background-image: url('');
+      background-repeat: no-repeat;
+      width: 6px;
+      height: 0;
     }
 
     &::-webkit-scrollbar-track {
       background-color: #dfdfdf;
-      box-shadow:0px 0px 3px #dfdfdf inset;
+      box-shadow: 0 0 3px #dfdfdf inset;
     }
 
     &::-webkit-scrollbar-thumb {
       -webkit-border-radius: 5px;
       border-radius: 5px;
       background-color: #bababa;
-      box-shadow:0px 1px 1px #fff inset;
-      background-image:url('https://yraaa.ru/_pu/24/59610063.png');
-      background-position:center;
-      background-repeat:no-repeat;
+      box-shadow: 0 1px 1px #fff inset;
+      background-image: url('https://yraaa.ru/_pu/24/59610063.png');
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
-    &::-webkit-resizer{
-      background-image:url('');
-      background-repeat:no-repeat;
-      width:7px;
-      height:0px
+    &::-webkit-resizer {
+      background-image: url('');
+      background-repeat: no-repeat;
+      width: 7px;
+      height: 0;
     }
 
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar {
       width: 2px;
     }
   }
 
   &__retail-list {
     display: none;
+
     &.active {
       display: block;
     }
@@ -116,6 +127,7 @@
 
   &__online-list {
     display: none;
+
     &.active {
       display: block;
     }
@@ -128,18 +140,22 @@
     font-family: @rubik;
     color: #686868;
     cursor: pointer;
+
     &.active {
       color: #686868;
     }
+
     &.active .stores__store-name {
       color: @red;
       border-color: @red;
     }
+
     &:hover .stores__store-name {
       color: @red;
       border-color: @red;
     }
   }
+
   &__store-name {
     display: inline-block;
     font-weight: 400;
@@ -147,21 +163,22 @@
     border-bottom: 1px solid @lightblack;
     margin-bottom: 5px;
   }
+
   &__store-address {
     display: block;
     margin-bottom: 3px;
   }
+
   &__store-district {
     display: block;
   }
-
-
 }
 
 .map-search {
   position: absolute;
   top: 0;
   right: 0;
+
   &__window {
     position: relative;
     top: 10px;
@@ -176,6 +193,7 @@
     line-height: 24px;
     padding: 12px 35px 11px 14px;
   }
+
   &__button {
     position: absolute;
     right: 22px;
@@ -183,11 +201,7 @@
     width: 14px;
     height: 14px;
     border: none;
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABR0lEQVQ4T5WSQVKDQBBF/090zwUk
-    lRvEKnCb5AZJ0H1yAzmB3sB4AjlASOIJZE+q5AZaxL3sCbQ1yOCEYiOroadfd//fQxjfx2xk9XoXSxJjgBaIhJDXq80hMvPUmTpwvHUmItwBsNpJAI
-    KiyP3hPsn0XQV+3bmjssRbDUUAn8kyQ4mxkPd1PLDDeHUGpp6roImqbF62i5Iy1WNT6er3L78BZEWRD81xGhkL50HIRxBrexP7lcZam+oY2WE87dCH
-    rhzW+t4FSAZhfN0Fpt7NDJAdIHs7PMwbV1PPVaNapgazgPZARPzB9rBuwKPWAGSkzLUBtf4nAMu2B80eU8/ZAZypampsAmpno7O9Clb2Ng7OHoD6qT
-    vrvelpI4pElau/VSu46WhqUoaJiHU6nRK9nnThLkG8aLgT7HJWxf5g2f8L1C8pz/PPH9s7pF8s+DzxAAAAAElFTkSuQmCC") no-repeat center;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABR0lEQVQ4T5WSQVKDQBBF/090zwUk lRvEKnCb5AZJ0H1yAzmB3sB4AjlASOIJZE+q5AZaxL3sCbQ1yOCEYiOroadfd//fQxjfx2xk9XoXSxJjgBaIhJDXq80hMvPUmTpwvHUmItwBsNpJAI KiyP3hPsn0XQV+3bmjssRbDUUAn8kyQ4mxkPd1PLDDeHUGpp6roImqbF62i5Iy1WNT6er3L78BZEWRD81xGhkL50HIRxBrexP7lcZam+oY2WE87dCH rhzW+t4FSAZhfN0Fpt7NDJAdIHs7PMwbV1PPVaNapgazgPZARPzB9rBuwKPWAGSkzLUBtf4nAMu2B80eU8/ZAZypampsAmpno7O9Clb2Ng7OHoD6qT vrvelpI4pElau/VSu46WhqUoaJiHU6nRK9nnThLkG8aLgT7HJWxf5g2f8L1C8pz/PPH9s7pF8s+DzxAAAAAElFTkSuQmCC") no-repeat center;
     background-size: cover;
   }
 }
