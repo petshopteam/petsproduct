@@ -5618,9 +5618,15 @@ if ( $.ajaxPrefilter ) {
   });
 
   /*----------------------------------------
-     HELP PAGE on click effects
+     Topline login on click effects
   ----------------------------------------*/
+  // Big login
   $('.main-topline__user-login').on('click', function(event) {
+    event.preventDefault();
+    $(this).toggleClass('entered');
+  });
+  //Small login
+  $('.main-topline__user-login_small').on('click', function(event) {
     event.preventDefault();
     $(this).toggleClass('entered');
   });

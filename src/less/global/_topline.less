@@ -103,21 +103,16 @@
       color: @red;
     }
   }
-  //media
-  @media (max-width: @laptop) {
-    display: none;
-	}
 }
 
 .main-topline__user-login_small {
-  display: none;
   position: relative;
   width: 24px;
   height: 33px;
   background: url(../images/icons/header-lock.svg) no-repeat center;
   background-size: contain;
-  //media
-  @media (max-width: @laptop) {
-    display: block;
-	}
+  &.entered {
+    background-image: url(../images/icons/header-lock_open.svg);
+    background-size: 77%;
+  }
 }

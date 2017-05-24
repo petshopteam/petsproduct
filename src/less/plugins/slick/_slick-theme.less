@@ -147,6 +147,9 @@
   @media (max-width: @desktop) {
 		left: -36%;
 	}
+  @media (max-width: @laptop) {
+		left: -35%;
+	}
 
   li {
     position: relative;
@@ -203,6 +206,36 @@
     }
   }
 }
+
+// main slider media styles
+
+.slick-prev {
+  @media (max-width: @laptop) {
+    opacity: 0.1;
+    background-image: url(../images/icons/arrow2_left.svg);
+    background-color: transparent;
+    top: 50%;
+    left: 0;
+    &:hover {
+      opacity: 0.2;
+      background-image: url(../images/icons/arrow2_left.svg);
+    }
+  }
+}
+
+.slick-next {
+  @media (max-width: @laptop) {
+    opacity: 0.1;
+    background-image: url(../images/icons/arrow2_right.svg);
+    background-color: transparent;
+    top: 50%;
+    &:hover {
+      opacity: 0.2;
+      background-image: url(../images/icons/arrow2_right.svg);
+    }
+  }
+}
+
 //main-suppliers slider styles
 .main-suppliers__slider .slick-next,
 .main-suppliers__slider .slick-prev {
