@@ -88,7 +88,7 @@
   // media
   @media (max-width: @desktop) {
 		right: 0;
-    left: 90%;
+    left: 90.3%;
 	}
 
   &[dir="rtl"] {
@@ -145,7 +145,7 @@
   width: 100%;
   //media
   @media (max-width: @desktop) {
-		left: -36%;
+		left: -39%;
 	}
   @media (max-width: @laptop) {
 		left: -35%;
@@ -256,20 +256,49 @@
   &:hover::before {
     opacity: 0.3;
   }
+  //media
+  @media (max-width: @desktop) {
+    &:before {
+      background-size: 70%;
+    }
+  }
+  @media (max-width: @laptop) {
+    opacity: 0.6;
+    background-image: none;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }
 
 .slick-next.slick-disabled:before,
 .slick-prev.slick-disabled:before {
   opacity: 0.1;
+  //media
+  @media (max-width: @laptop) {
+    &:hover {
+      opacity: 0.1;
+    }
+  }
 }
 
 .slick-next.slick-disabled:focus:before,
 .slick-prev.slick-disabled:focus:before {
   opacity: 0.1;
+  //media
+  @media (max-width: @laptop) {
+    &:hover {
+      opacity: 0.1;
+    }
+  }
 }
 
 .main-suppliers__slider .slick-prev {
   left: -6%;
+  //media
+  @media (max-width: @desktop) {
+    left: -7%;
+  }
 }
 
 .main-suppliers__slider .slick-next {

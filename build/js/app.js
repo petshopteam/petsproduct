@@ -5556,7 +5556,17 @@ if ( $.ajaxPrefilter ) {
   $('.main-suppliers__slider').slick({
     infinite: false,
     slidesToShow: 6,
-    slidesToScroll: 6
+    slidesToScroll: 6,
+    // responsive:
+    responsive: [
+    {
+      breakpoint: 980,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    }
+  ]
   });
 
   // article-item__slider

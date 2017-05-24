@@ -3643,14 +3643,9 @@ p.main-carousel__subtitle
     padding-bottom: 80px;
 }
 
-.main-about .col-lg-8
-{
-    margin-right: 20px;
-}
-
 .main-about__company
 {
-    max-width: 590px;
+    margin-right: 40px;
     padding: 50px 70px 70px;
 
     text-align: center;
@@ -3685,7 +3680,6 @@ p.main-carousel__subtitle
 {
     position: relative;
 
-    margin-top: 50px;
     margin-top: 45px;
     margin-bottom: 40px;
     padding-left: 15px;
@@ -3777,45 +3771,36 @@ p.main-carousel__subtitle
 .main-suppliers__slide
 {
     position: relative;
+}
 
+.main-suppliers__slide a
+{
+    display: inline-block;
+
+    width: 100%;
+    height: 100%;
+}
+
+.main-suppliers__slide a img
+{
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
 }
 
-.main-suppliers__slide:hover
+.main-suppliers__slide a img:hover
 {
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
 }
 
-.main-suppliers__slide-2
-{
-    top: 20px;
-}
-
-.main-suppliers__slide-3
-{
-    top: 6px;
-}
-
-.main-suppliers__slide-4
-{
-    top: 12px;
-}
-
-.main-suppliers__slide-5
+.main-suppliers__slide-5 a img
 {
     opacity: .5;
 }
 
-.main-suppliers__slide-5:hover
+.main-suppliers__slide-5 a img:hover
 {
     opacity: 1;
-}
-
-.main-suppliers__slide-7
-{
-    top: 12px;
 }
 
 .last-news > .container
@@ -8514,35 +8499,6 @@ p.CaptionCont.SelectBox span
     }
 }
 
-@media (min-width: 1199px)
-{
-    .hidden-lg
-    {
-        display: none !important;
-    }
-
-    .visible-lg
-    {
-        display: block !important;
-    }
-
-    table.visible-lg
-    {
-        display: table !important;
-    }
-
-    tr.visible-lg
-    {
-        display: table-row !important;
-    }
-
-    td.visible-lg,
-    th.visible-lg
-    {
-        display: table-cell !important;
-    }
-}
-
 @media (min-width: 1200px)
 {
     .container
@@ -8883,15 +8839,36 @@ p.CaptionCont.SelectBox span
     {
         margin-left: 0;
     }
+
+    .hidden-lg
+    {
+        display: none !important;
+    }
+
+    .visible-lg
+    {
+        display: block !important;
+    }
+
+    table.visible-lg
+    {
+        display: table !important;
+    }
+
+    tr.visible-lg
+    {
+        display: table-row !important;
+    }
+
+    td.visible-lg,
+    th.visible-lg
+    {
+        display: table-cell !important;
+    }
 }
 
 @media (max-width: 1199px)
 {
-    .container
-    {
-        max-width: 940px;
-    }
-
     .main-foot__logo
     {
         width: 149px;
@@ -8926,7 +8903,6 @@ p.CaptionCont.SelectBox span
 
     .main-navigation__list
     {
-        margin-right: -20px;
         padding-right: 0;
     }
 
@@ -8953,7 +8929,7 @@ p.CaptionCont.SelectBox span
 
     .main-carousel__slide p
     {
-        left: 69px;
+        left: 55px;
     }
 
     .main-carousel__title
@@ -8961,20 +8937,20 @@ p.CaptionCont.SelectBox span
         top: 20%;
     }
 
-    .main-about .col-lg-8
-    {
-        margin-right: 0;
-    }
-
     .main-about
     {
         padding-bottom: 5%;
+        padding-left: 10px;
     }
 
     .main-about__company
     {
-        margin-right: 2%;
-        padding: 5% 3% 10% 6%;
+        padding: 37px 10px 45px 37px;
+    }
+
+    .main-about__company-title
+    {
+        margin-bottom: 10px;
     }
 
     .main-about__company-text
@@ -8984,9 +8960,37 @@ p.CaptionCont.SelectBox span
         padding-right: 4%;
     }
 
+    .main-about__feature
+    {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
     .main-about__feature-title
     {
         font-size: 16px;
+    }
+
+    .main-suppliers > .container::before
+    {
+        left: 18px;
+
+        width: 239px;
+    }
+
+    .main-suppliers
+    {
+        padding-bottom: 40px;
+    }
+
+    .main-suppliers__title
+    {
+        margin-left: 55px;
+    }
+
+    .main-suppliers__slider
+    {
+        padding-left: 2%;
     }
 
     .last-news > .container
@@ -9012,7 +9016,7 @@ p.CaptionCont.SelectBox span
     .slick-prev
     {
         right: 0;
-        left: 90%;
+        left: 90.3%;
     }
 
     .slick-next
@@ -9023,17 +9027,23 @@ p.CaptionCont.SelectBox span
 
     .slick-dots
     {
-        left: -36%;
+        left: -39%;
+    }
+
+    .main-suppliers__slider .slick-next:before,
+    .main-suppliers__slider .slick-prev:before
+    {
+        background-size: 70%;
+    }
+
+    .main-suppliers__slider .slick-prev
+    {
+        left: -7%;
     }
 }
 
-@media (max-width: 959px)
+@media (max-width: 979px)
 {
-    .container
-    {
-        max-width: 740px;
-    }
-
     .main-topline__user
     {
         padding-top: 0;
@@ -9059,9 +9069,41 @@ p.CaptionCont.SelectBox span
         font-size: 15px;
     }
 
+    .main-about__company-text
+    {
+        font-size: 16px;
+
+        padding-right: 0;
+    }
+
+    .main-suppliers > .container
+    {
+        padding-top: 0;
+    }
+
+    .main-suppliers > .container::before
+    {
+        display: none;
+    }
+
+    .main-suppliers__title
+    {
+        margin-left: 0;
+
+        text-align: center;
+    }
+
+    .main-suppliers__slider
+    {
+        padding-left: 6%;
+        padding-left: 0;
+    }
+
     .main-suppliers__slider img
     {
-        width: 70%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
     }
 
     .slick-dots
@@ -9099,15 +9141,35 @@ p.CaptionCont.SelectBox span
         opacity: .2;
         background-image: url(../images/icons/arrow2_right.svg);
     }
-}
 
-@media (max-width: 767px)
-{
-    .hidden-xs
+    .main-suppliers__slider .slick-next,
+    .main-suppliers__slider .slick-prev
     {
-        display: none !important;
+        opacity: .6;
+        background-image: none;
     }
 
+    .main-suppliers__slider .slick-next:hover,
+    .main-suppliers__slider .slick-prev:hover
+    {
+        opacity: .7;
+    }
+
+    .slick-next.slick-disabled:before:hover,
+    .slick-prev.slick-disabled:before:hover
+    {
+        opacity: .1;
+    }
+
+    .slick-next.slick-disabled:focus:before:hover,
+    .slick-prev.slick-disabled:focus:before:hover
+    {
+        opacity: .1;
+    }
+}
+
+@media (max-width: 768px)
+{
     .visible-xs
     {
         display: block !important;
@@ -9130,7 +9192,15 @@ p.CaptionCont.SelectBox span
     }
 }
 
-@media (min-width: 767px) and (max-width: 959px)
+@media (max-width: 767px)
+{
+    .hidden-xs
+    {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px)
 {
     .hidden-sm
     {
@@ -9159,7 +9229,7 @@ p.CaptionCont.SelectBox span
     }
 }
 
-@media (min-width: 959px) and (max-width: 1199px)
+@media (min-width: 980px) and (max-width: 1199px)
 {
     .hidden-md
     {
