@@ -2940,6 +2940,7 @@ h1
 
 .main-topline__phone-time
 {
+    font-family: 'Rubik', Arial, sans-serif;
     font-size: 10px;
 }
 
@@ -9069,9 +9070,33 @@ p.CaptionCont.SelectBox span
         padding-left: 6%;
     }
 
+    .main-topline__phone-number
+    {
+        font-size: 18px;
+    }
+
+    .main-topline__phone-time
+    {
+        font-size: 12px;
+    }
+
     .main-topline__user
     {
         padding-top: 0;
+    }
+
+    .main-topline__user-login_small
+    {
+        top: -1px;
+
+        text-align: center;
+
+        background-size: 130%;
+    }
+
+    .main-topline__user-login_small.entered
+    {
+        background-size: 95%;
     }
 
     .main-page .main-head
@@ -9286,6 +9311,69 @@ p.CaptionCont.SelectBox span
     .hidden-xs
     {
         display: none !important;
+    }
+
+    .main-topline
+    {
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+
+    .main-topline__phone-wrap
+    {
+        margin-right: -5px;
+
+        text-align: right;
+    }
+
+    .main-topline__phone-time
+    {
+        padding-right: 38px;
+    }
+
+    .main-page .main-head
+    {
+        margin-bottom: 25px;
+        padding-bottom: 80px;
+
+        background-position: 64% top;
+        background-size: cover;
+    }
+
+    .main-head__logo
+    {
+        width: 160px;
+        height: 62px;
+
+        background-size: 80%;
+    }
+
+    .main-navigation
+    {
+        margin-bottom: 120px;
+    }
+
+    .main-head__title
+    {
+        font-size: 24px;
+        line-height: 32px;
+
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+
+    .main-head__subtitle
+    {
+        font-size: 16px;
+        line-height: 34px;
+
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+    .main-head__btn
+    {
+        margin-left: 0;
     }
 }
 

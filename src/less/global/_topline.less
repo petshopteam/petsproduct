@@ -12,6 +12,11 @@
   a:hover {
     color: inherit;
   }
+  //media
+  @media (max-width: @tablet) {
+    padding-right: 20px;
+    padding-left: 10px;
+  }
 }
 
 //city
@@ -43,6 +48,16 @@
 }
 
 //phone
+
+// wrapper
+.main-topline__phone-wrap {
+  //media
+  @media (max-width: @tablet) {
+    text-align: right;
+    margin-right: -5px;
+	}
+}
+
 .main-topline__phone {
   position: relative;
   padding-right: 10px;
@@ -62,10 +77,22 @@
 
 .main-topline__phone-number {
   font-weight: 700;
+  //media
+  @media (max-width: @laptop) {
+    font-size: 18px;
+	}
 }
 
 .main-topline__phone-time {
+  font-family: @rubik;
   font-size: 10px;
+  //media
+  @media (max-width: @laptop) {
+    font-size: 12px;
+	}
+  @media (max-width: @tablet) {
+    padding-right: 38px;
+	}
 }
 
 // user
@@ -115,4 +142,13 @@
     background-image: url(../images/icons/header-lock_open.svg);
     background-size: 77%;
   }
+  //media
+  @media (max-width: @laptop) {
+    text-align: center;
+    top: -1px;
+    background-size: 130%;
+    &.entered {
+      background-size: 95%;
+    }
+	}
 }
