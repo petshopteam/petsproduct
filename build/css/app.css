@@ -1486,6 +1486,8 @@ hr
 
 .main-foot__logo
 {
+    position: relative;
+
     width: 224px;
     height: 83px;
 }
@@ -3793,12 +3795,12 @@ p.main-carousel__subtitle
             filter: grayscale(0%);
 }
 
-.main-suppliers__slide-5 a img
+.bark-img
 {
     opacity: .5;
 }
 
-.main-suppliers__slide-5 a img:hover
+.bark-img:hover
 {
     opacity: 1;
 }
@@ -3818,6 +3820,13 @@ p.main-carousel__subtitle
     line-height: 60px;
 
     margin-bottom: 46px;
+}
+
+.last-news__read-all-wrap
+{
+    padding-right: 15px;
+
+    text-align: right;
 }
 
 .last-news__read-all
@@ -3842,6 +3851,8 @@ p.main-carousel__subtitle
 
 .last-news__article
 {
+    position: relative;
+
     max-width: 320px;
     min-height: 400px;
 
@@ -3909,7 +3920,7 @@ p.main-carousel__subtitle
     line-height: 24px;
 
     position: absolute;
-    right: 25px;
+    right: 0;
     bottom: 0;
 
     padding-right: 38px;
@@ -8162,7 +8173,7 @@ p.CaptionCont.SelectBox span
     }
 }
 
-@media (min-width: 960px)
+@media (min-width: 980px)
 {
     .col-md-1,
     .col-md-10,
@@ -8871,8 +8882,11 @@ p.CaptionCont.SelectBox span
 {
     .main-foot__logo
     {
-        width: 149px;
-        height: 55px;
+        top: 2px;
+
+        width: 160px;
+        height: auto;
+        padding-left: 20px;
     }
 
     .main-foot__copy-text
@@ -9003,14 +9017,14 @@ p.CaptionCont.SelectBox span
         margin-bottom: 30px;
     }
 
+    .last-news__read-all-wrap
+    {
+        padding-right: 0;
+    }
+
     .last-news__article
     {
         min-height: 371px;
-    }
-
-    .last-news__read-more
-    {
-        right: 10px;
     }
 
     .slick-prev
@@ -9044,6 +9058,17 @@ p.CaptionCont.SelectBox span
 
 @media (max-width: 979px)
 {
+    .main-foot__cont-wrap
+    {
+        padding-left: 5%;
+    }
+
+    .main-foot .container
+    {
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+
     .main-topline__user
     {
         padding-top: 0;
@@ -9069,6 +9094,18 @@ p.CaptionCont.SelectBox span
         font-size: 15px;
     }
 
+    .main-about
+    {
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+
+    .main-about__company
+    {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
     .main-about__company-text
     {
         font-size: 16px;
@@ -9088,6 +9125,7 @@ p.CaptionCont.SelectBox span
 
     .main-suppliers__title
     {
+        margin-bottom: 10px;
         margin-left: 0;
 
         text-align: center;
@@ -9095,15 +9133,50 @@ p.CaptionCont.SelectBox span
 
     .main-suppliers__slider
     {
-        padding-left: 6%;
-        padding-left: 0;
+        padding-right: 10%;
+        padding-left: 10%;
     }
 
     .main-suppliers__slider img
     {
         width: 100%;
         height: auto;
+    }
+
+    .last-news > .container
+    {
+        max-width: 637px;
+    }
+
+    .last-news__title
+    {
+        margin-bottom: 0;
+
+        text-align: center;
+    }
+
+    .last-news__read-all-wrap
+    {
         margin-bottom: 30px;
+
+        text-align: center;
+    }
+
+    .last-news__article
+    {
+        max-width: 320px;
+        min-height: 405px;
+        margin-right: auto;
+        margin-bottom: 30px;
+        margin-left: auto;
+    }
+
+    .last-news__image
+    {
+        width: 320px;
+        height: auto;
+        padding-right: auto;
+        padding-left: auto;
     }
 
     .slick-dots
@@ -9155,6 +9228,12 @@ p.CaptionCont.SelectBox span
         opacity: .7;
     }
 
+    .main-suppliers__slider .slick-next:before,
+    .main-suppliers__slider .slick-prev:before
+    {
+        background-size: cover;
+    }
+
     .slick-next.slick-disabled:before:hover,
     .slick-prev.slick-disabled:before:hover
     {
@@ -9165,6 +9244,16 @@ p.CaptionCont.SelectBox span
     .slick-prev.slick-disabled:focus:before:hover
     {
         opacity: .1;
+    }
+
+    .main-suppliers__slider .slick-prev
+    {
+        left: 3%;
+    }
+
+    .main-suppliers__slider .slick-next
+    {
+        left: 91%;
     }
 }
 

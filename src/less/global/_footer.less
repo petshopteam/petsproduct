@@ -16,12 +16,15 @@
   }
 
   &__logo {
+    position: relative;
     width: 224px;
     height: 83px;
     //media
     @media (max-width: @desktop) {
-      width: 149px;
-      height: 55px;
+      top: 2px;
+      width: 160px;
+      height: auto;
+      padding-left: 20px;
     }
   }
 
@@ -98,6 +101,13 @@
       }
     }
   }
+
+  &__cont-wrap {
+    //media
+    @media (max-width: @laptop) {
+  		padding-left: 5%;
+  	}
+  }
   //  copyright
   &__copyright {
     background: #000000;
@@ -129,6 +139,12 @@
   //media
   @media (max-width: @desktop) {
     padding-top: 55px;
+  }
+  @media (max-width: @laptop) {
+    & .container {
+      padding-left: 6%;
+      padding-right: 6%;
+    }
   }
 }
 

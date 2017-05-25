@@ -235,6 +235,10 @@ p.main-carousel__subtitle {
     padding-left: 10px;
     padding-bottom: 5%;
   }
+  @media (max-width: @laptop) {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
 }
 
 .main-about__company {
@@ -247,7 +251,8 @@ p.main-carousel__subtitle {
     padding: 37px 10px 45px 37px;
   }
   @media (max-width: @laptop) {
-
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -376,6 +381,7 @@ p.main-carousel__subtitle {
   @media (max-width: @laptop) {
     text-align: center;
     margin-left: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -393,12 +399,11 @@ p.main-carousel__subtitle {
     padding-left: 2%;
   }
   @media (max-width: @laptop) {
-    padding-left: 6%;
-    padding-left: 0;
+    padding-left: 10%;
+    padding-right: 10%;
     img {
       width: 100%;
       height: auto;
-      margin-bottom: 30px;
     }
   }
 }
@@ -418,7 +423,7 @@ p.main-carousel__subtitle {
   }
 }
 //barking heads
-.main-suppliers__slide-5 a img {
+.bark-img {
   opacity: 0.5;
   &:hover {
     opacity: 1;
@@ -436,6 +441,9 @@ p.main-carousel__subtitle {
     @media (max-width: @desktop) {
       padding-top: 50px;
     }
+    @media (max-width: @laptop) {
+      max-width: 637px;
+    }
   }
 
   &__title {
@@ -445,6 +453,23 @@ p.main-carousel__subtitle {
     margin-bottom: 46px;
     //media
     @media (max-width: @desktop) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: @laptop) {
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+
+  &__read-all-wrap {
+    text-align: right;
+    padding-right: 15px;
+    //media
+    @media (max-width: @desktop) {
+      padding-right: 0;
+    }
+    @media (max-width: @laptop) {
+      text-align: center;
       margin-bottom: 30px;
     }
   }
@@ -466,6 +491,7 @@ p.main-carousel__subtitle {
   }
 
   &__article {
+    position: relative;
     background: @white;
     max-width: 320px;
     min-height: 400px;
@@ -478,10 +504,25 @@ p.main-carousel__subtitle {
     @media (max-width: @desktop) {
       min-height: 371px;
     }
+    @media (max-width: @laptop) {
+      max-width: 320px;
+      min-height: 405px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
+
   }
 
   &__image {
     margin-bottom: 20px;
+    //media
+    @media (max-width: @laptop) {
+      width: 320px;
+      height: auto;
+      padding-left: auto;
+      padding-right: auto;
+    }
   }
 
   &__date {
@@ -517,7 +558,7 @@ p.main-carousel__subtitle {
 
   &__read-more {
     position: absolute;
-    right: 25px;
+    right: 0;
     bottom: 0;
     padding-right: 38px;
     font-weight: 500;
@@ -542,7 +583,10 @@ p.main-carousel__subtitle {
     }
     //media
     @media (max-width: @desktop) {
-      right: 10px;
+
+    }
+    @media (max-width: @laptop) {
+
     }
   }
 }

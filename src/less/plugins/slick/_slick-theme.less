@@ -268,6 +268,9 @@
     &:hover {
       opacity: 0.7;
     }
+    &:before {
+      background-size: cover;
+    }
   }
 }
 
@@ -299,6 +302,9 @@
   @media (max-width: @desktop) {
     left: -7%;
   }
+  @media (max-width: @laptop) {
+    left: 3%;
+  }
 }
 
 .main-suppliers__slider .slick-next {
@@ -306,6 +312,10 @@
 
   &::before {
     background-image: url("../images/icons/arrow2_right.svg");
+  }
+  //media
+  @media (max-width: @laptop) {
+    left: 91%;
   }
 }
 // article-item__slider settings
