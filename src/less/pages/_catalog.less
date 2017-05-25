@@ -40,9 +40,39 @@
   .catalog-brands {
     padding-left: 40px;
   }
+
+  // Меняю стиль чекбоксов (только для данной страницы)
+  .brand-filter__item label::before {
+    background: transparent;
+  }
+  .brand-filter__item label::after {
+    width: 14px;
+    height: 13px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAALCAYAAACgR9dcAAAAi0lEQVQoU5XSwRFAMBCF4X8b0IE63HVALwrRA01ow2jAWQ8xIZuJCMIhl+y3Ni8Rfn7GmAoYgUb+WAcnoACWbBzBDaizcBKKzOI2BqAVkTk+xhO0dRavQAmcowQN3qBim56G4Bt8wQPbJVHYAb1L9TaRHs0HFjXQ/Ufo/6yVOaOGgd6u6vKCEumHeAfveFAx5VpjEgAAAABJRU5ErkJggg==') no-repeat center;
+  }
+  .brand-filter__item {
+    input[type=checkbox]:checked + label::before {
+      background: @red;
+    }
+  }
+  // radio
+  input[type=radio] {
+    opacity: 0;
+    width: 19px;
+    height: 19px;
+    position: relative;
+    top: 4px;
+    left: 1px;
+  }
+  .pet-filter__item {
+    input[type=radio]:checked + label::after {
+      opacity: 1;
+    }
+    input[type=radio]:checked + label::before {
+      border-color: @red;
+    }
+  }
 }
-
-
 
 .brand-item {
   transition: background 0.2s ease;

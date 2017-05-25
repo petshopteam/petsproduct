@@ -1558,6 +1558,9 @@ hr
 {
     top: 10px;
 
+    width: 25px;
+    height: 25px;
+
     background: url('../images/icons/footer-2.svg') no-repeat center;
     background-size: 80%;
 }
@@ -3711,6 +3714,8 @@ p.main-carousel__subtitle
     margin-bottom: 5px;
 
     text-transform: uppercase;
+
+    color: #242423;
 }
 
 .main-about__feature-text
@@ -3718,6 +3723,10 @@ p.main-carousel__subtitle
     font-family: 'Rubik', Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
+
+    text-transform: lowercase;
+
+    color: #686868;
 }
 
 .main-suppliers
@@ -3910,6 +3919,7 @@ p.main-carousel__subtitle
     line-height: 24px;
 
     margin: 20px 23px 0;
+    margin-bottom: 40px;
 
     color: #242423;
 }
@@ -4183,6 +4193,46 @@ p.main-carousel__subtitle
 .catalog-page .catalog-brands
 {
     padding-left: 40px;
+}
+
+.catalog-page .brand-filter__item label::before
+{
+    background: transparent;
+}
+
+.catalog-page .brand-filter__item label::after
+{
+    width: 14px;
+    height: 13px;
+
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAALCAYAAACgR9dcAAAAi0lEQVQoU5XSwRFAMBCF4X8b0IE63HVALwrRA01ow2jAWQ8xIZuJCMIhl+y3Ni8Rfn7GmAoYgUb+WAcnoACWbBzBDaizcBKKzOI2BqAVkTk+xhO0dRavQAmcowQN3qBim56G4Bt8wQPbJVHYAb1L9TaRHs0HFjXQ/Ufo/6yVOaOGgd6u6vKCEumHeAfveFAx5VpjEgAAAABJRU5ErkJggg==') no-repeat center;
+}
+
+.catalog-page .brand-filter__item input[type=checkbox]:checked + label::before
+{
+    background: #e0552f;
+}
+
+.catalog-page input[type=radio]
+{
+    position: relative;
+    top: 4px;
+    left: 1px;
+
+    width: 19px;
+    height: 19px;
+
+    opacity: 0;
+}
+
+.catalog-page .pet-filter__item input[type=radio]:checked + label::after
+{
+    opacity: 1;
+}
+
+.catalog-page .pet-filter__item input[type=radio]:checked + label::before
+{
+    border-color: #e0552f;
 }
 
 .brand-item
@@ -8942,11 +8992,6 @@ p.CaptionCont.SelectBox span
         left: 55px;
     }
 
-    .main-carousel__slide p
-    {
-        left: 55px;
-    }
-
     .main-carousel__title
     {
         top: 20%;
@@ -9021,11 +9066,6 @@ p.CaptionCont.SelectBox span
     .last-news__read-all-wrap
     {
         padding-right: 0;
-    }
-
-    .last-news__article
-    {
-        min-height: 371px;
     }
 
     .slick-prev
@@ -9313,6 +9353,35 @@ p.CaptionCont.SelectBox span
         display: none !important;
     }
 
+    .main-foot__subtitle
+    {
+        margin-bottom: 30px;
+    }
+
+    .main-foot__list
+    {
+        margin-bottom: 40px;
+    }
+
+    .main-foot__cont-wrap
+    {
+        padding-left: 0;
+    }
+
+    .main-foot .container
+    {
+        padding-right: 6%;
+        padding-left: 17%;
+    }
+
+    .main-foot__copyright .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+
+        text-align: center;
+    }
+
     .main-topline
     {
         padding-right: 20px;
@@ -9374,6 +9443,193 @@ p.CaptionCont.SelectBox span
     .main-head__btn
     {
         margin-left: 0;
+    }
+
+    .main-carousel
+    {
+        margin-bottom: 45px;
+    }
+
+    .main-carousel__slide p
+    {
+        left: 10%;
+    }
+
+    .main-carousel__slide img
+    {
+        left: 38%;
+
+        width: 60%;
+    }
+
+    .main-carousel__title
+    {
+        font-size: 28px;
+    }
+
+    p.main-carousel__subtitle
+    {
+        font-size: 10px;
+
+        top: 48%;
+    }
+
+    .main-about
+    {
+        padding-right: 0;
+        padding-bottom: 12%;
+        padding-left: 0;
+    }
+
+    .main-about__company
+    {
+        padding: 3% 10% 13% 10%;
+    }
+
+    .main-about__company-title
+    {
+        font-size: 24px;
+    }
+
+    .main-about__company-text
+    {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .main-about__feature
+    {
+        max-width: 210px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .main-suppliers__title
+    {
+        font-size: 24px;
+        line-height: 32px;
+
+        margin-bottom: 20px;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .last-news > .container
+    {
+        width: 100%;
+        margin-bottom: 70px;
+        padding-top: 40px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+    }
+
+    .last-news__title
+    {
+        font-size: 24px;
+        line-height: 48px;
+    }
+
+    .last-news__read-all-wrap
+    {
+        margin-bottom: 40px;
+    }
+
+    .last-news__read-all
+    {
+        line-height: 28px;
+    }
+
+    .last-news__article
+    {
+        max-width: 260px;
+        min-height: 365px;
+        margin-bottom: 30px;
+    }
+
+    .slick-dots
+    {
+        left: 0;
+    }
+
+    .slick-dots li
+    {
+        bottom: -22px;
+
+        width: 10px;
+        height: 10px;
+    }
+
+    .slick-dots li button
+    {
+        width: 10px;
+        height: 10px;
+    }
+
+    .slick-dots li button:before
+    {
+        font-size: 10px;
+
+        width: 10px;
+        height: 10px;
+    }
+
+    .slick-prev
+    {
+        left: 0;
+
+        width: 20px;
+        height: 37px;
+
+        background-size: cover;
+    }
+
+    .slick-next
+    {
+        width: 20px;
+        height: 37px;
+
+        background-size: cover;
+    }
+
+    .main-suppliers__slider .slick-next:before,
+    .main-suppliers__slider .slick-prev:before
+    {
+        background-size: 70%;
+    }
+
+    .main-suppliers__slider .slick-prev
+    {
+        right: auto;
+        left: -8px;
+    }
+
+    .main-suppliers__slider .slick-next
+    {
+        right: -5px;
+        left: auto;
+    }
+}
+
+@media (max-width: 479px)
+{
+    .main-carousel__slide p
+    {
+        left: 5%;
+    }
+
+    .main-carousel__title
+    {
+        font-size: 18px;
+
+        top: 20%;
+    }
+
+    p.main-carousel__subtitle
+    {
+        font-size: 7px;
+
+        top: 47%;
     }
 }
 

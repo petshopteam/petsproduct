@@ -34,6 +34,10 @@
     line-height: 20px;
     text-transform: uppercase;
     margin-bottom: 66px;
+    //media
+    @media (max-width: @tablet) {
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
@@ -47,6 +51,10 @@
         font-size: 14px;
         font-weight: 300;
       }
+    }
+    //media
+    @media (max-width: @tablet) {
+      margin-bottom: 40px;
     }
   }
 
@@ -87,6 +95,8 @@
 
       &::before {
         top: 10px;
+        width: 25px;
+        height: 25px;
         background: url("../images/icons/footer-2.svg") no-repeat center;
         background-size: 80%;
       }
@@ -106,6 +116,9 @@
     //media
     @media (max-width: @laptop) {
   		padding-left: 5%;
+  	}
+    @media (max-width: @tablet) {
+  		padding-left: 0;
   	}
   }
   //  copyright
@@ -144,6 +157,17 @@
     & .container {
       padding-left: 6%;
       padding-right: 6%;
+    }
+  }
+  @media (max-width: @tablet) {
+    & .container {
+      padding-left: 17%;
+      padding-right: 6%;
+    }
+    &__copyright .container {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
     }
   }
 }

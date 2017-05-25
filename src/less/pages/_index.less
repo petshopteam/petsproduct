@@ -196,6 +196,10 @@
   position: relative;
   background: @green;
   margin-bottom: 60px;
+  //media
+  @media (max-width: @tablet) {
+    margin-bottom: 45px;
+  }
 }
 
 .main-carousel__slide {
@@ -211,8 +215,11 @@
     @media (max-width: @desktop) {
       left: 55px;
     }
-    @media (max-width: @desktop) {
-      left: 55px;
+    @media (max-width: @tablet) {
+      left: 10%;
+    }
+    @media (max-width: @mobile-wide) {
+      left: 5%;
     }
   }
 
@@ -228,6 +235,10 @@
     @media (max-width: @laptop) {
       left: 41%
     }
+    @media (max-width: @tablet) {
+      width: 60%;
+      left: 38%;
+    }
   }
 }
 
@@ -242,6 +253,13 @@
   @media (max-width: @laptop) {
     font-size: 39px;
   }
+  @media (max-width: @tablet) {
+    font-size: 28px;
+  }
+  @media (max-width: @mobile-wide) {
+    font-size: 18px;
+    top: 20%;
+  }
 }
 
 p.main-carousel__subtitle {
@@ -252,6 +270,14 @@ p.main-carousel__subtitle {
   //media
   @media (max-width: @laptop) {
     font-size: 15px;
+  }
+  @media (max-width: @tablet) {
+    font-size: 10px;
+    top: 48%;
+  }
+  @media (max-width: @mobile-wide) {
+    font-size: 7px;
+    top: 47%;
   }
 }
 //main-about section
@@ -266,6 +292,11 @@ p.main-carousel__subtitle {
   @media (max-width: @laptop) {
     padding-left: 8%;
     padding-right: 8%;
+  }
+  @media (max-width: @tablet) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 12%;
   }
 }
 
@@ -282,6 +313,9 @@ p.main-carousel__subtitle {
     margin: 0 auto;
     margin-bottom: 20px;
   }
+  @media (max-width: @tablet) {
+    padding: 3% 10% 13% 10%;
+  }
 }
 
 .main-about__company-title {
@@ -293,6 +327,9 @@ p.main-carousel__subtitle {
   //media
   @media (max-width: @desktop) {
     margin-bottom: 10px;
+  }
+  @media (max-width: @tablet) {
+    font-size: 24px;
   }
 }
 
@@ -311,6 +348,10 @@ p.main-carousel__subtitle {
   @media (max-width: @laptop) {
     font-size: 16px;
     padding-right: 0;
+  }
+  @media (max-width: @tablet) {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 
@@ -334,14 +375,16 @@ p.main-carousel__subtitle {
     margin-top: 30px;
     margin-bottom: 20px;
   }
-
-  @media (max-width: @laptop) {
-
+  @media (max-width: @tablet) {
+    max-width: 210px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .main-about__feature-title {
   font-family: @geometria;
+  color: #242423;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -354,6 +397,8 @@ p.main-carousel__subtitle {
 
 .main-about__feature-text {
   font-family: @rubik;
+  color: #686868;
+  text-transform: lowercase;
   font-size: 14px;
   font-weight: 400;
 }
@@ -410,6 +455,13 @@ p.main-carousel__subtitle {
     text-align: center;
     margin-left: 0;
     margin-bottom: 10px;
+  }
+  @media (max-width: @tablet) {
+    font-size: 24px;
+    line-height: 32px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 20px;
   }
 }
 
@@ -472,6 +524,15 @@ p.main-carousel__subtitle {
     @media (max-width: @laptop) {
       max-width: 637px;
     }
+    @media (max-width: @tablet) {
+      width: 100%;
+      padding-top: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 30px;
+      margin-bottom: 70px;
+
+    }
   }
 
   &__title {
@@ -487,6 +548,10 @@ p.main-carousel__subtitle {
       text-align: center;
       margin-bottom: 0;
     }
+    @media (max-width: @tablet) {
+      font-size: 24px;
+      line-height: 48px;
+    }
   }
 
   &__read-all-wrap {
@@ -499,6 +564,9 @@ p.main-carousel__subtitle {
     @media (max-width: @laptop) {
       text-align: center;
       margin-bottom: 30px;
+    }
+    @media (max-width: @tablet) {
+      margin-bottom: 40px;
     }
   }
 
@@ -516,6 +584,9 @@ p.main-carousel__subtitle {
       color: @red;
       border-color: @red;
     }
+    @media (max-width: @tablet) {
+      line-height: 28px;
+    }
   }
 
   &__article {
@@ -529,9 +600,6 @@ p.main-carousel__subtitle {
       color: @red;
     }
     //media
-    @media (max-width: @desktop) {
-      min-height: 371px;
-    }
     @media (max-width: @laptop) {
       max-width: 320px;
       min-height: 405px;
@@ -539,7 +607,11 @@ p.main-carousel__subtitle {
       margin-right: auto;
       margin-bottom: 30px;
     }
-
+    @media (max-width: @tablet) {
+      max-width: 260px;
+      min-height: 365px;
+      margin-bottom: 30px;
+    }
   }
 
   &__image {
@@ -582,6 +654,7 @@ p.main-carousel__subtitle {
     line-height: 24px;
     color: @lightblack;
     margin: 20px 23px 0;
+    margin-bottom: 40px;
   }
 
   &__read-more {

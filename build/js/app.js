@@ -5559,11 +5559,18 @@ if ( $.ajaxPrefilter ) {
     slidesToScroll: 6,
     // responsive:
     responsive: [
-    {
-      breakpoint: 980,
+      {
+      breakpoint: 960,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3
+      }
+    },
+    {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2
       }
     }
   ]
