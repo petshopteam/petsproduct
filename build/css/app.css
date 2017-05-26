@@ -2914,7 +2914,7 @@ video.responsive
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
 
-    background: url(../images/icons/arrow-right.svg) no-repeat center;
+    background: url('../images/icons/arrow-right.svg') no-repeat center;
     background-size: contain;
 }
 
@@ -2925,7 +2925,7 @@ video.responsive
 
 .pagination__left-arrow:hover
 {
-    background-image: url(../images/icons/arrow-right_red.svg);
+    background-image: url('../images/icons/arrow-right_red.svg');
 }
 
 .pagination__left-arrow a
@@ -2944,13 +2944,13 @@ video.responsive
     width: 15px;
     height: 15px;
 
-    background: url(../images/icons/arrow-right.svg) no-repeat center;
+    background: url('../images/icons/arrow-right.svg') no-repeat center;
     background-size: contain;
 }
 
 .pagination__right-arrow:hover
 {
-    background-image: url(../images/icons/arrow-right_red.svg);
+    background-image: url('../images/icons/arrow-right_red.svg');
 }
 
 .pagination__right-arrow a
@@ -4574,6 +4574,8 @@ h1
     font-size: 16px;
     line-height: 24px;
 
+    max-width: 391px;
+    height: 65px;
     margin-top: 55px;
     padding: 14px 13px 13px;
 
@@ -9237,6 +9239,11 @@ p.CaptionCont.SelectBox span
     .pet-filter__title
     {
         margin-bottom: 15px;
+    }
+
+    .brand-page .breadcrumbs
+    {
+        margin-left: 10px;
     }
 
     .slick-prev

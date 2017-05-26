@@ -23,7 +23,7 @@
 
 		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 		<script src="../js/app.js"></script>
-		<link rel="stylesheet" href="../less/app.less">
+		<!-- <link rel="stylesheet" href="../less/app.less"> -->
 		<!-- <meta name="viewport" content='width=1200' /> -->
 		<!-- title -->
 
@@ -51,7 +51,8 @@
 				<!--main-navigation-->
 				<div class="col-lg-11 col-lg-offset-5">
 					<nav class="main-navigation">
-						<ul id="menu" class="main-navigation__list">
+						<!-- (big size nav) -->
+						<ul id="menu" class="main-navigation__list hidden-sm hidden-xs">
 							<li class="menu-hover main-navigation__item active"><a href="catalog.html">Каталог</a></li>
 							<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
 							<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
@@ -59,8 +60,22 @@
 							<li class="main-navigation__item"><button class="btn btn_red">Оставить заявку</button></li>
 							<li id="line"></li>
 						</ul>
+						<!-- (small size nav) -->
+						<!-- btn -->
+						<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+						<div class="modal-navigation modal_div" id="modalNav">
+							<ul id="menuSmall" class="main-navigation__list_small hidden-lg hidden-md">
+								<a class="modal-navigation__close modal_close">Закрыть</a>
+								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+								<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+								<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+								<li class="main-navigation__item"><button class="btn btn_red">Оставить заявку</button></li>
+							</ul>
+						</div>
 					</nav>
 				</div>
+				<!-- end main-navigation -->
 			</div>
 		</div>
 	</header>
@@ -80,15 +95,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="brand-info">
-					<div class="col-lg-3 col-lg-offset-1">
+					<div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-0">
 						<div class="brand-info__logo">
 							<img src="images/brands/brand-1_small.png" alt="almo nature">
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 col-md-11">
 						<h1 class="brand-info__title">Almo Nature</h1>
 					</div>
-					<div class="col-lg-5 col-lg-offset-2">
+					<div class="col-lg-5 col-lg-offset-2 hidden-md hidden-sm-hidden-xs">
 						<div class="brand-info__price">
 							<form class="brand-info__form">
 								<label class="brand-info__label" for="regionSelect">Скачать прайс лист</label>
@@ -102,7 +117,7 @@
 							</form>
 						</div>
 					</div>
-					<div class="col-lg-13 col-lg-offset-1">
+					<div class="col-lg-13 col-lg-offset-1 col-md-15 col-md-offset-0">
 						<p class="brand-info__about_top">
 							Компания Almo Nature была основана в Генуе в 2000 году. Almo Nature – первая компания, которая
 							начала использовать полностью натуральные продукты для кошек и собак. Корм этой компании
@@ -132,7 +147,27 @@
 							и те самостоятельно оценивают вкус, аромат и аппетитность.
 						</p>
 					</div>
+
+					<!-- hidden price -->
+					<div class="hidden-lg col-md-5 col-md-offset-9">
+						<div class="brand-info__price">
+							<form class="brand-info__form">
+								<label class="brand-info__label" for="regionSelect">Скачать прайс лист</label>
+								<select class="brand-info__region-select select_small" name="brand-info__region-select" id="regionSelect" placeholder="Выберите регион">
+									<option class="region-select-placeholder" value="">Выберите регион</option>
+									<option value="Санкт-Петербург">Санкт-Петербург</option>
+									<option value="Москва">Москва</option>
+									<option value="Саратов">Саратов</option>
+									<option value="Харьков">Харьков</option>
+								</select>
+							</form>
+						</div>
+					</div>
+
 				</div>
+
+			</div>
+			<div class="row">
 
 				<div class="brand-production">
 					<div class="col-lg-15">
@@ -197,7 +232,7 @@
 					</div>
 
 				</div>
-			</div>
+			</>
 		</div>
 	</main>
 

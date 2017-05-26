@@ -1,28 +1,33 @@
 /* ==========================================================================
   PAGINATION
    ===========================================================================*/
-
 .pagination {
   font-size: 14px;
   font-weight: 500;
   line-height: 30px;
+
   &__left {
     float: left;
     padding-left: 25px;
   }
+
   &__right {
     float: right;
   }
+
   &__left-list {
     display: inline-block;
     margin-left: 10px;
   }
+
   &__left-item {
     display: inline-block;
     margin-right: 5px;
+
     &:hover a {
       color: @red;
     }
+
     &.active a {
       color: @red;
     }
@@ -33,13 +38,16 @@
     display: inline-block;
     margin-left: 10px;
   }
+
   &__right-item {
     display: inline-block;
     position: relative;
     margin-right: 5px;
+
     &:hover a {
       color: @red;
     }
+
     &.active a {
       color: @red;
     }
@@ -50,15 +58,18 @@
     left: -1px;
     width: 15px;
     height: 15px;
-    background: url(../images/icons/arrow-right.svg) no-repeat center;
+    background: url("../images/icons/arrow-right.svg") no-repeat center;
     background-size: contain;
     transform: rotate(180deg);
+
     &.hidden {
       display: none;
     }
+
     &:hover {
-      background-image: url(../images/icons/arrow-right_red.svg);
+      background-image: url("../images/icons/arrow-right_red.svg");
     }
+
     a {
       width: 100%;
       height: 100%;
@@ -71,11 +82,13 @@
     left: 5px;
     width: 15px;
     height: 15px;
-    background: url(../images/icons/arrow-right.svg) no-repeat center;
+    background: url("../images/icons/arrow-right.svg") no-repeat center;
     background-size: contain;
+
     &:hover {
-      background-image: url(../images/icons/arrow-right_red.svg);
+      background-image: url("../images/icons/arrow-right_red.svg");
     }
+
     a {
       width: 100%;
       height: 100%;
@@ -85,6 +98,7 @@
   //media
   @media (max-width: @desktop) {
     padding-right: 20px;
+
     &__left {
       padding-left: 42px;
     }
@@ -97,6 +111,4 @@
     }
   }
 }
-
-
 /* end pagination */
