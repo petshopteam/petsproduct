@@ -105,7 +105,7 @@
     // responsive:
     responsive: [
       {
-      breakpoint: 960,
+      breakpoint: 980,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3
@@ -178,6 +178,26 @@
     $('.request__subtitle_arrow').toggleClass('clicked');
     $('.request__hidden-subtitle').toggleClass('clicked');
   });
+
+
+  /*----------------------------------------
+    FILTERS (mobile) SLIDER TOGGLE
+  ----------------------------------------*/
+
+  $('.brand-filter__form_small').css('display', 'none');
+  $('.pet-filter__form_small').css('display', 'none');
+
+  $('.brand-filter_small .brand-filter__title, .pet-filter_small .pet-filter__title').on('click', function(event) {
+    event.preventDefault();
+    $(this).siblings('.brand-filter__form_small, .pet-filter__form_small').slideToggle('400');
+    $(this).toggleClass('clicked');
+    $(this).parents('.brand-filter_small').toggleClass('clicked');
+    $(this).parents('.pet-filter_small').toggleClass('clicked');
+    $(this).parents('.pet-filter_clear').removeClass('clicked');
+  });
+
+
+
 
   /*----------------------------------------
      Topline login on click effects

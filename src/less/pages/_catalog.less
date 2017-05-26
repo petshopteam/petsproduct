@@ -27,6 +27,10 @@
   .breadcrumbs {
     margin-bottom: 50px;
     margin-left: 0;
+    //mdeia
+    @media (max-width: @desktop) {
+      margin-bottom: 25px;
+    }
   }
 
   .pagination {
@@ -39,6 +43,14 @@
 
   .catalog-brands {
     padding-left: 40px;
+    //media
+    @media (max-width: @desktop) {
+      padding-left: 10px;
+    }
+    @media (max-width: @tablet) {
+      padding-left: 0;
+      padding-bottom: 100px;
+    }
   }
 
   // Меняю стиль чекбоксов (только для данной страницы)
@@ -72,7 +84,27 @@
       border-color: @red;
     }
   }
+
+  // главное меню
+  .main-navigation__hidden-btn {
+    color: black;
+    &::after {
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAYklEQVQ4T83UsQ2AQAxD0e+GGSjoktuUUU+CFaDJCdEwgE8iAzzJSmJlxgGseOZUZpTHepUHvIDFhN6KiJS0OcCq6nJAX8MPthY7YIkM9Clb9p6NPfL/t2w/bPvrzSgHa30NXS0cIbH2o1oAAAAASUVORK5CYII=');
+    }
+  }
+
+  // Фильтры
+  .brand-filter {
+    //media
+    @media (max-width: @laptop) {
+      &__title {
+        margin-top: 0;
+      }
+    }
+  }
 }
+
+// Brand-item blocks
 
 .brand-item {
   transition: background 0.2s ease;
@@ -97,13 +129,22 @@
   }
 
   &__title {
+    position: relative;
+    top: -20px;
+    font-weight: 500;
     font-size: 18px;
     line-height: 60px;
-    font-weight: bold;
+    //media
+    @media (max-width: @desktop) {
+      top: -7px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
   }
 
   &__text {
     font-family: @rubik;
+    color: #686868;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -132,6 +173,33 @@
     &:hover {
       color: @red;
     }
+    //media
+    @media (max-width: @laptop) {
+      display: none;
+    }
+  }
+  //media
+  @media (max-width: @tablet) {
+    padding: 20px;
+    margin-bottom: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    &__left {
+      margin-right: 0;
+      img {
+        float: none;
+        width: 100%;
+        margin-bottom: 25px;
+      }
+    }
+    &__right {
+
+    }
+    &__title {
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -148,6 +216,19 @@
     height: 3px;
     width: 300px;
   }
+  //media
+  @media (max-width: @desktop) {
+    padding-right: 20px;
+    &::after {
+      right: 20px;
+    }
+  }
+  @media (max-width: @tablet) {
+    padding: 0;
+    &::after {
+      width: 232px;
+    }
+  }
 }
 
 .brand-filter {
@@ -160,6 +241,12 @@
     margin-top: 45px;
     margin-bottom: 20px;
   }
+  //media
+  @media (max-width: @desktop) {
+    &__title {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .pet-filter {
@@ -171,5 +258,11 @@
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 20px;
+  }
+  //media
+  @media (max-width: @desktop) {
+    &__title {
+      margin-bottom: 15px;
+    }
   }
 }

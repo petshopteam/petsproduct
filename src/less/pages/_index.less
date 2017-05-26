@@ -205,81 +205,13 @@
 .main-carousel__slide {
   position: relative;
 
-  p {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 30%;
-    bottom: 0;
-    //media
-    @media (max-width: @desktop) {
-      left: 55px;
-    }
-    @media (max-width: @tablet) {
-      left: 10%;
-    }
-    @media (max-width: @mobile-wide) {
-      left: 5%;
-    }
-  }
-
   img {
     position: relative;
-    width: 50%;
+    width: 100%;
     height: auto;
-    right: 0;
-    left: 36%;
-    margin-top: 4%;
-    margin-bottom: 6%;
-    //media
-    @media (max-width: @laptop) {
-      left: 41%
-    }
-    @media (max-width: @tablet) {
-      width: 60%;
-      left: 38%;
-    }
   }
 }
 
-.main-carousel__title {
-  text-transform: uppercase;
-  font-size: 53px;
-  font-weight: 700;
-  //media
-  @media (max-width: @desktop) {
-    top: 20%;
-  }
-  @media (max-width: @laptop) {
-    font-size: 39px;
-  }
-  @media (max-width: @tablet) {
-    font-size: 28px;
-  }
-  @media (max-width: @mobile-wide) {
-    font-size: 18px;
-    top: 20%;
-  }
-}
-
-p.main-carousel__subtitle {
-  font-family: @rubik;
-  font-size: 20px;
-  font-weight: 400;
-  top: 55%;
-  //media
-  @media (max-width: @laptop) {
-    font-size: 15px;
-  }
-  @media (max-width: @tablet) {
-    font-size: 10px;
-    top: 48%;
-  }
-  @media (max-width: @mobile-wide) {
-    font-size: 7px;
-    top: 47%;
-  }
-}
 //main-about section
 
 .main-about {
@@ -515,7 +447,9 @@ p.main-carousel__subtitle {
 .last-news {
   & > .container {
     background: @lightgreen;
-    padding: 30px 65px 60px 90px;
+    padding: 30px 65px 60px 65px;
+    border-left: 20px solid @white;
+    border-right: 20px solid @white;
     margin-bottom: 100px;
     //media
     @media (max-width: @desktop) {
@@ -531,7 +465,8 @@ p.main-carousel__subtitle {
       padding-right: 10px;
       padding-bottom: 30px;
       margin-bottom: 70px;
-
+      border-left-width: 10px;
+      border-right-width: 10px;
     }
   }
 
@@ -681,13 +616,6 @@ p.main-carousel__subtitle {
       right: 0;
       width: 24px;
       height: 24px;
-    }
-    //media
-    @media (max-width: @desktop) {
-
-    }
-    @media (max-width: @laptop) {
-
     }
   }
 }

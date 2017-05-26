@@ -4,7 +4,7 @@
 
 .pagination {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 30px;
   &__left {
     float: left;
@@ -80,6 +80,20 @@
       width: 100%;
       height: 100%;
       display: inline-block;
+    }
+  }
+  //media
+  @media (max-width: @desktop) {
+    padding-right: 20px;
+    &__left {
+      padding-left: 42px;
+    }
+  }
+  @media (max-width: @tablet) {
+    &__left {
+      position: absolute;
+      top: -70px;
+      right: 0;
     }
   }
 }
