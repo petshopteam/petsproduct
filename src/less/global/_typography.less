@@ -3,11 +3,46 @@
    ===========================================================================*/
 
 /* TITLES */
-h1 {
-  font-size: 36px;
-  line-height: 50px;
+h1,h2,h3,h4,h5,h6 {
   font-family: @geometria;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.333em;
+}
+
+//main slider h1 title
+h1 {
+  font-size: 53px;
+  //media
+  @media (max-width: @desktop) {
+    font-size: 52px;
+  }
+  @media (max-width: @laptop) {
+    font-size: 39px;
+  }
+  @media (max-width: @tablet) {
+    font-size: 18px;
+  }
+}
+
+//every page h2 sitle
+h2 {
+  font-size: 36px;
+  //media
+  @media (max-width: @tablet) {
+    font-size: 24px;
+  }
+}
+
+//lite h3 subtitle
+h3 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+//footer h4 titles
+h4 {
+  font-size: 20px;
+  line-height: 1em;
 }
 
 /* TEXT */

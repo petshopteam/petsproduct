@@ -442,13 +442,6 @@ dfn
     font-style: italic;
 }
 
-h1
-{
-    font-size: 2em;
-
-    margin: .67em 0;
-}
-
 mark
 {
     color: #000;
@@ -2886,12 +2879,38 @@ video.responsive
 
 /* TITLES */
 
-h1
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
 {
     font-family: 'Geometria', Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1.333em;
+}
+
+h1
+{
+    font-size: 53px;
+}
+
+h2
+{
     font-size: 36px;
-    font-weight: bold;
-    line-height: 50px;
+}
+
+h3
+{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+h4
+{
+    font-size: 20px;
+    line-height: 1em;
 }
 
 /* TEXT */
@@ -8993,6 +9012,11 @@ p.CaptionCont.SelectBox span
         padding-left: 42px;
     }
 
+    h1
+    {
+        font-size: 52px;
+    }
+
     .main-topline__city
     {
         text-align: right;
@@ -9199,6 +9223,11 @@ p.CaptionCont.SelectBox span
         float: left;
 
         width: 100%;
+    }
+
+    h1
+    {
+        font-size: 39px;
     }
 
     .main-topline__phone-number
@@ -9496,6 +9525,16 @@ p.CaptionCont.SelectBox span
         position: absolute;
         top: -70px;
         right: 0;
+    }
+
+    h1
+    {
+        font-size: 18px;
+    }
+
+    h2
+    {
+        font-size: 24px;
     }
 
     .main-topline
