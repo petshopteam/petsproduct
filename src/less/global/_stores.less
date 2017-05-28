@@ -1,7 +1,7 @@
 //stores (где купить)
 
 .stores {
-  background: @grey;
+  background: @lightgrey;
   width: 100%;
   max-width: 1917px;
   margin: 0 auto;
@@ -26,8 +26,8 @@
     margin-top: 16px;
 
     &:hover {
-      color: @red;
-      border-color: @red;
+      color: @orange;
+      border-color: @orange;
     }
   }
 
@@ -42,7 +42,7 @@
 
     &.active {
       color: @white;
-      background-color: @red;
+      background-color: @orange;
       border-radius: 2px;
       padding: 10px 15px 11px;
       top: -8px;
@@ -53,7 +53,7 @@
     }
 
     &:hover {
-      color: @red;
+      color: @orange;
     }
   }
 
@@ -145,28 +145,28 @@
     font-size: 14px;
     line-height: 20px;
     font-family: @rubik;
-    color: #686868;
+    color: @darkgrey;
     cursor: pointer;
 
     &.active {
-      color: #686868;
+      color: @darkgrey;
     }
 
     &.active .stores__store-name {
-      color: @red;
-      border-color: @red;
+      color: @orange;
+      border-color: @orange;
     }
 
     &:hover .stores__store-name {
-      color: @red;
-      border-color: @red;
+      color: @orange;
+      border-color: @orange;
     }
   }
 
   &__store-name {
     display: inline-block;
     font-weight: 400;
-    color: #242423;
+    color: @lightblack;
     border-bottom: 1px solid @lightblack;
     margin-bottom: 5px;
   }
@@ -193,7 +193,7 @@
     width: 300px;
     height: 38px;
     border-radius: 2px;
-    border: 1px solid @red;
+    border: 1px solid @orange;
     background-color: #ffffff;
     font-family: @rubik;
     font-size: 14px;

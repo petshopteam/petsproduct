@@ -18,7 +18,7 @@
 }
 
 .SumoSelect > .optWrapper > .options li.opt {
-    color: #686868;
+    color: @darkgrey;
     font-family: @rubik;
     font-size: 14px;
     min-height: 36px;
@@ -29,10 +29,10 @@
 
 p.CaptionCont.SelectBox span {
     font-family: @rubik;
-    color: #242423;
+    color: @lightblack;
     font-size: 14px;
     font-weight: 300;
-    color: #242423;
+    color: @lightblack;
 }
 
 //select > option list
@@ -101,7 +101,7 @@ p.CaptionCont.SelectBox span {
             .SumoSelect > .optWrapper.selall > .options > li.opt:first-child { border-radius:0; }
             .SumoSelect > .optWrapper > .options > li.opt:last-child {border-radius: 0 0 2px 2px; border-bottom: none;}
             .SumoSelect > .optWrapper.okCancelInMulti > .options > li.opt:last-child {border-radius: 0;}
-            .SumoSelect > .optWrapper > .options li.opt:hover { background-color: #f1f1f1; }
+            .SumoSelect > .optWrapper > .options li.opt:hover { background-color: @lightgrey; }
             .SumoSelect > .optWrapper > .options li.opt.sel, .SumoSelect .select-all.sel{background-color: #a1c0e4;}
 
             .SumoSelect > .optWrapper > .options li label { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; display: block;cursor: pointer;}
@@ -130,7 +130,7 @@ p.CaptionCont.SelectBox span {
         .SumoSelect > .optWrapper.multiple.okCancelInMulti > .MultiControls > p:focus {box-shadow: 0 0 2px #a1c0e4;border-color: #a1c0e4;outline: none;background-color: #a1c0e4;}
 
     .SumoSelect > .optWrapper.multiple > .MultiControls > p { display: inline-block; cursor: pointer; padding: 12px; width: 50%; box-sizing: border-box; text-align: center; }
-        .SumoSelect > .optWrapper.multiple > .MultiControls > p:hover { background-color: #f1f1f1; }
+        .SumoSelect > .optWrapper.multiple > .MultiControls > p:hover { background-color: @lightgrey; }
         .SumoSelect > .optWrapper.multiple > .MultiControls > p.btnOk { border-right: 1px solid #DBDBDB; border-radius: 0 0 0 3px; }
         .SumoSelect > .optWrapper.multiple > .MultiControls > p.btnCancel { border-radius: 0 0 3px 0; }
     /*styling for select on popup mode*/
