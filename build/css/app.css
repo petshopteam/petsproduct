@@ -1297,6 +1297,7 @@ hr
     border: none;
     -webkit-border-radius: 2px;
             border-radius: 2px;
+    background-repeat: no-repeat;
 }
 
 .btn_orange
@@ -1360,18 +1361,34 @@ hr
 .btn_white-arrow
 {
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAA9UlEQVQ4T6WTIUuDURiFn2PToqAGWdyqbcUwy0CDsGjwFywLBqP/Yn9hxSKCA5c20GLSONPAtGBaPfKOO/kYK/d+b7zc8/Byn3NFxtg+AObAnaTBtqgyeNjeAZ6BC+BG0nAznwWMsO094BVoAz1JL1VoNjBB94Ep0AS6kt7W0CJggp4AE+AI6Ej6jPNiYILGhgGNOZc0k+0r4DhHzsbdU+AW+F5tansJ7NYAVqP9ADZqbngN3AOjlfU6m9m+BJ6Aj2R7WQy0fQaM/99O+i22bDtEhN1FsvtT3EPbrUpVon+z4p9iO9rwBRxWy1wX+Ag8SHrfJvQPCjZNjWFCsGAAAAAASUVORK5CYII=');
-    background-repeat: no-repeat;
 }
 
 .btn_orange-arrow
 {
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAATCAYAAACORR0GAAABd0lEQVRIS7XVPWtUQRQG4Oesi2xsrKwCIsYugmYv4kcQjUhIERshaCVoKdgEBP0Diq0gWFiKhVoFrIQEEYR87NqslQYstBBttDAScUfuZQMhGps7TnmHex6GOeedUGOltsvCPeFirJj7V6mo4UiFGTzGT8lUdM1vV68WVBZNhRu4jTUNZ2PZq79htaEBdgs38Q0T0dHdimWBBthdXMMXYSJW9DZj+SBC2wPhCj5KTkfXuw0sG1SdasYOqx6WXYj3mk7Gog/lXlaowkbtNOSp5Bze6huP1z5HarsujNZp8z/+DS3JhcH3npYTkQpraGWFthbrOxXpiMP69mWGDuAOGriv42r+OyrspRraYTyy36V44ldWKB0yrOkFRiRzRpwvkaxdl8bs0aiy7iCe+2E63ljPOkepsBsLGMNLTEXH96zJkAq7qE5yFEuYjI6vWbMuHTdk3bMySNHTd6YczuzpvemJWNU0Hos+/Zf3KLUdE2Y1zW5k2nbQb0RjY8kHZPSPAAAAAElFTkSuQmCC');
-    background-repeat: no-repeat;
 }
 
 .btn_orange-arrow:hover
 {
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAATCAYAAACORR0GAAABVElEQVRIS7XVr2uXURQH4OdsIG5lySSIsDUXNDkU8QcyFmYZDE2CRsEiCO4fUKyCYDCKQUyCabAxBINhyabCggbRokFBkSMH7heGbJb3fl94y3t5z8PlnvO5YcCTmdfwEFci4sX/SsUAR2au4hl+YykiNvarNwiqopl5B/fwExcj4vVe2GCoYXexhu84HxHb/2JdoIY9wE18bdjb3VhPqGo9xnV8wrmIeD/CukFtV5N4Ul2IHZyJiI+11hVq2AE8xyW8w+mI+BKZeRvHhrT5Hv8exOX2vc7qVEHVlrUwzudsQcdxtLMyh/uYwCPcGMcZHUEN7WE8xdWI+NMVyswqvoVZVPatFNK16zLzECrr5rGO5Yj41XWOMnMGmziBVy1gf3RNhsycbjs5iTdYjIhvXbMuM6fwsrINNS8Xaji7p/euK+JDS4DPY7mPMnMBt+odZdp+0F/uk2xXT4wBRAAAAABJRU5ErkJggg==');
+}
+
+.btn_load
+{
+    line-height: 2.4em;
+
+    padding-left: 3.29em;
+
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAACKUlEQVQ4T53Uz4uXVRTH8ddJI5jC7IdZ4iKa0FnUIsiaWQQa+A8YDWGNMCQuHGaZEu0qQhcuwkDBXUSgY0FgDEhOIAXhFIwh0SLQ1PyBK11kQnriTPc7MF+HmeF7Ns/z3Pvc9z0/PueEBSwz+/AOtmETHkfiEn7El/g2ImptnkX3QmYO4yCewlVM4XL7bwNex6P4BTsjYqb2MnMdXpwHzMx92Itz7TnZ7UVmPoRRfIRHKpKI+CozP8W7c8DMfB+f4HPsiog7C6Wjs5aZT1fY5RW2Yn85OgvMzJfwM05U3iLi7hKwFViNB3AG9b0WhzrASbyG/oi4vhisOfABPsYF/IOBdmZ7ZOZ6XMSBiHhvKVgD1pkdGMIrrYC19VwBR1rehiLip+UAF1DGs1gTEdMFrEJUQfoi4nYvwOb1OL4pYEllNCIqqT1ZZtbZaxgv4MN4MiL+7In2v0o24neMdKr8WFWr15Az8218gcHysLRULVbt9ANO4jvMRMS95XidmRNN3E8U8GVMt4O3sKq9fxYRlehFLTNfwK+zoo4YK2Cn5f7Gb01fg9XPJYMlOqam0mnU0BiIiCsFPIWaFB+2sVQhD0fEzSVg1XpfYwveioij9X8Bq3WOVHiZubuNrr+wBxPdfZ2ZD9aFbRg8g7GIONy5vIA1iqY6ssnMzXUBnscNfI/zbRD0N49KFX+0qVT7c3bfgG2qX4k38QZebSmpilfPn8UxHI+If7vT8h9TtdQfIv6kwAAAAABJRU5ErkJggg==');
+    background-position: 1.3em .6em;
+}
+
+.btn_back
+{
+    padding-left: 3em;
+
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAABAklEQVQ4T6XTL0+CURzF8e8pBJOBgpsJIyYLbph0w81ZKL4EfRdGApvZV2Ag2nSzaKDQrJoN6CYFmsddvTD+PRv3cuOz3/3st+ecKwqO7SugA+xK+i6aW/yuVYO2L4A74BE4k/STDdo+Be6BPnAiabQuFubmNrR9CDwB70BD0jAFmwNt7wMvwCdwJOkjFZuCtveA5wgELGyYdWS7EjerAjfAa5b0f2kQwEvgdgNk9uo4gKWYahNoA90N8MFfyra3YroHwLmkh1x0Whvb2zP/8lhSLwdd7OFOTLscq5Mc0NLTixUKfQwnVOgtZdOitzwp+RdQkzReF10JxqDqwDXQSgF/Ad1wUmOWEdjjAAAAAElFTkSuQmCC');
+    background-position: 1em .66em;
 }
 
 /* end buttons*/
@@ -1523,38 +1540,6 @@ hr
 	FORMS
 ----------------------------------------*/
 
-form :focus::-webkit-input-placeholder
-{
-    color: transparent;
-}
-
-form :focus::-moz-placeholder
-{
-    color: transparent;
-}
-
-form :focus:-moz-placeholder
-{
-    color: transparent;
-}
-
-form :focus:-ms-input-placeholder
-{
-    color: transparent;
-}
-
-input:focus,
-textarea:focus
-{
-    border-color: #bababa;
-    outline: none;
-}
-
-.SumoSelect:focus > .CaptionCont
-{
-    border-color: #bababa;
-}
-
 .brand-filter__search,
 .pet-filter__search
 {
@@ -1682,7 +1667,7 @@ textarea:focus
 .brand-filter__item label:hover::before,
 .pet-filter__item label:hover::before
 {
-    border-color: #f83e3e;
+    border-color: #e0552f;
 }
 
 .brand-filter ::-webkit-scrollbar-button,
@@ -1803,7 +1788,7 @@ textarea:focus
 .pet-filter_small .pet-filter__title.clicked
 {
     color: #fff;
-    background: #f83e3e;
+    background: #e0552f;
 }
 
 .brand-filter_small .brand-filter__title.clicked::after,
@@ -1867,7 +1852,7 @@ textarea:focus
 .brand-filter__item input[type=checkbox]:checked + label::before,
 .pet-filter__item input[type=checkbox]:checked + label::before
 {
-    border-color: #f83e3e;
+    border-color: #e0552f;
 }
 
 .brand-filter__item input[type=checkbox]:checked + label,
@@ -1945,8 +1930,8 @@ textarea:focus
 
     text-align: center;
 
-    color: #f83e3e;
-    border: 1px solid #f83e3e;
+    color: #e0552f;
+    border: 1px solid #e0552f;
     -webkit-border-radius: 1px;
             border-radius: 1px;
 }
@@ -1954,7 +1939,7 @@ textarea:focus
 .theme-filter__theme:hover
 {
     color: #fff;
-    background: #f83e3e;
+    background: #e0552f;
 }
 
 .file_upload
@@ -1979,7 +1964,7 @@ textarea:focus
             transition:         box-shadow .1s linear, -webkit-box-shadow .1s linear;
 
     color: #bababa;
-    border: 1px dashed #f83e3e;
+    border: 1px dashed #e0552f;
     -webkit-border-radius: 2px;
             border-radius: 2px;
 }
@@ -2048,7 +2033,63 @@ textarea:focus
     background: transparent;
 }
 
-label
+form :focus::-webkit-input-placeholder
+{
+    color: transparent;
+}
+
+form :focus::-moz-placeholder
+{
+    color: transparent;
+}
+
+form :focus:-moz-placeholder
+{
+    color: transparent;
+}
+
+form :focus:-ms-input-placeholder
+{
+    color: transparent;
+}
+
+input:focus,
+textarea:focus
+{
+    border-color: #bababa;
+    outline: none;
+}
+
+.SumoSelect:focus > .CaptionCont
+{
+    border-color: #bababa;
+}
+
+.form-input ::-webkit-input-placeholder,
+.form-textarea ::-webkit-input-placeholder
+{
+    color: #bababa;
+}
+
+.form-input ::-moz-placeholder,
+.form-textarea ::-moz-placeholder
+{
+    color: #bababa;
+}
+
+.form-input :-moz-placeholder,
+.form-textarea :-moz-placeholder
+{
+    color: #bababa;
+}
+
+.form-input :-ms-input-placeholder,
+.form-textarea :-ms-input-placeholder
+{
+    color: #bababa;
+}
+
+.form-label
 {
     font-family: 'Rubik', Arial, sans-serif;
     font-size: 14px;
@@ -2060,8 +2101,8 @@ label
     color: #242423;
 }
 
-input[type=text],
-textarea
+.form-input,
+.form-textarea
 {
     font-family: 'Rubik', Arial, sans-serif;
     font-size: 14px;
@@ -2071,15 +2112,19 @@ textarea
     width: 100%;
     padding-left: 1em;
 
-    color: #bababa;
+    color: #242423;
     border: 1px solid #f1f1f1;
+    border: 1px solid #dfdfdf;
     -webkit-border-radius: 2px;
             border-radius: 2px;
 }
 
-textarea
+.form-textarea
 {
     line-height: 1.333em;
+
+    padding-top: 1em;
+    padding-left: 1em;
 }
 
 .SumoSelect p
@@ -2275,7 +2320,7 @@ p.CaptionCont.SelectBox span
 {
     font-style: italic;
 
-    color: #ccc;
+    color: #bababa;
 }
 
 .SumoSelect > .CaptionCont > label
@@ -2996,7 +3041,7 @@ video.responsive
     width: 718px;
     max-height: 100vh;
     max-height: 325px;
-    padding: 0 60px 50px 60px;
+    padding: 0 55px 50px 55px;
 
     background-color: #fff;
     -webkit-box-shadow: 0 8px 87px 9px rgba(24, 24, 23, .75);
@@ -3266,13 +3311,21 @@ video.responsive
     bottom: auto;
 
     display: none;
+    overflow-y: auto;
 
-    width: 1100px;
+    max-width: 1100px;
+    max-height: 100vh;
     padding: 45px 40px 50px 40px;
 
     background: #fff;
     -webkit-box-shadow: 0 8px 87px 9px rgba(24, 24, 23, .75);
             box-shadow: 0 8px 87px 9px rgba(24, 24, 23, .75);
+}
+
+.modal-brand__left img
+{
+    width: 100%;
+    height: auto;
 }
 
 .modal-brand__title
@@ -3326,6 +3379,11 @@ video.responsive
     content: '';
 
     background: #e0552f;
+}
+
+.modal-brand__btn
+{
+    position: relative;
 }
 
 .modal-article
@@ -3811,6 +3869,13 @@ h4
     background: #f1f1f1;
 }
 
+.stores__hidden-topline
+{
+    padding-top: 40px;
+
+    background-color: #f1f1f1;
+}
+
 .stores__title
 {
     font-size: 36px;
@@ -3843,6 +3908,12 @@ h4
     border-color: #e0552f;
 }
 
+.stores__type-block
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .stores__type-select
 {
     font-size: 16px;
@@ -3853,6 +3924,8 @@ h4
 
     display: inline-block;
 
+    padding: 10px 15px 11px;
+
     -webkit-transition: color .2s ease;
             transition: color .2s ease;
     text-transform: uppercase;
@@ -3860,10 +3933,6 @@ h4
 
 .stores__type-select.active
 {
-    top: -8px;
-
-    padding: 10px 15px 11px;
-
     color: #fff;
     -webkit-border-radius: 2px;
             border-radius: 2px;
@@ -4940,7 +5009,7 @@ h4
 
 .brand-item:hover
 {
-    background: #f1f1f1;
+    background-color: #f1f1f1;
 }
 
 .brand-item:hover .brand-item__read-more
@@ -5139,6 +5208,16 @@ h4
     margin-bottom: 10px;
 }
 
+.brand-page .main-navigation__hidden-btn
+{
+    color: black;
+}
+
+.brand-page .main-navigation__hidden-btn::after
+{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAYklEQVQ4T83UsQ2AQAxD0e+GGSjoktuUUU+CFaDJCdEwgE8iAzzJSmJlxgGseOZUZpTHepUHvIDFhN6KiJS0OcCq6nJAX8MPthY7YIkM9Clb9p6NPfL/t2w/bPvrzSgHa30NXS0cIbH2o1oAAAAASUVORK5CYII=');
+}
+
 .brand-info__title
 {
     margin-top: 60px;
@@ -5160,15 +5239,46 @@ h4
 
 .brand-info__price
 {
-    font-size: 16px;
-    line-height: 24px;
-
-    max-width: 391px;
-    height: 65px;
+    max-width: 400px;
     margin-top: 55px;
-    padding: 14px 13px 13px;
+    margin-left: 60px;
+    padding: 13px 15px;
 
     background: #f1f1f1;
+}
+
+.brand-info__price .SumoSelect
+{
+    display: inline-block;
+
+    width: auto;
+    margin-bottom: 0;
+}
+
+.brand-info__price .SumoSelect > p.CaptionCont
+{
+    padding-right: 25px;
+}
+
+.brand-info__price-label
+{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+
+    position: relative;
+    top: -3px;
+
+    display: inline-block;
+
+    margin-right: 15px;
+
+    color: #242423;
+}
+
+.brand-info__price_hidden
+{
+    float: right;
 }
 
 .brand-info__about_top
@@ -5197,7 +5307,7 @@ h4
     border-left: 3px solid #e0552f;
 }
 
-.brand-production .col-lg-15 > .brand-production__item:nth-child(4n)
+.brand-production .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(4n)
 {
     margin-right: 0;
 }
@@ -5209,18 +5319,35 @@ h4
     line-height: 60px;
 
     margin-bottom: 60px;
+
+    text-align: center;
+}
+
+.brand-production__list
+{
+    text-align: left;
 }
 
 .brand-production__item
 {
-    float: left;
+    display: inline-block;
 
-    margin-right: 30px;
-    margin-bottom: 30px;
+    width: 23%;
+    max-width: 270px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+
+    text-align: center;
 
     background-color: #fff;
     -webkit-box-shadow: 0 0 4px rgba(36, 36, 35, .2);
             box-shadow: 0 0 4px rgba(36, 36, 35, .2);
+}
+
+.brand-production__item img
+{
+    width: 100%;
+    height: auto;
 }
 
 .brand-production__item:hover
@@ -5231,18 +5358,6 @@ h4
 .brand-production__item:last-child
 {
     margin-bottom: 90px;
-}
-
-.brand-production__label
-{
-    font-size: 16px;
-    font-weight: bold;
-
-    margin-bottom: 15px;
-
-    text-align: center;
-
-    color: #242423;
 }
 
 .actions-page .main-topline
@@ -6278,18 +6393,9 @@ h4
     border-top: none;
 }
 
-.request__label
+.request label
 {
-    font-family: 'Rubik', Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-
-    display: block;
-
-    width: 100%;
     margin-bottom: 10px;
-
-    color: #242423;
 }
 
 .request__input
@@ -9036,6 +9142,17 @@ h4
         padding-left: 10px;
     }
 
+    .modal-brand
+    {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    .modal-brand__btn
+    {
+        top: -70px;
+    }
+
     .pagination
     {
         padding-right: 20px;
@@ -9059,6 +9176,11 @@ h4
     .breadcrumbs
     {
         margin-top: 10px;
+    }
+
+    .stores__points
+    {
+        padding: 50px 0 0 20px;
     }
 
     .main-head__logo
@@ -9204,9 +9326,41 @@ h4
         margin-bottom: 15px;
     }
 
+    .brand-page .main-head__logo
+    {
+        left: 20px;
+    }
+
     .brand-page .breadcrumbs
     {
         margin-left: 10px;
+    }
+
+    .brand-content
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .brand-info__about_bottom
+    {
+        margin-bottom: 0;
+    }
+
+    .brand-info__price
+    {
+        margin-left: 30px;
+    }
+
+    .brand-production
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .brand-production__title
+    {
+        margin-top: 50px;
     }
 
     .slick-prev
@@ -9291,6 +9445,15 @@ h4
     .main-topline__user-login_small.entered
     {
         background-size: 95%;
+    }
+
+    .stores__points
+    {
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+        padding-top: 40px;
     }
 
     .main-page .main-head
@@ -9392,6 +9555,63 @@ h4
     .brand-item__read-more
     {
         display: none;
+    }
+
+    .brand-page .main-head__logo
+    {
+        left: 10px;
+    }
+
+    .brand-page .breadcrumbs
+    {
+        margin-left: 0;
+    }
+
+    .brand-content
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .brand-info__price
+    {
+        margin-left: 40px;
+    }
+
+    .brand-info
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .brand-info__title
+    {
+        margin-bottom: 20px;
+    }
+
+    .brand-production__item:last-child
+    {
+        margin-bottom: 80px;
+    }
+
+    .brand-production
+    {
+        padding-left: 5%;
+    }
+
+    .brand-production .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(4n)
+    {
+        margin-right: 2%;
+    }
+
+    .brand-production .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(3n)
+    {
+        margin-right: 0;
+    }
+
+    .brand-production__item
+    {
+        width: 30%;
     }
 
     .slick-dots
@@ -9554,6 +9774,30 @@ h4
         margin-bottom: 26px;
     }
 
+    .modal-brand
+    {
+        top: 0;
+
+        padding-right: 20px;
+        padding-bottom: 60px;
+        padding-left: 20px;
+    }
+
+    .modal-brand__left img
+    {
+        max-width: 232px;
+    }
+
+    .modal-brand__title
+    {
+        font-size: 24px;
+    }
+
+    .modal-brand__btn
+    {
+        top: 0;
+    }
+
     .pagination__left
     {
         position: absolute;
@@ -9587,6 +9831,45 @@ h4
     .main-topline__phone-time
     {
         padding-right: 38px;
+    }
+
+    .stores__hidden-topline
+    {
+        padding-top: 30px;
+        padding-bottom: 55px;
+    }
+
+    .stores__current-region
+    {
+        font-size: 14px;
+
+        margin-right: 5px;
+    }
+
+    .stores__type-block
+    {
+        max-width: 320px;
+    }
+
+    .stores__type-select
+    {
+        font-size: 11px;
+        line-height: 28px;
+
+        padding: 0 5px;
+    }
+
+    .stores__points
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .stores__title
+    {
+        font-size: 24px;
+
+        padding-left: 10px;
     }
 
     .main-page .main-head
@@ -9756,6 +10039,73 @@ h4
     .catalog-brands::after
     {
         width: 232px;
+    }
+
+    .brand-info__title
+    {
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+
+    .brand-info__logo img
+    {
+        width: 100px;
+        height: auto;
+    }
+
+    .brand-info__price
+    {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        margin-top: 40px;
+        padding: 20px 15px 30px 15px;
+    }
+
+    .brand-info__price .SumoSelect
+    {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .brand-info__about_top
+    {
+        margin-bottom: 20px;
+    }
+
+    .brand-production__title
+    {
+        font-size: 24px;
+
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    .brand-production__item:last-child
+    {
+        margin-bottom: 60px;
+    }
+
+    .brand-production .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(4n)
+    {
+        margin-right: auto;
+    }
+
+    .brand-production .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(3n)
+    {
+        margin-right: auto;
+    }
+
+    .brand-production__item
+    {
+        display: block;
+
+        width: 100%;
+        max-width: 214px;
+        margin: 0;
+        margin-right: auto;
+        margin-bottom: 30px;
+        margin-left: auto;
     }
 
     .slick-dots

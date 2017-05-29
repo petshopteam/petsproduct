@@ -2,26 +2,7 @@
 	FORMS
 ----------------------------------------*/
 
-//global
-form {
-  //убираем placeholder при фокусе
-  :focus::-webkit-input-placeholder {color: transparent}
-  :focus::-moz-placeholder          {color: transparent}
-  :focus:-moz-placeholder           {color: transparent}
-  :focus:-ms-input-placeholder      {color: transparent}
-}
 
-// подсветка input при фокусе
-input:focus,
-textarea:focus {
-  outline: none;
-  border-color: #bababa;
-}
-
-//подсветка select при фокусе
-.SumoSelect:focus > .CaptionCont {
-  border-color: #bababa;
-}
 
 
 //форма на странице каталога
@@ -121,7 +102,7 @@ textarea:focus {
       }
 
       &:hover::before {
-        border-color: @red;
+        border-color: @orange;
       }
     }
   }
@@ -209,7 +190,7 @@ textarea:focus {
       transition: all 0.2s ease;
     }
     &.clicked {
-      background: @red;
+      background: @orange;
       color: @white;
       &::after {
         background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAKCAYAAAC5Sw6hAAABDklEQVQoU43SsS5DURzH8e/PA7CQkNgY2XQx1SAinoBNUjEQMbYeoDWKMLSRWL0AIgZ2Nka2JpUwqAfwk9P8K1fdlrOcc+7vdz43ufeIAcP2CHABGFiR1O5XV7/A9hhwDhSicxfYa96ZXMj2OHANzPQcegQWJb30Yr8g25PALTAV5ZOYSzE/A0VJzSz2A7I9DdwACUvjENiN9QGwE+uELEh66mLfkO1Z4AqYiLAmaS/7VttVoBLPWsCSpIe070C254BLYDRKFUn7eR/VdhmoRfYGLEu6l+35QIYj3JZ0/Me12AKOovPRwWy/A+m+fAIlSaeDkG5mex1IP2IIaCdoDagDG5LO/oNksFWgAWx+AYYFVYa7ttp+AAAAAElFTkSuQmCC');
@@ -255,7 +236,7 @@ textarea:focus {
     opacity: 1;
   }
   input[type=checkbox]:checked + label::before {
-    border-color: @red;
+    border-color: @orange;
   }
   input[type=checkbox]:checked + label {
     font-weight: 400;
@@ -319,15 +300,15 @@ textarea:focus {
     min-width: 86px;
     text-align: center;
     border-radius: 1px;
-    border: 1px solid @red;
+    border: 1px solid @orange;
     font-size: 14px;
-    color: @red;
+    color: @orange;
     padding: 0px 8px;
     margin-right: 0px;
     margin-bottom: 3px;
     &:hover {
       color: @white;
-      background: @red;
+      background: @orange;
     }
   }
 }
@@ -340,7 +321,7 @@ textarea:focus {
   overflow: hidden;
   height: 38px;
   line-height: 35px;
-  border: 1px dashed @red;
+  border: 1px dashed @orange;
   border-radius: 2px;
   transition: box-shadow 0.1s linear;
   font-family: @rubik;
@@ -418,7 +399,37 @@ textarea:focus {
 
 // NEW FORMS
 
-label {
+//global
+form {
+  //убираем placeholder при фокусе
+  :focus::-webkit-input-placeholder {color: transparent}
+  :focus::-moz-placeholder          {color: transparent}
+  :focus:-moz-placeholder           {color: transparent}
+  :focus:-ms-input-placeholder      {color: transparent}
+}
+
+// подсветка input при фокусе
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #bababa;
+}
+
+//подсветка select при фокусе
+.SumoSelect:focus > .CaptionCont {
+  border-color: #bababa;
+}
+
+// placeholders color
+.form-input,
+.form-textarea {
+  ::-webkit-input-placeholder {color: @grey}
+  ::-moz-placeholder          {color: @grey}
+  :-moz-placeholder           {color: @grey}
+  :-ms-input-placeholder      {color: @grey}
+}
+
+.form-label {
   display: block;
   color: @lightblack;
   font-family: @rubik;
@@ -427,21 +438,31 @@ label {
   line-height: 1.714em;
 }
 
-input[type=text], textarea {
+.form-input, .form-textarea {
   width: 100%;
   border-radius: 2px;
   border: 1px solid @lightgrey;
   font-family: @rubik;
-  color: @grey;
+  color: @lightblack;
   font-weight: 300;
   font-size: 14px;
   line-height: 2.4em;
   padding-left: 1em;
+  border-radius: 2px;
+  border: 1px solid @border-grey;
 }
 
-textarea {
+.form-textarea {
   line-height: 1.333em;
+  padding-top: 1em;
+  padding-left: 1em;
 }
+
+
+
+
+
+
 
 //select (SUMO_SELECT)
 .SumoSelect p {margin: 0;}
@@ -512,7 +533,7 @@ p.CaptionCont.SelectBox span {
     .SumoSelect > .CaptionCont { position: relative; border: 1px solid #dfdfdf; min-height: 14px; background-color: #fff;border-radius:2px;margin:0;}
         .SumoSelect > .CaptionCont > span { display: block; padding-right: 30px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;cursor:default;}
             /*placeholder style*/
-            .SumoSelect > .CaptionCont > span.placeholder { color: #ccc; font-style: italic; }
+            .SumoSelect > .CaptionCont > span.placeholder { color: @grey; font-style: italic; }
 
         .SumoSelect > .CaptionCont > label { position: absolute; top: 0; right: 0; bottom: 0; width: 30px;}
 

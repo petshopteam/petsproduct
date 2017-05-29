@@ -6,6 +6,16 @@
   max-width: 1917px;
   margin: 0 auto;
 
+  &__hidden-topline {
+    padding-top: 40px;
+    background-color: @lightgrey;
+    //media
+    @media (max-width: @tablet) {
+      padding-top: 30px;
+      padding-bottom: 55px;
+    }
+  }
+
   &__title {
     font-size: 36px;
     font-weight: 700;
@@ -29,6 +39,19 @@
       color: @orange;
       border-color: @orange;
     }
+    //media
+    @media (max-width: @tablet) {
+      font-size: 14px;
+      margin-right: 5px;
+    }
+  }
+
+  &__type-block {
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: @tablet) {
+      max-width: 320px;
+    }
   }
 
   &__type-select {
@@ -38,14 +61,13 @@
     line-height: 24px;
     text-transform: uppercase;
     display: inline-block;
+    padding: 10px 15px 11px;
     transition: color 0.2s ease;
 
     &.active {
       color: @white;
       background-color: @orange;
       border-radius: 2px;
-      padding: 10px 15px 11px;
-      top: -8px;
 
       &:hover {
         color: @white;
@@ -54,6 +76,12 @@
 
     &:hover {
       color: @orange;
+    }
+    //media
+    @media (max-width: @tablet) {
+      font-size: 11px;
+      line-height: 28px;
+      padding: 0 5px;
     }
   }
 
@@ -84,6 +112,17 @@
   &__points {
     padding: 50px 0 0 60px;
     max-width: 720px;
+    @media (max-width: @laptop) {
+      max-width: 100%;
+      padding: 0;
+      padding-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (max-width: @tablet) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   &__stores-list {
@@ -178,6 +217,18 @@
 
   &__store-district {
     display: block;
+  }
+  //media
+  @media (max-width: @desktop) {
+    &__points {
+      padding: 50px 0 0 20px;
+    }
+  }
+  @media (max-width: @tablet) {
+    &__title {
+      font-size: 24px;
+      padding-left: 10px;
+    }
   }
 }
 

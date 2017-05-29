@@ -22,6 +22,13 @@
   .main-head__logo {
     background: @lightgrey url(../images/icons/logo-grey.svg) no-repeat center;
     background-size: 65%;
+    //media
+    @media (max-width: @desktop) {
+      left: 20px;
+    }
+    @media (max-width: @laptop) {
+      left: 10px;
+    }
   }
 
   .brand-banner {
@@ -44,16 +51,56 @@
 
   .breadcrumbs {
     margin-bottom: 10px;
+    //media
     @media (max-width: @desktop) {
       margin-left: 10px;
     }
+    @media (max-width: @laptop) {
+      margin-left: 0;
+    }
+  }
+
+  // главное меню
+  .main-navigation__hidden-btn {
+    color: black;
+    &::after {
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAYklEQVQ4T83UsQ2AQAxD0e+GGSjoktuUUU+CFaDJCdEwgE8iAzzJSmJlxgGseOZUZpTHepUHvIDFhN6KiJS0OcCq6nJAX8MPthY7YIkM9Clb9p6NPfL/t2w/bPvrzSgHa30NXS0cIbH2o1oAAAAASUVORK5CYII=');
+    }
   }
 }
+
+
 //main styles
+
+.brand-content {
+  //media
+  @media (max-width: @desktop) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media (max-width: @laptop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .brand-info {
   &__title {
     margin-top: 60px;
     margin-bottom: 80px;
+    @media (max-width: @tablet) {
+      margin-top: 35px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__logo {
+    img {
+      @media (max-width: @tablet) {
+        width: 100px;
+        height: auto;
+      }
+    }
   }
 
   &__label {
@@ -67,13 +114,49 @@
   }
 
   &__price {
-    max-width: 391px;
-    height: 65px;
-    font-size: 16px;
-    line-height: 24px;
+    max-width: 400px;
     margin-top: 55px;
-    padding: 14px 13px 13px;
+    margin-left: 60px;
+    padding: 13px 15px;
     background: @lightgrey;
+    .SumoSelect {
+      width: auto;
+      display: inline-block;
+      margin-bottom: 0;
+      & > p.CaptionCont {
+        padding-right: 25px;
+      }
+    }
+    //media
+    @media (max-width: @laptop) {
+      margin-left: 40px;
+    }
+    @media (max-width: @tablet) {
+      margin: 0;
+      padding: 20px 15px 30px 15px;
+      margin-top: 40px;
+      width: 100%;
+      max-width: 100%;
+      .SumoSelect {
+        margin-top: 5px;
+        width: 100%;
+      }
+    }
+  }
+
+  &__price-label {
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 500;
+    color: @lightblack;
+    margin-right: 15px;
+  }
+
+  &__price_hidden {
+    float: right;
   }
 
   &__about_top {
@@ -83,6 +166,9 @@
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 40px;
+    @media (max-width: @tablet) {
+      margin-bottom: 20px;
+    }
   }
 
   &__about_bottom {
@@ -95,26 +181,60 @@
     border-left: 3px solid @orange;
     margin-bottom: 90px;
   }
+  //media
+  @media (max-width: @desktop) {
+    &__about_bottom {
+      margin-bottom: 0;
+    }
+    &__price {
+      margin-left: 30px;
+    }
+  }
+  @media (max-width: @laptop) {
+    padding-left: 0;
+    padding-right: 0;
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .brand-production {
-  .col-lg-15 > .brand-production__item:nth-child(4n) {
+  .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(4n) {
     margin-right: 0;
   }
 
   &__title {
+    text-align: center;
     font-size: 36px;
     font-weight: bold;
     line-height: 60px;
     margin-bottom: 60px;
+    @media (max-width: @tablet) {
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__list {
+    text-align: left;
   }
 
   &__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    float: left;
+    display: inline-block;
+    text-align: center;
+    width: 23%;
+    max-width: 270px;
+    margin-right: 2%;
+    margin-bottom: 2%;
     box-shadow: 0 0 4px rgba(36, 36, 35, 0.2);
     background-color: @white;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
 
     &:hover {
       background: @lightgrey;
@@ -122,14 +242,57 @@
 
     &:last-child {
       margin-bottom: 90px;
+      @media (max-width: @laptop) {
+        margin-bottom: 80px;
+      }
+      @media (max-width: @tablet) {
+        margin-bottom: 60px;
+      }
     }
   }
 
   &__label {
-    color: #242423;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 15px;
+    // color: #242423;
+    // font-size: 16px;
+    // font-weight: bold;
+    // text-align: center;
+    // margin-bottom: 15px;
+  }
+  //media
+  @media (max-width: @desktop) {
+    padding-right: 10px;
+    padding-left: 10px;
+    &__title {
+      margin-top: 50px;
+    }
+  }
+  @media (max-width: @laptop) {
+    padding-left: 5%;
+    .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(4n) {
+      margin-right: 2%;
+    }
+    .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(3n) {
+      margin-right: 0;
+    }
+    &__item {
+      width: 30%;
+    }
+  }
+  @media (max-width: @tablet) {
+    .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(4n) {
+      margin-right: auto;
+    }
+    .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(3n) {
+      margin-right: auto;
+    }
+    &__item {
+      display: block;
+      width: 100%;
+      max-width: 214px;
+      margin: 0;
+      margin-bottom: 30px;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 }

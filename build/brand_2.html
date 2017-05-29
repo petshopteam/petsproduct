@@ -51,7 +51,7 @@
 								Ваш город Санкт-Петербург?
 							</p>
 							<a class="modal-city__no btn btn_grey btn_no open_modal_dark" href="#modalChangeCity">нет</a>
-							<a class="modal-city__yes btn btn_red">да</a>
+							<a class="modal-city__yes btn btn_orange">да</a>
 						</div>
 						<div id="overlay" class="overlay"></div>
 						<div id="overlay_dark" class="overlay_dark"></div>
@@ -134,7 +134,7 @@
 						</select>
 					</div>
 					<div class="col-lg-4 col-lg-offset-1">
-						<button href="#" type="submit" class="btn btn_red">Выбрать</button>
+						<button href="#" type="submit" class="btn btn_orange">Выбрать</button>
 					</div>
 				</div>
 			</form>
@@ -374,8 +374,18 @@
 
 	<!--stores-->
 	<div class="stores">
+		<div class="row hidden-lg hidden-md tac">
+			<div class="stores__hidden-topline">
+				<div class="col-sm-5 col-sm-offset-1 col-xs-8 col-xs-offset-0">
+					<h2 class="stores__title">Где купить?</h2>
+				</div>
+				<div class="col-sm-4 col-sm-offset-5 col-xs-7 col-xs-offset-0">
+					<a href="#" class="stores__current-region">Санкт-Петербург</a>
+				</div>
+			</div>
+		</div>
 		<div class="row">
-			<div class="col-lg-7">
+			<div class="col-lg-7 col-md-7">
 				<!-- left part -->
 				<div class="stores__map">
 					<div class="map-search">
@@ -386,28 +396,30 @@
 				</div>
 			</div>
 
-			<div class="col-lg-8">
+			<div class="col-lg-8 col-md-8 col-sm-15">
 				<!-- right part -->
 				<div class="stores__points">
 					<div class="continer-offset">
 						<div class="row">
-							<div class="col-lg-8">
+							<div class="col-lg-8 col-md-8 hidden-sm hidden-xs">
 								<h2 class="stores__title">Где купить?</h2>
 							</div>
-							<div class="col-lg-5 tar">
+							<div class="col-lg-5 col-md-6 hidden-sm hidden-xs tar">
 								<a href="#" class="stores__current-region">Санкт-Петербург</a>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-lg-6">
-								<a href="#" class="stores__type-select active">Розничные точки</a>
-							</div>
-							<div class="col-lg-6">
-								<a href="#" class="stores__type-select">Интернет магазины</a>
+						<div class="row tac">
+							<div class="stores__type-block">
+								<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-5 col-sm-offset-3 col-xs-7 col-xs-offset-0">
+									<a href="#" class="stores__type-select active">Розничные точки</a>
+								</div>
+								<div class="col-lg-6 col-md-7 col-sm-5 col-xs-8 col-xs-offset-0">
+									<a href="#" class="stores__type-select">Интернет магазины</a>
+								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-lg-13">
+							<div class="col-lg-13 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-11 col-sm-offset-2 ">
 								<div class="stores__search">
 									<select type="text" class="stores__search-window">
 										<option value="Московский">Московский район</option>
@@ -416,10 +428,10 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-lg-13">
+							<div class="col-lg-13 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-10 col-sm-offset-3">
 								<div class="stores__stores-list stores__retail-list active">
 									<!-- item-1 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item active">
 											<p class="stores__store-name">Зоомагазин</p>
 											<p class="stores__store-address">Краснопутиловская д. 123</p>
@@ -427,7 +439,7 @@
 										</div>
 									</div>
 									<!-- item-2 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Зоомагазин</p>
 											<p class="stores__store-address">Краснопутиловская д. 123</p>
@@ -435,7 +447,7 @@
 										</div>
 									</div>
 									<!-- item-3 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Зоомагазин</p>
 											<p class="stores__store-address">Новоизмайловский,40/1</p>
@@ -443,7 +455,7 @@
 										</div>
 									</div>
 									<!-- item-4 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Зоомагазин</p>
 											<p class="stores__store-address">Новоизмайловский,40/1</p>
@@ -451,7 +463,7 @@
 										</div>
 									</div>
 									<!-- item-5 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Зоомагазин</p>
 											<p class="stores__store-address">ул. Типанова, д. 21</p>
@@ -459,7 +471,7 @@
 										</div>
 									</div>
 									<!-- item-6 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Зоомагазин</p>
 											<p class="stores__store-address">ул. Типанова, д. 21</p>
@@ -467,7 +479,7 @@
 										</div>
 									</div>
 									<!-- item-7 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Зоомагазин</p>
 											<p class="stores__store-address">Ул. Алтайская, д. 21, лит. А</p>
@@ -475,7 +487,7 @@
 										</div>
 									</div>
 									<!-- item-8 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Зоомагазин</p>
 											<p class="stores__store-address">Ул. Алтайская, д. 21, лит. А</p>
@@ -486,7 +498,7 @@
 									<!-- fake items (for scroll bar test)-->
 
 									<!-- item-8 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Зоомагазин</p>
 											<p class="stores__store-address">Ул. Алтайская, д. 21, лит. А</p>
@@ -494,7 +506,7 @@
 										</div>
 									</div>
 									<!-- item-8 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Зоомагазин</p>
 											<p class="stores__store-address">Ул. Алтайская, д. 21, лит. А</p>
@@ -502,7 +514,7 @@
 										</div>
 									</div>
 									<!-- item-8 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Зоомагазин</p>
 											<p class="stores__store-address">Ул. Алтайская, д. 21, лит. А</p>
@@ -510,7 +522,7 @@
 										</div>
 									</div>
 									<!-- item-8 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Зоомагазин</p>
 											<p class="stores__store-address">Ул. Алтайская, д. 21, лит. А</p>
@@ -525,7 +537,7 @@
 
 								<div class="stores__stores-list stores__online-list">
 									<!-- item-1 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item active">
 											<p class="stores__store-name">Animal-care.ru</p>
 											<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
@@ -534,7 +546,7 @@
 										</div>
 									</div>
 									<!-- item-2 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Animal-care.ru</p>
 											<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
@@ -543,7 +555,7 @@
 										</div>
 									</div>
 									<!-- item-3 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Korkom.ru</p>
 											<p class="stores__store-address">ул. Бухарестская д. 96</p>
@@ -551,7 +563,7 @@
 										</div>
 									</div>
 									<!-- item-4 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Korkom.ru</p>
 											<p class="stores__store-address">ул. Бухарестская д. 96</p>
@@ -559,7 +571,7 @@
 										</div>
 									</div>
 									<!-- item-5 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Хavax.ru</p>
 											<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
@@ -567,7 +579,7 @@
 										</div>
 									</div>
 									<!-- item-6 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Хavax.ru</p>
 											<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
@@ -575,7 +587,7 @@
 										</div>
 									</div>
 									<!-- item-7 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Kandibobershop.ru</p>
 											<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
@@ -584,7 +596,7 @@
 										</div>
 									</div>
 									<!-- item-8 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Kandibobershop.ru</p>
 											<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
@@ -596,7 +608,7 @@
 									<!-- fake items (for scroll bar test)-->
 
 									<!-- item-1 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item active">
 											<p class="stores__store-name">Animal-care.ru</p>
 											<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
@@ -605,7 +617,7 @@
 										</div>
 									</div>
 									<!-- item-2 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Animal-care.ru</p>
 											<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
@@ -614,7 +626,7 @@
 										</div>
 									</div>
 									<!-- item-3 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Korkom.ru</p>
 											<p class="stores__store-address">ул. Бухарестская д. 96</p>
@@ -622,7 +634,7 @@
 										</div>
 									</div>
 									<!-- item-4 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Korkom.ru</p>
 											<p class="stores__store-address">ул. Бухарестская д. 96</p>
@@ -630,7 +642,7 @@
 										</div>
 									</div>
 									<!-- item-5 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Хavax.ru</p>
 											<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
@@ -638,7 +650,7 @@
 										</div>
 									</div>
 									<!-- item-6 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Хavax.ru</p>
 											<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
@@ -646,7 +658,7 @@
 										</div>
 									</div>
 									<!-- item-7 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Kandibobershop.ru</p>
 											<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
@@ -655,7 +667,7 @@
 										</div>
 									</div>
 									<!-- item-8 -->
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
 										<div class="stores__stores-item">
 											<p class="stores__store-name">Kandibobershop.ru</p>
 											<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
