@@ -1354,7 +1354,7 @@ hr
 {
     padding-right: 3em;
 
-    background-position: 8.3em .66em;
+    background-position: 8.3em .55em;
     background-size: 1.4em;
 }
 
@@ -9799,6 +9799,12 @@ h4
         padding-left: .9em;
     }
 
+    .form-textarea
+    {
+        padding-top: .8em;
+        padding-left: .8em;
+    }
+
     .main-navigation__list_small
     {
         padding-top: 120px;
@@ -10155,6 +10161,11 @@ h4
         padding-left: 10px;
 
         text-align: center;
+    }
+
+    .request__done
+    {
+        margin-bottom: 20%;
     }
 
     .request
