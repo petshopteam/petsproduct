@@ -152,9 +152,10 @@
 					<a class="main-head__logo" href="./"></a>
 				</div>
 				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5">
+				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
 					<nav class="main-navigation">
-						<ul id="menu" class="main-navigation__list">
+						<!-- (big size nav) -->
+						<ul id="menu" class="main-navigation__list hidden-sm hidden-xs">
 							<li class="active"></li>
 							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
 							</li>
@@ -165,12 +166,34 @@
 							<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
 							</li>
 							<li class="main-navigation__item">
-								<button class="btn btn_red">Оставить заявку</button>
+								<button class="btn btn_orange">Оставить заявку</button>
 							</li>
 							<li id="line"></li>
 						</ul>
+						<!-- (small size nav) -->
+						<!-- btn -->
+						<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+						<div class="modal-navigation modal_div" id="modalNav">
+							<ul id="menuSmall" class="main-navigation__list_small hidden-lg hidden-md">
+								<a class="modal-navigation__close modal_close">Закрыть</a>
+								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
+								</li>
+								<li class="main-navigation__item">
+									<button class="btn btn_orange">Оставить заявку</button>
+								</li>
+								<!-- overlay (заменяет topline overlay) -->
+								<div id="overlay_dark" class="overlay_dark"></div>
+							</ul>
+						</div>
 					</nav>
 				</div>
+				<!-- end main-navigation -->
 			</div>
 		</div>
 	</header>
@@ -191,7 +214,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-15">
-					<h1 class="request__title">Оформление заявки на сотрудничество</h1>
+					<h2 class="request__title">Оформление заявки на сотрудничество</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -208,15 +231,15 @@
 
 				<!-- first form-block -->
 				<div class="request__form-block clearfix">
-					<div class="col-lg-7">
+					<div class="col-lg-7 col-md-7 col-sm-15">
 						<label for="" class="form-label">Название организации</label>
 						<input type="text" class="request__input" placeholder="Краткое наименование организации">
 					</div>
-					<div class="col-lg-7 col-lg-offset-1">
+					<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
 						<label for="" class="form-label">Имя контактного лица</label>
 						<input type="text" class="request__input" placeholder="Фамилия Имя Отчество">
 					</div>
-					<div class="col-lg-7">
+					<div class="col-lg-7 col-md-7 col-sm-15">
 						<label for="" class="form-label">Вид деятельности</label>
 						<select type="text" class="request__select" placeholder="Зоомагазин">
 							<option value="#">Зоомагазин</option>
@@ -224,15 +247,15 @@
 							<option value="#">Еще вариант...</option>
 						</select>
 					</div>
-					<div class="col-lg-7 col-lg-offset-1">
+					<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
 						<label for="" class="form-label">Номер телефона</label>
 						<input type="text" class="request__input" placeholder="+7(___) ___-__-__">
 					</div>
-					<div class="col-lg-7">
+					<div class="col-lg-7 col-md-7 col-sm-15">
 						<label for="" class="form-label">Местоположение</label>
 						<input type="text" class="request__input" placeholder="Город / населенный пункт / регион">
 					</div>
-					<div class="col-lg-7 col-lg-offset-1">
+					<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
 						<label for="" class="form-label">Тема письма</label>
 						<select type="text" class="request__select" placeholder="Зоомагазин">
 							<option value="zoomag">Заявка на сотрудничество</option>
@@ -258,43 +281,43 @@
 
 				<!-- second form-block -->
 				<div class="request__form-block request__hidden-block clearfix">
-					<div class="col-lg-7">
+					<div class="col-lg-7 col-md-7 col-sm-15">
 						<label for="" class="request__label">Юридический адрес</label>
 						<input type="text" class="request__input" placeholder="Индекс, город, улица, дом">
 					</div>
-					<div class="col-lg-7 col-lg-offset-1">
+					<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
 						<label for="" class="request__label">Генеральный директор</label>
 						<input type="text" class="request__input" placeholder="Фамилия Имя Отчество">
 					</div>
-					<div class="col-lg-7">
+					<div class="col-lg-7 col-md-7 col-sm-15">
 						<label for="" class="request__label">Фактический адрес</label>
 						<input type="text" class="request__input" placeholder="Индекс, город, улица, дом">
 					</div>
-					<div class="col-lg-7 col-lg-offset-1">
+					<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
 						<label for="" class="request__label">Наименование банка</label>
 						<input type="text" class="request__input" placeholder="Полное наименование банка">
 					</div>
-					<div class="col-lg-7">
+					<div class="col-lg-7 col-md-7 col-sm-15">
 						<label for="" class="request__label">ИНН</label>
 						<input type="text" class="request__input" placeholder="Номер из 10 цифр">
 					</div>
-					<div class="col-lg-7 col-lg-offset-1">
+					<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
 						<label for="" class="request__label">БИК</label>
 						<input type="text" class="request__input" placeholder="Номер из 9 цифр">
 					</div>
-					<div class="col-lg-7">
+					<div class="col-lg-7 col-md-7 col-sm-15">
 						<label for="" class="request__label">КПП</label>
 						<input type="text" class="request__input" placeholder="Номер из 9 цифр">
 					</div>
-					<div class="col-lg-7 col-lg-offset-1">
+					<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
 						<label for="" class="request__label">Корреспондентский счет</label>
 						<input type="text" class="request__input" placeholder="Номер из 20 цифр">
 					</div>
-					<div class="col-lg-7">
+					<div class="col-lg-7 col-md-7 col-sm-15">
 						<label for="" class="request__label">ОГРН</label>
 						<input type="text" class="request__input" placeholder="Номер из 13 цифр">
 					</div>
-					<div class="col-lg-7 col-lg-offset-1">
+					<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
 						<label for="" class="request__label">Расчетный счет</label>
 						<input type="text" class="request__input" placeholder="Номер из 20 цифр">
 					</div>

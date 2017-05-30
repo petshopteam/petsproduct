@@ -25,12 +25,48 @@
 
   .breadcrumbs {
     margin-bottom: 50px;
+    @media (max-width: @desktop) {
+      margin-left: 0 ;
+    }
   }
 
   .pagination {
     margin-bottom: 60px;
   }
+  @media (max-width: @desktop) {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .main-foot .container {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+  @media (max-width: @laptop) {
+    .container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .main-foot .container {
+      padding-right: 6%;
+      padding-left: 6%;
+    }
+  }
+  @media (max-width: @tablet) {
+    .main-foot .container {
+      padding-right: 6%;
+      padding-left: 17%;
+    }
+    .main-foot__copyright .container {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
+  }
 }
+
+
 //main styles
 .request {
   &__title {
@@ -153,7 +189,7 @@
   &__check-label {
     position: relative;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 500;
     margin-left: 10px;
     padding-left: 35px;
 
@@ -212,6 +248,77 @@
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 12%;
+  }
+  //.request media
+  @media (max-width: @desktop) {
+    max-width: 840px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (max-width: @laptop) {
+    max-width: 677px;
+    &__title {
+      margin-left: -40px;
+      margin-right: -40px;
+    }
+    &__subtitle {
+      padding-right: 100px;
+    }
+    label {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: @tablet) {
+    max-width: 320px;
+    &__title {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__subtitle {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    &__subtitle_arrow {
+      top: 33px;
+      right: 15px;
+    }
+    &__form-block {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__submit-block {
+      position: relative;
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-bottom: 60px;
+      margin-bottom: 60px;
+    }
+    label {
+      padding-left: 20px;
+      margin-bottom: 0;
+      &::before {
+        top: 4px;
+      }
+      &::after {
+        top: 4px;
+      }
+    }
+    &__submit {
+      position: absolute;
+      bottom: 0; right: 10px;
+      margin-left: 0;
+    }
+    &__clear {
+      position: absolute;
+      bottom: 0; left: 10px;
+    }
   }
 }
 // Стилизация чекбокса отправки формы

@@ -4151,70 +4151,6 @@ h4
     background-size: cover;
 }
 
-.brand-banner
-{
-    background: #cef0f3 url(../images/brand-banner-bg.jpg) no-repeat center bottom;
-    background-size: cover;
-}
-
-.brand-banner .container
-{
-    padding-top: 45px;
-    padding-bottom: 105px;
-}
-
-.brand-banner__title
-{
-    font-size: 48px;
-    font-weight: 700;
-
-    margin-bottom: 15px;
-
-    text-transform: uppercase;
-
-    opacity: .97;
-    color: #e0552f;
-}
-
-.brand-banner__subtitle
-{
-    font-family: 'Rubik', Arial, sans-serif;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 21px;
-
-    margin-bottom: 20px;
-
-    opacity: .97;
-    color: black;
-}
-
-.brand-banner__term
-{
-    font-family: 'Rubik', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-
-    margin-bottom: 85px;
-    padding-top: 18px;
-    padding-bottom: 16px;
-
-    text-align: center;
-
-    opacity: .97;
-    color: #242423;
-    border-top: 2px solid #e0552f;
-    border-bottom: 1px solid #e0552f;
-}
-
-.brand-banner__brand-logo
-{
-    display: inline-block;
-
-    margin-bottom: 25px;
-}
-
 .main-page .main-head
 {
     position: relative;
@@ -4331,7 +4267,7 @@ h4
 
     text-transform: uppercase;
 
-    color: #fff;
+    color: #242423;
 }
 
 .main-navigation__hidden-btn::after
@@ -4345,7 +4281,17 @@ h4
 
     content: '';
 
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAWklEQVQ4T9XUsQ2AMAxE0XPDDBSUjMqoSLBCaD6KIjHBT4EHeJJ1ZxdwJVnjzF0AjjWUDrYki4Q+HdyTbBJ4lgR9jA8Ch7ryjJT12rgr/yJlt9gzTk9PWX1fL8apNPlP8sp8AAAAAElFTkSuQmCC') no-repeat center;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAYklEQVQ4T83UsQ2AQAxD0e+GGSjoktuUUU+CFaDJCdEwgE8iAzzJSmJlxgGseOZUZpTHepUHvIDFhN6KiJS0OcCq6nJAX8MPthY7YIkM9Clb9p6NPfL/t2w/bPvrzSgHa30NXS0cIbH2o1oAAAAASUVORK5CYII=') no-repeat center;
+}
+
+.main-navigation__hidden-btn.mnu-white
+{
+    color: #fff;
+}
+
+.main-navigation__hidden-btn.mnu-white::after
+{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAWklEQVQ4T9XUsQ2AMAxE0XPDDBSUjMqoSLBCaD6KIjHBT4EHeJJ1ZxdwJVnjzF0AjjWUDrYki4Q+HdyTbBJ4lgR9jA8Ch7ryjJT12rgr/yJlt9gzTk9PWX1fL8apNPlP8sp8AAAAAElFTkSuQmCC');
 }
 
 #menuSmall li
@@ -4991,16 +4937,6 @@ h4
     border-color: #e0552f;
 }
 
-.catalog-page .main-navigation__hidden-btn
-{
-    color: black;
-}
-
-.catalog-page .main-navigation__hidden-btn::after
-{
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAYklEQVQ4T83UsQ2AQAxD0e+GGSjoktuUUU+CFaDJCdEwgE8iAzzJSmJlxgGseOZUZpTHepUHvIDFhN6KiJS0OcCq6nJAX8MPthY7YIkM9Clb9p6NPfL/t2w/bPvrzSgHa30NXS0cIbH2o1oAAAAASUVORK5CYII=');
-}
-
 .brand-item
 {
     -webkit-transition: background .2s ease;
@@ -5184,6 +5120,14 @@ h4
 .brand-page .brand-banner
 {
     margin-bottom: 80px;
+
+    background-color: #cef0f3;
+}
+
+.brand-page .brand-banner img
+{
+    width: 100%;
+    height: auto;
 }
 
 .brand-page .SumoSelect > p.CaptionCont
@@ -5206,16 +5150,6 @@ h4
 .brand-page .breadcrumbs
 {
     margin-bottom: 10px;
-}
-
-.brand-page .main-navigation__hidden-btn
-{
-    color: black;
-}
-
-.brand-page .main-navigation__hidden-btn::after
-{
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAYklEQVQ4T83UsQ2AQAxD0e+GGSjoktuUUU+CFaDJCdEwgE8iAzzJSmJlxgGseOZUZpTHepUHvIDFhN6KiJS0OcCq6nJAX8MPthY7YIkM9Clb9p6NPfL/t2w/bPvrzSgHa30NXS0cIbH2o1oAAAAASUVORK5CYII=');
 }
 
 .brand-info__title
@@ -6467,7 +6401,7 @@ h4
 
 .request__check-label
 {
-    font-weight: bold;
+    font-weight: 500;
 
     position: relative;
 
@@ -9363,6 +9297,30 @@ h4
         margin-top: 50px;
     }
 
+    .request-page .breadcrumbs
+    {
+        margin-left: 0;
+    }
+
+    .request-page .container
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .request-page .main-foot .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .request
+    {
+        max-width: 840px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .slick-prev
     {
         right: 0;
@@ -9614,6 +9572,42 @@ h4
         width: 30%;
     }
 
+    .request-page .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .request-page .main-foot .container
+    {
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+
+    .request
+    {
+        max-width: 677px;
+    }
+
+    .request__title
+    {
+        margin-right: -40px;
+        margin-left: -40px;
+    }
+
+    .request__subtitle
+    {
+        padding-right: 100px;
+    }
+
+    .request label
+    {
+        display: block;
+
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
     .slick-dots
     {
         left: -35%;
@@ -9762,6 +9756,24 @@ h4
     {
         max-height: 210px;
         padding-left: 10px;
+    }
+
+    .region-select-placeholder
+    {
+        font-size: 13px;
+    }
+
+    .form-label
+    {
+        font-size: 13px;
+    }
+
+    .form-input,
+    .form-textarea
+    {
+        font-size: 13px;
+
+        padding-left: .9em;
     }
 
     .main-navigation__list_small
@@ -10106,6 +10118,94 @@ h4
         margin-right: auto;
         margin-bottom: 30px;
         margin-left: auto;
+    }
+
+    .request-page .main-foot .container
+    {
+        padding-right: 6%;
+        padding-left: 17%;
+    }
+
+    .request-page .main-foot__copyright .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+
+        text-align: center;
+    }
+
+    .request
+    {
+        max-width: 320px;
+    }
+
+    .request__title
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .request__subtitle
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .request__subtitle_arrow
+    {
+        top: 33px;
+        right: 15px;
+    }
+
+    .request__form-block
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .request__submit-block
+    {
+        position: relative;
+
+        max-width: 320px;
+        margin-right: auto;
+        margin-bottom: 60px;
+        margin-left: auto;
+        padding-right: 20px;
+        padding-bottom: 60px;
+        padding-left: 20px;
+    }
+
+    .request label
+    {
+        margin-bottom: 0;
+        padding-left: 20px;
+    }
+
+    .request label::before
+    {
+        top: 4px;
+    }
+
+    .request label::after
+    {
+        top: 4px;
+    }
+
+    .request__submit
+    {
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+
+        margin-left: 0;
+    }
+
+    .request__clear
+    {
+        position: absolute;
+        bottom: 0;
+        left: 10px;
     }
 
     .slick-dots
