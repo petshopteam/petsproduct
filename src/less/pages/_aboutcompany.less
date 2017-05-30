@@ -6,6 +6,9 @@
   .main-head {
     background: url(../images/aboutcompany-bg.jpg) no-repeat top;
     margin: 0;
+    @media (max-width: @desktop) {
+      // подгрузить другой bg
+    }
   }
 
   .main-navigation {
@@ -23,8 +26,42 @@
 
   .main-head__title {
     margin-bottom: 110px;
+    @media (max-width: @desktop) {
+      margin-left: 0;
+    }
   }
-
+  //media
+  @media (max-width: @desktop) {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .main-foot .container {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+  @media (max-width: @laptop) {
+    .container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .main-foot .container {
+      padding-right: 6%;
+      padding-left: 6%;
+    }
+  }
+  @media (max-width: @tablet) {
+    .main-foot .container {
+      padding-right: 6%;
+      padding-left: 17%;
+    }
+    .main-foot__copyright .container {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
+  }
 }
 
 //main styles
@@ -68,15 +105,19 @@
     margin-bottom: 60px;
   }
   &__item {
-    width: 350px;
-    height: 420px;
+    display: inline-block;
+    vertical-align: top;
+    width: 29%;
+    text-align: center;
     margin-bottom: 60px;
+    margin-left: 2%;
+    margin-right: 2%;
   }
   &__image {
     width: 100%;
-    height: 350px;
+    height: auto;
+    max-width: 350px;
     background: @white;
-    padding: 10px;
     box-shadow: 0 0 4px rgba(36, 36, 35, 0.2);
     margin-bottom: 10px;
   }
@@ -92,10 +133,32 @@
   // big item
   &__item_big {
     width: 471px;
-    height: 600px;
-  }
-  &__image_big {
     height: 471px;
+  }
+  //media
+  @media (max-width: @desktop) {
+    max-width: 978px;
+    margin-right: auto;
+    margin-left: auto;
+    &__item {
+
+    }
+  }
+  @media (max-width: @laptop) {
+    max-width: 788px;
+    &__item {
+      width: 44%;
+      margin-left: 3%;
+    }
+  }
+  @media (max-width: @tablet) {
+    padding-left: 20px;
+    padding-right: 20px;
+    &__item {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 }
 

@@ -48,19 +48,36 @@
 					<a class="main-head__logo" href="./"></a>
 				</div>
 				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5">
+				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
 					<nav class="main-navigation">
-						<ul id="menu" class="main-navigation__list">
-							<li class="active"><a href="#"></a></li>
+						<!-- (big size nav) -->
+						<ul id="menu" class="main-navigation__list hidden-sm hidden-xs">
+							<li class="active"></li>
 							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-							<li class="menu-hover main-navigation__item"><a href="#">Акции</a></li>
-							<li class="menu-hover main-navigation__item"><a href="#">Партнеры</a></li>
-							<li class="menu-hover main-navigation__item"><a href="#">Новости</a></li>
-							<li class="main-navigation__item"><button class="btn btn_red">Оставить заявку</button></li>
+							<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+							<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+							<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+							<li class="main-navigation__item"><button class="btn btn_orange">Оставить заявку</button></li>
 							<li id="line"></li>
 						</ul>
+						<!-- (small size nav) -->
+						<!-- btn -->
+						<a class="main-navigation__hidden-btn mnu-white hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+						<div class="modal-navigation modal_div" id="modalNav">
+							<ul id="menuSmall" class="main-navigation__list_small hidden-lg hidden-md">
+								<a class="modal-navigation__close modal_close">Закрыть</a>
+								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+								<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+								<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+								<li class="main-navigation__item"><button class="btn btn_orange">Оставить заявку</button></li>
+								<!-- overlay (заменяет topline overlay) -->
+								<div id="overlay_dark" class="overlay_dark"></div>
+							</ul>
+						</div>
 					</nav>
 				</div>
+				<!-- end main-navigation -->
 			</div>
 
 			<!-- breadcrumbs -->
@@ -75,8 +92,8 @@
 
 
 			<div class="row">
-				<div class="col-xs-6">
-					<h1 class="main-head__title">О компании PetsProduct</h1>
+				<div class="col-lg-6 col-md-9">
+					<h2 class="main-head__title">О компании PetsProduct</h2>
 				</div>
 			</div>
 
@@ -86,9 +103,9 @@
 	<section class="company-features">
 		<div class="container">
 			<div class="row">
-				
+
 				<!-- item-1 -->
-				<div class="col-lg-7">
+				<div class="col-lg-7 col-md-7 col-sm-15">
 					<div class="company-feature">
 						<img src="images/icons/aboutcomp1.svg" class="company-feature__image"></img>
 						<p class="company-feature__title">
@@ -101,20 +118,20 @@
 				</div>
 
 				<!-- item-2 -->
-				<div class="col-lg-7 col-lg-offset-1">
+				<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
 					<div class="company-feature">
 						<img src="images/icons/aboutcomp2.svg" class="company-feature__image"></img>
 						<p class="company-feature__title">
 							Работа с питомниками и заводчиками
 						</p>
 						<p class="company-feature__text">
-							Группа компаний «Пет-Продукт» предлагает специальные условия работы для питомников и заводчиков. Мы предлагаем широкий ассортимент, выгодные цены, удобные условия доставки, а также различные акции и специальные предложения. Также действует расширенная программа работы на взаимовыгодных условиях для фелинологических и кинологических клубов. Также компания выступает в качестве спонсора на различных выставках кошек и собак. 
+							Группа компаний «Пет-Продукт» предлагает специальные условия работы для питомников и заводчиков. Мы предлагаем широкий ассортимент, выгодные цены, удобные условия доставки, а также различные акции и специальные предложения. Также действует расширенная программа работы на взаимовыгодных условиях для фелинологических и кинологических клубов. Также компания выступает в качестве спонсора на различных выставках кошек и собак.
 						</p>
 					</div>
 				</div>
 
 				<!-- item-3 -->
-				<div class="col-lg-7">
+				<div class="col-lg-7 col-md-7 col-sm-15">
 					<div class="company-feature">
 						<img src="images/icons/aboutcomp3.svg" class="company-feature__image"></img>
 						<p class="company-feature__title">
@@ -127,7 +144,7 @@
 				</div>
 
 				<!-- item-4 -->
-				<div class="col-lg-7 col-lg-offset-1">
+				<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
 					<div class="company-feature">
 						<img src="images/icons/aboutcomp4.svg" class="company-feature__image"></img>
 						<p class="company-feature__title">
@@ -148,23 +165,19 @@
 			<div class="row tac">
 				<h2 class="distribution__title">Эксклюзивная дистрибьюция</h2>
 			</div>
-			<div class="row tac">
 
 				<!-- item-1 -->
-				<div class="col-lg-4">
 					<div class="distribution__item">
-						<img src="images/distribution/dist1.png" alt="go now" class="distribution__image">
+						<img src="images/distribution/dist1.jpg" alt="go now" class="distribution__image">
 						<p class="distribution__item-title">GO, NOW, SUMMIT, GATHER</p>
 						<p class="distribution__text">
 							Корма класса холистик из Канады
 						</p>
 					</div>
-				</div>
 
 				<!-- item-2 -->
-				<div class="col-lg-4 col-lg-offset-1">
 					<div class="distribution__item">
-						<img src="images/distribution/dist2.png" alt="go now" class="distribution__image">
+						<img src="images/distribution/dist2.jpg" alt="go now" class="distribution__image">
 						<p class="distribution__item-title">Almo Nature</p>
 						<p class="distribution__text">
 							Сухие корма и консервы класса холистик.
@@ -172,115 +185,101 @@
 							Содержание мяса в консервах более 75%
 						</p>
 					</div>
-				</div>
 
 				<!-- item-3 -->
-				<div class="col-lg-4 col-lg-offset-1">
 					<div class="distribution__item">
-						<img src="images/distribution/dist3.png" alt="go now" class="distribution__image">
+						<img src="images/distribution/dist3.jpg" alt="go now" class="distribution__image">
 						<p class="distribution__item-title">Barking Heads</p>
 						<p class="distribution__text">
-							Полнорационный корм класса холистик 
+							Полнорационный корм класса холистик
 							<br>
 							из Британии
 						</p>
 					</div>
-				</div>
 
 				<!-- item-4 -->
-				<div class="col-lg-4">
 					<div class="distribution__item">
-						<img src="images/distribution/dist4.png" alt="go now" class="distribution__image">
+						<img src="images/distribution/dist4.jpg" alt="go now" class="distribution__image">
 						<p class="distribution__item-title">Advance</p>
 						<p class="distribution__text">
 							Высококачественный корм супер-премиум класса Испанской компании Affinity Petcare
 						</p>
 					</div>
-				</div>
 
 				<!-- item-5 -->
-				<div class="col-lg-4 col-lg-offset-1">
 					<div class="distribution__item">
-						<img src="images/distribution/dist5.png" alt="go now" class="distribution__image">
+						<img src="images/distribution/dist5.jpg" alt="go now" class="distribution__image">
 						<p class="distribution__item-title">Nero Gold</p>
 						<p class="distribution__text">
 							Cухие корма и лакомства супер премиум класса. Программа для питомников, вес упаковки до 18 кг
 						</p>
 					</div>
-				</div>
 
 				<!-- item-6 -->
-				<div class="col-lg-4 col-lg-offset-1">
 					<div class="distribution__item">
-						<img src="images/distribution/dist6.png" alt="go now" class="distribution__image">
+						<img src="images/distribution/dist6.jpg" alt="go now" class="distribution__image">
 						<p class="distribution__item-title">Ontario</p>
 						<p class="distribution__text">
 							Игровые комплексы для кошек
 						</p>
 					</div>
-				</div>
 
 				<!-- item-7 -->
-				<div class="col-lg-4">
 					<div class="distribution__item">
-						<img src="images/distribution/dist7.png" alt="go now" class="distribution__image">
+						<img src="images/distribution/dist7.jpg" alt="go now" class="distribution__image">
 						<p class="distribution__item-title">Anju Beaute, Pet Head</p>
 						<p class="distribution__text">
 							Уникальные средства косметического ухода для собак и кошек используемые грумерами
 						</p>
 					</div>
-				</div>
 
 				<!-- item-8 -->
-				<div class="col-lg-4 col-lg-offset-1">
 					<div class="distribution__item">
-						<img src="images/distribution/dist8.png" alt="go now" class="distribution__image">
+						<img src="images/distribution/dist8.jpg" alt="go now" class="distribution__image">
 						<p class="distribution__item-title">Eurolitter, Canada Litter, <br> Sepiolsa, Van Cat</p>
 						<p class="distribution__text">
 							Комкующийся наполнитель без пыли для кошачьих туалетов супер премиум класса
 						</p>
 					</div>
-				</div>
 
-				<!-- item-9 -->
-				<div class="col-lg-4 col-lg-offset-1">
 					<div class="distribution__item">
-						<img src="images/distribution/dist9.png" alt="go now" class="distribution__image">
+						<img src="images/distribution/dist9.jpg" alt="go now" class="distribution__image">
 						<p class="distribution__item-title">Moderna, Stefanplast, Curver</p>
 						<p class="distribution__text">
 							Комкующийся кукурузный бионаполнитель для кошачьих туалетов
 						</p>
 					</div>
-				</div>
-			</div>
-			<div class="row tac">
-				<h2 class="distribution__title">Производство собственных тарговых марок</h2>
-			</div>
-			<div class="row tac">
+
+
+
+
+
+		<h2 class="distribution__title">Производство собственных тарговых марок</h2>
+
 
 				<!-- big-item-1 -->
-				<div class="col-lg-6 col-lg-offset-1">
 					<div class="distribution__item distribution__item_big">
-						<img src="images/distribution/dist1_big.png" alt="go now" class="distribution__image distribution__image_big">
+						<img src="images/distribution/dist1_big.jpg" alt="go now" class="distribution__image distribution__image_big">
 						<p class="distribution__item-title">Organix</p>
 						<p class="distribution__text">
 							Вкусный консервированный корм для собак и кошек. Консервы изгшотовлены из натуральных продуктов с добавлением минералов. Не содержит ГМО
 						</p>
 					</div>
-				</div>
 
 				<!-- big-item-2 -->
-				<div class="col-lg-6 col-lg-offset-1">
 					<div class="distribution__item distribution__item_big">
-						<img src="images/distribution/dist2_big.png" alt="go now" class="distribution__image distribution__image_big">
+						<img src="images/distribution/dist2_big.jpg" alt="go now" class="distribution__image distribution__image_big">
 						<p class="distribution__item-title">Yami-Yami</p>
 						<p class="distribution__text">
 							Экологически чистые, созданные с учетом потребностей домашних животных аксуссуары игрушки и косметика
 						</p>
 					</div>
-				</div>
-			</div>
-		</div>
+
+
+
+
+
+
 	</section>
 
 	<section class="details">
@@ -315,15 +314,15 @@
 						<p class="details__right-text">
 							<span class="text-bold">ИНН </span>7813452140
 						</p>
-						
+
 						<p class="details__right-text">
 							<span class="text-bold">ОГРН </span>1097847249114
 						</p>
-						
+
 						<p class="details__right-text">
 							<span class="text-bold">р/с </span>40702810232060000023
 						</p>
-						
+
 						<p class="details__right-text">
 							<span class="text-bold">к/с </span>30101810300000000811
 						</p>
@@ -337,7 +336,7 @@
 		</div>
 	</section>
 
-	
+
 
 	 <!--footer-->
 	 @@include('global/footer.html')
