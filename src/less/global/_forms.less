@@ -430,6 +430,7 @@ textarea:focus {
   ::-moz-placeholder          {color: @grey}
   :-moz-placeholder           {color: @grey}
   :-ms-input-placeholder      {color: @grey}
+  margin-bottom: 30px;
 }
 
 .form-label {
@@ -439,6 +440,7 @@ textarea:focus {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.714em;
+  margin-bottom: 10px;
   @media (max-width: @tablet) {
     font-size: 13px;
   }
@@ -463,6 +465,8 @@ textarea:focus {
 }
 
 .form-textarea {
+  max-width: 100%;
+  max-height: 1200px;
   line-height: 1.333em;
   padding-top: 1em;
   padding-left: 1em;
@@ -481,10 +485,6 @@ textarea:focus {
 .SumoSelect {
   margin-bottom: 30px;
 }
-//Добавляю курсор для всего поля селекта
-//.SumoSelect * {
-//  cursor: pointer !important;
-//}
 //длина селектов
 .SumoSelect{width: 100%;}
 //ширина селектов
@@ -502,6 +502,9 @@ textarea:focus {
     padding: 8px;
     padding-left: 15px;
     font-weight: 300;
+    @media (max-width: @laptop) {
+      font-size: 13px;
+    }
 }
 
 p.CaptionCont.SelectBox span {
@@ -510,6 +513,9 @@ p.CaptionCont.SelectBox span {
     font-size: 14px;
     font-weight: 300;
     color: @lightblack;
+    @media (max-width: @laptop) {
+      font-size: 13px;
+    }
 }
 
 //select > option list
@@ -548,9 +554,18 @@ p.CaptionCont.SelectBox span {
         .SumoSelect > .CaptionCont > label { position: absolute; top: 0; right: 0; bottom: 0; width: 30px;}
 
             //BG image (right corner arrow)
-
-            .SumoSelect > .CaptionCont > label > i { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAApklEQVQYV2OUl5c/wcjImPHgwYMLDFiAoqKi/r9/f2YwSktLy7CyMq/794+h6NGjR0eQ1crLy1sxMDD0/fnzJ4QRJKGiIiH6+zfbBkbGf80PHjzZARJTUJB1//+fsYaV9VfQnTsvXoMVgoCSkhL/379/1v3/zzCTgYHhHyMjQzozM0vIvXv3PoLk4QpBHCkpKS42NpYV//4x/Pvz50/Us2fPvsEMAgCDFjuVYjUhIgAAAABJRU5ErkJggg==');
-                background-position: center center; width: 16px; height: 16px; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;background-repeat: no-repeat;opacity: 0.8;}
+            .SumoSelect > .CaptionCont > label > i {
+              background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAApklEQVQYV2OUl5c/wcjImPHgwYMLDFiAoqKi/r9/f2YwSktLy7CyMq/794+h6NGjR0eQ1crLy1sxMDD0/fnzJ4QRJKGiIiH6+zfbBkbGf80PHjzZARJTUJB1//+fsYaV9VfQnTsvXoMVgoCSkhL/379/1v3/zzCTgYHhHyMjQzozM0vIvXv3PoLk4QpBHCkpKS42NpYV//4x/Pvz50/Us2fPvsEMAgCDFjuVYjUhIgAAAABJRU5ErkJggg==');
+              background-position: center center;
+              width: 16px;
+              height: 16px;
+              display: block;
+              position: absolute;
+              top: 0; left: 0; right: 0; bottom: 0;
+              margin: auto;
+              background-repeat: no-repeat;
+              opacity: 0.8;
+              }
 
             .SumoSelect.open > .CaptionCont > label > i { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAApUlEQVQYV2NkQAJSUlJcbGwsK/79Y/j358+fqGfPnn2DSTPCGEpKSvx///5Z9/8/w0wGBoZ/jIwM6czMLCH37t37CFIDVqiiIiH6+zfbBkbGf80PHjzZARJTUJB1//+fsYaV9VfQnTsvXjNKS0vLsLIyr/v3j6Ho0aNHR5CdIi8vb8XAwND358+fEEZ5efkTjIyMGQ8ePLiArAjGVlRU1P/3788MAORzO5VWRRIyAAAAAElFTkSuQmCC') }
 

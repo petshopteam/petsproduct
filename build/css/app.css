@@ -2065,6 +2065,12 @@ textarea:focus
     border-color: #bababa;
 }
 
+.form-input,
+.form-textarea
+{
+    margin-bottom: 30px;
+}
+
 .form-input ::-webkit-input-placeholder,
 .form-textarea ::-webkit-input-placeholder
 {
@@ -2098,6 +2104,8 @@ textarea:focus
 
     display: block;
 
+    margin-bottom: 10px;
+
     color: #242423;
 }
 
@@ -2123,6 +2131,8 @@ textarea:focus
 {
     line-height: 1.333em;
 
+    max-width: 100%;
+    max-height: 1200px;
     padding-top: 1em;
     padding-left: 1em;
 }
@@ -6327,11 +6337,6 @@ h4
     border-top: none;
 }
 
-.request label
-{
-    margin-bottom: 10px;
-}
-
 .request__input
 {
     font-family: 'Rubik', Arial, sans-serif;
@@ -9316,9 +9321,16 @@ h4
 
     .request
     {
-        max-width: 840px;
+        max-width: 860px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .request__check-label
+    {
+        display: inline-block;
+
+        margin-top: 7px;
     }
 
     .slick-prev
@@ -9369,6 +9381,16 @@ h4
         float: left;
 
         width: 100%;
+    }
+
+    .SumoSelect > .optWrapper > .options li.opt
+    {
+        font-size: 13px;
+    }
+
+    p.CaptionCont.SelectBox span
+    {
+        font-size: 13px;
     }
 
     h1
@@ -9586,13 +9608,13 @@ h4
 
     .request
     {
-        max-width: 677px;
+        max-width: 697px;
     }
 
     .request__title
     {
-        margin-right: -40px;
-        margin-left: -40px;
+        margin-right: -30px;
+        margin-left: -30px;
     }
 
     .request__subtitle
@@ -9600,11 +9622,12 @@ h4
         padding-right: 100px;
     }
 
-    .request label
+    .request__check-label
     {
         display: block;
 
         width: 100%;
+        margin-top: 0;
         margin-bottom: 40px;
     }
 
@@ -10176,18 +10199,18 @@ h4
         padding-left: 20px;
     }
 
-    .request label
+    .request__check-label
     {
         margin-bottom: 0;
         padding-left: 20px;
     }
 
-    .request label::before
+    .request__check-label::before
     {
         top: 4px;
     }
 
-    .request label::after
+    .request__check-label::after
     {
         top: 4px;
     }
