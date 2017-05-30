@@ -3961,7 +3961,7 @@ h4
 
 .stores__search
 {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .stores__search-window
@@ -3994,14 +3994,14 @@ h4
 .stores__points
 {
     max-width: 720px;
-    padding: 50px 0 0 60px;
+    padding: 30px 0 0 30px;
 }
 
 .stores__stores-list
 {
     overflow-x: hidden;
 
-    max-height: 280px;
+    max-height: 290px;
 }
 
 .stores__stores-list::-webkit-scrollbar-button
@@ -4025,7 +4025,6 @@ h4
     -webkit-border-radius: 5px;
             border-radius: 5px;
     background-color: #bababa;
-    background-image: url('https://yraaa.ru/_pu/24/59610063.png');
     background-repeat: no-repeat;
     background-position: center;
     -webkit-box-shadow: 0 1px 1px #fff inset;
@@ -9427,6 +9426,12 @@ h4
         background-size: 95%;
     }
 
+    .stores__search
+    {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
     .stores__points
     {
         max-width: 100%;
@@ -9434,6 +9439,11 @@ h4
         margin-left: auto;
         padding: 0;
         padding-top: 40px;
+    }
+
+    .stores__stores-list
+    {
+        margin-bottom: 40px;
     }
 
     .main-page .main-head
@@ -9846,11 +9856,6 @@ h4
         right: 0;
     }
 
-    h1
-    {
-        font-size: 18px;
-    }
-
     h2
     {
         font-size: 24px;
@@ -9900,10 +9905,22 @@ h4
         padding: 0 5px;
     }
 
+    .stores__search
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .stores__points
     {
         padding-right: 10px;
         padding-left: 10px;
+    }
+
+    .stores__stores-list
+    {
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .stores__title
@@ -10177,6 +10194,8 @@ h4
     {
         margin-right: auto;
         margin-left: auto;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
     .request__subtitle

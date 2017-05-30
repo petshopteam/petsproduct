@@ -86,7 +86,16 @@
   }
 
   &__search {
-    margin-top: 20px;
+    margin-top: 30px;
+    @media (max-width: @laptop) {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    @media (max-width: @tablet) {
+      // max-width: 300px;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   &__search-window {
@@ -110,7 +119,7 @@
   }
 
   &__points {
-    padding: 50px 0 0 60px;
+    padding: 30px 0 0 30px;
     max-width: 720px;
     @media (max-width: @laptop) {
       max-width: 100%;
@@ -127,7 +136,7 @@
 
   &__stores-list {
     overflow-x: hidden;
-    max-height: 280px;
+    max-height: 290px;
     //  стилизация полосы прокрутки
     &::-webkit-scrollbar-button {
       background-image: url('');
@@ -146,7 +155,6 @@
       border-radius: 5px;
       background-color: #bababa;
       box-shadow: 0 1px 1px #fff inset;
-      background-image: url('https://yraaa.ru/_pu/24/59610063.png');
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -160,6 +168,14 @@
 
     &::-webkit-scrollbar {
       width: 2px;
+    }
+    @media (max-width: @laptop) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: @tablet) {
+      // max-width: 300px;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 
