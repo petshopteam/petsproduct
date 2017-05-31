@@ -181,10 +181,11 @@
     //pagination
     .pagination {
       position: relative;
-      max-width: 276px;
-      padding-top: 30px;
+      max-width: 280px;
+      padding-top: 40px;
       margin-right: auto;
       margin-left: auto;
+
       &::before {
         content: "";
         position: absolute;
@@ -192,7 +193,7 @@
         height: 3px;
         top: 0;
         right: 0;
-        background: @orange;
+        background: @orange url(../) no-repeat center;
       }
     }
 
@@ -246,7 +247,6 @@
     padding-bottom: 25px;
   }
   @media (max-width: @tablet) {
-    padding-bottom: 0;
     margin-right: 0;
     &::after {
       display: none;
@@ -336,9 +336,6 @@
   }
   @media (max-width: @laptop) {
     height: 340px;
-    &__title {
-      margin-top: 10%;
-    }
   }
   @media (max-width: @tablet) {
     height: 355px;

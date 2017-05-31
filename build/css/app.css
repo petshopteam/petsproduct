@@ -9847,11 +9847,6 @@ h4
         height: 340px;
     }
 
-    .news-item__title
-    {
-        margin-top: 10%;
-    }
-
     .request-page .container
     {
         padding-right: 10px;
@@ -10618,10 +10613,10 @@ h4
     {
         position: relative;
 
-        max-width: 276px;
+        max-width: 280px;
         margin-right: auto;
         margin-left: auto;
-        padding-top: 30px;
+        padding-top: 40px;
     }
 
     .news-page .pagination::before
@@ -10635,7 +10630,7 @@ h4
 
         content: '';
 
-        background: #e0552f;
+        background: #e0552f url(../) no-repeat center;
     }
 
     .news-page .actions-newsletter.actions-newsletter_hidden
@@ -10661,7 +10656,6 @@ h4
     .news-list
     {
         margin-right: 0;
-        padding-bottom: 0;
     }
 
     .news-list::after
