@@ -49,18 +49,35 @@
 					<a class="main-head__logo" href="./"></a>
 				</div>
 				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5">
+				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
 					<nav class="main-navigation">
-						<ul id="menu" class="main-navigation__list">
+						<!-- (big size nav) -->
+						<ul id="menu" class="main-navigation__list hidden-sm hidden-xs">
 							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-							<li class="menu-hover main-navigation__item"><a href="#">Акции</a></li>
-							<li class="menu-hover main-navigation__item"><a href="#">Партнеры</a></li>
-							<li class="menu-hover main-navigation__item active"><a href="#">Новости</a></li>
-							<li class="main-navigation__item"><button class="btn btn_red">Оставить заявку</button></li>
+							<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+							<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+							<li class="menu-hover main-navigation__item active"><a href="news.html">Новости</a></li>
+							<li class="main-navigation__item"><button class="btn btn_orange">Оставить заявку</button></li>
 							<li id="line"></li>
 						</ul>
+						<!-- (small size nav) -->
+						<!-- btn -->
+						<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+						<div class="modal-navigation modal_div" id="modalNav">
+							<ul id="menuSmall" class="main-navigation__list_small hidden-lg hidden-md">
+								<a class="modal-navigation__close modal_close">Закрыть</a>
+								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+								<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+								<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+								<li class="main-navigation__item"><button class="btn btn_orange">Оставить заявку</button></li>
+								<!-- overlay (заменяет topline overlay) -->
+								<div id="overlay_dark" class="overlay_dark"></div>
+							</ul>
+						</div>
 					</nav>
 				</div>
+				<!-- end main-navigation -->
 			</div>
 		</div>
 	</header>
@@ -78,17 +95,17 @@
 	<main class="article-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
-					<aside class="news-filters">
+				<div class="col-lg-4 col-md-4 col-sm-15">
+					<aside class="aside-filters news-filters">
 						<!-- time filter form -->
-						<form class="time-filter">
+						<form class="time-filter clearfix">
 							<p class="time-filter__title">Время</p>
 							<select class="time-filter__select">
 								<option value="allPeriod">2017 год</option>
 							</select>
 						</form>
 						<!-- region filter form -->
-						<form class="theme-filter">
+						<form class="theme-filter clearfix">
 							<p class="theme-filter__title">Темы</p>
 							<div class="theme-filter__themes">
 								<a href="#" class="theme-filter__theme">Новинки</a>
@@ -97,20 +114,21 @@
 							</div>
 						</form>
 						<!-- subscription form -->
-						<form class="actions-newsletter">
+						<form class="actions-newsletter hidden-sm hidden-xs">
 							<p class="actions-newsletter__title">Рассылка</p>
 							<p class="actions-newsletter__text">
 								Подпишитесь на рассылку
 								и получайте новости обо всех акциях первыми!
 							</p>
 							<input type="text" class="actions-newsletter__input" placeholder="Оставьте свой e-mail">
-							<button type="submit" class="actions-newsletter__submit btn btn_red">Подписаться</button>
+							<button type="submit" class="actions-newsletter__submit btn btn_orange">Подписаться</button>
 						</form>
 					</aside>
 				</div>
-				<div class="col-lg-11">
+
+				<div class="col-lg-11 col-md-11">
 					<section class="article-item clearfix">
-						<p class="article-item__title">Новинка в ассортименте TM GO! NaturalHolistic</p>
+						<h2 class="article-item__title">Новинка в ассортименте TM GO! NaturalHolistic</h2>
 						<span class="article-item__date">31.03.2017</span>
 						<a class="article-item__theme">Новинки</a>
 						<img class="article-item__image" src="images/articles/article-1.jpg" alt="TM GO! NaturalHolistic">
@@ -187,10 +205,27 @@
 					</section>
 
 					<!-- article-pagination -->
-					<section class="article-pagination">
-							<a href="#" class="article-pagination__prev">Предыдущая новость</a>
-							<a href="#" class="article-pagination__next">Следующая новость</a>
+					<section class="article-pagination clearfix">
+							<a href="#" class="article-pagination__prev">Предыдущая <span class="hidden-xs">новость</span></a>
+							<a href="#" class="article-pagination__next">Следующая <span class="hidden-xs">новость</span></a>
 					</section>
+
+
+					<!-- hidden-newsletter -->
+					<section class="news__newsletter_hidden">
+						<div class="container">
+							<form class="actions-newsletter actions-newsletter_hidden clearfix hidden-lg hidden-md">
+								<p class="actions-newsletter__title">Рассылка</p>
+								<p class="actions-newsletter__text">
+									Подпишитесь на рассылку
+									и получайте новости обо всех акциях первыми!
+								</p>
+								<input type="text" class="actions-newsletter__input" placeholder="Оставьте свой e-mail">
+								<button type="submit" class="actions-newsletter__submit btn btn_orange">Подписаться</button>
+							</form>
+						</div>
+					</section>
+
 				</div>
 			</div>
 		</div>

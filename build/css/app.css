@@ -5798,6 +5798,59 @@ h4
     margin-bottom: 60px;
 }
 
+.article-page .SumoSelect > p.CaptionCont
+{
+    min-height: 29px;
+    padding: 4px;
+    padding-left: 15px;
+}
+
+.article-page .SumoSelect.open > .optWrapper
+{
+    top: 28px;
+}
+
+.article-page .theme-filter__theme
+{
+    margin-right: 14px;
+    margin-bottom: 12px;
+}
+
+.article-page .actions-newsletter.actions-newsletter_hidden
+{
+    float: none;
+
+    width: 100%;
+    padding: 3%;
+
+    border: 1px solid #dfdfdf;
+}
+
+.article-page .actions-newsletter.actions-newsletter_hidden .actions-newsletter__title
+{
+    width: 100%;
+}
+
+.article-page .actions-newsletter.actions-newsletter_hidden .actions-newsletter__text
+{
+    width: 100%;
+}
+
+.article-page .actions-newsletter.actions-newsletter_hidden .actions-newsletter__input
+{
+    float: left;
+
+    width: 72%;
+    margin-right: 2%;
+}
+
+.article-page .actions-newsletter.actions-newsletter_hidden .actions-newsletter__submit
+{
+    float: right;
+
+    width: 24%;
+}
+
 /* стили фильтров страницы находятся в forms.less */
 
 .article-item
@@ -6019,6 +6072,7 @@ h4
     font-weight: 500;
     line-height: 30px;
 
+    margin-bottom: 70px;
     margin-left: 0;
 }
 
@@ -6089,7 +6143,6 @@ h4
 
     float: right;
 
-    margin-bottom: 70px;
     padding-right: 30px;
 }
 
@@ -9411,6 +9464,55 @@ h4
         line-height: 18px;
     }
 
+    .article-page .breadcrumbs
+    {
+        margin-left: 1px;
+    }
+
+    .article-page .container
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .article-page .main-foot .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .article-item
+    {
+        margin-bottom: 35px;
+    }
+
+    .article-item__price
+    {
+        position: absolute;
+        top: -50px;
+
+        width: 100%;
+        padding: 0;
+
+        color: #e0552f;
+        background: transparent;
+    }
+
+    .article-item__price:hover
+    {
+        color: #f83e3e;
+    }
+
+    .article-item__social
+    {
+        position: relative;
+
+        width: 100%;
+        margin-top: 90px;
+
+        border-left: 2px solid #f1f1f1;
+    }
+
     .request-page .breadcrumbs
     {
         margin-left: 0;
@@ -9849,6 +9951,124 @@ h4
     .news-item
     {
         height: 340px;
+    }
+
+    .article-page .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .article-page .main-foot .container
+    {
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+
+    .article-page .time-filter,
+    .article-page .theme-filter,
+    .article-page .region-filter,
+    .article-page .actions-newsletter
+    {
+        float: left;
+
+        width: 340px;
+        padding-right: 0;
+    }
+
+    .article-page .time-filter__title,
+    .article-page .theme-filter__title,
+    .article-page .region-filter__title,
+    .article-page .actions-newsletter__title
+    {
+        float: left;
+
+        width: 70px;
+        margin-right: 10px;
+    }
+
+    .article-page .time-filter .SumoSelect,
+    .article-page .theme-filter .SumoSelect,
+    .article-page .region-filter .SumoSelect,
+    .article-page .actions-newsletter .SumoSelect
+    {
+        bottom: 2px;
+
+        float: right;
+
+        width: 258px;
+    }
+
+    .article-page .theme-filter
+    {
+        float: right;
+
+        max-width: 340px;
+        padding-right: 0;
+
+        text-align: right;
+    }
+
+    .article-page .theme-filter__title
+    {
+        float: left;
+
+        width: 56px;
+        margin-right: 10px;
+    }
+
+    .article-page .theme-filter__themes
+    {
+        float: right;
+
+        width: 273px;
+
+        text-align: right;
+    }
+
+    .article-page .theme-filter__theme
+    {
+        min-width: 64px;
+        margin-right: 0;
+        margin-left: 5px;
+    }
+
+    .article-page .news__newsletter_hidden
+    {
+        margin-bottom: 80px;
+    }
+
+    .article-item__social-price
+    {
+        margin-top: 40px;
+    }
+
+    .article-item__price
+    {
+        font-size: 14px;
+
+        position: relative;
+        top: 0;
+
+        width: 64%;
+        padding: 22px 10px 19px 10px;
+
+        color: #fff;
+        background: #e0552f;
+    }
+
+    .article-item__price:hover
+    {
+        color: #fff;
+    }
+
+    .article-item__social
+    {
+        position: absolute;
+
+        margin-top: 0;
+
+        border-left: none;
     }
 
     .request-page .container
@@ -10693,6 +10913,183 @@ h4
     {
         padding-right: 15px;
         padding-left: 15px;
+    }
+
+    .article-page .main-foot .container
+    {
+        padding-right: 6%;
+        padding-left: 17%;
+    }
+
+    .article-page .main-foot__copyright .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+
+        text-align: center;
+    }
+
+    .article-page .time-filter,
+    .article-page .theme-filter,
+    .article-page .region-filter,
+    .article-page .actions-newsletter
+    {
+        float: none;
+
+        width: 100%;
+        padding: 0;
+
+        text-align: left;
+    }
+
+    .article-page .time-filter__title,
+    .article-page .theme-filter__title,
+    .article-page .region-filter__title,
+    .article-page .actions-newsletter__title
+    {
+        float: left;
+
+        width: auto;
+        margin-right: 20px;
+    }
+
+    .article-page .time-filter .SumoSelect,
+    .article-page .theme-filter .SumoSelect,
+    .article-page .region-filter .SumoSelect,
+    .article-page .actions-newsletter .SumoSelect
+    {
+        bottom: 2px;
+
+        float: left;
+
+        width: 71%;
+    }
+
+    .article-page .theme-filter
+    {
+        float: none;
+
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+
+        text-align: left;
+    }
+
+    .article-page .theme-filter__title
+    {
+        float: left;
+
+        width: auto;
+        margin-right: 29px;
+    }
+
+    .article-page .theme-filter__themes
+    {
+        bottom: 2px;
+
+        float: left;
+
+        width: 71%;
+
+        text-align: left;
+    }
+
+    .article-page .theme-filter__theme
+    {
+        min-width: 87px;
+        margin-right: 10px;
+        margin-left: 0;
+    }
+
+    .article-page .pagination
+    {
+        position: relative;
+
+        max-width: 280px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 40px;
+    }
+
+    .article-page .pagination::before
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 232px;
+        height: 3px;
+
+        content: '';
+
+        background: #e0552f url(../) no-repeat center;
+    }
+
+    .article-page .actions-newsletter.actions-newsletter_hidden
+    {
+        padding: 7% 20% 8% 8%;
+    }
+
+    .article-page .actions-newsletter.actions-newsletter_hidden .actions-newsletter__input
+    {
+        float: none;
+
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .article-page .actions-newsletter.actions-newsletter_hidden .actions-newsletter__submit
+    {
+        float: none;
+
+        width: auto;
+    }
+
+    .article-item__image
+    {
+        margin-bottom: 10px;
+    }
+
+    .article-item__price
+    {
+        position: absolute;
+        top: -85px;
+
+        width: 100%;
+        padding: 0;
+
+        color: #e0552f;
+        background: transparent;
+    }
+
+    .article-item__price:hover
+    {
+        color: #f83e3e;
+    }
+
+    .article-item__social
+    {
+        position: relative;
+
+        width: 100%;
+        margin-top: 140px;
+        padding-right: 20px;
+        padding-left: 20px;
+
+        text-align: center;
+
+        border-left: 2px solid #f1f1f1;
+    }
+
+    .article-item__list
+    {
+        border-left: none;
+    }
+
+    .article-pagination
+    {
+        margin-bottom: 50px;
     }
 
     .request-page .main-foot .container
