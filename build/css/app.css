@@ -5579,7 +5579,7 @@ h4
 
 .news-page .theme-filter__theme
 {
-    margin-right: 15px;
+    margin-right: 14px;
     margin-bottom: 12px;
 }
 
@@ -9402,7 +9402,7 @@ h4
 
     .news-item
     {
-        height: 285px;
+        height: 295px;
     }
 
     .news-item__title
@@ -10076,6 +10076,14 @@ h4
     .main-suppliers__slider .slick-next
     {
         left: 91%;
+    }
+}
+
+@media (max-width: 880px)
+{
+    .news-item
+    {
+        height: 310px;
     }
 }
 
