@@ -6306,11 +6306,9 @@ h4
 
 .partners__list::after
 {
-    visibility: hidden;
-
     padding-left: 350px;
 
-    content: ' i i i i i i i i ';
+    content: ' i i i i ';
     word-spacing: 375px;
 }
 
@@ -10213,7 +10211,7 @@ h4
     {
         padding-left: 230px;
 
-        word-spacing: 250px;
+        word-spacing: 245px;
     }
 
     .partners__item
