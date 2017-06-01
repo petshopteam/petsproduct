@@ -33,6 +33,7 @@
   .pagination {
     margin-bottom: 60px;
     padding-right: 0;
+    padding-top: 15px;
   }
 
   .SumoSelect>p.CaptionCont {
@@ -80,6 +81,9 @@
     .main-foot .container {
       padding-right: 10px;
       padding-left: 10px;
+    }
+    .pagination {
+      padding-right: 10px;
     }
   }
   @media (max-width: @laptop) {
@@ -182,9 +186,12 @@
     .pagination {
       position: relative;
       max-width: 280px;
-      padding-top: 40px;
       margin-right: auto;
       margin-left: auto;
+      padding-right: 0;
+      &__right-list {
+        margin-right: -10px;
+      }
 
       &::before {
         content: "";
@@ -231,7 +238,7 @@
   text-align: center;
   padding-bottom: 30px;
   &::after {
-    content: ' i i i i ';
+    content: ' i i i ';
     padding-left: 258px;
     word-spacing: 291px;
     visibility: hidden;
@@ -264,6 +271,9 @@
   }
   @media (max-width: @tablet) {
     margin-right: 0;
+    &::after {
+      display: none;
+    }
     &::before {
       display: none;
     }

@@ -49,18 +49,35 @@
 					<a class="main-head__logo" href="./"></a>
 				</div>
 				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5">
+				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
 					<nav class="main-navigation">
-						<ul id="menu" class="main-navigation__list">
+						<!-- (big size nav) -->
+						<ul id="menu" class="main-navigation__list hidden-sm hidden-xs">
 							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
 							<li class="menu-hover main-navigation__item active"><a href="actions.html">Акции</a></li>
 							<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
 							<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-							<li class="main-navigation__item"><button class="btn btn_red">Оставить заявку</button></li>
+							<li class="main-navigation__item"><button class="btn btn_orange">Оставить заявку</button></li>
 							<li id="line"></li>
 						</ul>
+						<!-- (small size nav) -->
+						<!-- btn -->
+						<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+						<div class="modal-navigation modal_div" id="modalNav">
+							<ul id="menuSmall" class="main-navigation__list_small hidden-lg hidden-md">
+								<a class="modal-navigation__close modal_close">Закрыть</a>
+								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+								<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+								<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+								<li class="main-navigation__item"><button class="btn btn_orange">Оставить заявку</button></li>
+								<!-- overlay (заменяет topline overlay) -->
+								<div id="overlay_dark" class="overlay_dark"></div>
+							</ul>
+						</div>
 					</nav>
 				</div>
+				<!-- end main-navigation -->
 			</div>
 		</div>
 	</header>
@@ -78,40 +95,41 @@
 	<main class="actions-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3">
-					<aside class="aside-filters actions-filters">
+				<div class="col-lg-3 col-md-4 col-sm-15">
+					<aside class="aside-filters news-filters">
 						<!-- time filter form -->
-						<form class="time-filter">
+						<form class="time-filter clearfix">
 							<p class="time-filter__title">Время</p>
 							<select class="time-filter__select">
-								<option value="allPeriod">За весь период</option>
+								<option value="allPeriod">2017 год</option>
 							</select>
 						</form>
 						<!-- region filter form -->
-						<form class="region-filter">
+						<form class="region-filter clearfix">
 							<p class="region-filter__title">Регион</p>
 							<select class="region-filter__select">
 								<option value="allPeriod">Санкт-Петербург</option>
 							</select>
 						</form>
 						<!-- subscription form -->
-						<form class="actions-newsletter">
+						<form class="actions-newsletter hidden-sm hidden-xs">
 							<p class="actions-newsletter__title">Рассылка</p>
 							<p class="actions-newsletter__text">
 								Подпишитесь на рассылку
 								и получайте новости обо всех акциях первыми!
 							</p>
 							<input type="text" class="actions-newsletter__input" placeholder="Оставьте свой e-mail">
-							<button type="submit" class="actions-newsletter__submit btn btn_red">Подписаться</button>
+							<button type="submit" class="actions-newsletter__submit btn btn_orange">Подписаться</button>
 						</form>
 					</aside>
 				</div>
-				<div class="col-lg-12">
-					<section class="actions-list">
-						<div class="container-offset">
-							<div class="row">
+
+
+				<div class="col-lg-12 col-md-11 col-sm-15">
+
+					<section class="actions-list clearfix">
+
 								<!--  item-1  -->
-								<div class="col-lg-15">
 									<div class="actions-item clearfix">
 										<img class="actions-item__image" src="images/actions/action-1.jpg">
 										<div class="actions-item__text">
@@ -129,10 +147,8 @@
 											</p>
 										</div>
 									</div>
-								</div>
 
 								<!--  item-2  -->
-								<div class="col-lg-15">
 									<div class="actions-item clearfix">
 										<img class="actions-item__image" src="images/actions/action-2.jpg">
 										<div class="actions-item__text">
@@ -150,10 +166,8 @@
 											</p>
 										</div>
 									</div>
-								</div>
 
 								<!--  item-3  -->
-								<div class="col-lg-15">
 									<div class="actions-item clearfix">
 										<img class="actions-item__image" src="images/actions/action-3.jpg">
 										<div class="actions-item__text">
@@ -171,10 +185,8 @@
 											</p>
 										</div>
 									</div>
-								</div>
 
 								<!--  item-4  -->
-								<div class="col-lg-15">
 									<div class="actions-item clearfix">
 										<img class="actions-item__image" src="images/actions/action-4.jpg">
 										<div class="actions-item__text">
@@ -192,10 +204,8 @@
 											</p>
 										</div>
 									</div>
-								</div>
 
 								<!--  item-5  -->
-								<div class="col-lg-15">
 									<div class="actions-item clearfix">
 										<img class="actions-item__image" src="images/actions/action-5.jpg">
 										<div class="actions-item__text">
@@ -213,10 +223,8 @@
 											</p>
 										</div>
 									</div>
-								</div>
 
 								<!--  item-6  -->
-								<div class="col-lg-15">
 									<div class="actions-item clearfix">
 										<img class="actions-item__image" src="images/actions/action-6.jpg">
 										<div class="actions-item__text">
@@ -234,10 +242,8 @@
 											</p>
 										</div>
 									</div>
-								</div>
 
 								<!--  item-7  -->
-								<div class="col-lg-15">
 									<div class="actions-item clearfix">
 										<img class="actions-item__image" src="images/actions/action-7.jpg">
 										<div class="actions-item__text">
@@ -255,10 +261,8 @@
 											</p>
 										</div>
 									</div>
-								</div>
 
 								<!--  item-8  -->
-								<div class="col-lg-15">
 									<div class="actions-item clearfix">
 										<img class="actions-item__image" src="images/actions/action-8.jpg">
 										<div class="actions-item__text">
@@ -276,10 +280,8 @@
 											</p>
 										</div>
 									</div>
-								</div>
 
 								<!--  item-9  -->
-								<div class="col-lg-15">
 									<div class="actions-item clearfix">
 										<img class="actions-item__image" src="images/actions/action-9.jpg">
 										<div class="actions-item__text">
@@ -297,10 +299,8 @@
 											</p>
 										</div>
 									</div>
-								</div>
 
 								<!--  item-10  -->
-								<div class="col-lg-15">
 									<div class="actions-item clearfix">
 										<img class="actions-item__image" src="images/actions/action-10.jpg">
 										<div class="actions-item__text">
@@ -318,9 +318,36 @@
 											</p>
 										</div>
 									</div>
-								</div>
-							</div>
-						</div>
+
+
+
+
+									<section class="pagination clearfix">
+										<div class="container-offset">
+												<div class="pagination__left">
+													<span>Показать по:</span>
+													<ul class="pagination__left-list">
+														<li class="pagination__left-item active"><a href="#">10</a></li>
+														<li class="pagination__left-item"><a href="#">20</a></li>
+														<li class="pagination__left-item"><a href="#">ВСЕ</a></li>
+													</ul>
+												</div>
+												<div class="pagination__right clearfix">
+													<ul class="pagination__right-list">
+														<!-- hidden class (optional) for hide left arrow -->
+														<li class="pagination__right-item pagination__left-arrow hidden"><a href="#">
+														</a></li>
+														<li class="pagination__right-item active"><a href="">1</a></li>
+														<li class="pagination__right-item"><a href="#">2</a></li>
+														<li class="pagination__right-item"><a href="#">3</a></li>
+														<li class="pagination__right-item"><a href="...">...</a></li>
+														<li class="pagination__right-item"><a href="#">7</a></li>
+														<li class="pagination__right-item pagination__right-arrow"><a href="#">
+														</a></li>
+													</ul>
+												</div>
+										</div>
+									</section>
 
 
 					</section>
@@ -328,38 +355,6 @@
 			</div>
 		</div>
 	</main>
-
-	<!-- pagination -->
-	<section class="pagination clearfix">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-lg-offset-3">
-					<div class="pagination__left">
-						<span>Показать по:</span>
-						<ul class="pagination__left-list">
-							<li class="pagination__left-item active"><a href="#">10</a></li>
-							<li class="pagination__left-item"><a href="#">20</a></li>
-							<li class="pagination__left-item"><a href="#">ВСЕ</a></li>
-						</ul>
-					</div>
-					<div class="pagination__right clearfix">
-						<ul class="pagination__right-list">
-							<!-- hidden class (optional) for hide left arrow -->
-							<li class="pagination__right-item pagination__left-arrow hidden"><a href="#">
-							</a></li>
-							<li class="pagination__right-item active"><a href="">1</a></li>
-							<li class="pagination__right-item"><a href="#">2</a></li>
-							<li class="pagination__right-item"><a href="#">3</a></li>
-							<li class="pagination__right-item"><a href="...">...</a></li>
-							<li class="pagination__right-item"><a href="#">7</a></li>
-							<li class="pagination__right-item pagination__right-arrow"><a href="#">
-							</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 
 	 <!--footer-->
