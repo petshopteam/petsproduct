@@ -231,10 +231,10 @@
   text-align: center;
   padding-bottom: 30px;
   &::after {
-    content: ' i i i i i i i i ';
-    word-spacing: 107px;
-    padding-left: 97px;
-    // visibility: hidden;
+    content: ' i i i i ';
+    padding-left: 258px;
+    word-spacing: 291px;
+    visibility: hidden;
   }
   &::before {
     position: absolute;
@@ -248,8 +248,8 @@
   //media
   @media (max-width: @desktop) {
     &::after {
-      padding-left: 67px;
-      word-spacing: 67px;
+      padding-left: 202px;
+      word-spacing: 233px;
     }
     &::before {
       right: 10px;
@@ -257,6 +257,10 @@
   }
   @media (max-width: @laptop) {
     padding-bottom: 25px;
+    &::after {
+      padding-left: 222px;
+      word-spacing: 255px;
+    }
   }
   @media (max-width: @tablet) {
     margin-right: 0;

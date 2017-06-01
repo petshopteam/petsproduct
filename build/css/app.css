@@ -5645,10 +5645,12 @@ h4
 
 .news-list::after
 {
-    padding-left: 97px;
+    visibility: hidden;
 
-    content: ' i i i i i i i i ';
-    word-spacing: 107px;
+    padding-left: 258px;
+
+    content: ' i i i i ';
+    word-spacing: 291px;
 }
 
 .news-list::before
@@ -9505,9 +9507,9 @@ h4
 
     .news-list::after
     {
-        padding-left: 67px;
+        padding-left: 202px;
 
-        word-spacing: 67px;
+        word-spacing: 233px;
     }
 
     .news-list::before
@@ -10047,6 +10049,13 @@ h4
     .news-list
     {
         padding-bottom: 25px;
+    }
+
+    .news-list::after
+    {
+        padding-left: 222px;
+
+        word-spacing: 255px;
     }
 
     .news-item
