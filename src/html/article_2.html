@@ -49,18 +49,35 @@
 					<a class="main-head__logo" href="./"></a>
 				</div>
 				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5">
+				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
 					<nav class="main-navigation">
-						<ul id="menu" class="main-navigation__list">
+						<!-- (big size nav) -->
+						<ul id="menu" class="main-navigation__list hidden-sm hidden-xs">
 							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-							<li class="menu-hover main-navigation__item"><a href="#">Акции</a></li>
-							<li class="menu-hover main-navigation__item"><a href="#">Партнеры</a></li>
-							<li class="menu-hover main-navigation__item active"><a href="#">Новости</a></li>
-							<li class="main-navigation__item"><button class="btn btn_red">Оставить заявку</button></li>
+							<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+							<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+							<li class="menu-hover main-navigation__item active"><a href="news.html">Новости</a></li>
+							<li class="main-navigation__item"><button class="btn btn_orange">Оставить заявку</button></li>
 							<li id="line"></li>
 						</ul>
+						<!-- (small size nav) -->
+						<!-- btn -->
+						<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+						<div class="modal-navigation modal_div" id="modalNav">
+							<ul id="menuSmall" class="main-navigation__list_small hidden-lg hidden-md">
+								<a class="modal-navigation__close modal_close">Закрыть</a>
+								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+								<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+								<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+								<li class="main-navigation__item"><button class="btn btn_orange">Оставить заявку</button></li>
+								<!-- overlay (заменяет topline overlay) -->
+								<div id="overlay_dark" class="overlay_dark"></div>
+							</ul>
+						</div>
 					</nav>
 				</div>
+				<!-- end main-navigation -->
 			</div>
 		</div>
 	</header>
@@ -78,17 +95,17 @@
 	<main class="article-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
-					<aside class="news-filters">
+				<div class="col-lg-4 col-md-4 col-sm-15 col-xs-15">
+					<aside class="aside-filters news-filters">
 						<!-- time filter form -->
-						<form class="time-filter">
+						<form class="time-filter clearfix">
 							<p class="time-filter__title">Время</p>
 							<select class="time-filter__select">
 								<option value="allPeriod">2017 год</option>
 							</select>
 						</form>
 						<!-- region filter form -->
-						<form class="theme-filter">
+						<form class="theme-filter clearfix">
 							<p class="theme-filter__title">Темы</p>
 							<div class="theme-filter__themes">
 								<a href="#" class="theme-filter__theme">Новинки</a>
@@ -97,39 +114,39 @@
 							</div>
 						</form>
 						<!-- subscription form -->
-						<form class="actions-newsletter">
+						<form class="actions-newsletter hidden-sm hidden-xs">
 							<p class="actions-newsletter__title">Рассылка</p>
 							<p class="actions-newsletter__text">
 								Подпишитесь на рассылку
 								и получайте новости обо всех акциях первыми!
 							</p>
 							<input type="text" class="actions-newsletter__input" placeholder="Оставьте свой e-mail">
-							<button type="submit" class="actions-newsletter__submit btn btn_red">Подписаться</button>
+							<button type="submit" class="actions-newsletter__submit btn btn_orange">Подписаться</button>
 						</form>
 					</aside>
 				</div>
-				<div class="col-lg-11">
+				<div class="col-lg-11 col-md-11 col-sm-15 col-xs-15">
 					<section class="article-item clearfix">
-						<p class="article-item__title">В Санкт-Петребурге прошли монопородные выставки собак</p>
+						<h2 class="article-item__title">В Санкт-Петребурге прошли монопородные выставки собак</h2>
 						<span class="article-item__date">24.01.2017</span>
 						<a class="article-item__theme">Новинки</a>
 						<p class="article-item__subtitle">
 							Уважаемые клиенты!
 						</p>
 						<p class="article-item__text">
-							21 и 22 января в Санкт-Петербурге в рамках 2-х Всероссийских выставок собак, прошли монопородные выставки собак разных пород. Организаторами выставок выступили клубы «Санкт-Петербург» и «Северная Венеция» 
+							21 и 22 января в Санкт-Петербурге в рамках 2-х Всероссийских выставок собак, прошли монопородные выставки собак разных пород. Организаторами выставок выступили клубы «Санкт-Петербург» и «Северная Венеция»
 							<br>
 							ГК "Пет-Продукт" выступила спонсором ряда монопородных выставок: эрдельтерьер, французский бульдог, скайтерьер, большая швейцарская овчарка, пинчеры, а также одним из спонсоров рейтинга СЗРО НКП Такса - " Лучшая такса 2016".
 							<br>
 							В качестве призов были предоставлены корма ТМ GO! NATURAL Holistic, консервы и лакомства ТМ Organix.
 							<br>
 							<br>
-							<span class="text-bold">Поздравляем победителей и участников выставок!</span>
+							<span class="text-medium">Поздравляем победителей и участников выставок!</span>
 						</p>
 
 						<!-- article-slider block -->
 						<div class="article-item__slider">
-							
+
 							<!-- slide-1 -->
 							<div class="article-item__slide clearfix">
 								<a href="#modalArticle1" class="open_modal_dark">
@@ -143,7 +160,7 @@
 								<a href="#modalArticle1" class="open_modal_dark">
 									<img class="article-item__slide-image" src="images/article-slider/slide-1.jpg" alt="slide-2">
 									<p class="article-item__slide-text">Монопородная выставка собак в Санкт-Петербурге</p>
-									<span class="article-item__slide-counter"><span class="text-white">2 / </span>4</span>	
+									<span class="article-item__slide-counter"><span class="text-white">2 / </span>4</span>
 								</a>
 							</div>
 							<!-- slide-3 -->
@@ -151,7 +168,7 @@
 								<a href="#modalArticle1" class="open_modal_dark">
 									<img class="article-item__slide-image" src="images/article-slider/slide-1.jpg" alt="slide-3">
 									<p class="article-item__slide-text">Монопородная выставка собак в Санкт-Петербурге</p>
-									<span class="article-item__slide-counter"><span class="text-white">3 / </span>4</span>	
+									<span class="article-item__slide-counter"><span class="text-white">3 / </span>4</span>
 								</a>
 							</div>
 							<!-- slide-4 -->
@@ -159,11 +176,11 @@
 								<a href="#modalArticle1" class="open_modal_dark">
 									<img class="article-item__slide-image" src="images/article-slider/slide-1.jpg" alt="slide-4">
 									<p class="article-item__slide-text">Монопородная выставка собак в Санкт-Петербурге</p>
-									<span class="article-item__slide-counter"><span class="text-white">4 / </span>4</span>	
+									<span class="article-item__slide-counter"><span class="text-white">4 / </span>4</span>
 								</a>
 							</div>
-							
-						
+
+
 						</div>
 
 						<ul class="article-item__social article-item__social_full">
@@ -187,14 +204,29 @@
 					</section>
 
 					<!-- article-pagination -->
-					<section class="article-pagination">
-							<a href="#" class="article-pagination__prev">Предыдущая новость</a>
-							<a href="#" class="article-pagination__next">Следующая новость</a>
+					<section class="article-pagination clearfix">
+							<a href="#" class="article-pagination__prev">Предыдущая <span class="hidden-xs">запись</span></a>
+							<a href="#" class="article-pagination__next">Следующая <span class="hidden-xs">запись</span></a>
 					</section>
 				</div>
 			</div>
 		</div>
 	</main>
+
+	<!-- hidden-newsletter -->
+	<section class="news__newsletter_hidden">
+		<div class="container">
+			<form class="actions-newsletter actions-newsletter_hidden clearfix hidden-lg hidden-md">
+				<p class="actions-newsletter__title">Рассылка</p>
+				<p class="actions-newsletter__text">
+					Подпишитесь на рассылку
+					и получайте новости обо всех акциях первыми!
+				</p>
+				<input type="text" class="actions-newsletter__input" placeholder="Оставьте свой e-mail">
+				<button type="submit" class="actions-newsletter__submit btn btn_orange">Подписаться</button>
+			</form>
+		</div>
+	</section>
 
 	<!-- modal window -->
 

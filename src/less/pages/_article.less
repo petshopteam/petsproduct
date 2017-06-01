@@ -317,6 +317,7 @@
     }
   }
   &__social_full {
+    position: relative;
     width: 100%;
     border-left: 2px solid @lightgrey;
     padding: 16px 12px 15px 0;
@@ -363,6 +364,10 @@
       position: absolute;
       border-left: none;
     }
+    &__social_full {
+      position: relative;
+      border-left: 2px solid @lightgrey;
+    }
   }
   @media (max-width: @tablet) {
     &__image {
@@ -387,6 +392,9 @@
       padding-left: 20px;
       padding-right: 20px;
       border-left: 2px solid @lightgrey;
+    }
+    &__social_full {
+      margin-top: 10px;
     }
     &__list {
       border-left: none;

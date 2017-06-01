@@ -49,18 +49,35 @@
 					<a class="main-head__logo" href="./"></a>
 				</div>
 				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5">
+				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
 					<nav class="main-navigation">
-						<ul id="menu" class="main-navigation__list">
+						<!-- (big size nav) -->
+						<ul id="menu" class="main-navigation__list hidden-sm hidden-xs">
 							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
 							<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
 							<li class="menu-hover main-navigation__item active"><a href="partners.html">Партнеры</a></li>
 							<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-							<li class="main-navigation__item"><button class="btn btn_red">Оставить заявку</button></li>
+							<li class="main-navigation__item"><button class="btn btn_orange">Оставить заявку</button></li>
 							<li id="line"></li>
 						</ul>
+						<!-- (small size nav) -->
+						<!-- btn -->
+						<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+						<div class="modal-navigation modal_div" id="modalNav">
+							<ul id="menuSmall" class="main-navigation__list_small hidden-lg hidden-md">
+								<a class="modal-navigation__close modal_close">Закрыть</a>
+								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+								<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+								<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+								<li class="main-navigation__item"><button class="btn btn_orange">Оставить заявку</button></li>
+								<!-- overlay (заменяет topline overlay) -->
+								<div id="overlay_dark" class="overlay_dark"></div>
+							</ul>
+						</div>
 					</nav>
 				</div>
+				<!-- end main-navigation -->
 			</div>
 		</div>
 	</header>
@@ -75,106 +92,79 @@
 		</div>
 	</section>
 
-	<section class="partners">
+	<section class="partners tac">
 		<div class="container">
-			<div class="row tac">
-				<h1 class="partners__title">Наши партнеры</h1>
+				<h2 class="partners__title">Наши партнеры</h2>
 				<p class="partners__subtitle">
 					Наши партнёры это крупнейшие торговые интернет платформы, оптовые компании, розничные сети зоотоваров, интернет магазины, ветеринарные клиники, зоомагазины и питомники.
 				</p>
-			</div>
-			<div class="row">
 
-				<!-- item-1 -->
-				<div class="col-lg-5">
-					<div class="partners__item">
-						<img src="images/partners/1.png" alt="ozon.ru" class="partners__image responsive">
-						<p class="partners__item-title">ООО “Интернет решения” (Озон)</p>
-					</div>
-				</div>
-				<!-- item-2 -->
-				<div class="col-lg-5">
-					<div class="partners__item">
-						<img src="images/partners/2.png" alt="ulmart" class="partners__image responsive">
-						<p class="partners__item-title">НАО Юлмарт</p>
-					</div>
-				</div>
-				<!-- item-3 -->
-				<div class="col-lg-5">
-					<div class="partners__item">
-						<img src="images/partners/3.png" alt="CОРСО-СТР МСК" class="partners__image responsive">
-						<p class="partners__item-title">CОРСО-СТР МСК</p>
-					</div>
-				</div>
-				<!-- item-4 -->
-				<div class="col-lg-5">
-					<div class="partners__item">
-						<img src="images/partners/4.png" alt="Зоостандарт" class="partners__image responsive">
-						<p class="partners__item-title">ООО “Зоостандарт”</p>
-					</div>
-				</div>
-				<!-- item-5 -->
-				<div class="col-lg-5">
-					<div class="partners__item">
-						<img src="images/partners/5.png" alt="" class="partners__image responsive">
-						<p class="partners__item-title">Сеть зоомагазинов “Бетховен”</p>
-					</div>
-				</div>
-				<!-- item-6 -->
-				<div class="col-lg-5">
-					<div class="partners__item">
-						<img src="images/partners/6.png" alt="" class="partners__image responsive">
-						<p class="partners__item-title">Сеть зоомагазинов “4 лапы”</p>
-					</div>
-				</div>
-				<!-- item-7 -->
-				<div class="col-lg-5">
-					<div class="partners__item">
-						<img src="images/partners/7.png" alt="" class="partners__image responsive">
-						<p class="partners__item-title">Сеть зоомагазинов “Любимчик”</p>
-					</div>
-				</div>
-				<!-- item-8 -->
-				<div class="col-lg-5">
-					<div class="partners__item">
-						<img src="images/partners/8.png" alt="" class="partners__image responsive">
-						<p class="partners__item-title">Сеть зоомагазинов “Динозаврики”</p>
-					</div>
-				</div>
-				<!-- item-9 -->
-				<div class="col-lg-5">
-					<div class="partners__item">
-						<img src="images/partners/9.png" alt="" class="partners__image responsive">
-						<p class="partners__item-title">ООО Леонов (Лидмарт)</p>
-					</div>
-				</div>
-				<!-- item-10 -->
-				<div class="col-lg-5">
-					<div class="partners__item">
-						<img src="images/partners/10.png" alt="" class="partners__image responsive">
-						<p class="partners__item-title">ООО “Первая кормовая компания”</p>
-					</div>
-				</div>
-				<!-- item-11 -->
-				<div class="col-lg-5">
-					<div class="partners__item">
-						<img src="images/partners/11.png" alt="" class="partners__image responsive">
-						<p class="partners__item-title">ООО “Зоокомпания№1”</p>
-					</div>
-				</div>
-				<!-- item-12 -->
-				<div class="col-lg-5">
-					<div class="partners__item">
-						<img src="images/partners/12.png" alt="" class="partners__image responsive">
-						<p class="partners__item-title">ООО “Альбатрос Трейд”</p>
-					</div>
+				<div class="partners__list">
+					<!-- item-1 -->
+						<div class="partners__item">
+							<img src="images/partners/1.png" alt="ozon.ru" class="partners__image responsive">
+							<p class="partners__item-title">ООО “Интернет решения” (Озон)</p>
+						</div>
+					<!-- item-2 -->
+						<div class="partners__item">
+							<img src="images/partners/2.png" alt="ulmart" class="partners__image responsive">
+							<p class="partners__item-title">НАО Юлмарт</p>
+						</div>
+					<!-- item-3 -->
+						<div class="partners__item">
+							<img src="images/partners/3.png" alt="CОРСО-СТР МСК" class="partners__image responsive">
+							<p class="partners__item-title">CОРСО-СТР МСК</p>
+						</div>
+					<!-- item-4 -->
+						<div class="partners__item">
+							<img src="images/partners/4.png" alt="Зоостандарт" class="partners__image responsive">
+							<p class="partners__item-title">ООО “Зоостандарт”</p>
+						</div>
+					<!-- item-5 -->
+						<div class="partners__item">
+							<img src="images/partners/5.png" alt="" class="partners__image responsive">
+							<p class="partners__item-title">Сеть зоомагазинов “Бетховен”</p>
+						</div>
+					<!-- item-6 -->
+						<div class="partners__item">
+							<img src="images/partners/6.png" alt="" class="partners__image responsive">
+							<p class="partners__item-title">Сеть зоомагазинов “4 лапы”</p>
+						</div>
+					<!-- item-7 -->
+						<div class="partners__item">
+							<img src="images/partners/7.png" alt="" class="partners__image responsive">
+							<p class="partners__item-title">Сеть зоомагазинов “Любимчик”</p>
+						</div>
+					<!-- item-8 -->
+						<div class="partners__item">
+							<img src="images/partners/8.png" alt="" class="partners__image responsive">
+							<p class="partners__item-title">Сеть зоомагазинов “Динозаврики”</p>
+						</div>
+					<!-- item-9 -->
+						<div class="partners__item">
+							<img src="images/partners/9.png" alt="" class="partners__image responsive">
+							<p class="partners__item-title">ООО Леонов (Лидмарт)</p>
+						</div>
+					<!-- item-10 -->
+						<div class="partners__item">
+							<img src="images/partners/10.png" alt="" class="partners__image responsive">
+							<p class="partners__item-title">ООО “Первая кормовая компания”</p>
+						</div>
+					<!-- item-11 -->
+						<div class="partners__item">
+							<img src="images/partners/11.png" alt="" class="partners__image responsive">
+							<p class="partners__item-title">ООО “Зоокомпания№1”</p>
+						</div>
+					<!-- item-12 -->
+						<div class="partners__item">
+							<img src="images/partners/12.png" alt="" class="partners__image responsive">
+							<p class="partners__item-title">ООО “Альбатрос Трейд”</p>
+						</div>
 				</div>
 
-			</div>
-			<div class="row tac">
+
 				<a href="#" class="btn btn_orange btn_load">Загрузить ещё</a>
-			</div>
-		</div>
+
 	</section>
 
 

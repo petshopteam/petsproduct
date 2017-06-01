@@ -390,6 +390,7 @@
   position: fixed;
   width: 960px;
   height: 699px;
+  max-height: 100vh;
   left: 30%;
   top: 5%;
   background: @white;
@@ -399,6 +400,7 @@
   bottom: 0;
   left: 0;
   padding: 50px;
+  overflow-y: auto;
 
   &__slider {
 
@@ -410,10 +412,12 @@
     }
   }
   .slick-prev {
+    left: auto;
     right: 51%;
     bottom: -12%;
     }
   .slick-next {
+    left: auto;
     right: 45%;
     bottom: -12%;
   }

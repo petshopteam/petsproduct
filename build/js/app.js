@@ -5580,12 +5580,12 @@ if ( $.ajaxPrefilter ) {
   $('.article-item__slider').slick({
     dots: false,
     infinite: true,
-    speed: 800,
+    speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
-    fade: true,
+    autoplaySpeed: 3000,
+    // fade: true,
     cssEase: 'linear'
   });
 
@@ -5593,11 +5593,11 @@ if ( $.ajaxPrefilter ) {
   $('.modal-article__slider').slick({
     dots: false,
     infinite: true,
-    speed: 800,
+    speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 3000
 
   });
 
