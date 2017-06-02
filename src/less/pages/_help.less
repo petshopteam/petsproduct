@@ -31,23 +31,76 @@
   .pagination {
     margin-bottom: 60px;
   }
+  //media
+  @media (max-width: @desktop) {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .main-foot .container {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    .breadcrumbs {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: @laptop) {
+    .container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .main-foot .container {
+      padding-right: 6%;
+      padding-left: 6%;
+    }
+  }
+  @media (max-width: @tablet) {
+    .main-foot .container {
+      padding-right: 6%;
+      padding-left: 17%;
+    }
+
+    .main-foot__copyright .container {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
+  }
 }
+
 //main styles
 .main-help {
   padding-bottom: 20px;
 
+  &__wrap {
+    width: 100%;
+    text-align: center;
+
+    &::after {
+      content: ' i i i ';
+      padding-left: 348px;
+      word-spacing: 406px;
+      visibility: hidden;
+    }
+  }
+
   &__item {
     position: relative;
-    float: left;
-    width: 30%;
-    height: auto;
-    min-height: 350px;
-    margin-right: 5%;
-    margin-bottom: 4%;
-    height: auto;
-    padding: 8% 5% 0;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 345px;
+    height: 345px;
+    margin-right: 65px;
+    margin-bottom: 65px;
+    padding: 40px;
+    padding-top: 90px;
     box-shadow: 0 0 4px rgba(36, 36, 35, 0.2);
-
+    transition: background-color 0.2s ease;
     &:nth-child(3n) {
       margin-right: 0;
     }
@@ -66,14 +119,67 @@
     margin: auto;
     font-weight: 500;
   }
+
+  //media
+  @media (max-width: @desktop) {
+    &__wrap::after {
+      padding-left: 288px;
+      word-spacing: 315px;
+    }
+    &__item {
+      width: 290px;
+      height: 290px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+      padding-top: 50px;
+    }
+  }
+  @media (max-width: @laptop) {
+    &__wrap::after {
+      padding-left: 229px;
+      word-spacing: 250px;
+    }
+    &__item {
+      width: 233px;
+      height: 233px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      padding-top: 40px;
+      img {
+        width: 60%;
+      }
+    }
+  }
+  @media (max-width: @tablet) {
+    &__wrap::after {
+      display: none;
+    }
+    &__item {
+      display: block;
+      width: 300px;
+      height: 2300x;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 40px;
+      &:nth-child(3n) {
+        margin-right: auto;
+      }
+      img {
+        width: 45%;
+      }
+    }
+  }
 }
+
 // help_2 (возврат товара)
+
 .help {
   &__left {
     margin-top: 10px;
   }
 
-  &__right {}
+  &__right {
+  }
 
   &__left-title {
     display: block;
@@ -95,7 +201,8 @@
     }
   }
 
-  &__left-text {}
+  &__left-text {
+  }
 
   &__left-list {
     margin-bottom: 60px;
@@ -193,6 +300,7 @@
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAACzUlEQVRIS62VT0gUcRTHv292tzLqYCAldigjo6Sg6FQRWlGHri0Rgqjlzm8mlv4XJMgepEOnyj/zGxnNUgLZ8Fh6qZN0iDpEJYjYpWSLxqBakp1xXozsyjrsLqX+bjPvvc/v/d57v++PEFiaplUz83UApwBUA5gHkGLm1wDGFEUZNgzjRzAu9035BiHEYQCjRDTDzEPMPAnAIaKtAOoAnAAQAvAoHA53dHV1zQTBQeAEgEnbtqPJZDITdNZ1fcP8/HwjEd0gogrP8+4y84tIJDLR3d1t+/6LQFVV9xDRBwBHpJTjxY7k/29qalpXVlZ2NVua8qxvCkD7AjAej1c4jvMewKzrunWWZX0tBcy3xWKxylAoVMPM5wA0LgCFENcA3Eqn09sHBwfT/woL1N+v8csc8B6AA1LKo8uBZZNaAhz2uyil3LxiYCwW26soyjsiajAM48mKgaqqnlcU5b5hGBsB8IqBQogGf1Ajkcimzs7On6sBfAbAH9JDvb29zmoAM0TUYhjG0HJhS7oshPgDQJNSDiwXqKrqQQADRFROQogRAPuZ2b+f34NQ13WnLMv6XGizeDy+1nGcdv9SABgnombSdX0LMz9k5pMAlAKB/gl2Sim/5NtaW1trQqHQUwDbmPmmaZqmPyWL4hCNRtdUVVWtzw+am5urBzDCzLWmaX7M2XRd3+153itfmVzXPWtZ1qeCehjMTlXVMSIKSymP52yJRCKcSqXeAPht23Z9UOaW6GFARXYoijLFzKdN0/RHa2EJIa4AuENEtYZhTAeTKArUNO02M1+2bbsymUz6zwA0TSv3PG+aiHqklG2FGlUK+JyZU1LK5lygpmkPmPlMJpPZ1d/f/+u/gEKIUQDfpJSN2ez2MfNbZm4xTfNxsZktleEFZu4hojY/UwAdAKallMdKiUhRoP/eaJqWYOZLAMr88XEc52JfX99sqRv1F0x/RiUrLaonAAAAAElFTkSuQmCC') no-repeat center;
   }
 }
+
 // help_3 (письмо директору)
 .write-us {
   &__title {
@@ -222,6 +330,7 @@
     max-height: 800px;
   }
 }
+
 //left side slider start
 .menu-list {
   position: relative;
@@ -251,4 +360,5 @@
   background: @orange;
   transition: top 0.4s ease;
 }
+
 //left side slider end

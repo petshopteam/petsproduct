@@ -257,7 +257,13 @@
 						</div>
 						<div class="col-lg-15">
 							<label for="" class="request__label">Прикрепить резюме</label>
-							<input type="file" class="request__input" placeholder="Прикрепить файл">
+							<!-- file upload input -->
+							<div class="file_upload">
+								<span class="file_upload__text">Перетащите или</span>
+								<button type="button">загрузите файл</button>
+								<div>Файл не выбран</div>
+								<input type="file">
+							</div>
 						</div>
 						<div class="col-lg-15">
 							<label for="" class="request__label">Сопроводительное письмо</label>
@@ -273,7 +279,7 @@
 					<div class="col-lg-15">
 						<div class="modal-vacancy__buttons tac">
 							<button class="request__submit btn btn_orange">Отправить</button>
-							<button class="request__clear btn">Очистить</button>
+							<button class="request__clear btn btn_grey">Очистить</button>
 						</div>
 
 					</div>

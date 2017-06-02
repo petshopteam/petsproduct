@@ -11,15 +11,15 @@
 	<meta name="description" content="description ">
 	<!-- favicon -->
 	<!-- <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
-		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
-		<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
-		<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png" /> -->
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png" /> -->
 
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 	<script src="../js/app.js"></script>
@@ -30,9 +30,9 @@
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if IE]>
-				<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-				<link href= "css/ie.css" rel= "stylesheet" media= "all" />
-			<![endif]-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <link href="css/ie.css" rel="stylesheet" media="all"/>
+  <![endif]-->
 </head>
 
 <body class="help-page">
@@ -152,9 +152,10 @@
 					<a class="main-head__logo" href="./"></a>
 				</div>
 				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5">
+				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
 					<nav class="main-navigation">
-						<ul id="menu" class="main-navigation__list">
+						<!-- (big size nav) -->
+						<ul id="menu" class="main-navigation__list hidden-sm hidden-xs">
 							<li class="active"></li>
 							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
 							</li>
@@ -165,12 +166,34 @@
 							<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
 							</li>
 							<li class="main-navigation__item">
-								<button class="btn btn_red">Оставить заявку</button>
+								<button class="btn btn_orange">Оставить заявку</button>
 							</li>
 							<li id="line"></li>
 						</ul>
+						<!-- (small size nav) -->
+						<!-- btn -->
+						<a class="main-navigation__hidden-btn mnu-white hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+						<div class="modal-navigation modal_div" id="modalNav">
+							<ul id="menuSmall" class="main-navigation__list_small hidden-lg hidden-md">
+								<a class="modal-navigation__close modal_close">Закрыть</a>
+								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
+								</li>
+								<li class="main-navigation__item">
+									<button class="btn btn_orange">Оставить заявку</button>
+								</li>
+								<!-- overlay (заменяет topline overlay) -->
+								<div id="overlay_dark" class="overlay_dark"></div>
+							</ul>
+						</div>
 					</nav>
 				</div>
+				<!-- end main-navigation -->
 			</div>
 		</div>
 	</header>
@@ -189,7 +212,7 @@
 
 	<section class="main-help">
 		<div class="container">
-			<div class="main-help__wrapper clearfix tac">
+			<div class="main-help__wrap">
 
 				<!-- item-1 -->
 				<div class="main-help__item">
@@ -242,9 +265,6 @@
 			</div>
 		</div>
 	</section>
-
-
-
 
 
 	<!--footer-->
