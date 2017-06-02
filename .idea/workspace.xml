@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0ef0f512-f42b-4a73-8843-bf41647a6382" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/actions.html" afterPath="$PROJECT_DIR$/build/actions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/app.css" afterPath="$PROJECT_DIR$/build/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/app.min.css" afterPath="$PROJECT_DIR$/build/css/app.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/contacts.html" afterPath="$PROJECT_DIR$/src/html/contacts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/contacts.html" afterPath="$PROJECT_DIR$/build/contacts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/vacancy.html" afterPath="$PROJECT_DIR$/build/vacancy.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/vacancy.html" afterPath="$PROJECT_DIR$/src/html/vacancy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_contacts.less" afterPath="$PROJECT_DIR$/src/less/pages/_contacts.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/vacancy_2.html" afterPath="$PROJECT_DIR$/src/html/vacancy_2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/pages/_vacancy.less" afterPath="$PROJECT_DIR$/src/less/pages/_vacancy.less" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,11 +55,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="vacancy.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/html/vacancy.html">
+          <file leaf-file-name="vacancy_2.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/html/vacancy_2.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="234">
-                  <caret line="55" column="54" lean-forward="true" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
+                <state relative-caret-position="225">
+                  <caret line="97" column="21" lean-forward="true" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -74,8 +72,8 @@
           <file leaf-file-name="_vacancy.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/less/pages/_vacancy.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+                <state relative-caret-position="261">
+                  <caret line="79" column="21" lean-forward="false" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -94,7 +92,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>select</find>
       <find>stores</find>
       <find>Новый поль</find>
       <find>Напиши</find>
@@ -124,6 +121,7 @@
       <find>item</find>
       <find>btn</find>
       <find>__item</find>
+      <find>h1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,12 +174,12 @@
         <option value="$PROJECT_DIR$/src/html/request_3.html" />
         <option value="$PROJECT_DIR$/src/html/request_4.html" />
         <option value="$PROJECT_DIR$/src/less/pages/_news.less" />
-        <option value="$PROJECT_DIR$/src/html/vacancy_2.html" />
         <option value="$PROJECT_DIR$/src/html/actions.html" />
         <option value="$PROJECT_DIR$/src/less/pages/_actions.less" />
         <option value="$PROJECT_DIR$/src/html/contacts.html" />
         <option value="$PROJECT_DIR$/src/less/pages/_contacts.less" />
         <option value="$PROJECT_DIR$/src/html/vacancy.html" />
+        <option value="$PROJECT_DIR$/src/html/vacancy_2.html" />
         <option value="$PROJECT_DIR$/src/less/pages/_vacancy.less" />
       </list>
     </option>
@@ -563,7 +561,7 @@
       <workItem from="1495091856837" duration="15328000" />
       <workItem from="1495111583552" duration="10791000" />
       <workItem from="1495178125451" duration="25864000" />
-      <workItem from="1496388051491" duration="3494000" />
+      <workItem from="1496388051491" duration="4745000" />
     </task>
     <task id="LOCAL-00001" summary="Правит инпуты на 320px в actions.html">
       <created>1496389219914</created>
@@ -572,11 +570,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496389219914</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Адаптивит contacts.html">
+      <created>1496391582594</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1496391582594</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203683000" />
+    <option name="totallyTimeSpent" value="204934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1053" extended-state="0" />
@@ -629,7 +634,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Правит инпуты на 320px в actions.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Правит инпуты на 320px в actions.html" />
+    <MESSAGE value="Адаптивит contacts.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Адаптивит contacts.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -913,14 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/html/vacancy_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="19" column="63" lean-forward="false" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/html/request_4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1001,14 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/html/vacancy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="55" column="54" lean-forward="true" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/pages/_contacts.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="571">
@@ -1017,10 +1007,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/html/vacancy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="83" column="34" lean-forward="true" selection-start-line="49" selection-start-column="6" selection-end-line="83" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/pages/_vacancy.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        <state relative-caret-position="261">
+          <caret line="79" column="21" lean-forward="false" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/html/vacancy_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="97" column="21" lean-forward="true" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
           <folding />
         </state>
       </provider>
