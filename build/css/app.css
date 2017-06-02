@@ -7163,6 +7163,12 @@ h4
     margin-bottom: 80px;
 }
 
+.contacts__map img
+{
+    width: 100%;
+    height: auto;
+}
+
 .contacts__bottom
 {
     margin-bottom: 80px;
@@ -7197,6 +7203,8 @@ h4
 {
     font-family: 'Rubik', Arial, sans-serif;
     font-size: 14px;
+
+    color: #686868;
 }
 
 .cooperation-page .main-head
@@ -9791,6 +9799,45 @@ h4
         margin-bottom: 30px;
     }
 
+    .vacancy-page .container
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .vacancy-page .main-foot .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .vacancy-page .breadcrumbs
+    {
+        margin-left: 0;
+    }
+
+    .contacts-page .container
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .contacts-page .main-foot .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .contacts-page .breadcrumbs
+    {
+        margin-left: 0;
+    }
+
+    .contacts__item
+    {
+        padding: 30px 35px 30px 35px;
+    }
+
     .slick-prev
     {
         right: 0;
@@ -10610,6 +10657,35 @@ h4
         bottom: 0;
     }
 
+    .vacancy-page .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .vacancy-page .main-foot .container
+    {
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+
+    .contacts-page .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .contacts-page .main-foot .container
+    {
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+
+    .contacts__item
+    {
+        height: 195px;
+    }
+
     .slick-dots
     {
         left: -35%;
@@ -11167,7 +11243,8 @@ h4
     .actions-page .region-filter__title,
     .actions-page .actions-newsletter__title
     {
-        float: left;
+        position: absolute;
+        left: 10px;
 
         width: auto;
         margin-right: 30px;
@@ -11182,7 +11259,8 @@ h4
 
         float: left;
 
-        width: 68%;
+        width: 100%;
+        padding-left: 90px;
     }
 
     .actions-page .region-filter
@@ -11198,7 +11276,8 @@ h4
 
     .actions-page .region-filter__title
     {
-        float: left;
+        position: absolute;
+        left: 10px;
 
         width: auto;
         margin-right: 17px;
@@ -11210,7 +11289,8 @@ h4
 
         float: left;
 
-        width: 68%;
+        width: 100%;
+        padding-left: 90px;
     }
 
     .actions-page .pagination
@@ -11877,6 +11957,53 @@ h4
     {
         width: auto;
         max-width: 100%;
+    }
+
+    .vacancy-page .main-foot .container
+    {
+        padding-right: 6%;
+        padding-left: 17%;
+    }
+
+    .vacancy-page .main-foot__copyright .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+
+        text-align: center;
+    }
+
+    .contacts-page .main-foot .container
+    {
+        padding-right: 6%;
+        padding-left: 17%;
+    }
+
+    .contacts-page .main-foot__copyright .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+
+        text-align: center;
+    }
+
+    .contacts__item
+    {
+        width: 300px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+        padding: 30px 80px 30px 80px;
+    }
+
+    .contacts__map
+    {
+        margin-bottom: 40px;
+    }
+
+    .contacts__bottom
+    {
+        margin-bottom: 50px;
     }
 
     .slick-dots
