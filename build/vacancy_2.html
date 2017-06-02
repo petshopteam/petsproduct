@@ -151,9 +151,10 @@
 					<a class="main-head__logo" href="./"></a>
 				</div>
 				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5">
+				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
 					<nav class="main-navigation">
-						<ul id="menu" class="main-navigation__list">
+						<!-- (big size nav) -->
+						<ul id="menu" class="main-navigation__list hidden-sm hidden-xs">
 							<li class="active"></li>
 							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
 							</li>
@@ -164,12 +165,34 @@
 							<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
 							</li>
 							<li class="main-navigation__item">
-								<button class="btn btn_red">Оставить заявку</button>
+								<button class="btn btn_orange">Оставить заявку</button>
 							</li>
 							<li id="line"></li>
 						</ul>
+						<!-- (small size nav) -->
+						<!-- btn -->
+						<a class="main-navigation__hidden-btn mnu-white hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+						<div class="modal-navigation modal_div" id="modalNav">
+							<ul id="menuSmall" class="main-navigation__list_small hidden-lg hidden-md">
+								<a class="modal-navigation__close modal_close">Закрыть</a>
+								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
+								</li>
+								<li class="main-navigation__item">
+									<button class="btn btn_orange">Оставить заявку</button>
+								</li>
+								<!-- overlay (заменяет topline overlay) -->
+								<div id="overlay_dark" class="overlay_dark"></div>
+							</ul>
+						</div>
 					</nav>
 				</div>
+				<!-- end main-navigation -->
 			</div>
 
 			<!-- breadcrumbs -->
@@ -187,7 +210,7 @@
 
 			<div class="row">
 				<div class="col-xs-6">
-					<h1 class="main-head__title">Работа в PetsProduct</h1>
+					<h2 class="main-head__title">Работа в PetsProduct</h2>
 				</div>
 			</div>
 
@@ -197,7 +220,7 @@
 	<section class="vacancy">
 		<div class="container">
 			<div class="row tac">
-				<h1 class="vacancy__title">Открытые вакансии</h1>
+				<h2 class="vacancy__title">Открытые вакансии</h2>
 			</div>
 			<div class="row">
 
@@ -250,8 +273,8 @@
 							</ul>
 
 							<!-- Откликнуться -->
-							<div class="row tar">
-								<a href="#modalVacancy" class="vacancy__button btn btn_red open_modal_dark">Откликнуться</a>
+							<div class="row">
+								<a href="#modalVacancy" class="vacancy__button btn btn_orange open_modal_dark">Откликнуться</a>
 							</div>
 						</div>
 					</div>
@@ -308,7 +331,7 @@
 
 							<!-- Откликнуться -->
 							<div class="row tar">
-								<a href="#modalVacancy" class="vacancy__button btn btn_red open_modal_dark">Откликнуться</a>
+								<a href="#modalVacancy" class="vacancy__button btn btn_orange open_modal_dark">Откликнуться</a>
 							</div>
 						</div>
 					</div>
@@ -318,7 +341,9 @@
 			<div class="row">
 				<div class="col-lg-15">
 					<p class="vacancy__no-vacancy">
-						Нет подходящих для Вас вакансий? Мы всегда в поиске активных и целеустремленных людей!
+						Нет подходящих для Вас вакансий?
+						<br class="hidden-lg">Мы всегда в поиске активных и целеустремленных людей!
+						<br class="hidden-lg hidden-md hidden-sm">
 						<a href="#">Напишите нам</a>
 					</p>
 				</div>
