@@ -11,15 +11,15 @@
 	<meta name="description" content="description ">
 	<!-- favicon -->
 	<!-- <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
-		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
-		<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
-		<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png" /> -->
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png" /> -->
 
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 	<script src="../js/app.js"></script>
@@ -30,9 +30,9 @@
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if IE]>
-				<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-				<link href= "css/ie.css" rel= "stylesheet" media= "all" />
-			<![endif]-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <link href="css/ie.css" rel="stylesheet" media="all"/>
+  <![endif]-->
 
 	<!-- capcha -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
@@ -156,9 +156,10 @@
 					<a class="main-head__logo" href="./"></a>
 				</div>
 				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5">
+				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
 					<nav class="main-navigation">
-						<ul id="menu" class="main-navigation__list">
+						<!-- (big size nav) -->
+						<ul id="menu" class="main-navigation__list hidden-sm hidden-xs">
 							<li class="active"></li>
 							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
 							</li>
@@ -169,12 +170,34 @@
 							<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
 							</li>
 							<li class="main-navigation__item">
-								<button class="btn btn_red">Оставить заявку</button>
+								<button class="btn btn_orange">Оставить заявку</button>
 							</li>
 							<li id="line"></li>
 						</ul>
+						<!-- (small size nav) -->
+						<!-- btn -->
+						<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+						<div class="modal-navigation modal_div" id="modalNav">
+							<ul id="menuSmall" class="main-navigation__list_small hidden-lg hidden-md">
+								<a class="modal-navigation__close modal_close">Закрыть</a>
+								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
+								</li>
+								<li class="main-navigation__item">
+									<button class="btn btn_orange">Оставить заявку</button>
+								</li>
+								<!-- overlay (заменяет topline overlay) -->
+								<div id="overlay_dark" class="overlay_dark"></div>
+							</ul>
+						</div>
 					</nav>
 				</div>
+				<!-- end main-navigation -->
 			</div>
 		</div>
 	</header>
@@ -196,11 +219,9 @@
 	<main class="help-content">
 		<div class="container">
 			<div class="row">
-
 				<!-- left-side -->
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
 					<aside class="help__left">
-
 						<!--slider-->
 						<div class="slider-container">
 							<ul class="menu-list">
@@ -227,72 +248,106 @@
 								</li>
 							</ul>
 						</div>
-						<!--slider-->
-
+						<!--//slider-->
 					</aside>
 				</div>
 
-				<!-- right-side -->
-				<div class="col-lg-11">
-					<section class="write-us">
-						<h1 class="write-us__title">Письмо директору</h1>
-						<p class="write-us__text">
-							Уважаемый клиент, Вы можете отправить Ваше пожелание или жалобу напрямую Директору PetsProduct.ru. Для нас очень важно услышать Ваше мнение о нашей работе.
-							<br>Спасибо!
-						</p>
-
-						<!-- write-us main form -->
-						<form action="#" class="request__form">
-
-							<!-- first form-block -->
-							<div class="request__form-block clearfix">
-								<div class="col-lg-7">
-									<label for="" class="request__label">Как Вас зовут?</label>
-									<input type="text" class="request__input" placeholder="Фамилия Имя Отчество">
-								</div>
-								<div class="col-lg-7 col-lg-offset-1">
-									<label for="" class="request__label">Тема письма</label>
-									<select type="text" class="request__select" placeholder="Зоомагазин">
-										<option value="wish">Пожелание</option>
-									</select>
-								</div>
-								<div class="col-lg-7">
-									<label for="" class="request__label">Название организации</label>
-									<input type="text" class="request__input" placeholder="Краткое наименование организации">
-								</div>
-								<div class="col-lg-7 col-lg-offset-1" style="float: right;">
-									<label for="" class="request__label">Сообщение</label>
-									<textarea type="text" class="request__input request__input_big" placeholder="Текст сообщения"></textarea>
-								</div>
-								<div class="col-lg-7">
-									<label for="" class="request__label">Вид деятельности</label>
-									<select type="text" class="request__select" placeholder="Зоомагазин">
-										<option value="nursery">Питомник</option>
-									</select>
-								</div>
-								<div class="col-lg-7">
-									<label for="" class="request__label">Контактный e-mail</label>
-									<input type="text" class="request__input" placeholder="E-mail адрес">
+				<!-- right-side-top -->
+				<div class="col-lg-11 col-md-11">
+					<div class="write-us">
+						<div class="container-offset">
+							<div class="row">
+								<!-- title -->
+								<div class="col-lg-15">
+									<h2 class="write-us__title">Письмо директору</h2>
+									<p class="write-us__text">
+										Уважаемый клиент, Вы можете отправить Ваше пожелание или жалобу напрямую Директору PetsProduct.ru. Для нас очень важно услышать Ваше мнение о нашей работе.
+										<br>Спасибо!
+									</p>
 								</div>
 							</div>
 
-							<div class="request__submit-block clearfix">
-
-								<!-- capcha -->
-								<div class="g-recaptcha" style="display: inline-block;" data-sitekey="6LclISEUAAAAAH6ClfkPBXtaEzoVIkgInEdU5vs9"></div>
-
-								<button class="request__submit btn btn_red">Отправить</button>
-								<button class="request__clear btn btn_grey">Очистить</button>
-							</div>
-						</form>
-
-
-					</section>
+							<!-- right-side-bottom -->
+							<!-- write-us main form -->
+							<form action="#" class="request__form">
+								<!-- first form-block -->
+								<div class="request__form-block clearfix">
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-15">
+										<label for="" class="form-label">Как Вас зовут?</label>
+										<input type="text" class="form-input" placeholder="Фамилия Имя Отчество">
+									</div>
+									<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-7 col-sm-offset-1 col-xs-15">
+										<label for="" class="form-label">Тема письма</label>
+										<select type="text" class="request__select" placeholder="Зоомагазин">
+											<option value="wish">Пожелание</option>
+										</select>
+									</div>
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-15">
+										<label for="" class="form-label">Название организации</label>
+										<input type="text" class="form-input" placeholder="Краткое наименование организации">
+									</div>
+									<!--  textarea  -->
+									<div class="col-right col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-7 col-sm-offset-1 col-xs-15">
+										<label for="" class="form-label">Сообщение</label>
+										<textarea type="text" class="form-textarea request__input_big" placeholder="Текст сообщения"></textarea>
+									</div>
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-15">
+										<label for="" class="form-label">Вид деятельности</label>
+										<select type="text" class="request__select" placeholder="Зоомагазин">
+											<option value="nursery">Питомник</option>
+										</select>
+									</div>
+									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-15">
+										<label for="" class="form-label">Контактный e-mail</label>
+										<input type="text" class="form-input" placeholder="E-mail адрес">
+									</div>
+								</div>
+								<div class="request__submit-block clearfix">
+									<!-- capcha -->
+									<div class="g-recaptcha" style="display: inline-block;" data-sitekey="6LclISEUAAAAAH6ClfkPBXtaEzoVIkgInEdU5vs9"></div>
+									<button class="request__submit btn btn_orange">Отправить</button>
+									<button class="request__clear btn btn_grey">Очистить</button>
+								</div>
+							</form>
+							</section>
+						</div>
+					</div>
 				</div>
 			</div>
+
+			<!--hidden-slider-->
+			<ul class="help__hidden-nav hidden-lg hidden-md">
+
+				<!-- hidden list -->
+				<li class="">
+					<a>Как сделать заказ?</a>
+					<!-- задать новый класс. Показывать при клике нак ссылку а не на li -->
+					<ul class="">
+						<a href="#">Новый пользователь</a>
+						<a href="#">Зарегистрированный пользователь</a>
+						<a href="#">Как получить логин и пароль?</a>
+					</ul>
+				</li>
+				<!-- //hidden list -->
+
+				<!-- main list -->
+				<li class="_"><a href="#">Прайс листы</a>
+				</li>
+				<li class="_"><a href="#">Способы оплаты</a>
+				</li>
+				<li class="_"><a href="#">Доставка</a>
+				</li>
+				<li class="_"><a href="#">Письмо директору</a>
+				</li>
+				<li class="_"><a href="#">Возврат товара</a>
+				</li>
+				<!-- //main list -->
+
+			</ul>
+			<!--//hidden-slider-->
+
 		</div>
 	</main>
-
 
 	<!--footer-->
 	<footer class="main-foot">

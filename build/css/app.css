@@ -2919,6 +2919,11 @@ video.responsive
     float: left;
 }
 
+.col-right
+{
+    float: right !important;
+}
+
 /* end global*/
 
 /* ==========================================================================
@@ -7492,6 +7497,11 @@ h4
     margin-bottom: 30px;
 }
 
+.help-page h2
+{
+    font-weight: 500;
+}
+
 .help-page .main-topline
 {
     background: #f1f1f1;
@@ -7612,8 +7622,8 @@ h4
 
     margin-bottom: 30px;
 
-    -webkit-transition: all .5s ease, color .1s;
-            transition: all .5s ease, color .1s;
+    -webkit-transition: all .2s ease, color .1s;
+            transition: all .2s ease, color .1s;
     text-transform: uppercase;
 }
 
@@ -7769,6 +7779,7 @@ h4
 {
     font-family: 'Rubik', Arial, sans-serif;
     font-size: 16px;
+    font-weight: 400;
     line-height: 24px;
 
     margin-bottom: 30px;
@@ -7826,10 +7837,49 @@ h4
 
     width: 3px;
 
-    -webkit-transition: top .4s ease;
-            transition: top .4s ease;
+    -webkit-transition: top .2s ease;
+            transition: top .2s ease;
 
     background: #e0552f;
+}
+
+.help__hidden-nav
+{
+    margin-bottom: 20px;
+
+    border: 1px solid #dfdfdf;
+}
+
+.help__hidden-nav li
+{
+    display: block;
+
+    width: 100%;
+
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.help__hidden-nav li:last-of-type
+{
+    border-bottom: none;
+}
+
+.help__hidden-nav li a
+{
+    font-family: 'Rubik', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+
+    position: relative;
+
+    display: inline-block;
+
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+
+    color: #686868;
 }
 
 /* Slider */
@@ -9896,6 +9946,11 @@ h4
     .help-page .breadcrumbs
     {
         margin-left: 0;
+    }
+
+    .help-page .request__form-block
+    {
+        padding: 25px 25px 10px;
     }
 
     .main-help__wrap::after
@@ -12160,6 +12215,29 @@ h4
         padding-left: 10px;
 
         text-align: center;
+    }
+
+    .help-page .request__form-block
+    {
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 20px 10px;
+    }
+
+    .help-page .request__submit-block
+    {
+        padding-right: 0;
+        padding-left: 0;
+
+        text-align: center;
+    }
+
+    .help-page .form-input,
+    .help-page .form-textarea,
+    .help-page .SumoSelect
+    {
+        margin-bottom: 20px;
     }
 
     .main-help__wrap::after
