@@ -1344,9 +1344,10 @@ hr
 
 .btn_big-arrow
 {
-    padding-right: 4.4em;
+    padding-right: 3.9em;
+    padding-left: 1.7em;
 
-    background-position: 9.2em .8em;
+    background-position: 9.2em .74em;
     background-size: 1.4em;
 }
 
@@ -3832,6 +3833,7 @@ h4
     display: inline-block;
 
     margin-right: 20px;
+    margin-bottom: 5px;
     padding-left: 20px;
 }
 
@@ -7236,6 +7238,48 @@ h4
     background: url(../images/cooperation-bg.jpg) no-repeat top;
 }
 
+.cooperation-page .main-head__title
+{
+    margin-top: 90px;
+    margin-bottom: 120px;
+}
+
+.cooperation-page .main-head__features
+{
+    text-align: center;
+}
+
+.cooperation-page .main-head__feature
+{
+    display: inline-block;
+
+    width: 290px;
+
+    text-align: center;
+    vertical-align: top;
+}
+
+.cooperation-page .main-head__feature-image
+{
+    width: 95px;
+    height: 83px;
+    margin-bottom: 10px;
+}
+
+.cooperation-page .main-head__feature-text
+{
+    font-size: 18px;
+    font-weight: 500;
+
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+
+    color: #fff;
+}
+
 .cooperation-page .main-navigation
 {
     margin-bottom: 40px;
@@ -7253,27 +7297,6 @@ h4
     margin-bottom: 60px;
 }
 
-.cooperation-page .main-head__title
-{
-    margin-top: 90px;
-    margin-bottom: 120px;
-}
-
-.cooperation-page .main-head__feature-image
-{
-    width: 95px;
-    height: 83px;
-    margin-bottom: 10px;
-}
-
-.cooperation-page .main-head__feature-text
-{
-    font-size: 18px;
-    font-weight: bold;
-
-    color: #fff;
-}
-
 .cooperation
 {
     padding-top: 70px;
@@ -7282,9 +7305,6 @@ h4
 
 .cooperation__title
 {
-    font-size: 36px;
-    font-weight: bold;
-
     margin-bottom: 80px;
 
     text-align: center;
@@ -7327,7 +7347,7 @@ h4
 .cooperation__item-title
 {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
 
     margin-bottom: 5px;
 
@@ -7338,6 +7358,7 @@ h4
 {
     font-family: 'Rubik', Arial, sans-serif;
     font-size: 14px;
+    font-weight: 400;
 }
 
 .registration .container
@@ -7345,14 +7366,13 @@ h4
     margin-bottom: 90px;
     padding: 60px 3%;
 
+    text-align: center;
+
     background-color: #dfdfdf;
 }
 
 .registration__title
 {
-    font-size: 36px;
-    font-weight: bold;
-
     margin-bottom: 80px;
 }
 
@@ -7360,16 +7380,21 @@ h4
 {
     position: relative;
 
-    text-align: center;
+    display: inline-block;
+
+    width: 355px;
+
+    text-align: left;
+    vertical-align: top;
 }
 
 .registration__item::after
 {
     position: absolute;
     top: 40px;
-    right: 2%;
+    right: 20px;
 
-    width: 59px;
+    width: 50px;
     height: 1px;
 
     content: '';
@@ -7386,13 +7411,16 @@ h4
 .registration__item-number
 {
     font-size: 51px;
-    font-weight: bold;
+    font-weight: 700;
 
-    float: left;
+    display: inline-block;
 
     width: 87px;
     height: 87px;
     padding-top: 10px;
+
+    text-align: center;
+    vertical-align: top;
 
     color: #fff;
     -webkit-border-radius: 50%;
@@ -7405,28 +7433,20 @@ h4
     font-size: 16px;
     line-height: 24px;
 
-    display: inline-block;
-    float: left;
+    position: relative;
 
-    width: 55%;
+    display: inline-block;
+
+    width: 185px;
     margin-left: 20px;
 
     text-align: left;
+    vertical-align: top;
 }
 
 .registration__button
 {
     margin-top: 70px;
-    padding: 3px 72px 2px 30px;
-}
-
-.registration__button::after
-{
-    top: 31%;
-    right: 11%;
-
-    width: 26px;
-    height: 18px;
 }
 
 .error-page .main-topline
@@ -7845,16 +7865,19 @@ h4
 
 .help__hidden-nav
 {
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 
     border: 1px solid #dfdfdf;
 }
 
 .help__hidden-nav li
 {
+    line-height: 50px;
+
     display: block;
 
     width: 100%;
+    min-height: 50px;
 
     border-bottom: 1px solid #dfdfdf;
 }
@@ -7866,20 +7889,41 @@ h4
 
 .help__hidden-nav li a
 {
-    font-family: 'Rubik', Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 20px;
+    font-size: 18px;
+    font-weight: 700;
 
     position: relative;
 
-    display: inline-block;
+    display: block;
 
     width: 100%;
     height: 100%;
     padding-left: 15px;
 
-    color: #686868;
+    text-transform: uppercase;
+
+    color: #242423;
+}
+
+.help__hidden-nav li.active a
+{
+    color: #e0552f;
+}
+
+.help__hidden-nav li.active a::before
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 3px;
+    height: 13px;
+    margin: auto;
+
+    content: '';
+
+    background-color: #e0552f;
 }
 
 /* Slider */
@@ -9931,6 +9975,106 @@ h4
         padding: 30px 35px 30px 35px;
     }
 
+    .cooperation-page .container
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .cooperation-page .main-foot .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .cooperation-page .breadcrumbs
+    {
+        margin-left: 0;
+    }
+
+    .cooperation-page .main-head__title
+    {
+        margin-left: 0;
+    }
+
+    .cooperation-page .main-head__feature
+    {
+        width: 230px;
+    }
+
+    .cooperation-page .main-head__feature-text
+    {
+        font-size: 16px;
+    }
+
+    .cooperation__image
+    {
+        margin-top: 50px;
+    }
+
+    .cooperation__item-title
+    {
+        padding-right: 110px;
+    }
+
+    .cooperation__item-text
+    {
+        padding-right: 20px;
+    }
+
+    .registration .container
+    {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .registration__item
+    {
+        width: 295px;
+    }
+
+    .registration__item::after
+    {
+        top: 37px;
+        right: 12px;
+
+        width: 30px;
+    }
+
+    .registration__item:nth-of-type(2) .registration__item-text
+    {
+        top: -10px;
+
+        width: 130px;
+    }
+
+    .registration__item:nth-of-type(2)::after
+    {
+        right: 30px;
+    }
+
+    .registration__item:nth-of-type(3) .registration__item-text
+    {
+        top: -10px;
+
+        width: 190px;
+    }
+
+    .registration__item-number
+    {
+        font-size: 41px;
+
+        width: 70px;
+        height: 70px;
+        padding-top: 8px;
+    }
+
+    .registration__item-text
+    {
+        width: 160px;
+        margin-left: 10px;
+    }
+
     .help-page .container
     {
         padding-right: 20px;
@@ -10820,6 +10964,95 @@ h4
     .contacts__item
     {
         height: 195px;
+    }
+
+    .cooperation-page .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .cooperation-page .main-foot .container
+    {
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+
+    .cooperation-page .main-head__feature
+    {
+        width: 180px;
+    }
+
+    .cooperation-page .main-head__feature-text
+    {
+        font-size: 14px;
+
+        width: 170px;
+    }
+
+    .cooperation__image
+    {
+        margin-bottom: 20px;
+    }
+
+    .cooperation__title
+    {
+        margin-bottom: 20px;
+    }
+
+    .registration .container
+    {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .registration__item
+    {
+        width: 450px;
+        margin-bottom: 50px;
+    }
+
+    .registration__item::after
+    {
+        display: none;
+    }
+
+    .registration__item:nth-of-type(2)
+    {
+        width: 230px;
+    }
+
+    .registration__item:nth-of-type(2) .registration__item-text
+    {
+        top: -10px;
+
+        width: 130px;
+    }
+
+    .registration__item:nth-of-type(3)
+    {
+        width: 100%;
+        margin-bottom: 0;
+
+        text-align: center;
+    }
+
+    .registration__item:nth-of-type(3) .registration__item-text
+    {
+        top: -10px;
+
+        width: 200px;
+    }
+
+    .registration__item-text
+    {
+        margin-left: 20px;
+    }
+
+    .registration__button
+    {
+        margin-top: 50px;
+        margin-bottom: 10px;
     }
 
     .help-page .container
@@ -12203,6 +12436,130 @@ h4
         margin-bottom: 50px;
     }
 
+    .cooperation-page .main-foot .container
+    {
+        padding-right: 6%;
+        padding-left: 17%;
+    }
+
+    .cooperation-page .main-foot__copyright .container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+
+        text-align: center;
+    }
+
+    .cooperation-page .main-head
+    {
+        padding-bottom: 0;
+
+        background-size: cover;
+    }
+
+    .cooperation-page .main-head__title
+    {
+        margin-top: 30px;
+        margin-bottom: 90px;
+    }
+
+    .cooperation-page .main-head__features
+    {
+        width: 320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .cooperation-page .main-head__feature
+    {
+        width: 145px;
+        margin-bottom: 60px;
+    }
+
+    .cooperation-page .main-head__feature-text
+    {
+        width: 145px;
+    }
+
+    .cooperation__item::before
+    {
+        height: 93%;
+    }
+
+    .cooperation__item-title
+    {
+        padding-right: 0;
+    }
+
+    .registration__wrap
+    {
+        width: 280px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .registration__item
+    {
+        width: 300px;
+        margin-right: auto;
+        margin-bottom: 80px;
+        margin-left: auto;
+
+        text-align: left;
+    }
+
+    .registration__item-text
+    {
+        width: 160px;
+        margin-left: 10px;
+    }
+
+    .registration__item::after
+    {
+        top: 93px;
+        bottom: 0;
+        left: 35px;
+
+        display: block;
+
+        width: 1px;
+        height: 39px;
+    }
+
+    .registration__item:nth-of-type(2)
+    {
+        width: 300px;
+
+        text-align: left;
+    }
+
+    .registration__item:nth-of-type(2) .registration__item-text
+    {
+        top: -10px;
+
+        width: 160px;
+    }
+
+    .registration__item:nth-of-type(3)
+    {
+        width: 300px;
+        margin-bottom: 0;
+
+        text-align: left;
+    }
+
+    .registration__item:nth-of-type(3)::after
+    {
+        display: none;
+    }
+
+    .registration__item:nth-of-type(3) .registration__item-text
+    {
+        top: -20px;
+
+        width: 170px;
+    }
+
     .help-page .main-foot .container
     {
         padding-right: 6%;
@@ -12264,6 +12621,25 @@ h4
     .main-help__item img
     {
         width: 45%;
+    }
+
+    .help__useful
+    {
+        text-align: center;
+    }
+
+    .help__useful-title
+    {
+        display: block;
+
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .write-us__text
+    {
+        letter-spacing: .3px;
+        word-spacing: 2px;
     }
 
     .slick-dots
