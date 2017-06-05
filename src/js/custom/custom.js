@@ -251,11 +251,12 @@
    HELP_2 (состояние пользователя) Click effects
    ----------------------------------------*/
 
-  $('.help__left-list').on('click', function (event) {
-    event.preventDefault();
-    $('.help__left-list').removeClass('active');
-    $(this).toggleClass('active');
-  });
+  // $('.help__left-list').on('click', function (event) {
+  //   event.preventDefault();
+  //   $('.help__left-list').removeClass('active');
+  //   $(this).toggleClass('active');
+  // });
+
 
   // hidden navigation
 

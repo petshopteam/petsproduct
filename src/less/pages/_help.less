@@ -334,7 +334,6 @@
   &__title {
     margin-bottom: 40px;
   }
-
   &__text {
     color: #242423;
     font-family: @rubik;
@@ -357,6 +356,13 @@
   .request__input_big {
     min-height: 240px;
     max-height: 800px;
+  }
+  //media
+  @media (max-width: @tablet) {
+    &__text {
+      letter-spacing: 0.3px;
+      word-spacing: 2px;
+    }
   }
 }
 
@@ -390,28 +396,46 @@
   transition: top 0.2s ease;
 }
 
-//hidden-nav ПЕРЕПИСАТЬ СТИЛИ ЗАНОВО
+//hidden-nav
 .help__hidden-nav {
   border: 1px solid @border-grey;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   li {
     display: block;
     width: 100%;
+    min-height: 50px;
+    line-height: 50px;
     border-bottom: 1px solid @border-grey;
     &:last-of-type {
       border-bottom: none;
     }
     a {
-      display: inline-block;
+      position: relative;
+      display: block;
       width: 100%;
       height: 100%;
-      position: relative;
-      color: @darkgrey;
-      font-family: @rubik;
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      color: @lightblack;
+      text-transform: uppercase;
       padding-left: 15px;
+    }
+    &.active {
+      & a {
+        color: @orange;
+        &::before {
+          position: absolute;
+          content: '';
+          width: 3px;
+          height: 13px;
+          background-color: @orange;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+      }
+
     }
   }
 }
