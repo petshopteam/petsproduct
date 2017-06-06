@@ -290,36 +290,68 @@
    Hover effect on main navigation
    ----------------------------------------*/
 
-  $(function () {
-    var $menu = $("#menu");
-    $line = $("#line"),
-        $indicator = true,
-        $active = $menu.find(".active"),
-        default_pos = $active.offset().left - $menu.offset().left,
-        default_width = $active.outerWidth();
 
-    $line.css({
-      left: default_pos,
-      width: default_width
-    });
+  // $(function () {
+  //   var $menu = $("#menu");
+  //   $line = $("#line"),
+  //       $indicator = true,
+  //       $active = $menu.find(".active"),
+  //       default_pos = $active.offset().left - $menu.offset().left,
+  //       default_width = $active.outerWidth();
+  //
+  //   $line.css({
+  //     left: default_pos,
+  //     width: default_width
+  //   });
+  //
+  //   $("#menu li.menu-hover").hover(function () {
+  //     if (this === $active.get(0)) return;
+  //     var self = $(this);
+  //     var diff = self.offset().left - $menu.offset().left;
+  //     $line.stop().animate({
+  //       width: self.outerWidth(),
+  //       left: diff
+  //     }, 300);
+  //   }, function () {
+  //     if (this === $active.get(0)) return;
+  //     $line.stop().animate({
+  //       width: default_width,
+  //       left: default_pos
+  //     }, 300);
+  //   });
+  // });
 
-    $("#menu li.menu-hover").hover(function () {
-      if (this === $active.get(0)) return;
-      var self = $(this);
-      var diff = self.offset().left - $menu.offset().left;
-      $line.stop().animate({
-        width: self.outerWidth(),
-        left: diff
-      }, 300);
-    }, function () {
-      if (this === $active.get(0)) return;
-      $line.stop().animate({
-        width: default_width,
-        left: default_pos
-      }, 300);
-    });
+  // пересчитать показатели
+  // $(window).resize(function () {
+  //   var $menu = $("#menu");
+  //   $line = $("#line"),
+  //       $indicator = true,
+  //       $active = $menu.find(".active"),
+  //       default_pos = $active.offset().left - $menu.offset().left,
+  //       default_width = $active.outerWidth();
+  //
+  //   $line.css({
+  //     left: default_pos,
+  //     width: default_width
+  //   });
+  //
+  //   $("#menu li.menu-hover").hover(function () {
+  //     if (this === $active.get(0)) return;
+  //     var self = $(this);
+  //     var diff = self.offset().left - $menu.offset().left;
+  //     $line.stop().animate({
+  //       width: self.outerWidth(),
+  //       left: diff
+  //     }, 300);
+  //   }, function () {
+  //     if (this === $active.get(0)) return;
+  //     $line.stop().animate({
+  //       width: default_width,
+  //       left: default_pos
+  //     }, 300);
+  //   });
+  // });
 
-  });
 
   /*----------------------------------------
    Help page slider animation
@@ -378,6 +410,7 @@
       }
     }, 'li');
   });
+
 
   /*----------------------------------------
    File upload styling
