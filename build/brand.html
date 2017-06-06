@@ -359,7 +359,8 @@
 
 	<div class="modal-brand modal_div" id="modalBrand1">
 		<div class="container-offset">
-			<a class="modal-change-city__close modal_close"></a>
+			<a class="modal-change-city__close modal_close hidden-sm hidden-xs"></a>
+			<a class="modal-navigation__close modal_close hidden-lg hidden-md">Закрыть</a>
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-15">
 					<p class="modal-brand__title hidden-lg hidden-md hidden-sm">Линейка Classic</p>
@@ -435,10 +436,10 @@
 						<div class="row tal">
 							<div class="stores__type-block">
 								<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-5 col-sm-offset-3 col-xs-7 col-xs-offset-0">
-									<a href="#" class="stores__type-select active">Розничные точки</a>
+									<a href="#" class="stores__type-select stores__type-select_retail active">Розничные точки</a>
 								</div>
 								<div class="col-lg-6 col-md-7 col-sm-5 col-xs-8 col-xs-offset-0">
-									<a href="#" class="stores__type-select">Интернет магазины</a>
+									<a href="#" class="stores__type-select stores__type-select_online">Интернет магазины</a>
 								</div>
 							</div>
 						</div>
@@ -630,75 +631,84 @@
 
 									<!-- fake items (for scroll bar test)-->
 
-									<!-- item-1 -->
-									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-										<div class="stores__stores-item active">
-											<p class="stores__store-name">Animal-care.ru</p>
-											<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
-											</p>
-											<p class="stores__store-district">+7 (812) 575 10 93</p>
+									<!-- row-1 -->
+									<div class="row">
+										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+											<div class="stores__stores-item active">
+												<p class="stores__store-name">Animal-care.ru</p>
+												<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
+												</p>
+												<p class="stores__store-district">+7 (812) 575 10 93</p>
+											</div>
+										</div>
+										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+											<div class="stores__stores-item">
+												<p class="stores__store-name">Animal-care.ru</p>
+												<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
+												</p>
+												<p class="stores__store-district">+7 (812) 575 10 93</p>
+											</div>
 										</div>
 									</div>
-									<!-- item-2 -->
-									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-										<div class="stores__stores-item">
-											<p class="stores__store-name">Animal-care.ru</p>
-											<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
-											</p>
-											<p class="stores__store-district">+7 (812) 575 10 93</p>
+
+									<!-- row-2 -->
+									<div class="row">
+										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+											<div class="stores__stores-item">
+												<p class="stores__store-name">Korkom.ru</p>
+												<p class="stores__store-address">ул. Бухарестская д. 96</p>
+												<p class="stores__store-district">+7 (812) 33-66-309</p>
+											</div>
+										</div>
+										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+											<div class="stores__stores-item">
+												<p class="stores__store-name">Korkom.ru</p>
+												<p class="stores__store-address">ул. Бухарестская д. 96</p>
+												<p class="stores__store-district">+7 (812) 33-66-309</p>
+											</div>
 										</div>
 									</div>
-									<!-- item-3 -->
-									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-										<div class="stores__stores-item">
-											<p class="stores__store-name">Korkom.ru</p>
-											<p class="stores__store-address">ул. Бухарестская д. 96</p>
-											<p class="stores__store-district">+7 (812) 33-66-309</p>
+
+									<!-- row-3 -->
+									<div class="row">
+										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+											<div class="stores__stores-item">
+												<p class="stores__store-name">Хavax.ru</p>
+												<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
+												<p class="stores__store-district">+7 (812) 454-19-70</p>
+											</div>
+										</div>
+										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+											<div class="stores__stores-item">
+												<p class="stores__store-name">Хavax.ru</p>
+												<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
+												<p class="stores__store-district">+7 (812) 454-19-70</p>
+											</div>
 										</div>
 									</div>
-									<!-- item-4 -->
-									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-										<div class="stores__stores-item">
-											<p class="stores__store-name">Korkom.ru</p>
-											<p class="stores__store-address">ул. Бухарестская д. 96</p>
-											<p class="stores__store-district">+7 (812) 33-66-309</p>
+
+									<!-- row-4 -->
+									<div class="row">
+										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+											<div class="stores__stores-item">
+												<p class="stores__store-name">Kandibobershop.ru</p>
+												<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
+												</p>
+												<p class="stores__store-district">Тел. 8 (921) 560-84-41</p>
+											</div>
+										</div>
+										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+											<div class="stores__stores-item">
+												<p class="stores__store-name">Kandibobershop.ru</p>
+												<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
+												</p>
+												<p class="stores__store-district">Тел. 8 (921) 560-84-41</p>
+											</div>
 										</div>
 									</div>
-									<!-- item-5 -->
-									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-										<div class="stores__stores-item">
-											<p class="stores__store-name">Хavax.ru</p>
-											<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
-											<p class="stores__store-district">+7 (812) 454-19-70</p>
-										</div>
-									</div>
-									<!-- item-6 -->
-									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-										<div class="stores__stores-item">
-											<p class="stores__store-name">Хavax.ru</p>
-											<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
-											<p class="stores__store-district">+7 (812) 454-19-70</p>
-										</div>
-									</div>
-									<!-- item-7 -->
-									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-										<div class="stores__stores-item">
-											<p class="stores__store-name">Kandibobershop.ru</p>
-											<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
-											</p>
-											<p class="stores__store-district">Тел. 8 (921) 560-84-41</p>
-										</div>
-									</div>
-									<!-- item-8 -->
-									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-										<div class="stores__stores-item">
-											<p class="stores__store-name">Kandibobershop.ru</p>
-											<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
-											</p>
-											<p class="stores__store-district">Тел. 8 (921) 560-84-41</p>
-										</div>
-									</div>
+
 									<!-- end of fake items (for scroll bar test) -->
+
 								</div>
 							</div>
 						</div>

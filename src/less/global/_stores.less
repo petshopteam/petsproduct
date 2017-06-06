@@ -73,15 +73,20 @@
         color: @white;
       }
     }
-
     &:hover {
       color: @orange;
+    }
+    &_online {
+      margin-left: -15px;
     }
     //media
     @media (max-width: @tablet) {
       font-size: 11px;
       line-height: 28px;
       padding: 0 5px;
+      &_online {
+        margin-left: 0;
+      }
     }
   }
 
@@ -169,6 +174,7 @@
     &::-webkit-scrollbar {
       width: 2px;
     }
+    //media
     @media (max-width: @laptop) {
       margin-bottom: 40px;
     }
@@ -192,6 +198,7 @@
 
     &.active {
       display: block;
+      margin-top: 60px;
     }
   }
 

@@ -272,6 +272,7 @@
   height: 24px;
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAABAUlEQVQoU4XSMUoEMRQG4P9BQKy2UDsPYxMCuYF4ArEXLEQQQcFarYQ9gIVVigR3WitPoY1TWS5h5pcsmyWbndlNmeTjvfcnEkK4iTG+Wmu/sWN5708B/Ir3/pPkYdd1J9tgCOGc5BOAMwkhTEh6kgdjMAMRudBav0jqaBusQbq/QGNwCKyhDAHM+r6fAJiKyG1uqcxoVSlvOueOlFJfAI5JXhtj7upQN1CR0g/J+VA4a6icIcb4ppSakdyvYRlEeodnkpfGmMfU0rLVDZgjXwARudJaP5QzDMH0uKOgCmdVMX2jPxG5ryvUiS0rfgB4F+fcnrV2vuuzpvOmaVTbtvwHZVPf9mAlp5gAAAAASUVORK5CYII=') no-repeat center;
   background-position: 87px 4px;
+  z-index: 10;
   &:hover {
     color: @lightblack;
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAABBElEQVQoU4XSsUrEMBwG8O+DUnG6QQUHryklD+JriE8g7oKDCCIo3KxOgg/g4Czo7OQTdGjULm6OR5L7S0tberleL2OSH/8vH2GSJJfe+8eyLH+wYaXp9Gix4C+VUh+A7DrnD8dgmk5PRHhHyjGzLJs4515J7KyDPXBaFN8PrBKNwRBU92u0Dg6BJdRC7907gAnAJ0CuSKkj9TvqJrWbWu/vWRt/AjgAeGGMuQ5LXUFtJAAlgPlQOUuo/4Yoss/WxlXU7RB2qAH3AM+MMbMqUhN1BdaoBSTOi+Lrtv+GIcgxEJTTTaRSyR+Jm3BC2Fg10bn4TUReqLXeyvN8vumzNucRAPkHzPzAr1UgANUAAAAASUVORK5CYII=');
@@ -325,7 +326,15 @@
   max-width: 1100px;
   max-height: 100vh;
   overflow-y: auto;
-  padding: 45px 40px 50px 40px;
+  padding: 40px;
+  padding-top: 10px;
+
+  //hidden modal close btn
+  .modal-navigation__close {
+    right: 15px;
+    top: 15px;
+  }
+
   &__left {
     img {
       width: 100%;
@@ -339,7 +348,7 @@
     margin-bottom: 20px;
   }
   &__subtitle {
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 20px;
   }
   &__text {
@@ -372,15 +381,36 @@
   @media (max-width: @desktop) {
     padding-top: 20px;
     padding-bottom: 0;
+    margin-right: 40px;
+    margin-left: 40px;
     &__btn {
       top: -70px;
     }
   }
-  @media (max-width: @tablet) {
+  @media (max-width: @laptop) {
+    // width: 100%;
+    // height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
     top: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 60px;
+    .container-offset {
+      padding: 40px;
+      padding-top: 60px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  @media (max-width: @tablet) {
+    .container-offset {
+      padding: 20px;
+      padding-top: 40px;
+      padding-bottom: 80px;
+    }
     &__left {
       img {
         max-width: 232px;

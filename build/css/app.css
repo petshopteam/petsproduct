@@ -3252,6 +3252,7 @@ video.responsive
 .modal-navigation__close
 {
     position: absolute;
+    z-index: 10;
     top: 30px;
     right: 30px;
 
@@ -3330,11 +3331,18 @@ video.responsive
 
     max-width: 1100px;
     max-height: 100vh;
-    padding: 45px 40px 50px 40px;
+    padding: 40px;
+    padding-top: 10px;
 
     background: #fff;
     -webkit-box-shadow: 0 8px 87px 9px rgba(24, 24, 23, .75);
             box-shadow: 0 8px 87px 9px rgba(24, 24, 23, .75);
+}
+
+.modal-brand .modal-navigation__close
+{
+    top: 15px;
+    right: 15px;
 }
 
 .modal-brand__left img
@@ -3354,7 +3362,7 @@ video.responsive
 
 .modal-brand__subtitle
 {
-    font-weight: bold;
+    font-weight: 500;
 
     margin-bottom: 20px;
 }
@@ -3975,6 +3983,11 @@ h4
     color: #e0552f;
 }
 
+.stores__type-select_online
+{
+    margin-left: -15px;
+}
+
 .stores__search
 {
     margin-top: 30px;
@@ -4079,6 +4092,8 @@ h4
 .stores__online-list.active
 {
     display: block;
+
+    margin-top: 60px;
 }
 
 .stores__stores-item
@@ -9646,6 +9661,8 @@ h4
 
     .modal-brand
     {
+        margin-right: 40px;
+        margin-left: 40px;
         padding-top: 20px;
         padding-bottom: 0;
     }
@@ -10393,6 +10410,27 @@ h4
         max-width: 600px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .modal-brand
+    {
+        top: 0;
+
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+        max-height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+    }
+
+    .modal-brand .container-offset
+    {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 40px;
+        padding-top: 60px;
     }
 
     h1
@@ -11493,13 +11531,11 @@ h4
         margin-bottom: 26px;
     }
 
-    .modal-brand
+    .modal-brand .container-offset
     {
-        top: 0;
-
-        padding-right: 20px;
-        padding-bottom: 60px;
-        padding-left: 20px;
+        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 80px;
     }
 
     .modal-brand__left img
@@ -11571,6 +11607,11 @@ h4
         line-height: 28px;
 
         padding: 0 5px;
+    }
+
+    .stores__type-select_online
+    {
+        margin-left: 0;
     }
 
     .stores__search

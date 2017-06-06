@@ -5693,15 +5693,24 @@ if ( $.ajaxPrefilter ) {
    STORES Click effects
    ----------------------------------------*/
 
-  $('.stores__type-select').on('click', function (event) {
+// по клику на retail
+  $('.stores__type-select_retail').on('click', function (event) {
     event.preventDefault();
     $('.stores__type-select').removeClass('active');
     $(this).toggleClass('active');
-    $('.stores__online-list, .stores__retail-list').toggleClass('active');
-    //добавить проверку на .active у кнопки,
-    //чтобы нельзя было нажать уже нажатую кнопку
+    $('.stores__search').css('display', 'block');
+    $('.stores__online-list').removeClass('active');
+    $('.stores__retail-list').addClass('active');
+  });
 
-    
+// по клику на online
+  $('.stores__type-select_online').on('click', function (event) {
+    event.preventDefault();
+    $('.stores__type-select').removeClass('active');
+    $(this).toggleClass('active');
+    $('.stores__search').css('display', 'none');
+    $('.stores__retail-list').removeClass('active');
+    $('.stores__online-list').addClass('active');
   });
 
   /*----------------------------------------
