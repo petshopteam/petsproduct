@@ -5700,6 +5700,8 @@ if ( $.ajaxPrefilter ) {
     $('.stores__online-list, .stores__retail-list').toggleClass('active');
     //добавить проверку на .active у кнопки,
     //чтобы нельзя было нажать уже нажатую кнопку
+
+    
   });
 
   /*----------------------------------------

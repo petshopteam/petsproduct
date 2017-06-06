@@ -1309,7 +1309,7 @@ hr
 .btn_orange:hover
 {
     color: #fff;
-    background-color: #f83e3e;
+    background-color: #c1421f;
 }
 
 .btn_grey
@@ -3055,7 +3055,7 @@ video.responsive
     overflow-y: visible;
 
     width: 718px;
-    max-height: 300px;
+    max-height: 320px;
     padding: 35px 55px 10px 55px;
 
     background-color: #fff;
@@ -3086,6 +3086,7 @@ video.responsive
     font-weight: 500;
     line-height: 27px;
 
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -3223,7 +3224,7 @@ video.responsive
 
     overflow-y: auto;
 
-    max-height: 100vh;
+    height: 100vh;
     padding-top: 140px;
     padding-bottom: 165px;
 
@@ -6133,10 +6134,6 @@ h4
 
 .article-item__title
 {
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 48px;
-
     margin-bottom: 20px;
 }
 
@@ -9647,11 +9644,6 @@ h4
         padding-left: 10px;
     }
 
-    .modal-change-city
-    {
-        overflow-y: auto;
-    }
-
     .modal-brand
     {
         padding-top: 20px;
@@ -10018,7 +10010,7 @@ h4
 
     .article-item__price:hover
     {
-        color: #f83e3e;
+        color: #c1421f;
     }
 
     .article-item__social
@@ -10385,6 +10377,22 @@ h4
     p.CaptionCont.SelectBox span
     {
         font-size: 13px;
+    }
+
+    .modal-change-city
+    {
+        overflow-y: auto;
+
+        width: 100%;
+        max-height: 100vh;
+        padding-top: 100px;
+    }
+
+    .modal-change-city .container-offset
+    {
+        max-width: 600px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     h1
@@ -12311,7 +12319,7 @@ h4
 
     .article-item__price:hover
     {
-        color: #f83e3e;
+        color: #c1421f;
     }
 
     .article-item__social
@@ -12335,7 +12343,7 @@ h4
 
     .article-item__list
     {
-        border-left: none;
+        padding-left: 30px;
     }
 
     .article-pagination
