@@ -11,15 +11,15 @@
 	<meta name="description" content="description ">
 	<!-- favicon -->
 	<!-- <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
-		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
-		<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
-		<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png" /> -->
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png" /> -->
 
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 	<script src="../js/app.js"></script>
@@ -29,9 +29,9 @@
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if IE]>
-				<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-				<link href= "css/ie.css" rel= "stylesheet" media= "all" />
-			<![endif]-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <link href="css/ie.css" rel="stylesheet" media="all"/>
+  <![endif]-->
 </head>
 
 <body class="cooperation-page">
@@ -151,9 +151,10 @@
 					<a class="main-head__logo" href="./"></a>
 				</div>
 				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5">
+				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
 					<nav class="main-navigation">
-						<ul id="menu" class="main-navigation__list">
+						<!-- (big size nav) -->
+						<ul id="menu" class="main-navigation__list hidden-sm hidden-xs">
 							<li class="active"></li>
 							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
 							</li>
@@ -164,37 +165,64 @@
 							<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
 							</li>
 							<li class="main-navigation__item">
-								<button class="btn btn_red">Оставить заявку</button>
+								<button class="btn btn_orange">Оставить заявку</button>
 							</li>
 							<li id="line"></li>
 						</ul>
+						<!-- (small size nav) -->
+						<!-- btn -->
+						<a class="main-navigation__hidden-btn mnu-white hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+						<div class="modal-navigation modal_div" id="modalNav">
+							<ul id="menuSmall" class="main-navigation__list_small hidden-lg hidden-md">
+								<a class="modal-navigation__close modal_close">Закрыть</a>
+								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a>
+								</li>
+								<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
+								</li>
+								<li class="main-navigation__item">
+									<button class="btn btn_orange">Оставить заявку</button>
+								</li>
+								<!-- overlay (заменяет topline overlay) -->
+								<div id="overlay_dark" class="overlay_dark"></div>
+							</ul>
+						</div>
 					</nav>
 				</div>
+				<!-- end main-navigation -->
 			</div>
 
 			<div class="row">
-				<div class="col-xs-9">
-					<h1 class="main-head__title">PetsProduct - <br> выгодный партнер в Вашем бизнесе! </h1>
+				<div class="col-lg-9 col-md-12">
+					<h2 class="main-head__title">PetsProduct - <br> выгодный партнер в Вашем бизнесе! </h2>
 				</div>
 			</div>
 
-			<div class="row tac">
-				<div class="col-lg-3">
+			<div class="main-head__features">
+
+				<div class="main-head__feature">
 					<img src="images/icons/coop1.svg" alt="coop1" class="main-head__feature-image">
 					<p class="main-head__feature-text">Крупные оптовые компании</p>
 				</div>
-				<div class="col-lg-3 col-lg-offset-1">
+
+				<div class="main-head__feature">
 					<img src="images/icons/coop2.svg" alt="coop2" class="main-head__feature-image">
 					<p class="main-head__feature-text">Зоомагазины</p>
 				</div>
-				<div class="col-lg-3 col-lg-offset-1">
+
+				<div class="main-head__feature">
 					<img src="images/icons/coop3.svg" alt="coop3" class="main-head__feature-image">
 					<p class="main-head__feature-text">Интернет-магазины</p>
 				</div>
-				<div class="col-lg-3 col-lg-offset-1">
+
+				<div class="main-head__feature">
 					<img src="images/icons/coop4.svg" alt="coop4" class="main-head__feature-image">
 					<p class="main-head__feature-text">Питомники</p>
 				</div>
+
 			</div>
 
 		</div>
@@ -204,19 +232,20 @@
 		<div class="container">
 			<div class="row">
 				<h2 class="cooperation__title">Плюсы регистрации в нашей стстеме:</h2>
-				<div class="col-lg-8">
+				<div class="col-lg-8 col-lg-offset-0 col-md-8 col-md-offset-0 col-sm-11 col-sm-offset-2">
 					<img class="cooperation__image" src="images/cooperation-plus.jpg" alt="cooperation-plus">
 				</div>
-				<div class="col-lg-7">
+				<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-12 col-sm-offset-3 col-xs-15 col-xs-offset-0">
 					<!-- item 1 -->
 					<div class="cooperation__item">
 						<div class="cooperation__item-title">Самостоятельное оформление заказа:</div>
 						<div class="cooperation__item-text">Получение доступа к просмотру полного онлайн каталога продукции
-							<br>Возможность сделать заказ 24 часа в сутки.</div>
+							<br>Возможность сделать заказ 24 часа в сутки.
+						</div>
 					</div>
 					<!-- item 2 -->
 					<div class="cooperation__item">
-						<div class="cooperation__item-title">"Экономия времени":</div>
+						<div class="cooperation__item-title">Экономия времени:</div>
 						<div class="cooperation__item-text">
 							Нет необходимости звонить менеджеру
 							<br>Всегда указаны актуальные цены на наличие товара
@@ -241,52 +270,43 @@
 
 	<section class="registration">
 		<div class="container">
-			<div class="row tac">
+			<div class="registration__wrap">
+
 				<h2 class="registration__title">Зарегистрироваться просто!</h2>
 
-				<div class="col-lg-5">
-					<div class="registration__item">
-						<div class="registration__item-number">
-							1
-						</div>
-						<p class="registration__item-text">
-							Оформите заявку на сотрудничество на нашем сайте
-						</p>
+				<div class="registration__item">
+					<div class="registration__item-number">
+						1
 					</div>
+					<p class="registration__item-text">
+						Оформите заявку на сотрудничество на нашем сайте
+					</p>
 				</div>
 
-				<div class="col-lg-5">
-					<div class="registration__item">
-						<div class="registration__item-number">
-							2
-						</div>
-						<p class="registration__item-text">
-							<br>Ждите звонка от менеджера
-						</p>
+				<div class="registration__item">
+					<div class="registration__item-number">
+						2
 					</div>
+					<p class="registration__item-text">
+						<br>Ждите звонка от менеджера
+					</p>
 				</div>
 
-				<div class="col-lg-5">
-					<div class="registration__item registration__item_last clearfix">
-						<div class="registration__item-number">
-							3
-						</div>
-						<p class="registration__item-text">
-							Заключение договора поставки, получение логина и пароля от личного кабинета
-						</p>
+				<div class="registration__item registration__item_last">
+					<div class="registration__item-number">
+						3
 					</div>
+					<p class="registration__item-text">
+						Заключение договора поставки, получение логина и пароля от личного кабинета
+					</p>
 				</div>
+
+				<a href="#" class="registration__button btn btn_orange btn_big btn_big-arrow btn_white-arrow">Подробнее</a>
 
 			</div>
-
-			<div class="row tac">
-				<a href="#" class="registration__button btn btn_red btn_more-red">Подробнее</a>
-			</div>
-
 
 		</div>
 	</section>
-
 
 
 	<!--footer-->
