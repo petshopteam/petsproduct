@@ -333,6 +333,11 @@
   background: @orange;
 }
 
+// hover
+.request__check:hover + .request__check-label::before {
+  background: @orange;
+}
+
 .request__check:focus + .request__check-label::before {
-  border-color: #bababa;
+  box-shadow: 0px 0px 1px 1px #bababa;
 }

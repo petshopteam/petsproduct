@@ -3253,8 +3253,8 @@ video.responsive
 {
     position: absolute;
     z-index: 10;
-    top: 30px;
-    right: 30px;
+    top: 15px;
+    right: 15px;
 
     width: 100px;
     height: 24px;
@@ -3275,6 +3275,7 @@ video.responsive
 
 .modal-vacancy
 {
+    z-index: 100;
     top: 3%;
     bottom: auto;
 
@@ -3283,7 +3284,7 @@ video.responsive
 
     max-width: 700px;
     max-height: 100vh;
-    padding: 48px 100px;
+    padding: 38px 100px;
     padding-bottom: 55px;
 
     background: #fff;
@@ -3300,6 +3301,7 @@ video.responsive
 
 .modal-vacancy .request__form-block
 {
+    margin-bottom: 0;
     padding: 0;
 
     border: none;
@@ -3337,12 +3339,6 @@ video.responsive
     background: #fff;
     -webkit-box-shadow: 0 8px 87px 9px rgba(24, 24, 23, .75);
             box-shadow: 0 8px 87px 9px rgba(24, 24, 23, .75);
-}
-
-.modal-brand .modal-navigation__close
-{
-    top: 15px;
-    right: 15px;
 }
 
 .modal-brand__left img
@@ -4644,6 +4640,8 @@ h4
 
 .last-news__image
 {
+    width: 100%;
+    height: auto;
     margin-bottom: 20px;
 }
 
@@ -6565,6 +6563,8 @@ h4
 
 .partners__list::after
 {
+    visibility: hidden;
+
     padding-left: 350px;
 
     content: ' i i i i ';
@@ -6920,9 +6920,15 @@ h4
     background: #e0552f;
 }
 
+.request__check:hover + .request__check-label::before
+{
+    background: #e0552f;
+}
+
 .request__check:focus + .request__check-label::before
 {
-    border-color: #bababa;
+    -webkit-box-shadow: 0 0 1px 1px #bababa;
+            box-shadow: 0 0 1px 1px #bababa;
 }
 
 .aboutcompany-page .main-head
@@ -10412,6 +10418,27 @@ h4
         margin-left: auto;
     }
 
+    .modal-vacancy
+    {
+        top: 0;
+
+        max-width: 100%;
+        max-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .modal-vacancy .container-offset
+    {
+        max-width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 60px;
+        padding-right: 10px;
+        padding-bottom: 60px;
+        padding-left: 10px;
+    }
+
     .modal-brand
     {
         top: 0;
@@ -10566,14 +10593,6 @@ h4
         margin-right: auto;
         margin-bottom: 30px;
         margin-left: auto;
-    }
-
-    .last-news__image
-    {
-        width: 320px;
-        height: auto;
-        padding-right: auto;
-        padding-left: auto;
     }
 
     .catalog-page .brand-filter__title,
@@ -11531,6 +11550,21 @@ h4
         margin-bottom: 26px;
     }
 
+    .modal-vacancy .container-offset
+    {
+        max-width: 300px;
+    }
+
+    .modal-vacancy__agree
+    {
+        margin-bottom: 60px;
+    }
+
+    .modal-vacancy .request__submit
+    {
+        margin-right: 0;
+    }
+
     .modal-brand .container-offset
     {
         padding: 20px;
@@ -12200,7 +12234,7 @@ h4
         display: block;
 
         width: 276px;
-        height: 355px;
+        height: 335px;
         margin-right: auto;
         margin-left: auto;
     }
