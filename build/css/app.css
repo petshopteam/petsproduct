@@ -7863,13 +7863,48 @@ h4
     font-size: 18px;
     font-weight: bold;
 
+    position: relative;
+
     display: block;
 
     margin-bottom: 30px;
 
-    -webkit-transition: all .2s ease, color .1s;
-            transition: all .2s ease, color .1s;
+    -webkit-transition: .3s ease;
+            transition: .3s ease;
     text-transform: uppercase;
+}
+
+.help__left-title::before
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 3px;
+    height: 0;
+    margin: auto;
+
+    content: '';
+    -webkit-transition: .3s ease;
+            transition: .3s ease;
+
+    opacity: 0;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    background-color: #e0552f;
+}
+
+.help__left-title:hover
+{
+    padding-left: 15px;
+}
+
+.help__left-title:hover::before
+{
+    height: 60%;
+
+    opacity: 1;
 }
 
 .help__left-title.active
@@ -7879,9 +7914,11 @@ h4
     color: #e0552f;
 }
 
-.help__left-title:hover
+.help__left-title.active::before
 {
-    padding-left: 15px;
+    height: 60%;
+
+    opacity: 1;
 }
 
 .help__left-list
@@ -12903,8 +12940,8 @@ h4
     {
         display: block;
 
-        width: 300px;
-        height: 2300x;
+        width: 230px;
+        height: 230px;
         margin-right: auto;
         margin-left: auto;
         padding-top: 40px;
@@ -12917,7 +12954,7 @@ h4
 
     .main-help__item img
     {
-        width: 45%;
+        width: 60%;
     }
 
     .help__useful

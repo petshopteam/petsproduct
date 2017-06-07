@@ -5678,7 +5678,15 @@ if ( $.ajaxPrefilter ) {
     //убираю класс active всем остальным заголовкам
     $('.help__left-title').removeClass('active');
     //и добавляю его только тому, на который кликнули
-    $(this).toggleClass('active');
+    $(this).addClass('active');
+
+    // Проверка на наличие active у "как сделать заказ"
+    if ( $(".help__left-title_order").hasClass("active") ) {
+      return false;
+    } else {
+      $(this).siblings('.help__left-list').slideUp('400');
+    }
+
   });
 
 
@@ -5686,7 +5694,7 @@ if ( $.ajaxPrefilter ) {
   $('.help__left-title_order').on('click', function (event) {
     event.preventDefault();
     //нахожу в соседних элементах класс .help__left-list и применяю метод slideToggle().
-    $(this).siblings('.help__left-list').slideToggle('400');
+    $(this).siblings('.help__left-list').slideDown('400');
   });
 
   /*----------------------------------------
@@ -5823,59 +5831,59 @@ if ( $.ajaxPrefilter ) {
    Help page slider animation
    ----------------------------------------*/
 
-  $(document).ready(function () {
-    // var $element;
-    var topPos;
-    var newHeight;
-    var $mainNav = $('.menu-list');
-    var $active;
-
-    var $sliderLine = $('<div class="slider-line"></div>');
-    $mainNav.append($sliderLine);
-
-    initSliderLine();
-
-    function initSliderLine() {
-      $active = $mainNav.find('li.active');
-
-      $sliderLine
-          .height($active.height())
-          .css('top', $active.position().top)
-          .data('originalTop', $sliderLine.position().top)
-          .data('originalHeight', $sliderLine.height());
-    };
-
-    function changeSliderPosition(target) {
-      topPos = target.position().top;
-      newHeight = target.height();
-
-      $sliderLine.stop().animate({
-        'top': topPos,
-        'height': newHeight
-      })
-    };
-
-    $mainNav.on({
-      'click': function (evt) {
-        var $this = $(this);
-        changeSliderPosition($this);
-      },
-      'click': function (evt) {
-        $sliderLine.stop().animate({
-          'top': $sliderLine.data('originalTop'),
-          'height': $sliderLine.data('originalHeight')
-        })
-      },
-      'click': function (evt) {
-        var $this = $(this);
-
-        $mainNav.find('li').removeClass('active');
-        $this.addClass('active');
-
-        initSliderLine();
-      }
-    }, 'li');
-  });
+  // $(document).ready(function () {
+  //   // var $element;
+  //   var topPos;
+  //   var newHeight;
+  //   var $mainNav = $('.menu-list');
+  //   var $active;
+  //
+  //   var $sliderLine = $('<div class="slider-line"></div>');
+  //   $mainNav.append($sliderLine);
+  //
+  //   initSliderLine();
+  //
+  //   function initSliderLine() {
+  //     $active = $mainNav.find('li.active');
+  //
+  //     $sliderLine
+  //         .height($active.height())
+  //         .css('top', $active.position().top)
+  //         .data('originalTop', $sliderLine.position().top)
+  //         .data('originalHeight', $sliderLine.height());
+  //   };
+  //
+  //   function changeSliderPosition(target) {
+  //     topPos = target.position().top;
+  //     newHeight = target.height();
+  //
+  //     $sliderLine.stop().animate({
+  //       'top': topPos,
+  //       'height': newHeight
+  //     })
+  //   };
+  //
+  //   $mainNav.on({
+  //     'click': function (evt) {
+  //       var $this = $(this);
+  //       changeSliderPosition($this);
+  //     },
+  //     'click': function (evt) {
+  //       $sliderLine.stop().animate({
+  //         'top': $sliderLine.data('originalTop'),
+  //         'height': $sliderLine.data('originalHeight')
+  //       })
+  //     },
+  //     'click': function (evt) {
+  //       var $this = $(this);
+  //
+  //       $mainNav.find('li').removeClass('active');
+  //       $this.addClass('active');
+  //
+  //       initSliderLine();
+  //     }
+  //   }, 'li');
+  // });
 
 
   /*----------------------------------------
