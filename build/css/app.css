@@ -3946,6 +3946,11 @@ h4
     border-color: #e0552f;
 }
 
+.stores__type-wrap
+{
+    text-align: left;
+}
+
 .stores__type-block
 {
     margin-right: auto;
@@ -5507,11 +5512,6 @@ h4
     border-left: 3px solid #e0552f;
 }
 
-.brand-production .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(4n)
-{
-    margin-right: 0;
-}
-
 .brand-production__title
 {
     font-size: 36px;
@@ -5525,17 +5525,23 @@ h4
 
 .brand-production__list
 {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+
     text-align: left;
 }
 
 .brand-production__item
 {
+    position: relative;
+
     display: inline-block;
 
-    width: 23%;
-    max-width: 270px;
-    margin-right: 2%;
-    margin-bottom: 2%;
+    width: 267px;
+    height: 267px;
+    margin-right: 40px;
+    margin-bottom: 35px;
 
     text-align: center;
 
@@ -5544,9 +5550,14 @@ h4
             box-shadow: 0 0 4px rgba(36, 36, 35, .2);
 }
 
+.brand-production__item:nth-child(4n)
+{
+    margin-right: 0;
+}
+
 .brand-production__item img
 {
-    width: 100%;
+    width: 85%;
     height: auto;
 }
 
@@ -5555,9 +5566,12 @@ h4
     background: #f1f1f1;
 }
 
-.brand-production__item:last-child
+.brand-production__label
 {
-    margin-bottom: 90px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
 }
 
 .actions-page .main-topline
@@ -9921,14 +9935,12 @@ h4
         padding-left: 10px;
     }
 
-    .brand-info__about_bottom
+    .brand-production__item
     {
-        margin-bottom: 0;
-    }
-
-    .brand-info__price
-    {
-        margin-left: 30px;
+        width: 189px;
+        height: 189px;
+        margin-right: 35px;
+        margin-bottom: 35px;
     }
 
     .brand-production
@@ -9940,6 +9952,17 @@ h4
     .brand-production__title
     {
         margin-top: 50px;
+    }
+
+    .brand-production__list
+    {
+        width: 900px;
+    }
+
+    .brand-production__item
+    {
+        width: 195px;
+        height: 195px;
     }
 
     .actions-page .breadcrumbs
@@ -10691,40 +10714,27 @@ h4
         margin-left: 40px;
     }
 
-    .brand-info
+    .brand-production__list
     {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    .brand-info__title
-    {
-        margin-bottom: 20px;
-    }
-
-    .brand-production__item:last-child
-    {
-        margin-bottom: 80px;
-    }
-
-    .brand-production
-    {
-        padding-left: 5%;
-    }
-
-    .brand-production .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(4n)
-    {
-        margin-right: 2%;
-    }
-
-    .brand-production .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(3n)
-    {
-        margin-right: 0;
+        width: 712px;
     }
 
     .brand-production__item
     {
-        width: 30%;
+        width: 218px;
+        height: 218px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+
+    .brand-production__item:nth-child(4n)
+    {
+        margin-right: 25px;
+    }
+
+    .brand-production__item:nth-child(3n)
+    {
+        margin-right: 0;
     }
 
     .actions-page .container
@@ -11704,6 +11714,11 @@ h4
         margin-right: 5px;
     }
 
+    .stores__type-wrap
+    {
+        text-align: center;
+    }
+
     .stores__type-block
     {
         max-width: 320px;
@@ -11711,7 +11726,7 @@ h4
 
     .stores__type-select
     {
-        font-size: 11px;
+        font-size: 10px;
         line-height: 28px;
 
         padding: 0 5px;
@@ -11719,6 +11734,8 @@ h4
 
     .stores__type-select_online
     {
+        right: -18px;
+
         margin-left: 0;
     }
 
@@ -11970,31 +11987,29 @@ h4
         margin-bottom: 25px;
     }
 
-    .brand-production__item:last-child
+    .brand-production__list
     {
-        margin-bottom: 60px;
-    }
+        width: 265px;
 
-    .brand-production .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(4n)
-    {
-        margin-right: auto;
-    }
-
-    .brand-production .col-lg-15 > .brand-production__list > .brand-production__item:nth-child(3n)
-    {
-        margin-right: auto;
+        text-align: center;
     }
 
     .brand-production__item
     {
-        display: block;
-
-        width: 100%;
-        max-width: 214px;
-        margin: 0;
+        width: 215px;
+        height: 215px;
         margin-right: auto;
-        margin-bottom: 30px;
         margin-left: auto;
+    }
+
+    .brand-production__item:nth-child(4n)
+    {
+        margin-right: auto;
+    }
+
+    .brand-production__item:nth-child(3n)
+    {
+        margin-right: auto;
     }
 
     .actions-page .main-foot .container
