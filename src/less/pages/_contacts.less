@@ -64,15 +64,27 @@
 
 .contacts {
 
+  // TMP MAP
+  #mapkit-7181 {
+    width: 100%;
+    height: 682px;
+    //media
+    @media (max-width: @desktop) {
+      height: 479px;
+    }
+    @media (max-width: @laptop) {
+      height: 383px;
+    }
+    @media (max-width: @tablet) {
+      height: 326px;
+    }
+  }
+  // TMP MAP
+
   &__map {
     width: 100%;
     height: auto;
     margin-bottom: 80px;
-    //temp (вместо img здесь буде карта)
-    img {
-      width: 100%;
-      height: auto;
-    }
   }
   &__bottom {
     margin-bottom: 80px;
@@ -101,16 +113,25 @@
 
   //media
   @media (max-width: @desktop) {
+    &__map {
+      margin-bottom: 40px;
+    }
     &__item {
       padding: 30px 35px 30px 35px;
     }
   }
   @media (max-width: @laptop) {
+    &__map {
+      margin-bottom: 30px;
+    }
     &__item {
       height: 195px;
     }
   }
   @media (max-width: @tablet) {
+    &__map {
+      margin-bottom: 35px;
+    }
     &__item {
       width: 300px;
       padding: 30px 80px 30px 80px;

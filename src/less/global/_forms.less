@@ -2,12 +2,10 @@
 	FORMS
 ----------------------------------------*/
 
-
-
-
 //форма на странице каталога
 
 //brand filter
+
 .brand-filter {
 
   &__search {
@@ -25,6 +23,12 @@
     font-weight: 300;
     line-height: 24px;
     margin-bottom: 15px;
+    &:focus {
+      // background: @orange;
+      & + .brand-filter__search-button {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAABnElEQVQoU42SPWgUURSFv7PZbKuC9oGN0ZDoTli1sZYYMLqbxVIb8acJmGAlIkhQCwtLwSgEBEEGMrMWxkaQkCoYMrvESht/8lNYJKQJhpkrM7OzasSQW7x3i/dxzznvilZZrXyUKLwLnAUOgK1Brk4+mpDbWM7exbfiwy4cHyaXexW3QB34DnQD54ENzIbkN+YzUFYpF1HYBD6h6JymmzGQlNVKfYR6g6yAqVd+sJ5MsqrzFOwSUdij+tK3P2Uk4IhzEmMe47b84GEGLWP2Tn7j8k6gPbHqzCGk6eB0BsU+7sgL7u8CTQJn5AVdGbQJPJcX3NwF8oGivOBYCyrNgPrJbxflfvz5j6fh8kHy4RfQC3mLN1KoVhok0ltgEi+4rjT2NL2LfQW2Oz3EIESOvObS73+qOI8RsbzY8BPMvgI9oDGgH/GZjo4Tchc22lAa7cAoZvfSbWjXCvASGAdm2bd/SFPvt5KNaMu5Vu7kR3iKiENYtErhyAe5bmiVgSvIngGvyR8e+Qv6X3qJkqpzC3iEmNoz1NqOBxhXfwGiSpdGmdIImAAAAABJRU5ErkJggg==');
+      }
+    }
     //media
     @media (max-width: @desktop) {
       width: 100%;
@@ -35,7 +39,7 @@
     width: 15px;
     height: 15px;
     border: none;
-    background: transparent url(../images/icons/search.png) no-repeat center;
+    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAYAAAD0f5bSAAABqElEQVQoU42SP2gUQRSHv7d3lyoWgjYHO7NwEpSLIJzaWIcYUIv02ohoI6hYiQgiamFhKRiFgCBYaSzUxiakClbiVZrLzOxeFK4xJIXIuU/2sisxEPFXzP+P95v3nlAqSZKDqnoL9CSwF/imykKe53eyLOtX74pZisEYc1qEF4CCLIBmoAdAzgDrUZTPrK5myxUocRy3okg+gn4eDvNT/X4/qy6NMW0RfQMyJhIdcs59H0Wy1jwGztbrw4mVlbV0u41iHcfxsSiSZRFuOBfuV1Dh97334dxOoNpba5aKAN6HExWkoDe9T+/+A5oDprwPSQVtiPDUuXBlN8gY80qElvfhcAnZt6CT4+N7Wt1u9+dOsNls7ms06l6VZyGESyMoSeJpVXkHzHkfLm6lfUvtdntsc3PjJTCd53okTdNP2+v0UITC3hLII1UNIjIBehWYBL7UavWjvV5v/Q9UFviyCLfLbqiCrYE+B7kGuihSm3HO/Rh1RKVOp9MYDAbHo0j3g351LvsA/LLWngd9IsJr58LsX9Bu2SvOrbXXQR+oMv/fUPmFeyJc+A2JXKFSBimzvgAAAABJRU5ErkJggg==') no-repeat center;
     top: 11px;
     right: 10px;
   }
