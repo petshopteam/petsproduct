@@ -1438,6 +1438,8 @@ hr
 
 .main-foot__list li
 {
+    position: relative;
+
     margin-bottom: 15px;
 }
 
@@ -1454,6 +1456,8 @@ hr
 
 .main-foot__list_last li a
 {
+    position: relative;
+
     padding-left: 40px;
 
     cursor: auto;
@@ -11599,12 +11603,22 @@ h4
         padding-left: 17%;
     }
 
+    .main-foot__copyright
+    {
+        height: auto;
+    }
+
     .main-foot__copyright .container
     {
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 3px;
+        padding-left: 3px;
 
         text-align: center;
+    }
+
+    .main-foot__copy-text
+    {
+        font-size: 9px;
     }
 
     .brand-filter__list,
