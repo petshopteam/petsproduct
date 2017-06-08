@@ -8,7 +8,6 @@
     margin: 0;
     //media
     @media (max-width: @desktop) {
-      // подгрузить другой bg
       margin-bottom: 20px;
     }
     @media (max-width: @laptop) {
@@ -21,7 +20,7 @@
   }
 
   .breadcrumbs {
-    margin-top: 40px;
+    //margin-top: 40px;
     color: @white;
   }
 
@@ -45,6 +44,9 @@
       padding-right: 10px;
       padding-left: 10px;
     }
+    .breadcrumbs {
+      margin-left: -20px;
+    }
   }
   @media (max-width: @laptop) {
     .container {
@@ -55,12 +57,16 @@
       padding-right: 6%;
       padding-left: 6%;
     }
+    .breadcrumbs {
+      margin-left: -10px;
+    }
   }
   @media (max-width: @tablet) {
     .main-foot .container {
       padding-right: 6%;
       padding-left: 17%;
     }
+
     .main-foot__copyright .container {
       padding-left: 10px;
       padding-right: 10px;
@@ -109,12 +115,14 @@
       height: auto;
       margin-right: 35px;
     }
+
     &__title {
       float: left;
       width: 80%;
       line-height: 26px;
       margin-bottom: 15px;
     }
+
     &__text {
       float: left;
       width: 80%;
@@ -130,11 +138,13 @@
       margin-right: 0;
       margin-bottom: 10px;
     }
+
     &__title {
       float: none;
       width: 100%;
       padding: 0;
     }
+
     &__text {
       float: none;
       width: 100%;
@@ -148,7 +158,7 @@
   background: @lightgrey;
   padding-top: 0.3%;
 
-  &__title{
+  &__title {
     text-align: center;
     font-weight: 700;
     margin-top: 60px;
@@ -212,10 +222,12 @@
       padding-right: 5%;
       padding-left: 5%;
     }
+
     &__item {
       width: 44%;
       margin-left: 3%;
     }
+
     &__item_big {
       width: 100%;
       min-width: 471px;
@@ -238,20 +250,24 @@
       padding-right: 10px;
       padding-left: 10px;
     }
+
     &__item-title {
       padding-right: 5px;
       padding-left: 5px;
     }
+
     &__text {
       padding-right: 0;
       padding-left: 0;
     }
+
     &__item {
       width: 100%;
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 40px;
     }
+
     &__item_big {
       min-width: auto;
       width: 100%;
@@ -294,8 +310,10 @@
     &::after {
       content: "";
       position: absolute;
-      width: 100%; height: 3px;
-      top: 0; left: 0;
+      width: 100%;
+      height: 3px;
+      top: 0;
+      left: 0;
       background: @orange url(../) no-repeat center;
     }
   }
@@ -310,6 +328,7 @@
       height: 410px;
       padding: 120px 10px 40px 20px;
     }
+
     &__left-title {
       margin-bottom: 30px;
     }
@@ -322,6 +341,7 @@
       margin-left: auto;
       margin-right: auto;
     }
+
     &__right {
       width: 544px;
       height: auto;
@@ -330,7 +350,8 @@
       margin-left: auto;
       margin-right: auto;
       &::after {
-        top: auto; bottom: 0;
+        top: auto;
+        bottom: 0;
       }
     }
   }
@@ -341,6 +362,7 @@
       height: 269px;
       padding: 75px 20px 40px 20px;
     }
+
     &__right {
       width: auto;
       max-width: 100%;

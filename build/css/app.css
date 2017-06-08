@@ -5421,6 +5421,7 @@ h4
 .brand-page .breadcrumbs
 {
     margin-bottom: 10px;
+    margin-left: 0;
 }
 
 .brand-info__title
@@ -6978,8 +6979,6 @@ h4
 
 .aboutcompany-page .breadcrumbs
 {
-    margin-top: 40px;
-
     color: #fff;
 }
 
@@ -10212,6 +10211,11 @@ h4
         padding-left: 10px;
     }
 
+    .aboutcompany-page .breadcrumbs
+    {
+        margin-left: -20px;
+    }
+
     .distribution
     {
         max-width: 978px;
@@ -11188,6 +11192,11 @@ h4
         padding-left: 6%;
     }
 
+    .aboutcompany-page .breadcrumbs
+    {
+        margin-left: -10px;
+    }
+
     .company-feature
     {
         width: 100%;
@@ -11559,6 +11568,11 @@ h4
         display: none !important;
     }
 
+    .btn
+    {
+        font-size: 15px;
+    }
+
     .main-foot__subtitle
     {
         margin-bottom: 30px;
@@ -11699,6 +11713,17 @@ h4
     .main-topline__phone-time
     {
         padding-right: 38px;
+    }
+
+    .breadcrumbs
+    {
+        margin-top: 10px;
+    }
+
+    .breadcrumbs__item
+    {
+        margin-right: 10px;
+        padding-left: 15px;
     }
 
     .stores__hidden-topline
@@ -12987,7 +13012,7 @@ h4
 
     .help-page .request__form-block
     {
-        width: 300px;
+        width: 285px;
         margin-right: auto;
         margin-left: auto;
         padding: 20px 10px;
@@ -12999,6 +13024,11 @@ h4
         padding-left: 0;
 
         text-align: center;
+    }
+
+    .help-page .request__submit-block .btn
+    {
+        font-size: 15px;
     }
 
     .help-page .form-input,
