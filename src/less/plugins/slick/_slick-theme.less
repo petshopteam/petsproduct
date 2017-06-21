@@ -228,41 +228,43 @@
 
 // main slider media styles
 
-.slick-prev {
-  @media (max-width: @laptop) {
-    opacity: 0.1;
-    background-image: url(../images/icons/arrow2_left.svg);
-    background-color: transparent;
-    top: 50%;
-    left: 0;
-    &:hover {
-      opacity: 0.2;
-      background-image: url(../images/icons/arrow2_left.svg);
-    }
-  }
-  @media (max-width: @tablet) {
-    width: 20px;
-    height: 37px;
-    background-size: cover;
-    left: 0;
-  }
-}
+.main-carousel__slider {
 
-.slick-next {
-  @media (max-width: @laptop) {
-    opacity: 0.1;
-    background-image: url(../images/icons/arrow2_right.svg);
-    background-color: transparent;
-    top: 50%;
-    &:hover {
-      opacity: 0.2;
-      background-image: url(../images/icons/arrow2_right.svg);
+  .slick-prev {
+    @media (max-width: @laptop) {
+      opacity: 0.1;
+      background-image: url(../images/icons/arrow2_left.svg);
+      background-color: transparent;
+      top: 50%;
+      left: 0;
+      &:hover {
+        opacity: 0.2;
+        background-image: url(../images/icons/arrow2_left.svg);
+      }
+    }
+    @media (max-width: @tablet) {
+      width: 20px;
+      height: 37px;
+      background-size: cover;
+      left: 0;
     }
   }
-  @media (max-width: @tablet) {
-    width: 20px;
-    height: 37px;
-    background-size: cover;
+  .slick-next {
+    @media (max-width: @laptop) {
+      opacity: 0.1;
+      background-image: url(../images/icons/arrow2_right.svg);
+      background-color: transparent;
+      top: 50%;
+      &:hover {
+        opacity: 0.2;
+        background-image: url(../images/icons/arrow2_right.svg);
+      }
+    }
+    @media (max-width: @tablet) {
+      width: 20px;
+      height: 37px;
+      background-size: cover;
+    }
   }
 }
 
