@@ -5538,15 +5538,14 @@ h4
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
-
-    text-align: left;
+    padding-left: 5px;
 }
 
 .brand-production__item
 {
     position: relative;
 
-    display: inline-block;
+    float: left;
 
     width: 267px;
     height: 267px;
