@@ -11534,7 +11534,7 @@ h4
         left: -35%;
     }
 
-    .slick-prev
+    .main-carousel__slider .slick-prev
     {
         top: 50%;
         left: 0;
@@ -11544,13 +11544,13 @@ h4
         background-image: url(../images/icons/arrow2_left.svg);
     }
 
-    .slick-prev:hover
+    .main-carousel__slider .slick-prev:hover
     {
         opacity: .2;
         background-image: url(../images/icons/arrow2_left.svg);
     }
 
-    .slick-next
+    .main-carousel__slider .slick-next
     {
         top: 50%;
 
@@ -11559,7 +11559,7 @@ h4
         background-image: url(../images/icons/arrow2_right.svg);
     }
 
-    .slick-next:hover
+    .main-carousel__slider .slick-next:hover
     {
         opacity: .2;
         background-image: url(../images/icons/arrow2_right.svg);
@@ -13191,7 +13191,7 @@ h4
         height: 10px;
     }
 
-    .slick-prev
+    .main-carousel__slider .slick-prev
     {
         left: 0;
 
@@ -13201,7 +13201,7 @@ h4
         background-size: cover;
     }
 
-    .slick-next
+    .main-carousel__slider .slick-next
     {
         width: 20px;
         height: 37px;
