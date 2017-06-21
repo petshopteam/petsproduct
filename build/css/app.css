@@ -3191,6 +3191,11 @@ button:focus
     background-color: #e0552f;
 }
 
+.modal-change-city .SumoSelect label
+{
+    display: none;
+}
+
 .modal-change-city__item label:hover::before
 {
     border-color: #e0552f;
@@ -7750,15 +7755,26 @@ h4
     padding-bottom: 18%;
 }
 
+.main-error__left
+{
+    float: left;
+
+    width: 40%;
+    margin-right: 5%;
+}
+
+.main-error__right
+{
+    float: left;
+
+    width: 50%;
+}
+
 .main-error__image
 {
     width: 100%;
+    max-width: 477px;
     height: auto;
-}
-
-.main-error__info
-{
-    margin-left: 5%;
 }
 
 .main-error__title
@@ -11428,6 +11444,29 @@ h4
     {
         margin-top: 50px;
         margin-bottom: 10px;
+    }
+
+    .main-error__left
+    {
+        float: none;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .main-error__right
+    {
+        float: none;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .main-error__info
+    {
+        text-align: center;
     }
 
     .help-page .container

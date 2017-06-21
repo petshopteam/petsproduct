@@ -37,12 +37,21 @@
   padding-top: 12%;
   padding-bottom: 18%;
 
+  &__left {
+    float: left;
+    width: 40%;
+    margin-right: 5%;
+  }
+
+  &__right {
+    float: left;
+    width: 50%;
+  }
+
   &__image {
     width: 100%;
+    max-width: 477px;
     height: auto;
-  }
-  &__info {
-    margin-left: 5%;
   }
   &__title {
     margin-top: 5%;
@@ -54,5 +63,20 @@
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 30px;
+  }
+  @media (max-width: @laptop) {
+    &__left {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+    &__right {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+    &__info {
+      text-align: center;
+    }
   }
 }
