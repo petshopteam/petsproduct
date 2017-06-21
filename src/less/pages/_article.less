@@ -529,7 +529,7 @@
     position: relative;
   }
   &__slide-text {
-    width: 30%;
+    width: 32%;
     position: absolute;
     font-family: @rubik;
     font-size: 14px;
@@ -557,8 +557,33 @@
       width: 55%;
     }
     &__slide-text {
-      width: 35%;
-      right: 30px;
+      width: 38%;
+      right: 10px;
+    }
+  }
+  @media (max-width: @tablet) {
+    &__slider {
+      padding: 0 10px;
+    }
+    &__slide-image {
+      padding-top: 75px;
+      width: 100%;
+    }
+    &__slide-text {
+      position: relative;
+      width: 90%;
+      right: auto;
+      left: 0;
+      top: auto;
+      bottom: 0;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    &__slide-counter {
+      right: auto;
+      left: 0;
+      top: 18px;
+
     }
   }
 }

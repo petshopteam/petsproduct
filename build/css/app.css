@@ -6520,7 +6520,7 @@ h4
     top: 50%;
     right: 0;
 
-    width: 30%;
+    width: 32%;
 }
 
 .article-item__slide-counter
@@ -10154,9 +10154,9 @@ h4
 
     .article-item__slide-text
     {
-        right: 30px;
+        right: 10px;
 
-        width: 35%;
+        width: 38%;
     }
 
     .partners-page .breadcrumbs
@@ -12635,6 +12635,37 @@ h4
         margin-bottom: 50px;
     }
 
+    .article-item__slider
+    {
+        padding: 0 10px;
+    }
+
+    .article-item__slide-image
+    {
+        width: 100%;
+        padding-top: 75px;
+    }
+
+    .article-item__slide-text
+    {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: 0;
+        left: 0;
+
+        width: 90%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .article-item__slide-counter
+    {
+        top: 18px;
+        right: auto;
+        left: 0;
+    }
+
     .partners-page .main-foot .container
     {
         padding-right: 6%;
@@ -13225,6 +13256,16 @@ h4
     {
         right: -5px;
         left: auto;
+    }
+
+    .article-item__slider .slick-prev
+    {
+        visibility: hidden;
+    }
+
+    .article-item__slider .slick-next
+    {
+        visibility: hidden;
     }
 }
 
