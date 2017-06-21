@@ -365,6 +365,7 @@
 }
 // article-item__slider settings
 .article-item__slider {
+
   .slick-prev {
     left: auto;
     right: 104px;
@@ -373,5 +374,14 @@
   .slick-next {
     left: auto;
     right: 59px;
+  }
+  //media
+  @media (max-width: @desktop) {
+    .slick-prev {
+      right: 54px;
+    }
+    .slick-next {
+      right: 20px;
+    }
   }
 }

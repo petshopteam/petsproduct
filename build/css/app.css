@@ -10142,6 +10142,23 @@ h4
         border-left: 2px solid #f1f1f1;
     }
 
+    .article-item__slider
+    {
+        padding: 50px 20px;
+    }
+
+    .article-item__slide-image
+    {
+        width: 55%;
+    }
+
+    .article-item__slide-text
+    {
+        right: 30px;
+
+        width: 35%;
+    }
+
     .partners-page .breadcrumbs
     {
         margin-left: 0;
@@ -10479,6 +10496,16 @@ h4
     .main-suppliers__slider .slick-prev
     {
         left: -7%;
+    }
+
+    .article-item__slider .slick-prev
+    {
+        right: 54px;
+    }
+
+    .article-item__slider .slick-next
+    {
+        right: 20px;
     }
 }
 
