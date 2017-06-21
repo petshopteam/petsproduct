@@ -5535,7 +5535,7 @@ h4
 
 .brand-production__list
 {
-    width: 1200px;
+    width: 1170px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 5px;
@@ -5547,8 +5547,8 @@ h4
 
     float: left;
 
-    width: 267px;
-    height: 267px;
+    width: 260px;
+    height: 260px;
     margin-right: 40px;
     margin-bottom: 35px;
 
@@ -12100,6 +12100,8 @@ h4
 
     .brand-production__item
     {
+        float: none;
+
         width: 215px;
         height: 215px;
         margin-right: auto;
