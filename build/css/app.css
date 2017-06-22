@@ -3443,11 +3443,9 @@ button:focus
 .modal-article
 {
     position: fixed;
-    top: 5%;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 30%;
     left: 0;
 
     overflow-y: auto;
@@ -3481,7 +3479,8 @@ button:focus
     left: auto;
 }
 
-.overlay
+.overlay,
+.overlay_dark
 {
     position: fixed;
     z-index: 99;
@@ -3500,24 +3499,7 @@ button:focus
 
 .overlay_dark
 {
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
-
-    display: none;
-    overflow: auto;
-
-    width: 100%;
-    height: 100%;
-
-    color: #12485a;
     background: rgba(0, 0, 0, .6);
-}
-
-.overlay-dark
-{
-    background-color: #181817;
 }
 
 /* ==========================================================================
@@ -10644,6 +10626,31 @@ h4
         padding: 60px 40px 40px;
     }
 
+    .modal-article
+    {
+        width: 600px;
+        height: 480px;
+        padding: 40px;
+    }
+
+    .modal-article__slide img
+    {
+        width: 520px;
+        height: auto;
+    }
+
+    .modal-article .slick-next
+    {
+        right: 42%;
+        bottom: -70px;
+    }
+
+    .modal-article .slick-prev
+    {
+        right: 50%;
+        bottom: -70px;
+    }
+
     h1
     {
         font-size: 39px;
@@ -11846,6 +11853,25 @@ h4
     .modal-brand__btn
     {
         top: 0;
+    }
+
+    .modal-article
+    {
+        width: 320px;
+        height: 296px;
+        padding: 20px;
+        padding-top: 35px;
+    }
+
+    .modal-article__slide img
+    {
+        width: 280px;
+        height: auto;
+    }
+
+    .modal-article .slick-next
+    {
+        right: 32%;
     }
 
     .pagination__left
