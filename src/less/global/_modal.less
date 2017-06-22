@@ -47,35 +47,37 @@
 // modal-city
 .modal-city {
   position: absolute;
-  width: 327px;
-  height: 161px;
-  background: red;
+  width: 320px;
+  min-height: 195px;
   box-shadow: 0 1px 5px 1px rgba(24, 24, 23, 0.5);
   border: 1px solid #bababa;
   background-color: #ffffff;
   top: 35px;
-  left: -27px;
+  left: -20px;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 15px;
   display: none;
 
   &__title {
+    text-align: left;
     color: #0e0c07;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 21px;
+    margin-left: 30px;
     margin-bottom: 30px;
   }
 
   a.modal-city__yes {
+    margin-right: 20px;
     &:hover {
       color: @white;
     }
   }
 
   a.modal-city__no {
-    margin-right: 25px;
+
 
     &:hover {
       color: @white;
@@ -91,6 +93,17 @@
     background-size: cover;
     top: -12px;
     left: 46%;
+  }
+
+  &__text {
+    text-align: left;
+    font-size: 13px;
+    font-family: @rubik;
+    font-weight: 300;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+
   }
 }
 // change-city modal
@@ -356,7 +369,6 @@
     .request__form-block {
       padding: 0;
     }
-
     &__agree {
       margin-bottom: 60px;
     }
