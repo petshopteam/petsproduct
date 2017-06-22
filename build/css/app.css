@@ -3907,10 +3907,27 @@ h4
     background: #e0552f;
 }
 
+.breadcrumbs.small .breadcrumbs__item:nth-child(2)
+{
+    padding-left: 0;
+}
+
+.breadcrumbs.small .breadcrumbs__item:nth-child(2)::before
+{
+    display: none;
+}
+
 .breadcrumbs.small .breadcrumbs__item.back
 {
     width: 14px;
     height: 14px;
+    margin-right: 15px;
+    padding-left: 0;
+}
+
+.breadcrumbs.small .breadcrumbs__item.back::before
+{
+    display: none;
 }
 
 .breadcrumbs.small .breadcrumbs__item.back a
@@ -11875,6 +11892,7 @@ h4
 
     .breadcrumbs.small
     {
+        margin-top: 0;
         margin-bottom: 30px;
     }
 
