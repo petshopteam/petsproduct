@@ -3060,7 +3060,7 @@ button:focus
 
     content: '';
 
-    background: url(../images/icons/city-modal-triangle.png) no-repeat center;
+    background: url('../images/icons/city-modal-triangle.png') no-repeat center;
     background-size: cover;
 }
 
@@ -3071,7 +3071,7 @@ button:focus
 
     width: 718px;
     max-height: 320px;
-    padding: 35px 55px 10px 55px;
+    padding: 35px 55px 10px;
 
     background-color: #fff;
     -webkit-box-shadow: 0 8px 87px 9px rgba(24, 24, 23, .75);
@@ -3304,8 +3304,7 @@ button:focus
 
     max-width: 700px;
     max-height: 100vh;
-    padding: 38px 100px;
-    padding-bottom: 55px;
+    padding: 38px 100px 55px;
 
     background: #fff;
 }
@@ -3332,8 +3331,8 @@ button:focus
     margin-bottom: 45px;
 }
 
-.modal-vacancy .request__submit,
-.modal-vacancy .request__clear
+.modal-vacancy .request__clear,
+.modal-vacancy .request__submit
 {
     float: none;
 }
@@ -3350,8 +3349,7 @@ button:focus
 
     max-width: 1100px;
     max-height: 550px;
-    padding: 40px;
-    padding-top: 10px;
+    padding: 10px 40px 40px;
 
     background: #fff;
     -webkit-box-shadow: 0 8px 87px 9px rgba(24, 24, 23, .75);
@@ -10618,10 +10616,12 @@ h4
         max-width: 600px;
         margin-right: auto;
         margin-left: auto;
-        padding-top: 60px;
-        padding-right: 10px;
-        padding-bottom: 60px;
-        padding-left: 10px;
+        padding: 60px 10px;
+    }
+
+    .modal-vacancy .request__form-block
+    {
+        padding: 0 30px;
     }
 
     .modal-brand
@@ -10641,8 +10641,7 @@ h4
     {
         margin-right: auto;
         margin-left: auto;
-        padding: 40px;
-        padding-top: 60px;
+        padding: 60px 40px 40px;
     }
 
     h1
@@ -11807,6 +11806,11 @@ h4
         max-width: 300px;
     }
 
+    .modal-vacancy .request__form-block
+    {
+        padding: 0;
+    }
+
     .modal-vacancy__agree
     {
         margin-bottom: 60px;
@@ -11817,11 +11821,19 @@ h4
         margin-right: 0;
     }
 
+    .modal-vacancy .request__clear
+    {
+        left: 10px;
+    }
+
+    .modal-vacancy .request__submit
+    {
+        right: 10px;
+    }
+
     .modal-brand .container-offset
     {
-        padding: 20px;
-        padding-top: 40px;
-        padding-bottom: 80px;
+        padding: 40px 20px 80px;
     }
 
     .modal-brand__left img
@@ -12869,7 +12881,7 @@ h4
     .request__submit
     {
         position: absolute;
-        right: 10px;
+        right: 0;
         bottom: 0;
 
         margin-left: 0;
@@ -12879,7 +12891,7 @@ h4
     {
         position: absolute;
         bottom: 0;
-        left: 10px;
+        left: 0;
     }
 
     .aboutcompany-page .main-foot .container
@@ -13205,7 +13217,7 @@ h4
 
     .help-page .request__form-block
     {
-        width: 285px;
+        width: 300px;
         margin-right: auto;
         margin-left: auto;
         padding: 20px 10px;
@@ -13213,6 +13225,7 @@ h4
 
     .help-page .request__submit-block
     {
+        max-width: 300px;
         padding-right: 0;
         padding-left: 0;
 
