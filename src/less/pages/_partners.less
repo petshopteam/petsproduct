@@ -86,18 +86,13 @@
     margin-bottom: 40px;
   }
   &__list {
-    width: 100%;
+    width: 1110px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    &::after {
-      content: ' i i i i ';
-      padding-left: 350px;
-      word-spacing: 375px;
-      visibility: hidden;
-    }
   }
   &__item {
+    float: left;
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -138,9 +133,8 @@
 
   //media
   @media (max-width: @desktop) {
-    &__list::after {
-      padding-left: 277px;
-      word-spacing: 304px;
+    &__list {
+      width: 900px;
     }
     &__item {
       width: 279px;
@@ -152,9 +146,8 @@
     }
   }
   @media (max-width: @laptop) {
-    &__list::after {
-      padding-left: 230px;
-      word-spacing: 245px;
+    &__list {
+      width: 740px;
     }
     &__item {
       width: 233px;
@@ -167,10 +160,11 @@
     }
   }
   @media (max-width: @tablet) {
-    &__list::after {
-      display: none;
+    &__list {
+      width: 100%;
     }
     &__item {
+      float: none;
       display: block;
       width: 279px;
       height: 280px;

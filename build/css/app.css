@@ -6649,21 +6649,11 @@ h4
 
 .partners__list
 {
-    width: 100%;
+    width: 1110px;
     margin-right: auto;
     margin-left: auto;
 
     text-align: center;
-}
-
-.partners__list::after
-{
-    visibility: hidden;
-
-    padding-left: 350px;
-
-    content: ' i i i i ';
-    word-spacing: 375px;
 }
 
 .partners__item
@@ -6671,6 +6661,7 @@ h4
     position: relative;
 
     display: inline-block;
+    float: left;
 
     width: 350px;
     height: 340px;
@@ -10240,11 +10231,9 @@ h4
         padding-left: 10px;
     }
 
-    .partners__list::after
+    .partners__list
     {
-        padding-left: 277px;
-
-        word-spacing: 304px;
+        width: 900px;
     }
 
     .partners__item
@@ -11258,11 +11247,9 @@ h4
         padding-left: 6%;
     }
 
-    .partners__list::after
+    .partners__list
     {
-        padding-left: 230px;
-
-        word-spacing: 245px;
+        width: 740px;
     }
 
     .partners__item
@@ -12792,14 +12779,15 @@ h4
         text-align: center;
     }
 
-    .partners__list::after
+    .partners__list
     {
-        display: none;
+        width: 100%;
     }
 
     .partners__item
     {
         display: block;
+        float: none;
 
         width: 279px;
         height: 280px;
