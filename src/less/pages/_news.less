@@ -31,9 +31,22 @@
   }
 
   .pagination {
-    margin-bottom: 60px;
+    width: 852px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 40px;
     padding-right: 0;
     padding-top: 15px;
+    margin-top: 60px;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 300px;
+      height: 3px;
+      top: 0;
+      right: 0;
+      background: @orange;
+    }
   }
 
   .SumoSelect > p.CaptionCont {
@@ -85,7 +98,7 @@
     }
 
     .pagination {
-      padding-right: 10px;
+      width: 675px;
     }
   }
   @media (max-width: @laptop) {
@@ -135,6 +148,9 @@
         margin-right: 0;
         margin-left: 5px;
       }
+    }
+    .pagination {
+      width: 741px;
     }
   }
   @media (max-width: @tablet) {
@@ -191,17 +207,15 @@
         min-width: 87px;
       }
     }
-
-    //pagination
     .pagination {
       position: relative;
-      max-width: 280px;
+      width: 100%;
+      max-width: 300px;
       margin-right: auto;
       margin-left: auto;
+      margin-top: 30px;
+      margin-bottom: 0;
       padding-right: 0;
-      &__right-list {
-        margin-right: -10px;
-      }
 
       &::before {
         content: "";
@@ -242,57 +256,28 @@
 
 .news-list {
   position: relative;
-  width: 100%;
+  width: 852px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
   padding-bottom: 30px;
-  &::after {
-    content: ' i i i ';
-    padding-left: 258px;
-    word-spacing: 291px;
-    visibility: hidden;
-  }
-  &::before {
-    position: absolute;
-    content: '';
-    width: 300px;
-    height: 3px;
-    bottom: 0;
-    right: 0;
-    background: @orange;
-  }
   //media
   @media (max-width: @desktop) {
-    &::after {
-      padding-left: 202px;
-      word-spacing: 233px;
-    }
-
-    &::before {
-      right: 10px;
-    }
+    width: 675px;
   }
   @media (max-width: @laptop) {
     padding-bottom: 25px;
-    &::after {
-      padding-left: 222px;
-      word-spacing: 255px;
-    }
+    width: 742px;
   }
   @media (max-width: @tablet) {
     margin-right: 0;
-    &::after {
-      display: none;
-    }
-
-    &::before {
-      display: none;
-    }
+    width: 100%;
   }
 }
 
 .news-item {
+  &:extend(.clearfix all);
+  float: left;
   display: inline-block;
   vertical-align: top;
   position: relative;
@@ -392,9 +377,10 @@
     }
   }
   @media (max-width: @tablet) {
+    float: none;
     display: block;
     height: 335px;
-    width: 276px;
+    width: 300px;
     margin-right: auto;
     margin-left: auto;
     &:nth-child(3n) {
