@@ -2189,6 +2189,8 @@ p.CaptionCont.SelectBox span
     font-size: 14px;
     font-weight: 300;
 
+    cursor: pointer;
+
     color: #242423;
 }
 
@@ -3005,7 +3007,7 @@ button:focus
 .modal-city
 {
     position: absolute;
-    top: 35px;
+    top: 40px;
     left: -20px;
 
     display: none;
@@ -5595,6 +5597,7 @@ h4
 {
     position: relative;
 
+    display: inline-block;
     float: left;
 
     width: 260px;
@@ -6408,7 +6411,7 @@ h4
 {
     border-color: #385c8e;
     background-image: url(../images/icons/social-fb.svg);
-    background-size: 18%;
+    background-size: 9px;
 }
 
 .social-fb:hover
