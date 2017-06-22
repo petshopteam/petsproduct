@@ -7881,18 +7881,10 @@ h4
 .main-help__wrap
 {
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 
     text-align: center;
-}
-
-.main-help__wrap::after
-{
-    visibility: hidden;
-
-    padding-left: 348px;
-
-    content: ' i i i ';
-    word-spacing: 406px;
 }
 
 .main-help__item
@@ -7900,6 +7892,7 @@ h4
     position: relative;
 
     display: inline-block;
+    float: left;
 
     width: 345px;
     height: 345px;
@@ -10509,11 +10502,10 @@ h4
         padding: 25px 25px 10px;
     }
 
-    .main-help__wrap::after
+    .main-help__wrap
     {
-        padding-left: 288px;
-
-        word-spacing: 315px;
+        width: 940px;
+        padding-left: 5px;
     }
 
     .main-help__item
@@ -11592,11 +11584,9 @@ h4
         padding-left: 6%;
     }
 
-    .main-help__wrap::after
+    .main-help__wrap
     {
-        padding-left: 229px;
-
-        word-spacing: 250px;
+        width: 748px;
     }
 
     .main-help__item
@@ -13241,14 +13231,16 @@ h4
         margin-bottom: 20px;
     }
 
-    .main-help__wrap::after
+    .main-help__wrap
     {
-        display: none;
+        width: 100%;
+        padding-left: 0;
     }
 
     .main-help__item
     {
         display: block;
+        float: none;
 
         width: 230px;
         height: 230px;

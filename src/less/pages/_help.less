@@ -108,16 +108,12 @@
   &__wrap {
     width: 100%;
     text-align: center;
-
-    &::after {
-      content: ' i i i ';
-      padding-left: 348px;
-      word-spacing: 406px;
-      visibility: hidden;
-    }
+    margin-right: auto;
+    margin-left: auto;
   }
 
   &__item {
+    float: left;
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -151,9 +147,9 @@
 
   //media
   @media (max-width: @desktop) {
-    &__wrap::after {
-      padding-left: 288px;
-      word-spacing: 315px;
+    &__wrap {
+      width: 940px;
+      padding-left: 5px;
     }
     &__item {
       width: 290px;
@@ -164,9 +160,8 @@
     }
   }
   @media (max-width: @laptop) {
-    &__wrap::after {
-      padding-left: 229px;
-      word-spacing: 250px;
+    &__wrap {
+      width: 748px;
     }
     &__item {
       width: 233px;
@@ -180,10 +175,12 @@
     }
   }
   @media (max-width: @tablet) {
-    &__wrap::after {
-      display: none;
+    &__wrap {
+      width: 100%;
+      padding-left: 0;
     }
     &__item {
+      float: none;
       display: block;
       width: 230px;
       height: 230px;
