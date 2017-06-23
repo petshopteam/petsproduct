@@ -4366,6 +4366,15 @@ h4
     color: #fff;
 }
 
+.main-navigation__item a.btn
+{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2.2em;
+
+    color: #fff;
+}
+
 .main-navigation .main-navigation__item.active::before
 {
     position: absolute;
