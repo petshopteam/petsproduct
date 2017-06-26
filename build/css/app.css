@@ -4615,7 +4615,7 @@ h4
 
 .main-suppliers__slider img
 {
-    width: 80%;
+    max-width: 80%;
     height: auto;
 }
 
