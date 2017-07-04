@@ -3011,15 +3011,19 @@ button:focus
 {
     position: absolute;
     top: 40px;
-    left: -20px;
+    left: -7px;
 
     display: none;
 
-    width: 320px;
-    min-height: 195px;
+    width: 290px;
+    min-height: 175px;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 25px;
+    padding-right: 23px;
     padding-bottom: 15px;
+    padding-left: 24px;
+
+    text-align: left;
 
     border: 1px solid #bababa;
     background-color: #fff;
@@ -3033,8 +3037,7 @@ button:focus
     font-weight: 500;
     line-height: 21px;
 
-    margin-bottom: 30px;
-    margin-left: 30px;
+    margin-bottom: 15px;
 
     text-align: left;
 
@@ -3043,12 +3046,19 @@ button:focus
 
 .modal-city a.modal-city__yes
 {
+    font-size: 15px;
+
     margin-right: 20px;
 }
 
 .modal-city a.modal-city__yes:hover
 {
     color: #fff;
+}
+
+.modal-city a.modal-city__no
+{
+    font-size: 15px;
 }
 
 .modal-city a.modal-city__no:hover
@@ -3078,8 +3088,6 @@ button:focus
     font-weight: 300;
 
     margin-top: 20px;
-    margin-right: 30px;
-    margin-left: 30px;
 
     text-align: left;
 }
@@ -4268,6 +4276,21 @@ h4
     background-size: cover;
 }
 
+.main-page .main-navigation__item a
+{
+    color: #fff;
+}
+
+.main-page .modal-navigation .main-navigation__item a
+{
+    color: #242423;
+}
+
+.main-page .modal-navigation .main-navigation__item a.btn
+{
+    color: #fff;
+}
+
 .main-head__logo
 {
     position: absolute;
@@ -4363,7 +4386,7 @@ h4
             transition: color .3s ease;
     text-transform: uppercase;
 
-    color: #fff;
+    color: #242423;
 }
 
 .main-navigation__item a.btn
@@ -5192,11 +5215,6 @@ h4
     margin-bottom: 40px;
 }
 
-.catalog-page .main-navigation__item a
-{
-    color: #242423;
-}
-
 .catalog-page .main-head__logo
 {
     background: #f1f1f1 url(../images/icons/logo-grey.svg) no-repeat center;
@@ -5433,11 +5451,6 @@ h4
     margin-bottom: 40px;
 }
 
-.brand-page .main-navigation__item a
-{
-    color: #242423;
-}
-
 .brand-page .main-head__logo
 {
     background: #f1f1f1 url(../images/icons/logo-grey.svg) no-repeat center;
@@ -5646,11 +5659,6 @@ h4
 .actions-page .main-navigation
 {
     margin-bottom: 40px;
-}
-
-.actions-page .main-navigation__item a
-{
-    color: #242423;
 }
 
 .actions-page .main-head__logo
@@ -5895,11 +5903,6 @@ h4
 .news-page .main-navigation
 {
     margin-bottom: 40px;
-}
-
-.news-page .main-navigation__item a
-{
-    color: #242423;
 }
 
 .news-page .main-head__logo
@@ -6148,11 +6151,6 @@ h4
 .article-page .main-navigation
 {
     margin-bottom: 40px;
-}
-
-.article-page .main-navigation__item a
-{
-    color: #242423;
 }
 
 .article-page .main-head__logo
@@ -6602,11 +6600,6 @@ h4
     margin-bottom: 40px;
 }
 
-.partners-page .main-navigation__item a
-{
-    color: #242423;
-}
-
 .partners-page .main-head__logo
 {
     background: #f1f1f1 url(../images/icons/logo-grey.svg) no-repeat center;
@@ -6719,11 +6712,6 @@ h4
 .request-page .main-navigation
 {
     margin-bottom: 40px;
-}
-
-.request-page .main-navigation__item a
-{
-    color: #242423;
 }
 
 .request-page .main-head__logo
@@ -7021,6 +7009,21 @@ h4
     margin-bottom: 40px;
 }
 
+.aboutcompany-page .main-navigation__item a
+{
+    color: #fff;
+}
+
+.aboutcompany-page .modal-navigation .main-navigation__item a
+{
+    color: #242423;
+}
+
+.aboutcompany-page .modal-navigation .main-navigation__item a.btn
+{
+    color: #fff;
+}
+
 .aboutcompany-page .breadcrumbs
 {
     color: #fff;
@@ -7224,6 +7227,21 @@ h4
 .vacancy-page .main-navigation
 {
     margin-bottom: 40px;
+}
+
+.vacancy-page .main-navigation__item a
+{
+    color: #fff;
+}
+
+.vacancy-page .modal-navigation .main-navigation__item a
+{
+    color: #242423;
+}
+
+.vacancy-page .modal-navigation .main-navigation__item a.btn
+{
+    color: #fff;
 }
 
 .vacancy-page .breadcrumbs
@@ -7464,11 +7482,6 @@ h4
     margin-bottom: 40px;
 }
 
-.contacts-page .main-navigation__item a
-{
-    color: #242423;
-}
-
 .contacts-page .main-head__logo
 {
     background: #f1f1f1 url(../images/icons/logo-grey.svg) no-repeat center;
@@ -7584,6 +7597,21 @@ h4
 .cooperation-page .main-navigation
 {
     margin-bottom: 40px;
+}
+
+.cooperation-page .main-navigation__item a
+{
+    color: #fff;
+}
+
+.cooperation-page .modal-navigation .main-navigation__item a
+{
+    color: #242423;
+}
+
+.cooperation-page .modal-navigation .main-navigation__item a.btn
+{
+    color: #fff;
 }
 
 .cooperation-page .breadcrumbs
@@ -7849,11 +7877,6 @@ h4
 .help-page .main-navigation
 {
     margin-bottom: 40px;
-}
-
-.help-page .main-navigation__item a
-{
-    color: #242423;
 }
 
 .help-page .main-head__logo
