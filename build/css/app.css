@@ -1205,7 +1205,9 @@ hr
 .row:after,
 .row:before,
 .news-item:after,
-.news-item:before
+.news-item:before,
+.article-item__social-price:after,
+.article-item__social-price:before
 {
     display: table;
 
@@ -1216,7 +1218,8 @@ hr
 .container-fluid:after,
 .container:after,
 .row:after,
-.news-item:after
+.news-item:after,
+.article-item__social-price:after
 {
     clear: both;
 }
@@ -3324,7 +3327,7 @@ button:focus
 .modal-vacancy
 {
     z-index: 100;
-    top: 3%;
+    top: 0;
     bottom: auto;
 
     display: none;
@@ -3368,6 +3371,7 @@ button:focus
 .modal-vacancy .request__submit
 {
     margin-right: 20px;
+    margin-left: 0;
 }
 
 .modal-brand
@@ -6337,7 +6341,7 @@ h4
 .article-item__social
 {
     position: absolute;
-    right: 0;
+    right: 3px;
 
     padding: 16px 12px 15px 81px;
 
@@ -6345,6 +6349,7 @@ h4
 
     border: 2px solid #f1f1f1;
     border-left: none;
+    background-color: #fff;
 }
 
 .article-item__social li
@@ -7815,7 +7820,9 @@ h4
 .main-error
 {
     padding-top: 12%;
+    padding-right: 3%;
     padding-bottom: 18%;
+    padding-left: 2%;
 }
 
 .main-error__left
@@ -7824,6 +7831,7 @@ h4
 
     width: 40%;
     margin-right: 5%;
+    margin-left: 5%;
 }
 
 .main-error__right
@@ -10639,6 +10647,13 @@ h4
         padding: 0 30px;
     }
 
+    .modal-vacancy__agree
+    {
+        margin-bottom: 60px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
     .modal-brand
     {
         top: 0;
@@ -11585,11 +11600,19 @@ h4
         margin-bottom: 10px;
     }
 
+    .main-error
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
     .main-error__left
     {
         float: none;
 
         width: 100%;
+        margin-right: 0;
+        margin-left: 0;
 
         text-align: center;
     }
@@ -11851,6 +11874,8 @@ h4
     .modal-vacancy__agree
     {
         margin-bottom: 60px;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .modal-vacancy .request__submit
@@ -12773,6 +12798,13 @@ h4
     .article-pagination
     {
         margin-bottom: 50px;
+    }
+
+    .article-item__popup-link
+    {
+        display: block;
+
+        pointer-events: none;
     }
 
     .article-item__slider

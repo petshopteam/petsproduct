@@ -315,7 +315,7 @@
   max-width: 700px;
   max-height: 100vh;
   background: @white;
-  top: 3%;
+  top: 0;
   bottom: auto;
   padding: 38px 100px 55px;
   overflow-y: auto;
@@ -345,6 +345,7 @@
 
   .request__submit {
     margin-right: 20px;
+    margin-left: 0;
   }
   //media
   @media (max-width: @laptop) {
@@ -362,6 +363,11 @@
     .request__form-block {
       padding: 0 30px;
     }
+    &__agree {
+      margin-bottom: 60px;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
   }
   @media (max-width: @tablet) {
     .container-offset {
@@ -372,6 +378,8 @@
     }
     &__agree {
       margin-bottom: 60px;
+      padding-right: 0;
+      padding-left: 0;
     }
 
     .request__submit {

@@ -280,7 +280,7 @@
   }
 
   // price and social blocks
-  &__social-price {
+  &__social-price:extend(.clearfix all) {
     position: relative;
   }
   &__price {
@@ -297,11 +297,12 @@
   }
   &__social {
     position: absolute;
-    right: 0;
+    right: 3px;
     border: 2px solid #f1f1f1;
     border-left: none;
     padding: 16px 12px 15px 81px;
     text-align: right;
+    background-color: @white;
     li {
       display: inline-block;
       vertical-align: top;
@@ -558,6 +559,10 @@
     }
   }
   @media (max-width: @tablet) {
+    &__popup-link {
+      display: block;
+      pointer-events: none;
+    }
     &__slider {
       padding: 0 10px;
     }

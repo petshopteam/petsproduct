@@ -36,11 +36,14 @@
 .main-error {
   padding-top: 12%;
   padding-bottom: 18%;
+  padding-left: 2%;
+  padding-right: 3%;
 
   &__left {
     float: left;
     width: 40%;
     margin-right: 5%;
+    margin-left: 5%;
   }
 
   &__right {
@@ -65,10 +68,14 @@
     margin-bottom: 30px;
   }
   @media (max-width: @laptop) {
+    padding-left: 0;
+    padding-right: 0;
     &__left {
       float: none;
       width: 100%;
       text-align: center;
+      margin-right: 0;
+      margin-left: 0;
     }
     &__right {
       float: none;

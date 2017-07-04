@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
 
   /*==========FOR SVG ==============*/
   svg4everybody({});
@@ -293,6 +293,41 @@
   /*----------------------------------------
    jQuery.sumoselect plugin (form styling)
    ----------------------------------------*/
+
+  $('select').SumoSelect();
+
+  //________________________________________
+
+  /*----------------------------------------
+   Отменяем действие слайдера на странице article_2.html на мобильных
+   ----------------------------------------*/
+
+$(function(){
+
+  function screen_check(){
+    var target = $('.article-item__popup-link');
+    var targets = document.querySelectorAll('.article-item__popup-link');
+
+    // for (var i = 0; i < targets.length; i++) {
+    //   $(targets[i]).removeAttr('class');
+    //   $(targets[i]).removeAttr('href');
+    //   $(targets[i]).css('background', 'red');
+    // }
+
+    // if ($(window).width() <= 768) {
+    //     $(targets).css('display', 'none');
+    // } else {
+    //   return;
+    // }
+  }
+  screen_check();
+  $(window).on('resize', function(){
+    screen_check();
+  });
+
+});
+
+  //________________________________________
 
   $('select').SumoSelect();
 
