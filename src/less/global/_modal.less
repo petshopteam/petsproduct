@@ -313,11 +313,12 @@
 .modal-vacancy {
   display: none;
   max-width: 700px;
-  max-height: 100vh;
+  // max-height: 100vh;
+  max-height: 750px;
   background: @white;
   top: 0;
-  bottom: auto;
-  padding: 38px 100px 55px;
+  bottom: 0;
+  padding: 28px 100px;
   overflow-y: auto;
   z-index: 100;
 
@@ -325,7 +326,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
   }
 
   .request__form-block {
@@ -347,6 +348,11 @@
     margin-right: 20px;
     margin-left: 0;
   }
+
+  .form-input, .form-textarea {
+    margin-bottom: 20px;
+  }
+
   //media
   @media (max-width: @laptop) {
     padding: 0;
@@ -370,6 +376,7 @@
     }
   }
   @media (max-width: @tablet) {
+    top: 0;
     .container-offset {
       max-width: 300px;
     }

@@ -1298,6 +1298,7 @@ hr
 
     -webkit-transition: all .2s ease;
             transition: all .2s ease;
+    text-align: center;
     text-transform: uppercase;
 
     border: none;
@@ -3328,14 +3329,14 @@ button:focus
 {
     z-index: 100;
     top: 0;
-    bottom: auto;
+    bottom: 0;
 
     display: none;
     overflow-y: auto;
 
     max-width: 700px;
-    max-height: 100vh;
-    padding: 38px 100px 55px;
+    max-height: 750px;
+    padding: 28px 100px;
 
     background: #fff;
 }
@@ -3346,7 +3347,7 @@ button:focus
     font-weight: 500;
     line-height: 27px;
 
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .modal-vacancy .request__form-block
@@ -3372,6 +3373,12 @@ button:focus
 {
     margin-right: 20px;
     margin-left: 0;
+}
+
+.modal-vacancy .form-input,
+.modal-vacancy .form-textarea
+{
+    margin-bottom: 20px;
 }
 
 .modal-brand
@@ -11859,6 +11866,11 @@ h4
     .main-navigation__list_small li
     {
         margin-bottom: 26px;
+    }
+
+    .modal-vacancy
+    {
+        top: 0;
     }
 
     .modal-vacancy .container-offset
