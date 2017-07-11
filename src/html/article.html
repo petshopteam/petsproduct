@@ -35,186 +35,86 @@
 			<![endif]-->
 	</head>
 
-<body class="article-page">
+<body>
+	<div class="article-page">
+		<!-- main topline -->
+		@@include('global/topline.html')
 
-	<!-- main topline -->
-	@@include('global/topline.html')
+		<!-- header -->
+		<header class="main-head">
+			<div class="container">
+				<div class="row tar">
+					<!--main-logo-->
+					<div class="col-lg-3">
+						<a class="main-head__logo" href="./"></a>
+					</div>
+					<!--main-navigation-->
+		      <div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
+		        <nav class="main-navigation">
+		          <!-- (big size nav) -->
+		          <ul class="main-navigation__list hidden-sm hidden-xs">
+		            <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+		            <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+		            <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+		            <li class="menu-hover main-navigation__item active"><a href="news.html">Новости</a></li>
+		            <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
+		          </ul>
+		          <!-- (small size nav) -->
+		          <!-- btn -->
+		          <a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+		          <div class="modal-navigation modal_div" id="modalNav">
+		            <ul class="main-navigation__list_small hidden-lg hidden-md">
+		              <a class="modal-navigation__close modal_close">Закрыть</a>
+		              <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+		              <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+		              <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+		              <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+		              <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
 
-	<!-- header -->
-	<header class="main-head">
-		<div class="container">
-			<div class="row tar">
-				<!--main-logo-->
-				<div class="col-lg-3">
-					<a class="main-head__logo" href="./"></a>
+		            </ul>
+		          </div>
+		        </nav>
+		      </div>
+		      <!-- end main-navigation -->
 				</div>
-				<!--main-navigation-->
-	      <div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
-	        <nav class="main-navigation">
-	          <!-- (big size nav) -->
-	          <ul class="main-navigation__list hidden-sm hidden-xs">
-	            <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-	            <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-	            <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-	            <li class="menu-hover main-navigation__item active"><a href="news.html">Новости</a></li>
-	            <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-	          </ul>
-	          <!-- (small size nav) -->
-	          <!-- btn -->
-	          <a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
-	          <div class="modal-navigation modal_div" id="modalNav">
-	            <ul class="main-navigation__list_small hidden-lg hidden-md">
-	              <a class="modal-navigation__close modal_close">Закрыть</a>
-	              <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-	              <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-	              <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-	              <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-	              <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-
-	            </ul>
-	          </div>
-	        </nav>
-	      </div>
-	      <!-- end main-navigation -->
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<!-- breadcrumbs -->
-	<section class="breadcrumbs small">
-		<div class="container">
-			<ul class="breadcrumbs__list clearfix">
-				<li class="breadcrumbs__item back hidden-lg hidden-md"><a href="news.html"></a></li>
-				<li class="breadcrumbs__item first"><a href="./">Главная</a></li>
-				<li class="breadcrumbs__item"><a href="actions.html">Новости</a></li>
-				<li class="breadcrumbs__item active"><a href="actions.html">Новинка в ассортименте TM GO! NaturalHolistic</a></li>
-			</ul>
-		</div>
-	</section>
+		<!-- breadcrumbs -->
+		<section class="breadcrumbs small">
+			<div class="container">
+				<ul class="breadcrumbs__list clearfix">
+					<li class="breadcrumbs__item back hidden-lg hidden-md"><a href="news.html"></a></li>
+					<li class="breadcrumbs__item first"><a href="./">Главная</a></li>
+					<li class="breadcrumbs__item"><a href="actions.html">Новости</a></li>
+					<li class="breadcrumbs__item active"><a href="actions.html">Новинка в ассортименте TM GO! NaturalHolistic</a></li>
+				</ul>
+			</div>
+		</section>
 
-	<main class="article-content">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-15">
-					<aside class="aside-filters news-filters">
-						<!-- time filter form -->
-						<form class="time-filter clearfix">
-							<p class="time-filter__title">Время</p>
-							<select class="time-filter__select">
-								<option value="allPeriod">2017 год</option>
-							</select>
-						</form>
-						<!-- region filter form -->
-						<form class="theme-filter clearfix">
-							<p class="theme-filter__title">Темы</p>
-							<div class="theme-filter__themes">
-								<a href="#" class="theme-filter__theme">Новинки</a>
-								<a href="#" class="theme-filter__theme">События</a>
-								<a href="#" class="theme-filter__theme">Выставки</a>
-							</div>
-						</form>
-						<!-- subscription form -->
-						<form class="actions-newsletter hidden-sm hidden-xs">
-							<p class="actions-newsletter__title">Рассылка</p>
-							<p class="actions-newsletter__text">
-								Подпишитесь на рассылку
-								и получайте новости обо всех акциях первыми!
-							</p>
-							<input type="text" class="actions-newsletter__input" placeholder="Оставьте свой e-mail">
-							<button type="submit" class="actions-newsletter__submit btn btn_orange">Подписаться</button>
-						</form>
-					</aside>
-				</div>
-
-				<div class="col-lg-11 col-md-11">
-					<section class="article-item clearfix">
-						<h2 class="article-item__title">Новинка в ассортименте TM GO! NaturalHolistic</h2>
-						<span class="article-item__date">31.03.2017</span>
-						<a class="article-item__theme">Новинки</a>
-						<img class="article-item__image" src="images/articles/article-1.jpg" alt="TM GO! NaturalHolistic">
-						<p class="article-item__subtitle">
-							Уважаемые клиенты!
-							<br>
-							Доводим до Вашего сведения, что корм GO Sensitivity Shine Turkey Dog Recipe выводится из нашего ассортимента, так как производитель снимает его с производства.
-						</p>
-						<p class="article-item__text">
-							Вместо него вводится новый корм, также с индейкой GO Sensitivity Shine LIMITED INGREDIENTS Turkey Dog Recipe, который отличается по составу. Товар уже доступен на складе в Санкт-Петербурге в расфасовке 230 гр. и 11,35 кг. Вариант 2,72 кг будет позже.
-						</p>
-						<ul class="article-item__list">
-							<li>арт. 13844 - Беззерновой для Щенков и Собак с Индейкой для чувств. пищеварения (0.230)</li>
-							<li>арт. 13845 - Беззерновой для Щенков и Собак с Индейкой для чувств. пищеварения (2.72)</li>
-							<li>арт. 13846 - Беззерновой для Щенков и Собак с Индейкой для чувств. пищеварения (11.35)</li>
-						</ul>
-						<p class="article-item__text">
-							<span class="text-medium text-grey">Гипоаллергенный беззерновой корм GO! с индейкой для чувствительного пищеварения - новая формула LIMITED INGREDIENT:</span>
-							<br>
-							- единственный источник животного белка
-							<br>
-							- ограниченный состав дополнительных элементов
-						</p>
-						<p class="article-item__text">
-							<span class="text-medium text-grey">Состав:</span>
-							 Свежее филе индейки, дегидрированное мясо индейки, тапиока, горох, чечевица, нут, рапсовое масло (источник витамина Е), кокосовое масло (источник витамина Е), натуральный ароматизатор, дикальция фосфат, лососевое масло, хлорид натрия, хлорид калия, сушеный корень цикория, хлорид холина, витамины (витамин А, витамин D3, витамин Е, инозитол, ниацин, L-аскорбил-2-полифосфатов (источник витамина С), D-пантотенат кальция, мононитрат тиамина, бета-каротин, рибофлавин , пиридоксина гидрохлорид, фолиевая кислота, биотин, витамины В12), минералы (цинка протеинат, железа протеинат, меди протеинат, оксид цинка, марганца протеинат, сульфат меди, сульфата железа, йодат кальция, оксид марганца, дрожжи селена), сушеный розмарин.
-						</p>
-						<p class="article-item__text">
-							<span class="text-medium text-grey">Гарантированный анализ:</span>
-							<br>
-							Белки (min) 26%
-							<br>
-							Жиры (min) 14%
-							<br>
-							Клетчатка (max) 4%
-							<br>
-							Влага (max) 10%
-							<br>
-							Кальций (min) 1,2%
-							<br>
-							Фосфор (min) 1%
-							<br>
-							*Жирные кислоты Omega 6 (min) 2.5%
-							<br>
-							*Жирные кислоты Omega 3 (min) 0.5%
-							<br>
-							Калорийность: ME =4098 ккал/кг или 451 ккал/порция
-						</p>
-
-						<div class="article-item__social-price">
-							<a class="article-item__price">
-								Скачать прайс лист :  <span class="text-underline">GO! NaturalHolistic_прайс от 26.01.2017.xls</span>
-							</a>
-							<ul class="article-item__social">
-								<!-- vkontakte -->
-								<li>
-									<a href="#" class="social-link social-vk"></a>
-								</li>
-								<!-- facebook -->
-								<li>
-									<a href="#" class="social-link social-fb"></a>
-								</li>
-								<!-- google+ -->
-								<li>
-									<a href="#" class="social-link social-gplus"></a>
-								</li>
-								<!-- twitter -->
-								<li>
-									<a href="#" class="social-link social-tw"></a>
-								</li>
-							</ul>
-						</div>
-
-					</section>
-
-					<!-- article-pagination -->
-					<section class="article-pagination clearfix">
-							<a href="#" class="article-pagination__prev">Предыдущая <span class="hidden-xs">запись</span></a>
-							<a href="#" class="article-pagination__next">Следующая <span class="hidden-xs">запись</span></a>
-					</section>
-
-
-					<!-- hidden-newsletter -->
-					<section class="news__newsletter_hidden">
-						<div class="container">
-							<form class="actions-newsletter actions-newsletter_hidden clearfix hidden-lg hidden-md">
+		<main class="article-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-15">
+						<aside class="aside-filters news-filters">
+							<!-- time filter form -->
+							<form class="time-filter clearfix">
+								<p class="time-filter__title">Время</p>
+								<select class="time-filter__select">
+									<option value="allPeriod">2017 год</option>
+								</select>
+							</form>
+							<!-- region filter form -->
+							<form class="theme-filter clearfix">
+								<p class="theme-filter__title">Темы</p>
+								<div class="theme-filter__themes">
+									<a href="#" class="theme-filter__theme">Новинки</a>
+									<a href="#" class="theme-filter__theme">События</a>
+									<a href="#" class="theme-filter__theme">Выставки</a>
+								</div>
+							</form>
+							<!-- subscription form -->
+							<form class="actions-newsletter hidden-sm hidden-xs">
 								<p class="actions-newsletter__title">Рассылка</p>
 								<p class="actions-newsletter__text">
 									Подпишитесь на рассылку
@@ -223,21 +123,120 @@
 								<input type="text" class="actions-newsletter__input" placeholder="Оставьте свой e-mail">
 								<button type="submit" class="actions-newsletter__submit btn btn_orange">Подписаться</button>
 							</form>
-						</div>
-					</section>
+						</aside>
+					</div>
 
+					<div class="col-lg-11 col-md-11">
+						<section class="article-item clearfix">
+							<h2 class="article-item__title">Новинка в ассортименте TM GO! NaturalHolistic</h2>
+							<span class="article-item__date">31.03.2017</span>
+							<a class="article-item__theme">Новинки</a>
+							<img class="article-item__image" src="images/articles/article-1.jpg" alt="TM GO! NaturalHolistic">
+							<p class="article-item__subtitle">
+								Уважаемые клиенты!
+								<br>
+								Доводим до Вашего сведения, что корм GO Sensitivity Shine Turkey Dog Recipe выводится из нашего ассортимента, так как производитель снимает его с производства.
+							</p>
+							<p class="article-item__text">
+								Вместо него вводится новый корм, также с индейкой GO Sensitivity Shine LIMITED INGREDIENTS Turkey Dog Recipe, который отличается по составу. Товар уже доступен на складе в Санкт-Петербурге в расфасовке 230 гр. и 11,35 кг. Вариант 2,72 кг будет позже.
+							</p>
+							<ul class="article-item__list">
+								<li>арт. 13844 - Беззерновой для Щенков и Собак с Индейкой для чувств. пищеварения (0.230)</li>
+								<li>арт. 13845 - Беззерновой для Щенков и Собак с Индейкой для чувств. пищеварения (2.72)</li>
+								<li>арт. 13846 - Беззерновой для Щенков и Собак с Индейкой для чувств. пищеварения (11.35)</li>
+							</ul>
+							<p class="article-item__text">
+								<span class="text-medium text-grey">Гипоаллергенный беззерновой корм GO! с индейкой для чувствительного пищеварения - новая формула LIMITED INGREDIENT:</span>
+								<br>
+								- единственный источник животного белка
+								<br>
+								- ограниченный состав дополнительных элементов
+							</p>
+							<p class="article-item__text">
+								<span class="text-medium text-grey">Состав:</span>
+								 Свежее филе индейки, дегидрированное мясо индейки, тапиока, горох, чечевица, нут, рапсовое масло (источник витамина Е), кокосовое масло (источник витамина Е), натуральный ароматизатор, дикальция фосфат, лососевое масло, хлорид натрия, хлорид калия, сушеный корень цикория, хлорид холина, витамины (витамин А, витамин D3, витамин Е, инозитол, ниацин, L-аскорбил-2-полифосфатов (источник витамина С), D-пантотенат кальция, мононитрат тиамина, бета-каротин, рибофлавин , пиридоксина гидрохлорид, фолиевая кислота, биотин, витамины В12), минералы (цинка протеинат, железа протеинат, меди протеинат, оксид цинка, марганца протеинат, сульфат меди, сульфата железа, йодат кальция, оксид марганца, дрожжи селена), сушеный розмарин.
+							</p>
+							<p class="article-item__text">
+								<span class="text-medium text-grey">Гарантированный анализ:</span>
+								<br>
+								Белки (min) 26%
+								<br>
+								Жиры (min) 14%
+								<br>
+								Клетчатка (max) 4%
+								<br>
+								Влага (max) 10%
+								<br>
+								Кальций (min) 1,2%
+								<br>
+								Фосфор (min) 1%
+								<br>
+								*Жирные кислоты Omega 6 (min) 2.5%
+								<br>
+								*Жирные кислоты Omega 3 (min) 0.5%
+								<br>
+								Калорийность: ME =4098 ккал/кг или 451 ккал/порция
+							</p>
+
+							<div class="article-item__social-price">
+								<a class="article-item__price">
+									Скачать прайс лист :  <span class="text-underline">GO! NaturalHolistic_прайс от 26.01.2017.xls</span>
+								</a>
+								<ul class="article-item__social">
+									<!-- vkontakte -->
+									<li>
+										<a href="#" class="social-link social-vk"></a>
+									</li>
+									<!-- facebook -->
+									<li>
+										<a href="#" class="social-link social-fb"></a>
+									</li>
+									<!-- google+ -->
+									<li>
+										<a href="#" class="social-link social-gplus"></a>
+									</li>
+									<!-- twitter -->
+									<li>
+										<a href="#" class="social-link social-tw"></a>
+									</li>
+								</ul>
+							</div>
+
+						</section>
+
+						<!-- article-pagination -->
+						<section class="article-pagination clearfix">
+								<a href="#" class="article-pagination__prev">Предыдущая <span class="hidden-xs">запись</span></a>
+								<a href="#" class="article-pagination__next">Следующая <span class="hidden-xs">запись</span></a>
+						</section>
+
+
+						<!-- hidden-newsletter -->
+						<section class="news__newsletter_hidden">
+							<div class="container">
+								<form class="actions-newsletter actions-newsletter_hidden clearfix hidden-lg hidden-md">
+									<p class="actions-newsletter__title">Рассылка</p>
+									<p class="actions-newsletter__text">
+										Подпишитесь на рассылку
+										и получайте новости обо всех акциях первыми!
+									</p>
+									<input type="text" class="actions-newsletter__input" placeholder="Оставьте свой e-mail">
+									<button type="submit" class="actions-newsletter__submit btn btn_orange">Подписаться</button>
+								</form>
+							</div>
+						</section>
+
+					</div>
 				</div>
 			</div>
-		</div>
-	</main>
+		</main>
 
 
-	 <!--footer-->
-	 @@include('global/footer.html')
+		 <!--footer-->
+		 @@include('global/footer.html')
 
-	<!-- scripts (скрипты проекта) -->
-	@@include('global/scripts.html')
-
+		<!-- scripts (скрипты проекта) -->
+		@@include('global/scripts.html')
+	</div>
 </body>
-
 </html>

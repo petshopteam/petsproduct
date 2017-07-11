@@ -35,87 +35,86 @@
 			<![endif]-->
 	</head>
 
-<body class="request-page">
+<body>
+	<div class="request-page">
+		<!-- main topline -->
+		@@include('global/topline.html')
 
-	<!-- main topline -->
-	@@include('global/topline.html')
-
-	<!-- header -->
-	<header class="main-head">
-		<div class="container">
-			<div class="row tar">
-				<!--main-logo-->
-				<div class="col-lg-3">
-					<a class="main-head__logo" href="./"></a>
-				</div>
-				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
-					<nav class="main-navigation">
-						<!-- (big size nav) -->
-						<ul class="main-navigation__list hidden-sm hidden-xs">
-							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-							<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-							<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-							<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-							<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-						</ul>
-						<!-- (small size nav) -->
-						<!-- btn -->
-						<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
-						<div class="modal-navigation modal_div" id="modalNav">
-							<ul class="main-navigation__list_small hidden-lg hidden-md">
-								<a class="modal-navigation__close modal_close">Закрыть</a>
+		<!-- header -->
+		<header class="main-head">
+			<div class="container">
+				<div class="row tar">
+					<!--main-logo-->
+					<div class="col-lg-3">
+						<a class="main-head__logo" href="./"></a>
+					</div>
+					<!--main-navigation-->
+					<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
+						<nav class="main-navigation">
+							<!-- (big size nav) -->
+							<ul class="main-navigation__list hidden-sm hidden-xs">
 								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
 								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
 								<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
 								<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
 								<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-
 							</ul>
-						</div>
-					</nav>
-				</div>
-				<!-- end main-navigation -->
-			</div>
-		</div>
-	</header>
+							<!-- (small size nav) -->
+							<!-- btn -->
+							<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+							<div class="modal-navigation modal_div" id="modalNav">
+								<ul class="main-navigation__list_small hidden-lg hidden-md">
+									<a class="modal-navigation__close modal_close">Закрыть</a>
+									<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+									<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+									<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+									<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+									<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
 
-	<!-- breadcrumbs -->
-	<section class="breadcrumbs">
-		<div class="container">
-			<ul class="breadcrumbs__list">
-				<li class="breadcrumbs__item"><a href="./">Главная</a></li>
-				<li class="breadcrumbs__item active"><a href="catalog.html">Оставить заявку</a></li>
-			</ul>
-		</div>
-	</section>
-
-	<section class="request">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-15">
-					<h2 class="request__title">Оформление заявки на сотрудничество</h2>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<!-- end main-navigation -->
 				</div>
 			</div>
+		</header>
 
-			<div class="request__done">
-				<img class="request__done-image" src="images/icons/plane.png" alt="#">
-				<p class="request__done-text">
-					Ваша заявка успешно оформлена! <br>
-					Наш менеджер свяжется с Вами для уточнения деталей!
-				</p>
-				<a href="catalog.html" class="btn btn_grey btn_arrow btn_white-arrow ">К каталогу</a>
+		<!-- breadcrumbs -->
+		<section class="breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item"><a href="./">Главная</a></li>
+					<li class="breadcrumbs__item active"><a href="catalog.html">Оставить заявку</a></li>
+				</ul>
 			</div>
+		</section>
 
-		</div>
-	</section>
+		<section class="request">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-15">
+						<h2 class="request__title">Оформление заявки на сотрудничество</h2>
+					</div>
+				</div>
 
-	 <!--footer-->
-	 @@include('global/footer.html')
+				<div class="request__done">
+					<img class="request__done-image" src="images/icons/plane.png" alt="#">
+					<p class="request__done-text">
+						Ваша заявка успешно оформлена! <br>
+						Наш менеджер свяжется с Вами для уточнения деталей!
+					</p>
+					<a href="catalog.html" class="btn btn_grey btn_arrow btn_white-arrow ">К каталогу</a>
+				</div>
 
-	<!-- scripts (скрипты проекта) -->
-	@@include('global/scripts.html')
+			</div>
+		</section>
 
+		 <!--footer-->
+		 @@include('global/footer.html')
+
+		<!-- scripts (скрипты проекта) -->
+		@@include('global/scripts.html')
+	</div>
 </body>
-
 </html>

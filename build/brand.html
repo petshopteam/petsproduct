@@ -44,146 +44,128 @@
 
 </head>
 
-<body class="brand-page">
-
-	<!-- main topline -->
-	<div class="main-topline">
-		<div class="container">
-			<div class="row tac">
-				<div class="col-lg-2 col-lg-offset-9 col-md-3 col-md-offset-6 col-sm-4 col-sm-offset-6 hidden-xs">
-					<!--city-->
-					<div class="main-topline__city">
-						<a class="main-topline__change-city open_modal" href="#modalCity">Санкт-Петербург</a>
-						<!-- modal window -->
-						<div class="modal-city modal_div" id="modalCity">
-							<p class="modal-city__title">
-								Ваш город Санкт-Петербург?
-							</p>
-							<a class="modal-city__yes btn btn_orange modal_close">да</a>
-							<a class="modal-city__no btn btn_grey btn_no open_modal_dark" href="#modalChangeCity">Другой город</a>
-							<p class="modal-city__text">От выбранного города зависят акции, отображаемые на сайте</p>
+<body>
+	<div class="brand-page">
+		<!-- main topline -->
+		<div class="main-topline">
+			<div class="container">
+				<div class="row tac">
+					<div class="col-lg-2 col-lg-offset-9 col-md-3 col-md-offset-6 col-sm-4 col-sm-offset-6 hidden-xs">
+						<!--city-->
+						<div class="main-topline__city">
+							<a class="main-topline__change-city open_modal" href="#modalCity">Санкт-Петербург</a>
+							<!-- modal window -->
+							<div class="modal-city modal_div" id="modalCity">
+								<p class="modal-city__title">
+									Ваш город Санкт-Петербург?
+								</p>
+								<a class="modal-city__yes btn btn_orange modal_close">да</a>
+								<a class="modal-city__no btn btn_grey btn_no open_modal_dark" href="#modalChangeCity">Другой город</a>
+								<p class="modal-city__text">От выбранного города зависят акции, отображаемые на сайте</p>
+							</div>
+							<!-- end modal -->
 						</div>
-						<!-- end modal -->
 					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-14 main-topline__phone-wrap">
-					<!--phone-->
-					<div class="main-topline__phone">
-						<p class="main-topline__phone-number"><a href="tel:8812424-46-64">8 (812) 424-46-64</a>
-						</p>
-						<p class="main-topline__phone-time text-light">c 9:00 до 20:00</p>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-xs-14 main-topline__phone-wrap">
+						<!--phone-->
+						<div class="main-topline__phone">
+							<p class="main-topline__phone-number"><a href="tel:8812424-46-64">8 (812) 424-46-64</a>
+							</p>
+							<p class="main-topline__phone-time text-light">c 9:00 до 20:00</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-1 col-xs-1">
-					<!--user-->
-					<div class="main-topline__user">
-						<a class="main-topline__user-login hidden-sm hidden-xs">Личный кабинет</a>
-						<a class="main-topline__user-login_small visible-sm visible-xs"></a>
+					<div class="col-lg-2 col-md-3 col-sm-1 col-xs-1">
+						<!--user-->
+						<div class="main-topline__user">
+							<a class="main-topline__user-login hidden-sm hidden-xs">Личный кабинет</a>
+							<a class="main-topline__user-login_small visible-sm visible-xs"></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- change-city modal window -->
-	<div class="modal-change-city modal_div hidden-xs" id="modalChangeCity">
-		<div class="container-offset">
-			<a class="modal-change-city__close modal_close hidden-sm"></a>
-			<a class="modal-navigation__close modal_close hidden-lg hidden-md">Закрыть</a>
-			<form action="#" class="modal-change-city__form">
-				<div class="row">
-					<div class="col-lg-15 col-md-15 col-sm-15">
-						<p class="modal-change-city__title">Выберите свой город</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" checked name="changeCity" id="changeCity1">
-							<label for="changeCity1">Москва</label>
+		<!-- change-city modal window -->
+		<div class="modal-change-city modal_div hidden-xs" id="modalChangeCity">
+			<div class="container-offset">
+				<a class="modal-change-city__close modal_close hidden-sm"></a>
+				<a class="modal-navigation__close modal_close hidden-lg hidden-md">Закрыть</a>
+				<form action="#" class="modal-change-city__form">
+					<div class="row">
+						<div class="col-lg-15 col-md-15 col-sm-15">
+							<p class="modal-change-city__title">Выберите свой город</p>
 						</div>
 					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" name="changeCity" id="changeCity2">
-							<label for="changeCity2">Казань</label>
+					<div class="row">
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" checked name="changeCity" id="changeCity1">
+								<label for="changeCity1">Москва</label>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" name="changeCity" id="changeCity3">
-							<label for="changeCity3">Остальные регионы</label>
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" name="changeCity" id="changeCity2">
+								<label for="changeCity2">Казань</label>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" name="changeCity" id="changeCity4">
-							<label for="changeCity4">Санкт-Петербург</label>
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" name="changeCity" id="changeCity3">
+								<label for="changeCity3">Остальные регионы</label>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" name="changeCity" id="changeCity5">
-							<label for="changeCity5">Казань</label>
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" name="changeCity" id="changeCity4">
+								<label for="changeCity4">Санкт-Петербург</label>
+							</div>
 						</div>
-					</div>
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" name="changeCity" id="changeCity5">
+								<label for="changeCity5">Казань</label>
+							</div>
+						</div>
 
-				</div>
-				<div class="row">
-					<div class="col-lg-15 col-md-15 col-sm-15">
-						<p class="modal-change-city__title">Или укажите в поле</p>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-10 col-md-10 col-sm-10">
-						<select type="text" class="modal-change-city__input">
-							<option value="">Санкт-Петербург</option>
-							<option value="">Москва</option>
-							<option value="">Екатеринбург</option>
-						</select>
+					<div class="row">
+						<div class="col-lg-15 col-md-15 col-sm-15">
+							<p class="modal-change-city__title">Или укажите в поле</p>
+						</div>
 					</div>
-					<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1">
-						<button href="#" type="submit" class="btn btn_orange">Выбрать</button>
+					<div class="row">
+						<div class="col-lg-10 col-md-10 col-sm-10">
+							<select type="text" class="modal-change-city__input">
+								<option value="">Санкт-Петербург</option>
+								<option value="">Москва</option>
+								<option value="">Екатеринбург</option>
+							</select>
+						</div>
+						<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1">
+							<button href="#" type="submit" class="btn btn_orange">Выбрать</button>
+						</div>
 					</div>
-				</div>
-			</form>
+				</form>
+			</div>
 		</div>
-	</div>
-	<!-- end modal -->
+		<!-- end modal -->
 
 
-	<!-- header -->
-	<header class="main-head">
-		<div class="container">
-			<div class="row tar">
-				<!--main-logo-->
-				<div class="col-lg-3">
-					<a class="main-head__logo" href="./"></a>
-				</div>
-				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
-					<nav class="main-navigation">
-						<!-- (big size nav) -->
-						<ul class="main-navigation__list hidden-sm hidden-xs">
-							<li class="menu-hover main-navigation__item active"><a href="catalog.html">Каталог</a>
-							</li>
-							<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a>
-							</li>
-							<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a>
-							</li>
-							<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
-							</li>
-							<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a>
-								</>
-							</li>
-						</ul>
-						<!-- (small size nav) -->
-						<!-- btn -->
-						<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
-						<div class="modal-navigation modal_div" id="modalNav">
-							<ul class="main-navigation__list_small hidden-lg hidden-md">
-								<a class="modal-navigation__close modal_close">Закрыть</a>
-								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
+		<!-- header -->
+		<header class="main-head">
+			<div class="container">
+				<div class="row tar">
+					<!--main-logo-->
+					<div class="col-lg-3">
+						<a class="main-head__logo" href="./"></a>
+					</div>
+					<!--main-navigation-->
+					<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
+						<nav class="main-navigation">
+							<!-- (big size nav) -->
+							<ul class="main-navigation__list hidden-sm hidden-xs">
+								<li class="menu-hover main-navigation__item active"><a href="catalog.html">Каталог</a>
 								</li>
 								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a>
 								</li>
@@ -195,47 +177,109 @@
 									</>
 								</li>
 							</ul>
-						</div>
-					</nav>
+							<!-- (small size nav) -->
+							<!-- btn -->
+							<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+							<div class="modal-navigation modal_div" id="modalNav">
+								<ul class="main-navigation__list_small hidden-lg hidden-md">
+									<a class="modal-navigation__close modal_close">Закрыть</a>
+									<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
+									</li>
+									<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a>
+									</li>
+									<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a>
+									</li>
+									<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
+									</li>
+									<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a>
+										</>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<!-- end main-navigation -->
 				</div>
-				<!-- end main-navigation -->
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<!-- breadcrumbs -->
-	<section class="breadcrumbs small">
-		<div class="container">
-			<ul class="breadcrumbs__list clearfix">
-				<li class="breadcrumbs__item back hidden-lg hidden-md">
-					<a href="./"></a>
-				</li>
-				<li class="breadcrumbs__item first"><a href="./">Главная</a>
-				</li>
-				<li class="breadcrumbs__item"><a href="catalog.html">Каталог</a>
-				</li>
-				<li class="breadcrumbs__item active"><a href="#">Almo Nature</a>
-				</li>
-			</ul>
-		</div>
-	</section>
+		<!-- breadcrumbs -->
+		<section class="breadcrumbs small">
+			<div class="container">
+				<ul class="breadcrumbs__list clearfix">
+					<li class="breadcrumbs__item back hidden-lg hidden-md">
+						<a href="./"></a>
+					</li>
+					<li class="breadcrumbs__item first"><a href="./">Главная</a>
+					</li>
+					<li class="breadcrumbs__item"><a href="catalog.html">Каталог</a>
+					</li>
+					<li class="breadcrumbs__item active"><a href="#">Almo Nature</a>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-	<main class="brand-content">
-		<div class="container">
-			<div class="row">
-				<div class="brand-info">
-					<div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-5 col-xs-offset-0">
-						<div class="brand-info__logo">
-							<img src="images/brands/brand-1_small.png" alt="almo nature">
+		<main class="brand-content">
+			<div class="container">
+				<div class="row">
+					<div class="brand-info">
+						<div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-5 col-xs-offset-0">
+							<div class="brand-info__logo">
+								<img src="images/brands/brand-1_small.png" alt="almo nature">
+							</div>
 						</div>
+						<div class="col-lg-4 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-9 col-xs-offset-1">
+							<h2 class="brand-info__title">Almo Nature</h2>
+						</div>
+
+						<!-- download price-list -->
+						<div class="col-lg-6 col-lg-offset-1 hidden-md hidden-sm hidden-xs">
+							<div class="brand-info__price">
+								<form>
+									<label class="brand-info__price-label" for="regionSelect">Скачать прайс лист</label>
+									<select class="brand-info__region-select select_small" name="brand-info__region-select" id="regionSelect" placeholder="Выберите регион">
+										<option class="region-select-placeholder" value="">Выберите регион</option>
+										<option value="Санкт-Петербург">Санкт-Петербург</option>
+										<option value="Москва">Москва</option>
+										<option value="Саратов">Саратов</option>
+										<option value="Харьков">Харьков</option>
+									</select>
+								</form>
+							</div>
+						</div>
+						<!-- //download price-list -->
 					</div>
-					<div class="col-lg-4 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-9 col-xs-offset-1">
-						<h2 class="brand-info__title">Almo Nature</h2>
+				</div>
+
+				<div class="row">
+
+					<div class="col-lg-13 col-lg-offset-1 col-md-15 col-md-offset-0">
+						<p class="brand-info__about_top">
+							Компания Almo Nature была основана в Генуе в 2000 году. Almo Nature – первая компания, которая начала использовать полностью натуральные продукты для кошек и собак. Корм этой компании изготавливается с учетом потребностей домашних животных, с заботой
+							об их здоровье и долголетии. Компания стремимся к использованию ингредиентов, обладающих самой высокой биологической и питательной ценностью: свежевыловленная морская рыба, настоящее мясо животных свободного выгула (курица, говядина, телятина)
+							– без гормонов и антибиотиков. Продукция компании подвергается минимальной обработке и производится с учетом всех этических стандартов.
+							<br>
+							<br>На сегодняшний момент продукция Almo Nature поступает на рынки Германии, Швейцарии, Франции, Канады, Великобритании через дочерние компании и эксклюзивных импортеров в Восточной и Северной Европе.
+						</p>
+						<br>
+						<p class="brand-info__about_bottom">
+							Все корма Almo Nature, проходят строжайший контроль качества на всех этапах производства, не менее строгий, чем при производстве продуктов для людей. Контроль качества включает в себя серию микробиологических, химических и физических анализов.
+							<br>
+							<br>Almo Nature заботится обо всех живых существах. Благополучие животных – прерогатива компании, поэтому продукция не тестируется на животных.
+							<br>
+							<br>Перед запуском продукта на рынок, компания предоставляет продукцию тем семьям по всей Европе, которые дали свое согласие на дегустацию нового корма для своих кошек и собак. Хозяева сами в домашних условиях угощают своих четвероногих друзей новинками,
+							и те самостоятельно оценивают вкус, аромат и аппетитность.
+						</p>
 					</div>
 
-					<!-- download price-list -->
-					<div class="col-lg-6 col-lg-offset-1 hidden-md hidden-sm hidden-xs">
-						<div class="brand-info__price">
+				</div>
+
+				<div class="row">
+
+					<!-- hidden price -->
+					<div class="hidden-lg col-md-15">
+						<div class="brand-info__price brand-info__price_hidden">
 							<form>
 								<label class="brand-info__price-label" for="regionSelect">Скачать прайс лист</label>
 								<select class="brand-info__region-select select_small" name="brand-info__region-select" id="regionSelect" placeholder="Выберите регион">
@@ -248,579 +292,535 @@
 							</form>
 						</div>
 					</div>
-					<!-- //download price-list -->
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-13 col-lg-offset-1 col-md-15 col-md-offset-0">
-					<p class="brand-info__about_top">
-						Компания Almo Nature была основана в Генуе в 2000 году. Almo Nature – первая компания, которая начала использовать полностью натуральные продукты для кошек и собак. Корм этой компании изготавливается с учетом потребностей домашних животных, с заботой
-						об их здоровье и долголетии. Компания стремимся к использованию ингредиентов, обладающих самой высокой биологической и питательной ценностью: свежевыловленная морская рыба, настоящее мясо животных свободного выгула (курица, говядина, телятина) –
-						без гормонов и антибиотиков. Продукция компании подвергается минимальной обработке и производится с учетом всех этических стандартов.
-						<br>
-						<br>На сегодняшний момент продукция Almo Nature поступает на рынки Германии, Швейцарии, Франции, Канады, Великобритании через дочерние компании и эксклюзивных импортеров в Восточной и Северной Европе.
-					</p>
-					<br>
-					<p class="brand-info__about_bottom">
-						Все корма Almo Nature, проходят строжайший контроль качества на всех этапах производства, не менее строгий, чем при производстве продуктов для людей. Контроль качества включает в себя серию микробиологических, химических и физических анализов.
-						<br>
-						<br>Almo Nature заботится обо всех живых существах. Благополучие животных – прерогатива компании, поэтому продукция не тестируется на животных.
-						<br>
-						<br>Перед запуском продукта на рынок, компания предоставляет продукцию тем семьям по всей Европе, которые дали свое согласие на дегустацию нового корма для своих кошек и собак. Хозяева сами в домашних условиях угощают своих четвероногих друзей новинками,
-						и те самостоятельно оценивают вкус, аромат и аппетитность.
-					</p>
 				</div>
 
-			</div>
 
-			<div class="row">
+				<div class="brand-production">
+					<h2 class="brand-production__title">Продукция</h2>
 
-				<!-- hidden price -->
-				<div class="hidden-lg col-md-15">
-					<div class="brand-info__price brand-info__price_hidden">
-						<form>
-							<label class="brand-info__price-label" for="regionSelect">Скачать прайс лист</label>
-							<select class="brand-info__region-select select_small" name="brand-info__region-select" id="regionSelect" placeholder="Выберите регион">
-								<option class="region-select-placeholder" value="">Выберите регион</option>
-								<option value="Санкт-Петербург">Санкт-Петербург</option>
-								<option value="Москва">Москва</option>
-								<option value="Саратов">Саратов</option>
-								<option value="Харьков">Харьков</option>
-							</select>
-						</form>
+					<div class="brand-production__list clearfix">
+
+						<!-- item-1 -->
+						<a href="#modalBrand1" class="brand-production__item open_modal_dark">
+							<img src="images/products/almo-nature/green-label.png" alt="Green Label">
+							<p class="brand-production__label">Green Label</p>
+						</a>
+
+						<!-- item-2 -->
+						<a href="#modalBrand1" class="brand-production__item open_modal_dark">
+							<img src="images/products/almo-nature/orange-label.png" alt="Orange Label">
+							<p class="brand-production__label">Orange Label</p>
+						</a>
+
+						<!-- item-3 -->
+						<a href="#modalBrand1" class="brand-production__item open_modal_dark">
+							<img src="images/products/almo-nature/classic.png" alt="Orange Label">
+							<p class="brand-production__label">Classic</p>
+						</a>
+
+						<!-- item-4 -->
+						<a href="#" class="brand-production__item">
+							<img src="images/products/almo-nature/azul-label.png" alt="Azul Label">
+							<p class="brand-production__label">Azul Label</p>
+						</a>
+
+						<!-- item-5 -->
+						<a href="#" class="brand-production__item">
+							<img src="images/products/almo-nature/daily-menu.png" alt="Daily Menu">
+							<p class="brand-production__label">Daily Menu</p>
+						</a>
+
+						<!-- item-6 -->
+						<a href="#" class="brand-production__item">
+							<img src="images/products/almo-nature/legend.png" alt="Legend">
+							<p class="brand-production__label">Legend</p>
+						</a>
+
+						<!-- item-7 -->
+						<a href="#" class="brand-production__item">
+							<img src="images/products/almo-nature/functional-line.png" alt="Functional Line">
+							<p class="brand-production__label">Functional Line</p>
+						</a>
+
+						<!-- item-8 -->
+						<a href="#" class="brand-production__item">
+							<img src="images/products/almo-nature/alternative.png" alt="Alternative">
+							<p class="brand-production__label">Alternative</p>
+						</a>
+
+						<!-- item-9 -->
+						<a href="#" class="brand-production__item">
+							<img src="images/products/almo-nature/single-protein.png" alt="Single Protein">
+							<p class="brand-production__label">Single Protein</p>
+						</a>
+
+						<!-- item-10 -->
+						<a href="#" class="brand-production__item">
+							<img src="images/products/almo-nature/holistic.png" alt="Holistic">
+							<p class="brand-production__label">Holistic</p>
+						</a>
+
 					</div>
 				</div>
+
 			</div>
+		</main>
 
+		<!-- modal window -->
 
-			<div class="brand-production">
-				<h2 class="brand-production__title">Продукция</h2>
-
-				<div class="brand-production__list clearfix">
-
-					<!-- item-1 -->
-					<a href="#modalBrand1" class="brand-production__item open_modal_dark">
-						<img src="images/products/almo-nature/green-label.png" alt="Green Label">
-						<p class="brand-production__label">Green Label</p>
-					</a>
-
-					<!-- item-2 -->
-					<a href="#modalBrand1" class="brand-production__item open_modal_dark">
-						<img src="images/products/almo-nature/orange-label.png" alt="Orange Label">
-						<p class="brand-production__label">Orange Label</p>
-					</a>
-
-					<!-- item-3 -->
-					<a href="#modalBrand1" class="brand-production__item open_modal_dark">
-						<img src="images/products/almo-nature/classic.png" alt="Orange Label">
-						<p class="brand-production__label">Classic</p>
-					</a>
-
-					<!-- item-4 -->
-					<a href="#" class="brand-production__item">
-						<img src="images/products/almo-nature/azul-label.png" alt="Azul Label">
-						<p class="brand-production__label">Azul Label</p>
-					</a>
-
-					<!-- item-5 -->
-					<a href="#" class="brand-production__item">
-						<img src="images/products/almo-nature/daily-menu.png" alt="Daily Menu">
-						<p class="brand-production__label">Daily Menu</p>
-					</a>
-
-					<!-- item-6 -->
-					<a href="#" class="brand-production__item">
-						<img src="images/products/almo-nature/legend.png" alt="Legend">
-						<p class="brand-production__label">Legend</p>
-					</a>
-
-					<!-- item-7 -->
-					<a href="#" class="brand-production__item">
-						<img src="images/products/almo-nature/functional-line.png" alt="Functional Line">
-						<p class="brand-production__label">Functional Line</p>
-					</a>
-
-					<!-- item-8 -->
-					<a href="#" class="brand-production__item">
-						<img src="images/products/almo-nature/alternative.png" alt="Alternative">
-						<p class="brand-production__label">Alternative</p>
-					</a>
-
-					<!-- item-9 -->
-					<a href="#" class="brand-production__item">
-						<img src="images/products/almo-nature/single-protein.png" alt="Single Protein">
-						<p class="brand-production__label">Single Protein</p>
-					</a>
-
-					<!-- item-10 -->
-					<a href="#" class="brand-production__item">
-						<img src="images/products/almo-nature/holistic.png" alt="Holistic">
-						<p class="brand-production__label">Holistic</p>
-					</a>
-
+		<div class="modal-brand modal_div" id="modalBrand1">
+			<div class="container-offset">
+				<a class="modal-change-city__close modal_close hidden-sm hidden-xs"></a>
+				<a class="modal-navigation__close modal_close hidden-lg hidden-md">Закрыть</a>
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-15">
+						<p class="modal-brand__title hidden-lg hidden-md hidden-sm">Линейка Classic</p>
+						<p class="modal-brand__subtitle hidden-lg hidden-md hidden-sm">Консервы ждя собак и кошек</p>
+						<div class="modal-brand__left">
+							<img src="images/products/almo-nature/classic.png" alt="#">
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-15">
+						<div class="mobile-brand__right tal">
+							<p class="modal-brand__title hidden-xs">Линейка Classic</p>
+							<p class="modal-brand__subtitle hidden-xs">Консервы ждя собак и кошек</p>
+							<p class="modal-brand__text">
+								Консервы Almo Nature Classic содержат 75-55% (для кошек) и 50%(для собак) высококачественного мяса или рыбы, приготовленных в собственном бульоне- именно такой простой и естественный состав привлекает домашних любимцев.
+							</p>
+							<ul class="modal-brand__list">
+								<li>Натуральные продукты, подходящие даже для потребления человеком:</li>
+								<li>Свежевыловленная морская рыба</li>
+								<li>Настоящее мясо животных свободного выгула (курица, говядина, телятина) – без гормонов и антибиотиков</li>
+								<li>Механическая обработка продуктов, с большой осторожностью, без применения химикатов во избежание потери питательных веществ</li>
+								<li>Консервирование продукта происходит в его собственном бульоне – с целью сохранения питательных веществ и первоначального вкуса</li>
+								<li>Без добавок, будь то химические или какие-либо другие ингредиенты, тем не менее – излюбленный всеми кошками продукт, за свою простоту и подлинность.</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-			</div>
+				<div class="row">
+					<button class="modal-brand__btn btn btn_grey btn_back modal_close">Назад</button>
+				</div>
 
+			</div>
 		</div>
-	</main>
 
-	<!-- modal window -->
+		<!-- // modal window -->
 
-	<div class="modal-brand modal_div" id="modalBrand1">
-		<div class="container-offset">
-			<a class="modal-change-city__close modal_close hidden-sm hidden-xs"></a>
-			<a class="modal-navigation__close modal_close hidden-lg hidden-md">Закрыть</a>
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-15">
-					<p class="modal-brand__title hidden-lg hidden-md hidden-sm">Линейка Classic</p>
-					<p class="modal-brand__subtitle hidden-lg hidden-md hidden-sm">Консервы ждя собак и кошек</p>
-					<div class="modal-brand__left">
-						<img src="images/products/almo-nature/classic.png" alt="#">
+		<!--stores-->
+		<div class="stores">
+			<div class="row hidden-lg hidden-md tac">
+				<div class="stores__hidden-topline">
+					<div class="col-sm-5 col-sm-offset-1 col-xs-8 col-xs-offset-0">
+						<h2 class="stores__title">Где купить?</h2>
+					</div>
+					<div class="col-sm-4 col-sm-offset-5 col-xs-7 col-xs-offset-0">
+						<a href="#" class="stores__current-region">Санкт-Петербург</a>
 					</div>
 				</div>
-				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-15">
-					<div class="mobile-brand__right tal">
-						<p class="modal-brand__title hidden-xs">Линейка Classic</p>
-						<p class="modal-brand__subtitle hidden-xs">Консервы ждя собак и кошек</p>
-						<p class="modal-brand__text">
-							Консервы Almo Nature Classic содержат 75-55% (для кошек) и 50%(для собак) высококачественного мяса или рыбы, приготовленных в собственном бульоне- именно такой простой и естественный состав привлекает домашних любимцев.
-						</p>
-						<ul class="modal-brand__list">
-							<li>Натуральные продукты, подходящие даже для потребления человеком:</li>
-							<li>Свежевыловленная морская рыба</li>
-							<li>Настоящее мясо животных свободного выгула (курица, говядина, телятина) – без гормонов и антибиотиков</li>
-							<li>Механическая обработка продуктов, с большой осторожностью, без применения химикатов во избежание потери питательных веществ</li>
-							<li>Консервирование продукта происходит в его собственном бульоне – с целью сохранения питательных веществ и первоначального вкуса</li>
-							<li>Без добавок, будь то химические или какие-либо другие ингредиенты, тем не менее – излюбленный всеми кошками продукт, за свою простоту и подлинность.</li>
+			</div>
+			<div class="row">
+				<div class="col-lg-7 col-md-7">
+					<!-- left part -->
+					<div class="stores__map">
+						<div class="map-search">
+							<input class="map-search__window" type="text" placeholder="Введите город или регион">
+							<button class="map-search__button" type="submit"></button>
+						</div>
+						<div id="mapkit-7181"></div>
+					</div>
+				</div>
+
+				<div class="col-lg-8 col-md-8 col-sm-15">
+
+					<!-- right part -->
+					<div class="stores__points">
+						<div class="continer-offset">
+							<div class="row">
+								<div class="col-lg-8 col-md-8 hidden-sm hidden-xs">
+									<h2 class="stores__title">Где купить?</h2>
+								</div>
+								<div class="col-lg-5 col-md-6 hidden-sm hidden-xs tar">
+									<a href="#" class="stores__current-region">Санкт-Петербург</a>
+								</div>
+							</div>
+							<div class="row stores__type-wrap">
+								<div class="stores__type-block">
+									<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-5 col-sm-offset-3 col-xs-7 col-xs-offset-0">
+										<a href="#" class="stores__type-select stores__type-select_retail active">Розничные точки</a>
+									</div>
+									<div class="col-lg-6 col-md-7 col-sm-5 col-xs-8">
+										<a href="#" class="stores__type-select stores__type-select_online">Интернет магазины</a>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-13 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-11 col-sm-offset-2 col-xs-15">
+									<div class="stores__search">
+										<select type="text" class="stores__search-window">
+											<option value="Московский">Московский район</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-13 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-11 col-sm-offset-2">
+									<div class="stores__stores-list stores__retail-list active">
+										<!-- row-1 -->
+										<div class="row">
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item active">
+													<p class="stores__store-name">Зоомагазин</p>
+													<p class="stores__store-address">Краснопутиловская д. 123</p>
+													<p class="stores__store-district">Московский район</p>
+												</div>
+											</div>
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Зоомагазин</p>
+													<p class="stores__store-address">Краснопутиловская д. 123</p>
+													<p class="stores__store-district">Московский район</p>
+												</div>
+											</div>
+										</div>
+										<!-- row-2 -->
+										<div class="row">
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Зоомагазин</p>
+													<p class="stores__store-address">Краснопутиловская д. 123</p>
+													<p class="stores__store-district">Московский район</p>
+												</div>
+											</div>
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Зоомагазин</p>
+													<p class="stores__store-address">Краснопутиловская д. 123</p>
+													<p class="stores__store-district">Московский район</p>
+												</div>
+											</div>
+										</div>
+										<!-- row-3 -->
+										<div class="row">
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Зоомагазин</p>
+													<p class="stores__store-address">Краснопутиловская д. 123</p>
+													<p class="stores__store-district">Московский район</p>
+												</div>
+											</div>
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Зоомагазин</p>
+													<p class="stores__store-address">Краснопутиловская д. 123</p>
+													<p class="stores__store-district">Московский район</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- fake items (for scroll bar test)-->
+
+										<!-- fake-row-1 -->
+										<div class="row">
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Зоомагазин</p>
+													<p class="stores__store-address">Краснопутиловская д. 123</p>
+													<p class="stores__store-district">Московский район</p>
+												</div>
+											</div>
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Зоомагазин</p>
+													<p class="stores__store-address">Краснопутиловская д. 123</p>
+													<p class="stores__store-district">Московский район</p>
+												</div>
+											</div>
+										</div>
+										<!-- fake-row-2 -->
+										<div class="row">
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Зоомагазин</p>
+													<p class="stores__store-address">Краснопутиловская д. 123</p>
+													<p class="stores__store-district">Московский район</p>
+												</div>
+											</div>
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Зоомагазин</p>
+													<p class="stores__store-address">Краснопутиловская д. 123</p>
+													<p class="stores__store-district">Московский район</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- end of fake items (for scroll bar test) -->
+									</div>
+
+									<!-- Hidden stores (online-stores) -->
+
+									<div class="stores__stores-list stores__online-list">
+
+										<!-- row-1 -->
+										<div class="row">
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item active">
+													<p class="stores__store-name">Animal-care.ru</p>
+													<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
+													</p>
+													<p class="stores__store-district">+7 (812) 575 10 93</p>
+												</div>
+											</div>
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Animal-care.ru</p>
+													<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
+													</p>
+													<p class="stores__store-district">+7 (812) 575 10 93</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- row-2 -->
+										<div class="row">
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Korkom.ru</p>
+													<p class="stores__store-address">ул. Бухарестская д. 96</p>
+													<p class="stores__store-district">+7 (812) 33-66-309</p>
+												</div>
+											</div>
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Korkom.ru</p>
+													<p class="stores__store-address">ул. Бухарестская д. 96</p>
+													<p class="stores__store-district">+7 (812) 33-66-309</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- row-3 -->
+										<div class="row">
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Хavax.ru</p>
+													<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
+													<p class="stores__store-district">+7 (812) 454-19-70</p>
+												</div>
+											</div>
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Хavax.ru</p>
+													<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
+													<p class="stores__store-district">+7 (812) 454-19-70</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- row-4 -->
+										<div class="row">
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Kandibobershop.ru</p>
+													<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
+													</p>
+													<p class="stores__store-district">Тел. 8 (921) 560-84-41</p>
+												</div>
+											</div>
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Kandibobershop.ru</p>
+													<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
+													</p>
+													<p class="stores__store-district">Тел. 8 (921) 560-84-41</p>
+												</div>
+											</div>
+										</div>
+
+
+
+										<!-- fake items (for scroll bar test)-->
+
+										<!-- row-1 -->
+										<div class="row">
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item active">
+													<p class="stores__store-name">Animal-care.ru</p>
+													<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
+													</p>
+													<p class="stores__store-district">+7 (812) 575 10 93</p>
+												</div>
+											</div>
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Animal-care.ru</p>
+													<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
+													</p>
+													<p class="stores__store-district">+7 (812) 575 10 93</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- row-2 -->
+										<div class="row">
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Korkom.ru</p>
+													<p class="stores__store-address">ул. Бухарестская д. 96</p>
+													<p class="stores__store-district">+7 (812) 33-66-309</p>
+												</div>
+											</div>
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Korkom.ru</p>
+													<p class="stores__store-address">ул. Бухарестская д. 96</p>
+													<p class="stores__store-district">+7 (812) 33-66-309</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- row-3 -->
+										<div class="row">
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Хavax.ru</p>
+													<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
+													<p class="stores__store-district">+7 (812) 454-19-70</p>
+												</div>
+											</div>
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Хavax.ru</p>
+													<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
+													<p class="stores__store-district">+7 (812) 454-19-70</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- row-4 -->
+										<div class="row">
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Kandibobershop.ru</p>
+													<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
+													</p>
+													<p class="stores__store-district">Тел. 8 (921) 560-84-41</p>
+												</div>
+											</div>
+											<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
+												<div class="stores__stores-item">
+													<p class="stores__store-name">Kandibobershop.ru</p>
+													<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
+													</p>
+													<p class="stores__store-district">Тел. 8 (921) 560-84-41</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- end of fake items (for scroll bar test) -->
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--footer-->
+		<footer class="main-foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
+						<a href="./">
+							<img class="main-foot__logo" src="images/icons/logo-white.svg" alt="footer-logo">
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4">
+						<p class="main-foot__subtitle">О компании</p>
+						<ul class="main-foot__list">
+							<li><a href="#">О нас</a>
+							</li>
+							<li><a href="#">Каталог</a>
+							</li>
+							<li><a href="#">Акции</a>
+							</li>
+							<li><a href="#">Партнеры</a>
+							</li>
+							<li><a href="#">Вакансии</a>
+							</li>
+							<li><a href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-5">
+						<p class="main-foot__subtitle">Сервис и помощь</p>
+						<ul class="main-foot__list">
+							<li><a href="#">Прайс-Листы</a>
+							</li>
+							<li><a href="#">Как сделать заказ</a>
+							</li>
+							<li><a href="#">Способы оплаты</a>
+							</li>
+							<li><a href="#">Доставка</a>
+							</li>
+							<li><a href="#">Письмо директору</a>
+							</li>
+							<li><a href="#">Возврат товара</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 main-foot__cont-wrap">
+						<p class="main-foot__subtitle">Контакты</p>
+						<ul class="main-foot__list main-foot__list_last">
+							<li class="main-foot__address"><a>Санкт-Петербург, улица <br>
+						Всеволода Вишневского 12а</a>
+							</li>
+							<li class="main-foot__tel">
+								<a>8 (812) 424-46-64</a> 
+								<br>
+								<a>8 (495) 640-13-00</a>
+							</li>
+							<li class="main-foot__email"><a>info@petsproduct.ru</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<button class="modal-brand__btn btn btn_grey btn_back modal_close">Назад</button>
+			<div class="main-foot__copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5">
+							<span class="main-foot__copy-text"><a href="#">Все права защищены Petsproduct 2017</a></span>
+							<span class="main-foot__copy-text"><a href="#">Публичная оферта</a></span>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!-- overlay -->
+			<div id="overlay" class="overlay"></div>
+			<div id="overlay_dark" class="overlay_dark"></div>
+		</footer>
 
-		</div>
+
+		<!-- scripts (скрипты проекта) -->
+		<!-- styles -->
+		<link rel="stylesheet" type="text/css" href="css/app.min.css?v=1.2">
+		<!-- jquery -->
+		<script src="js/jq.min.js"></script>
+		<!-- всегда в начале -->
+		<script src="js/gallery.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+		<script src="js/app.min.js"></script>
+		<!-- всегда в конце -->
+
+		<!-- plugins js -->
+		<script src="js/modernizr-custom.min.js"></script>
+
 	</div>
-
-	<!-- // modal window -->
-
-	<!--stores-->
-	<div class="stores">
-		<div class="row hidden-lg hidden-md tac">
-			<div class="stores__hidden-topline">
-				<div class="col-sm-5 col-sm-offset-1 col-xs-8 col-xs-offset-0">
-					<h2 class="stores__title">Где купить?</h2>
-				</div>
-				<div class="col-sm-4 col-sm-offset-5 col-xs-7 col-xs-offset-0">
-					<a href="#" class="stores__current-region">Санкт-Петербург</a>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-7 col-md-7">
-				<!-- left part -->
-				<div class="stores__map">
-					<div class="map-search">
-						<input class="map-search__window" type="text" placeholder="Введите город или регион">
-						<button class="map-search__button" type="submit"></button>
-					</div>
-					<div id="mapkit-7181"></div>
-				</div>
-			</div>
-
-			<div class="col-lg-8 col-md-8 col-sm-15">
-
-				<!-- right part -->
-				<div class="stores__points">
-					<div class="continer-offset">
-						<div class="row">
-							<div class="col-lg-8 col-md-8 hidden-sm hidden-xs">
-								<h2 class="stores__title">Где купить?</h2>
-							</div>
-							<div class="col-lg-5 col-md-6 hidden-sm hidden-xs tar">
-								<a href="#" class="stores__current-region">Санкт-Петербург</a>
-							</div>
-						</div>
-						<div class="row stores__type-wrap">
-							<div class="stores__type-block">
-								<div class="col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-5 col-sm-offset-3 col-xs-7 col-xs-offset-0">
-									<a href="#" class="stores__type-select stores__type-select_retail active">Розничные точки</a>
-								</div>
-								<div class="col-lg-6 col-md-7 col-sm-5 col-xs-8">
-									<a href="#" class="stores__type-select stores__type-select_online">Интернет магазины</a>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-13 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-11 col-sm-offset-2 col-xs-15">
-								<div class="stores__search">
-									<select type="text" class="stores__search-window">
-										<option value="Московский">Московский район</option>
-									</select>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-13 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-11 col-sm-offset-2">
-								<div class="stores__stores-list stores__retail-list active">
-									<!-- row-1 -->
-									<div class="row">
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item active">
-												<p class="stores__store-name">Зоомагазин</p>
-												<p class="stores__store-address">Краснопутиловская д. 123</p>
-												<p class="stores__store-district">Московский район</p>
-											</div>
-										</div>
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Зоомагазин</p>
-												<p class="stores__store-address">Краснопутиловская д. 123</p>
-												<p class="stores__store-district">Московский район</p>
-											</div>
-										</div>
-									</div>
-									<!-- row-2 -->
-									<div class="row">
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Зоомагазин</p>
-												<p class="stores__store-address">Краснопутиловская д. 123</p>
-												<p class="stores__store-district">Московский район</p>
-											</div>
-										</div>
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Зоомагазин</p>
-												<p class="stores__store-address">Краснопутиловская д. 123</p>
-												<p class="stores__store-district">Московский район</p>
-											</div>
-										</div>
-									</div>
-									<!-- row-3 -->
-									<div class="row">
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Зоомагазин</p>
-												<p class="stores__store-address">Краснопутиловская д. 123</p>
-												<p class="stores__store-district">Московский район</p>
-											</div>
-										</div>
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Зоомагазин</p>
-												<p class="stores__store-address">Краснопутиловская д. 123</p>
-												<p class="stores__store-district">Московский район</p>
-											</div>
-										</div>
-									</div>
-
-									<!-- fake items (for scroll bar test)-->
-
-									<!-- fake-row-1 -->
-									<div class="row">
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Зоомагазин</p>
-												<p class="stores__store-address">Краснопутиловская д. 123</p>
-												<p class="stores__store-district">Московский район</p>
-											</div>
-										</div>
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Зоомагазин</p>
-												<p class="stores__store-address">Краснопутиловская д. 123</p>
-												<p class="stores__store-district">Московский район</p>
-											</div>
-										</div>
-									</div>
-									<!-- fake-row-2 -->
-									<div class="row">
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Зоомагазин</p>
-												<p class="stores__store-address">Краснопутиловская д. 123</p>
-												<p class="stores__store-district">Московский район</p>
-											</div>
-										</div>
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Зоомагазин</p>
-												<p class="stores__store-address">Краснопутиловская д. 123</p>
-												<p class="stores__store-district">Московский район</p>
-											</div>
-										</div>
-									</div>
-
-									<!-- end of fake items (for scroll bar test) -->
-								</div>
-
-								<!-- Hidden stores (online-stores) -->
-
-								<div class="stores__stores-list stores__online-list">
-
-									<!-- row-1 -->
-									<div class="row">
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item active">
-												<p class="stores__store-name">Animal-care.ru</p>
-												<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
-												</p>
-												<p class="stores__store-district">+7 (812) 575 10 93</p>
-											</div>
-										</div>
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Animal-care.ru</p>
-												<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
-												</p>
-												<p class="stores__store-district">+7 (812) 575 10 93</p>
-											</div>
-										</div>
-									</div>
-
-									<!-- row-2 -->
-									<div class="row">
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Korkom.ru</p>
-												<p class="stores__store-address">ул. Бухарестская д. 96</p>
-												<p class="stores__store-district">+7 (812) 33-66-309</p>
-											</div>
-										</div>
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Korkom.ru</p>
-												<p class="stores__store-address">ул. Бухарестская д. 96</p>
-												<p class="stores__store-district">+7 (812) 33-66-309</p>
-											</div>
-										</div>
-									</div>
-
-									<!-- row-3 -->
-									<div class="row">
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Хavax.ru</p>
-												<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
-												<p class="stores__store-district">+7 (812) 454-19-70</p>
-											</div>
-										</div>
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Хavax.ru</p>
-												<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
-												<p class="stores__store-district">+7 (812) 454-19-70</p>
-											</div>
-										</div>
-									</div>
-
-									<!-- row-4 -->
-									<div class="row">
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Kandibobershop.ru</p>
-												<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
-												</p>
-												<p class="stores__store-district">Тел. 8 (921) 560-84-41</p>
-											</div>
-										</div>
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Kandibobershop.ru</p>
-												<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
-												</p>
-												<p class="stores__store-district">Тел. 8 (921) 560-84-41</p>
-											</div>
-										</div>
-									</div>
-
-
-
-									<!-- fake items (for scroll bar test)-->
-
-									<!-- row-1 -->
-									<div class="row">
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item active">
-												<p class="stores__store-name">Animal-care.ru</p>
-												<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
-												</p>
-												<p class="stores__store-district">+7 (812) 575 10 93</p>
-											</div>
-										</div>
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Animal-care.ru</p>
-												<p class="stores__store-address">Ул. 11-я Красноармейская 11, здание завода «Пекарь»
-												</p>
-												<p class="stores__store-district">+7 (812) 575 10 93</p>
-											</div>
-										</div>
-									</div>
-
-									<!-- row-2 -->
-									<div class="row">
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Korkom.ru</p>
-												<p class="stores__store-address">ул. Бухарестская д. 96</p>
-												<p class="stores__store-district">+7 (812) 33-66-309</p>
-											</div>
-										</div>
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Korkom.ru</p>
-												<p class="stores__store-address">ул. Бухарестская д. 96</p>
-												<p class="stores__store-district">+7 (812) 33-66-309</p>
-											</div>
-										</div>
-									</div>
-
-									<!-- row-3 -->
-									<div class="row">
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Хavax.ru</p>
-												<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
-												<p class="stores__store-district">+7 (812) 454-19-70</p>
-											</div>
-										</div>
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Хavax.ru</p>
-												<p class="stores__store-address">Старо-Петергофский пр-т, 8б</p>
-												<p class="stores__store-district">+7 (812) 454-19-70</p>
-											</div>
-										</div>
-									</div>
-
-									<!-- row-4 -->
-									<div class="row">
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Kandibobershop.ru</p>
-												<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
-												</p>
-												<p class="stores__store-district">Тел. 8 (921) 560-84-41</p>
-											</div>
-										</div>
-										<div class="col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-2">
-											<div class="stores__stores-item">
-												<p class="stores__store-name">Kandibobershop.ru</p>
-												<p class="stores__store-address">г. Лодейное Поле, Ленинградская область
-												</p>
-												<p class="stores__store-district">Тел. 8 (921) 560-84-41</p>
-											</div>
-										</div>
-									</div>
-
-									<!-- end of fake items (for scroll bar test) -->
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<!--footer-->
-	<footer class="main-foot">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
-					<a href="./">
-						<img class="main-foot__logo" src="images/icons/logo-white.svg" alt="footer-logo">
-					</a>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-4">
-					<p class="main-foot__subtitle">О компании</p>
-					<ul class="main-foot__list">
-						<li><a href="#">О нас</a>
-						</li>
-						<li><a href="#">Каталог</a>
-						</li>
-						<li><a href="#">Акции</a>
-						</li>
-						<li><a href="#">Партнеры</a>
-						</li>
-						<li><a href="#">Вакансии</a>
-						</li>
-						<li><a href="#">Контакты</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-5">
-					<p class="main-foot__subtitle">Сервис и помощь</p>
-					<ul class="main-foot__list">
-						<li><a href="#">Прайс-Листы</a>
-						</li>
-						<li><a href="#">Как сделать заказ</a>
-						</li>
-						<li><a href="#">Способы оплаты</a>
-						</li>
-						<li><a href="#">Доставка</a>
-						</li>
-						<li><a href="#">Письмо директору</a>
-						</li>
-						<li><a href="#">Возврат товара</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 main-foot__cont-wrap">
-					<p class="main-foot__subtitle">Контакты</p>
-					<ul class="main-foot__list main-foot__list_last">
-						<li class="main-foot__address"><a>Санкт-Петербург, улица <br>
-						Всеволода Вишневского 12а</a>
-						</li>
-						<li class="main-foot__tel">
-							<a>8 (812) 424-46-64</a> 
-							<br>
-							<a>8 (495) 640-13-00</a>
-						</li>
-						<li class="main-foot__email"><a>info@petsproduct.ru</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="main-foot__copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5">
-						<span class="main-foot__copy-text"><a href="#">Все права защищены Petsproduct 2017</a></span>
-						<span class="main-foot__copy-text"><a href="#">Публичная оферта</a></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- overlay -->
-		<div id="overlay" class="overlay"></div>
-		<div id="overlay_dark" class="overlay_dark"></div>
-	</footer>
-
-
-	<!-- scripts (скрипты проекта) -->
-	<!-- styles -->
-	<link rel="stylesheet" type="text/css" href="css/app.min.css?v=1.2">
-	<!-- jquery -->
-	<script src="js/jq.min.js"></script>
-	<!-- всегда в начале -->
-	<script src="js/gallery.min.js"></script>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
-	<script src="js/app.min.js"></script>
-	<!-- всегда в конце -->
-
-	<!-- plugins js -->
-	<script src="js/modernizr-custom.min.js"></script>
-
-
 </body>
 
 </html>

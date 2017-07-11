@@ -34,145 +34,127 @@
 			<![endif]-->
 </head>
 
-<body class="aboutcompany-page">
-
-	<!-- main topline -->
-	<div class="main-topline">
-		<div class="container">
-			<div class="row tac">
-				<div class="col-lg-2 col-lg-offset-9 col-md-3 col-md-offset-6 col-sm-4 col-sm-offset-6 hidden-xs">
-					<!--city-->
-					<div class="main-topline__city">
-						<a class="main-topline__change-city open_modal" href="#modalCity">Санкт-Петербург</a>
-						<!-- modal window -->
-						<div class="modal-city modal_div" id="modalCity">
-							<p class="modal-city__title">
-								Ваш город Санкт-Петербург?
-							</p>
-							<a class="modal-city__yes btn btn_orange modal_close">да</a>
-							<a class="modal-city__no btn btn_grey btn_no open_modal_dark" href="#modalChangeCity">Другой город</a>
-							<p class="modal-city__text">От выбранного города зависят акции, отображаемые на сайте</p>
+<body>
+	<div class="aboutcompany-page">
+		<!-- main topline -->
+		<div class="main-topline">
+			<div class="container">
+				<div class="row tac">
+					<div class="col-lg-2 col-lg-offset-9 col-md-3 col-md-offset-6 col-sm-4 col-sm-offset-6 hidden-xs">
+						<!--city-->
+						<div class="main-topline__city">
+							<a class="main-topline__change-city open_modal" href="#modalCity">Санкт-Петербург</a>
+							<!-- modal window -->
+							<div class="modal-city modal_div" id="modalCity">
+								<p class="modal-city__title">
+									Ваш город Санкт-Петербург?
+								</p>
+								<a class="modal-city__yes btn btn_orange modal_close">да</a>
+								<a class="modal-city__no btn btn_grey btn_no open_modal_dark" href="#modalChangeCity">Другой город</a>
+								<p class="modal-city__text">От выбранного города зависят акции, отображаемые на сайте</p>
+							</div>
+							<!-- end modal -->
 						</div>
-						<!-- end modal -->
 					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-14 main-topline__phone-wrap">
-					<!--phone-->
-					<div class="main-topline__phone">
-						<p class="main-topline__phone-number"><a href="tel:8812424-46-64">8 (812) 424-46-64</a>
-						</p>
-						<p class="main-topline__phone-time text-light">c 9:00 до 20:00</p>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-xs-14 main-topline__phone-wrap">
+						<!--phone-->
+						<div class="main-topline__phone">
+							<p class="main-topline__phone-number"><a href="tel:8812424-46-64">8 (812) 424-46-64</a>
+							</p>
+							<p class="main-topline__phone-time text-light">c 9:00 до 20:00</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-1 col-xs-1">
-					<!--user-->
-					<div class="main-topline__user">
-						<a class="main-topline__user-login hidden-sm hidden-xs">Личный кабинет</a>
-						<a class="main-topline__user-login_small visible-sm visible-xs"></a>
+					<div class="col-lg-2 col-md-3 col-sm-1 col-xs-1">
+						<!--user-->
+						<div class="main-topline__user">
+							<a class="main-topline__user-login hidden-sm hidden-xs">Личный кабинет</a>
+							<a class="main-topline__user-login_small visible-sm visible-xs"></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- change-city modal window -->
-	<div class="modal-change-city modal_div hidden-xs" id="modalChangeCity">
-		<div class="container-offset">
-			<a class="modal-change-city__close modal_close hidden-sm"></a>
-			<a class="modal-navigation__close modal_close hidden-lg hidden-md">Закрыть</a>
-			<form action="#" class="modal-change-city__form">
-				<div class="row">
-					<div class="col-lg-15 col-md-15 col-sm-15">
-						<p class="modal-change-city__title">Выберите свой город</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" checked name="changeCity" id="changeCity1">
-							<label for="changeCity1">Москва</label>
+		<!-- change-city modal window -->
+		<div class="modal-change-city modal_div hidden-xs" id="modalChangeCity">
+			<div class="container-offset">
+				<a class="modal-change-city__close modal_close hidden-sm"></a>
+				<a class="modal-navigation__close modal_close hidden-lg hidden-md">Закрыть</a>
+				<form action="#" class="modal-change-city__form">
+					<div class="row">
+						<div class="col-lg-15 col-md-15 col-sm-15">
+							<p class="modal-change-city__title">Выберите свой город</p>
 						</div>
 					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" name="changeCity" id="changeCity2">
-							<label for="changeCity2">Казань</label>
+					<div class="row">
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" checked name="changeCity" id="changeCity1">
+								<label for="changeCity1">Москва</label>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" name="changeCity" id="changeCity3">
-							<label for="changeCity3">Остальные регионы</label>
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" name="changeCity" id="changeCity2">
+								<label for="changeCity2">Казань</label>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" name="changeCity" id="changeCity4">
-							<label for="changeCity4">Санкт-Петербург</label>
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" name="changeCity" id="changeCity3">
+								<label for="changeCity3">Остальные регионы</label>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" name="changeCity" id="changeCity5">
-							<label for="changeCity5">Казань</label>
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" name="changeCity" id="changeCity4">
+								<label for="changeCity4">Санкт-Петербург</label>
+							</div>
 						</div>
-					</div>
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" name="changeCity" id="changeCity5">
+								<label for="changeCity5">Казань</label>
+							</div>
+						</div>
 
-				</div>
-				<div class="row">
-					<div class="col-lg-15 col-md-15 col-sm-15">
-						<p class="modal-change-city__title">Или укажите в поле</p>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-10 col-md-10 col-sm-10">
-						<select type="text" class="modal-change-city__input">
-							<option value="">Санкт-Петербург</option>
-							<option value="">Москва</option>
-							<option value="">Екатеринбург</option>
-						</select>
+					<div class="row">
+						<div class="col-lg-15 col-md-15 col-sm-15">
+							<p class="modal-change-city__title">Или укажите в поле</p>
+						</div>
 					</div>
-					<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1">
-						<button href="#" type="submit" class="btn btn_orange">Выбрать</button>
+					<div class="row">
+						<div class="col-lg-10 col-md-10 col-sm-10">
+							<select type="text" class="modal-change-city__input">
+								<option value="">Санкт-Петербург</option>
+								<option value="">Москва</option>
+								<option value="">Екатеринбург</option>
+							</select>
+						</div>
+						<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1">
+							<button href="#" type="submit" class="btn btn_orange">Выбрать</button>
+						</div>
 					</div>
-				</div>
-			</form>
+				</form>
+			</div>
 		</div>
-	</div>
-	<!-- end modal -->
+		<!-- end modal -->
 
 
-	<!-- header -->
-	<header class="main-head">
-		<div class="container">
-			<div class="row tar">
-				<!--main-logo-->
-				<div class="col-lg-3">
-					<a class="main-head__logo" href="./"></a>
-				</div>
-				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
-					<nav class="main-navigation">
-						<!-- (big size nav) -->
-						<ul class="main-navigation__list hidden-sm hidden-xs">
-							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
-							</li>
-							<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a>
-							</li>
-							<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a>
-							</li>
-							<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
-							</li>
-							<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a>
-								</>
-							</li>
-						</ul>
-						<!-- (small size nav) -->
-						<!-- btn -->
-						<a class="main-navigation__hidden-btn mnu-white hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
-						<div class="modal-navigation modal_div" id="modalNav">
-							<ul class="main-navigation__list_small hidden-lg hidden-md">
-								<a class="modal-navigation__close modal_close">Закрыть</a>
+		<!-- header -->
+		<header class="main-head">
+			<div class="container">
+				<div class="row tar">
+					<!--main-logo-->
+					<div class="col-lg-3">
+						<a class="main-head__logo" href="./"></a>
+					</div>
+					<!--main-navigation-->
+					<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
+						<nav class="main-navigation">
+							<!-- (big size nav) -->
+							<ul class="main-navigation__list hidden-sm hidden-xs">
 								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
 								</li>
 								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a>
@@ -185,362 +167,380 @@
 									</>
 								</li>
 							</ul>
-						</div>
-					</nav>
-				</div>
-				<!-- end main-navigation -->
-			</div>
-
-			<!-- breadcrumbs -->
-			<section class="breadcrumbs">
-				<div class="container">
-					<ul class="breadcrumbs__list">
-						<li class="breadcrumbs__item"><a href="./">Главная</a>
-						</li>
-						<li class="breadcrumbs__item active"><a href="actions.html">О компании</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-
-			<div class="row">
-				<div class="col-lg-6 col-md-9">
-					<h2 class="main-head__title">О компании PetsProduct</h2>
-				</div>
-			</div>
-
-		</div>
-	</header>
-
-	<section class="company-features">
-		<div class="container">
-			<div class="row">
-
-				<!-- item-1 -->
-				<div class="col-lg-7 col-md-7 col-sm-15">
-					<div class="company-feature clearfix">
-						<img src="images/icons/aboutcomp1.svg" class="company-feature__image"></img>
-						<p class="company-feature__title">
-							Крупнейший поставщик зоотоваров в России
-						</p>
-						<p class="company-feature__text">
-							В настоящий момент Группа компаний «Пет-Продукт» - крупнейший поставщик зоотоваров в России. Мы предлагаем широкий ассортимент товаров от ведущих мировых производителей: сухие и влажные корма для кошек и собак, пищевые добавки, витамины, груминг, парфюмерию,
-							средства по уходу, аксессуары, игрушки.
-						</p>
+							<!-- (small size nav) -->
+							<!-- btn -->
+							<a class="main-navigation__hidden-btn mnu-white hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+							<div class="modal-navigation modal_div" id="modalNav">
+								<ul class="main-navigation__list_small hidden-lg hidden-md">
+									<a class="modal-navigation__close modal_close">Закрыть</a>
+									<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
+									</li>
+									<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a>
+									</li>
+									<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a>
+									</li>
+									<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
+									</li>
+									<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a>
+										</>
+									</li>
+								</ul>
+							</div>
+						</nav>
 					</div>
+					<!-- end main-navigation -->
 				</div>
 
-				<!-- item-2 -->
-				<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
-					<div class="company-feature clearfix">
-						<img src="images/icons/aboutcomp2.svg" class="company-feature__image"></img>
-						<p class="company-feature__title">
-							Работа с питомниками и заводчиками
-						</p>
-						<p class="company-feature__text">
-							Группа компаний «Пет-Продукт» предлагает специальные условия работы для питомников и заводчиков. Мы предлагаем широкий ассортимент, выгодные цены, удобные условия доставки, а также различные акции и специальные предложения. Также действует расширенная
-							программа работы на взаимовыгодных условиях для фелинологических и кинологических клубов. Также компания выступает в качестве спонсора на различных выставках кошек и собак.
-						</p>
+				<!-- breadcrumbs -->
+				<section class="breadcrumbs">
+					<div class="container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item"><a href="./">Главная</a>
+							</li>
+							<li class="breadcrumbs__item active"><a href="actions.html">О компании</a>
+							</li>
+						</ul>
 					</div>
-				</div>
+				</section>
 
-				<!-- item-3 -->
-				<div class="col-lg-7 col-md-7 col-sm-15">
-					<div class="company-feature clearfix">
-						<img src="images/icons/aboutcomp3.svg" class="company-feature__image"></img>
-						<p class="company-feature__title">
-							Широкая география работы
-						</p>
-						<p class="company-feature__text">
-							Головной офис компании находится в Санкт-Петербурге, а филиал - в Москве. Также сузществуют региональные представители и более 45 партнеров в различных регионах России. Собственный автомобильный парк для ежедневной доставки грузов в Санкт-Петербурге и
-							Москве, а также складские помещения мощностью__ м. кв. в разных городах страны. Весь товар хранится в надлежащих условиях, мы тщательно следим за его сроком годности и товарным видом. Наши клиенты всегда могут быть уверены в качестве, поставляемого
-							товара.
-						</p>
-					</div>
-				</div>
 
-				<!-- item-4 -->
-				<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
-					<div class="company-feature clearfix">
-						<img src="images/icons/aboutcomp4.svg" class="company-feature__image"></img>
-						<p class="company-feature__title">
-							Надежный партнер для любого клиента
-						</p>
-						<p class="company-feature__text">
-							Группа компаний «Пет-Продукт» имеет специальную структуру для работы с различными клиентами. Мы одинаково внимательно относимся ко всем: маленьким и большим зоомагазинам, интернет-магазинам, питомникам и другим партнерам. Для каждого типа предприятия
-							существует четкая программа сотрудничества, а также специальный отдел, который понимает потребностям именно Вашего бизнеса.
-						</p>
+				<div class="row">
+					<div class="col-lg-6 col-md-9">
+						<h2 class="main-head__title">О компании PetsProduct</h2>
 					</div>
 				</div>
 
 			</div>
-		</div>
-	</section>
+		</header>
 
-	<section class="distribution">
-		<div class="container">
-			<div class="row tac">
-				<h2 class="distribution__title">Эксклюзивная дистрибьюция</h2>
-			</div>
-
-			<!-- item-1 -->
-			<a href="#" class="distribution__item">
-				<img src="images/distribution/dist1.png" alt="go now" class="distribution__image">
-				<p class="distribution__item-title">GO, NOW, SUMMIT, GATHER</p>
-				<p class="distribution__text">
-					Корма класса холистик из Канады
-				</p>
-			</a>
-
-			<!-- item-2 -->
-			<a href="#" class="distribution__item">
-				<img src="images/distribution/dist2.png" alt="go now" class="distribution__image">
-				<p class="distribution__item-title">Almo Nature</p>
-				<p class="distribution__text">
-					Сухие корма и консервы класса холистик.
-					<br>Содержание мяса в консервах более 75%
-				</p>
-			</a>
-
-			<!-- item-3 -->
-			<a href="#" class="distribution__item">
-				<img src="images/distribution/dist3.png" alt="go now" class="distribution__image">
-				<p class="distribution__item-title">Barking Heads</p>
-				<p class="distribution__text">
-					Полнорационный корм класса холистик
-					<br>из Британии
-				</p>
-			</a>
-
-			<!-- item-4 -->
-			<a href="#" class="distribution__item">
-				<img src="images/distribution/dist4.png" alt="go now" class="distribution__image">
-				<p class="distribution__item-title">Advance</p>
-				<p class="distribution__text">
-					Высококачественный корм супер-премиум класса Испанской компании Affinity Petcare
-				</p>
-			</a>
-
-			<!-- item-5 -->
-			<a href="#" class="distribution__item">
-				<img src="images/distribution/dist5.png" alt="go now" class="distribution__image">
-				<p class="distribution__item-title">Nero Gold</p>
-				<p class="distribution__text">
-					Cухие корма и лакомства супер премиум класса. Программа для питомников, вес упаковки до 18 кг
-				</p>
-			</a>
-
-			<!-- item-6 -->
-			<a href="#" class="distribution__item">
-				<img src="images/distribution/dist6.png" alt="go now" class="distribution__image">
-				<p class="distribution__item-title">Ontario</p>
-				<p class="distribution__text">
-					Игровые комплексы для кошек
-				</p>
-			</a>
-
-			<!-- item-7 -->
-			<a href="#" class="distribution__item">
-				<img src="images/distribution/dist7.png" alt="go now" class="distribution__image">
-				<p class="distribution__item-title">Anju Beaute, Pet Head</p>
-				<p class="distribution__text">
-					Уникальные средства косметического ухода для собак и кошек используемые грумерами
-				</p>
-			</a>
-
-			<!-- item-8 -->
-			<a href="#" class="distribution__item">
-				<img src="images/distribution/dist8.png" alt="go now" class="distribution__image">
-				<p class="distribution__item-title">Eurolitter, Canada Litter,
-					<br>Sepiolsa, Van Cat</p>
-				<p class="distribution__text">
-					Комкующийся наполнитель без пыли для кошачьих туалетов супер премиум класса
-				</p>
-			</a>
-
-			<a href="#" class="distribution__item">
-				<img src="images/distribution/dist9.png" alt="go now" class="distribution__image">
-				<p class="distribution__item-title">Moderna, Stefanplast, Curver</p>
-				<p class="distribution__text">
-					Комкующийся кукурузный бионаполнитель для кошачьих туалетов
-				</p>
-			</a>
-
-
-
-
-
-			<h2 class="distribution__title">Производство собственных торговых марок</h2>
-
-
-			<!-- big-item-1 -->
-			<a href="#" class="distribution__item distribution__item_big">
-				<img src="images/distribution/dist1_big.png" alt="go now" class="distribution__image distribution__image_big">
-				<p class="distribution__item-title">Organix</p>
-				<p class="distribution__text">
-					Вкусный консервированный корм для собак и кошек. Консервы изготовлены из натуральных продуктов с добавлением минералов. Не содержит ГМО
-				</p>
-			</a>
-
-			<!-- big-item-2 -->
-			<a href="#" class="distribution__item distribution__item_big">
-				<img src="images/distribution/dist2_big.png" alt="go now" class="distribution__image distribution__image_big">
-				<p class="distribution__item-title">Yami-Yami</p>
-				<p class="distribution__text">
-					Экологически чистые, созданные с учетом потребностей домашних животных аксессуары игрушки и косметика
-				</p>
-			</a>
-
-	</section>
-
-	<section class="details">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 col-md-7">
-					<div class="details__left">
-						<h2 class="details__left-title">
-							Реквизиты комнпаии PetsProduct
-						</h2>
-						<a href="#" class="details__left-link">Скачать карту клиента</a>
-					</div>
-				</div>
-				<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1">
-					<div class="details__right">
-
-						<p class="details__right-text">
-							<b>Название организации:</b>
-							<br class="hidden-lg hidden-md hidden-sm">ООО "Пет-Продукт"
-						</p>
-
-						<p class="details__right-text">
-							<b>Юридический адрес:</b>
-							<br class="hidden-lg hidden-md hidden-sm">197101, г.Санкт-Петербург, пр.Каменноостровский, д.26-28, лит.А, пом.28-Н
-						</p>
-
-						<p class="details__right-text">
-							<b>Фактический адрес: </b>
-							<br class="hidden-lg hidden-md hidden-sm">197022, г.Санкт-Петербург, ул.Всеволода Вишневского, д.12, оф.702 (для отправкикорреспонденции)
-						</p>
-
-						<p class="details__right-text">
-							<b>ИНН </b>7813452140
-						</p>
-
-						<p class="details__right-text">
-							<b>ОГРН </b>1097847249114
-						</p>
-
-						<p class="details__right-text">
-							<b>р/с </b>40702810232060000023
-						</p>
-
-						<p class="details__right-text">
-							<b>к/с </b>30101810300000000811
-						</p>
-
-						<p class="details__right-text">
-							<b>БИК </b>044030811
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-
-	<!--footer-->
-	<footer class="main-foot">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
-					<a href="./">
-						<img class="main-foot__logo" src="images/icons/logo-white.svg" alt="footer-logo">
-					</a>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-4">
-					<p class="main-foot__subtitle">О компании</p>
-					<ul class="main-foot__list">
-						<li><a href="#">О нас</a>
-						</li>
-						<li><a href="#">Каталог</a>
-						</li>
-						<li><a href="#">Акции</a>
-						</li>
-						<li><a href="#">Партнеры</a>
-						</li>
-						<li><a href="#">Вакансии</a>
-						</li>
-						<li><a href="#">Контакты</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-5">
-					<p class="main-foot__subtitle">Сервис и помощь</p>
-					<ul class="main-foot__list">
-						<li><a href="#">Прайс-Листы</a>
-						</li>
-						<li><a href="#">Как сделать заказ</a>
-						</li>
-						<li><a href="#">Способы оплаты</a>
-						</li>
-						<li><a href="#">Доставка</a>
-						</li>
-						<li><a href="#">Письмо директору</a>
-						</li>
-						<li><a href="#">Возврат товара</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 main-foot__cont-wrap">
-					<p class="main-foot__subtitle">Контакты</p>
-					<ul class="main-foot__list main-foot__list_last">
-						<li class="main-foot__address"><a>Санкт-Петербург, улица <br>
-						Всеволода Вишневского 12а</a>
-						</li>
-						<li class="main-foot__tel">
-							<a>8 (812) 424-46-64</a> 
-							<br>
-							<a>8 (495) 640-13-00</a>
-						</li>
-						<li class="main-foot__email"><a>info@petsproduct.ru</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="main-foot__copyright">
+		<section class="company-features">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-5">
-						<span class="main-foot__copy-text"><a href="#">Все права защищены Petsproduct 2017</a></span>
-						<span class="main-foot__copy-text"><a href="#">Публичная оферта</a></span>
+
+					<!-- item-1 -->
+					<div class="col-lg-7 col-md-7 col-sm-15">
+						<div class="company-feature clearfix">
+							<img src="images/icons/aboutcomp1.svg" class="company-feature__image"></img>
+							<p class="company-feature__title">
+								Крупнейший поставщик зоотоваров в России
+							</p>
+							<p class="company-feature__text">
+								В настоящий момент Группа компаний «Пет-Продукт» - крупнейший поставщик зоотоваров в России. Мы предлагаем широкий ассортимент товаров от ведущих мировых производителей: сухие и влажные корма для кошек и собак, пищевые добавки, витамины, груминг, парфюмерию,
+								средства по уходу, аксессуары, игрушки.
+							</p>
+						</div>
+					</div>
+
+					<!-- item-2 -->
+					<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
+						<div class="company-feature clearfix">
+							<img src="images/icons/aboutcomp2.svg" class="company-feature__image"></img>
+							<p class="company-feature__title">
+								Работа с питомниками и заводчиками
+							</p>
+							<p class="company-feature__text">
+								Группа компаний «Пет-Продукт» предлагает специальные условия работы для питомников и заводчиков. Мы предлагаем широкий ассортимент, выгодные цены, удобные условия доставки, а также различные акции и специальные предложения. Также действует расширенная
+								программа работы на взаимовыгодных условиях для фелинологических и кинологических клубов. Также компания выступает в качестве спонсора на различных выставках кошек и собак.
+							</p>
+						</div>
+					</div>
+
+					<!-- item-3 -->
+					<div class="col-lg-7 col-md-7 col-sm-15">
+						<div class="company-feature clearfix">
+							<img src="images/icons/aboutcomp3.svg" class="company-feature__image"></img>
+							<p class="company-feature__title">
+								Широкая география работы
+							</p>
+							<p class="company-feature__text">
+								Головной офис компании находится в Санкт-Петербурге, а филиал - в Москве. Также сузществуют региональные представители и более 45 партнеров в различных регионах России. Собственный автомобильный парк для ежедневной доставки грузов в Санкт-Петербурге и
+								Москве, а также складские помещения мощностью__ м. кв. в разных городах страны. Весь товар хранится в надлежащих условиях, мы тщательно следим за его сроком годности и товарным видом. Наши клиенты всегда могут быть уверены в качестве, поставляемого
+								товара.
+							</p>
+						</div>
+					</div>
+
+					<!-- item-4 -->
+					<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
+						<div class="company-feature clearfix">
+							<img src="images/icons/aboutcomp4.svg" class="company-feature__image"></img>
+							<p class="company-feature__title">
+								Надежный партнер для любого клиента
+							</p>
+							<p class="company-feature__text">
+								Группа компаний «Пет-Продукт» имеет специальную структуру для работы с различными клиентами. Мы одинаково внимательно относимся ко всем: маленьким и большим зоомагазинам, интернет-магазинам, питомникам и другим партнерам. Для каждого типа предприятия
+								существует четкая программа сотрудничества, а также специальный отдел, который понимает потребностям именно Вашего бизнеса.
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="distribution">
+			<div class="container">
+				<div class="row tac">
+					<h2 class="distribution__title">Эксклюзивная дистрибьюция</h2>
+				</div>
+
+				<!-- item-1 -->
+				<a href="#" class="distribution__item">
+					<img src="images/distribution/dist1.png" alt="go now" class="distribution__image">
+					<p class="distribution__item-title">GO, NOW, SUMMIT, GATHER</p>
+					<p class="distribution__text">
+						Корма класса холистик из Канады
+					</p>
+				</a>
+
+				<!-- item-2 -->
+				<a href="#" class="distribution__item">
+					<img src="images/distribution/dist2.png" alt="go now" class="distribution__image">
+					<p class="distribution__item-title">Almo Nature</p>
+					<p class="distribution__text">
+						Сухие корма и консервы класса холистик.
+						<br>Содержание мяса в консервах более 75%
+					</p>
+				</a>
+
+				<!-- item-3 -->
+				<a href="#" class="distribution__item">
+					<img src="images/distribution/dist3.png" alt="go now" class="distribution__image">
+					<p class="distribution__item-title">Barking Heads</p>
+					<p class="distribution__text">
+						Полнорационный корм класса холистик
+						<br>из Британии
+					</p>
+				</a>
+
+				<!-- item-4 -->
+				<a href="#" class="distribution__item">
+					<img src="images/distribution/dist4.png" alt="go now" class="distribution__image">
+					<p class="distribution__item-title">Advance</p>
+					<p class="distribution__text">
+						Высококачественный корм супер-премиум класса Испанской компании Affinity Petcare
+					</p>
+				</a>
+
+				<!-- item-5 -->
+				<a href="#" class="distribution__item">
+					<img src="images/distribution/dist5.png" alt="go now" class="distribution__image">
+					<p class="distribution__item-title">Nero Gold</p>
+					<p class="distribution__text">
+						Cухие корма и лакомства супер премиум класса. Программа для питомников, вес упаковки до 18 кг
+					</p>
+				</a>
+
+				<!-- item-6 -->
+				<a href="#" class="distribution__item">
+					<img src="images/distribution/dist6.png" alt="go now" class="distribution__image">
+					<p class="distribution__item-title">Ontario</p>
+					<p class="distribution__text">
+						Игровые комплексы для кошек
+					</p>
+				</a>
+
+				<!-- item-7 -->
+				<a href="#" class="distribution__item">
+					<img src="images/distribution/dist7.png" alt="go now" class="distribution__image">
+					<p class="distribution__item-title">Anju Beaute, Pet Head</p>
+					<p class="distribution__text">
+						Уникальные средства косметического ухода для собак и кошек используемые грумерами
+					</p>
+				</a>
+
+				<!-- item-8 -->
+				<a href="#" class="distribution__item">
+					<img src="images/distribution/dist8.png" alt="go now" class="distribution__image">
+					<p class="distribution__item-title">Eurolitter, Canada Litter,
+						<br>Sepiolsa, Van Cat</p>
+					<p class="distribution__text">
+						Комкующийся наполнитель без пыли для кошачьих туалетов супер премиум класса
+					</p>
+				</a>
+
+				<a href="#" class="distribution__item">
+					<img src="images/distribution/dist9.png" alt="go now" class="distribution__image">
+					<p class="distribution__item-title">Moderna, Stefanplast, Curver</p>
+					<p class="distribution__text">
+						Комкующийся кукурузный бионаполнитель для кошачьих туалетов
+					</p>
+				</a>
+
+
+
+
+
+				<h2 class="distribution__title">Производство собственных торговых марок</h2>
+
+
+				<!-- big-item-1 -->
+				<a href="#" class="distribution__item distribution__item_big">
+					<img src="images/distribution/dist1_big.png" alt="go now" class="distribution__image distribution__image_big">
+					<p class="distribution__item-title">Organix</p>
+					<p class="distribution__text">
+						Вкусный консервированный корм для собак и кошек. Консервы изготовлены из натуральных продуктов с добавлением минералов. Не содержит ГМО
+					</p>
+				</a>
+
+				<!-- big-item-2 -->
+				<a href="#" class="distribution__item distribution__item_big">
+					<img src="images/distribution/dist2_big.png" alt="go now" class="distribution__image distribution__image_big">
+					<p class="distribution__item-title">Yami-Yami</p>
+					<p class="distribution__text">
+						Экологически чистые, созданные с учетом потребностей домашних животных аксессуары игрушки и косметика
+					</p>
+				</a>
+
+		</section>
+
+		<section class="details">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 col-md-7">
+						<div class="details__left">
+							<h2 class="details__left-title">
+								Реквизиты комнпаии PetsProduct
+							</h2>
+							<a href="#" class="details__left-link">Скачать карту клиента</a>
+						</div>
+					</div>
+					<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1">
+						<div class="details__right">
+
+							<p class="details__right-text">
+								<b>Название организации:</b>
+								<br class="hidden-lg hidden-md hidden-sm">ООО "Пет-Продукт"
+							</p>
+
+							<p class="details__right-text">
+								<b>Юридический адрес:</b>
+								<br class="hidden-lg hidden-md hidden-sm">197101, г.Санкт-Петербург, пр.Каменноостровский, д.26-28, лит.А, пом.28-Н
+							</p>
+
+							<p class="details__right-text">
+								<b>Фактический адрес: </b>
+								<br class="hidden-lg hidden-md hidden-sm">197022, г.Санкт-Петербург, ул.Всеволода Вишневского, д.12, оф.702 (для отправкикорреспонденции)
+							</p>
+
+							<p class="details__right-text">
+								<b>ИНН </b>7813452140
+							</p>
+
+							<p class="details__right-text">
+								<b>ОГРН </b>1097847249114
+							</p>
+
+							<p class="details__right-text">
+								<b>р/с </b>40702810232060000023
+							</p>
+
+							<p class="details__right-text">
+								<b>к/с </b>30101810300000000811
+							</p>
+
+							<p class="details__right-text">
+								<b>БИК </b>044030811
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
+		</section>
+
+
+
+		<!--footer-->
+		<footer class="main-foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
+						<a href="./">
+							<img class="main-foot__logo" src="images/icons/logo-white.svg" alt="footer-logo">
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4">
+						<p class="main-foot__subtitle">О компании</p>
+						<ul class="main-foot__list">
+							<li><a href="#">О нас</a>
+							</li>
+							<li><a href="#">Каталог</a>
+							</li>
+							<li><a href="#">Акции</a>
+							</li>
+							<li><a href="#">Партнеры</a>
+							</li>
+							<li><a href="#">Вакансии</a>
+							</li>
+							<li><a href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-5">
+						<p class="main-foot__subtitle">Сервис и помощь</p>
+						<ul class="main-foot__list">
+							<li><a href="#">Прайс-Листы</a>
+							</li>
+							<li><a href="#">Как сделать заказ</a>
+							</li>
+							<li><a href="#">Способы оплаты</a>
+							</li>
+							<li><a href="#">Доставка</a>
+							</li>
+							<li><a href="#">Письмо директору</a>
+							</li>
+							<li><a href="#">Возврат товара</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 main-foot__cont-wrap">
+						<p class="main-foot__subtitle">Контакты</p>
+						<ul class="main-foot__list main-foot__list_last">
+							<li class="main-foot__address"><a>Санкт-Петербург, улица <br>
+						Всеволода Вишневского 12а</a>
+							</li>
+							<li class="main-foot__tel">
+								<a>8 (812) 424-46-64</a> 
+								<br>
+								<a>8 (495) 640-13-00</a>
+							</li>
+							<li class="main-foot__email"><a>info@petsproduct.ru</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="main-foot__copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5">
+							<span class="main-foot__copy-text"><a href="#">Все права защищены Petsproduct 2017</a></span>
+							<span class="main-foot__copy-text"><a href="#">Публичная оферта</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- overlay -->
+			<div id="overlay" class="overlay"></div>
+			<div id="overlay_dark" class="overlay_dark"></div>
+		</footer>
+
+
+		<!-- scripts (скрипты проекта) -->
+		<!-- styles -->
+		<link rel="stylesheet" type="text/css" href="css/app.min.css?v=1.2">
+		<!-- jquery -->
+		<script src="js/jq.min.js"></script>
+		<!-- всегда в начале -->
+		<script src="js/gallery.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+		<script src="js/app.min.js"></script>
+		<!-- всегда в конце -->
+
+		<!-- plugins js -->
+		<script src="js/modernizr-custom.min.js"></script>
+
 		</div>
-		<!-- overlay -->
-		<div id="overlay" class="overlay"></div>
-		<div id="overlay_dark" class="overlay_dark"></div>
-	</footer>
-
-
-	<!-- scripts (скрипты проекта) -->
-	<!-- styles -->
-	<link rel="stylesheet" type="text/css" href="css/app.min.css?v=1.2">
-	<!-- jquery -->
-	<script src="js/jq.min.js"></script>
-	<!-- всегда в начале -->
-	<script src="js/gallery.min.js"></script>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
-	<script src="js/app.min.js"></script>
-	<!-- всегда в конце -->
-
-	<!-- plugins js -->
-	<script src="js/modernizr-custom.min.js"></script>
-
-
 </body>
 
 </html>

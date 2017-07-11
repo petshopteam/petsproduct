@@ -39,145 +39,127 @@
 
 </head>
 
-<body class="help-page">
-
-	<!-- main topline -->
-	<div class="main-topline">
-		<div class="container">
-			<div class="row tac">
-				<div class="col-lg-2 col-lg-offset-9 col-md-3 col-md-offset-6 col-sm-4 col-sm-offset-6 hidden-xs">
-					<!--city-->
-					<div class="main-topline__city">
-						<a class="main-topline__change-city open_modal" href="#modalCity">Санкт-Петербург</a>
-						<!-- modal window -->
-						<div class="modal-city modal_div" id="modalCity">
-							<p class="modal-city__title">
-								Ваш город Санкт-Петербург?
-							</p>
-							<a class="modal-city__yes btn btn_orange modal_close">да</a>
-							<a class="modal-city__no btn btn_grey btn_no open_modal_dark" href="#modalChangeCity">Другой город</a>
-							<p class="modal-city__text">От выбранного города зависят акции, отображаемые на сайте</p>
+<body>
+	<div class="help-page">
+		<!-- main topline -->
+		<div class="main-topline">
+			<div class="container">
+				<div class="row tac">
+					<div class="col-lg-2 col-lg-offset-9 col-md-3 col-md-offset-6 col-sm-4 col-sm-offset-6 hidden-xs">
+						<!--city-->
+						<div class="main-topline__city">
+							<a class="main-topline__change-city open_modal" href="#modalCity">Санкт-Петербург</a>
+							<!-- modal window -->
+							<div class="modal-city modal_div" id="modalCity">
+								<p class="modal-city__title">
+									Ваш город Санкт-Петербург?
+								</p>
+								<a class="modal-city__yes btn btn_orange modal_close">да</a>
+								<a class="modal-city__no btn btn_grey btn_no open_modal_dark" href="#modalChangeCity">Другой город</a>
+								<p class="modal-city__text">От выбранного города зависят акции, отображаемые на сайте</p>
+							</div>
+							<!-- end modal -->
 						</div>
-						<!-- end modal -->
 					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-14 main-topline__phone-wrap">
-					<!--phone-->
-					<div class="main-topline__phone">
-						<p class="main-topline__phone-number"><a href="tel:8812424-46-64">8 (812) 424-46-64</a>
-						</p>
-						<p class="main-topline__phone-time text-light">c 9:00 до 20:00</p>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-xs-14 main-topline__phone-wrap">
+						<!--phone-->
+						<div class="main-topline__phone">
+							<p class="main-topline__phone-number"><a href="tel:8812424-46-64">8 (812) 424-46-64</a>
+							</p>
+							<p class="main-topline__phone-time text-light">c 9:00 до 20:00</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-2 col-md-3 col-sm-1 col-xs-1">
-					<!--user-->
-					<div class="main-topline__user">
-						<a class="main-topline__user-login hidden-sm hidden-xs">Личный кабинет</a>
-						<a class="main-topline__user-login_small visible-sm visible-xs"></a>
+					<div class="col-lg-2 col-md-3 col-sm-1 col-xs-1">
+						<!--user-->
+						<div class="main-topline__user">
+							<a class="main-topline__user-login hidden-sm hidden-xs">Личный кабинет</a>
+							<a class="main-topline__user-login_small visible-sm visible-xs"></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- change-city modal window -->
-	<div class="modal-change-city modal_div hidden-xs" id="modalChangeCity">
-		<div class="container-offset">
-			<a class="modal-change-city__close modal_close hidden-sm"></a>
-			<a class="modal-navigation__close modal_close hidden-lg hidden-md">Закрыть</a>
-			<form action="#" class="modal-change-city__form">
-				<div class="row">
-					<div class="col-lg-15 col-md-15 col-sm-15">
-						<p class="modal-change-city__title">Выберите свой город</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" checked name="changeCity" id="changeCity1">
-							<label for="changeCity1">Москва</label>
+		<!-- change-city modal window -->
+		<div class="modal-change-city modal_div hidden-xs" id="modalChangeCity">
+			<div class="container-offset">
+				<a class="modal-change-city__close modal_close hidden-sm"></a>
+				<a class="modal-navigation__close modal_close hidden-lg hidden-md">Закрыть</a>
+				<form action="#" class="modal-change-city__form">
+					<div class="row">
+						<div class="col-lg-15 col-md-15 col-sm-15">
+							<p class="modal-change-city__title">Выберите свой город</p>
 						</div>
 					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" name="changeCity" id="changeCity2">
-							<label for="changeCity2">Казань</label>
+					<div class="row">
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" checked name="changeCity" id="changeCity1">
+								<label for="changeCity1">Москва</label>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" name="changeCity" id="changeCity3">
-							<label for="changeCity3">Остальные регионы</label>
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" name="changeCity" id="changeCity2">
+								<label for="changeCity2">Казань</label>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" name="changeCity" id="changeCity4">
-							<label for="changeCity4">Санкт-Петербург</label>
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" name="changeCity" id="changeCity3">
+								<label for="changeCity3">Остальные регионы</label>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5">
-						<div class="modal-change-city__item">
-							<input type="radio" name="changeCity" id="changeCity5">
-							<label for="changeCity5">Казань</label>
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" name="changeCity" id="changeCity4">
+								<label for="changeCity4">Санкт-Петербург</label>
+							</div>
 						</div>
-					</div>
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<div class="modal-change-city__item">
+								<input type="radio" name="changeCity" id="changeCity5">
+								<label for="changeCity5">Казань</label>
+							</div>
+						</div>
 
-				</div>
-				<div class="row">
-					<div class="col-lg-15 col-md-15 col-sm-15">
-						<p class="modal-change-city__title">Или укажите в поле</p>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-10 col-md-10 col-sm-10">
-						<select type="text" class="modal-change-city__input">
-							<option value="">Санкт-Петербург</option>
-							<option value="">Москва</option>
-							<option value="">Екатеринбург</option>
-						</select>
+					<div class="row">
+						<div class="col-lg-15 col-md-15 col-sm-15">
+							<p class="modal-change-city__title">Или укажите в поле</p>
+						</div>
 					</div>
-					<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1">
-						<button href="#" type="submit" class="btn btn_orange">Выбрать</button>
+					<div class="row">
+						<div class="col-lg-10 col-md-10 col-sm-10">
+							<select type="text" class="modal-change-city__input">
+								<option value="">Санкт-Петербург</option>
+								<option value="">Москва</option>
+								<option value="">Екатеринбург</option>
+							</select>
+						</div>
+						<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1">
+							<button href="#" type="submit" class="btn btn_orange">Выбрать</button>
+						</div>
 					</div>
-				</div>
-			</form>
+				</form>
+			</div>
 		</div>
-	</div>
-	<!-- end modal -->
+		<!-- end modal -->
 
 
-	<!-- header -->
-	<header class="main-head">
-		<div class="container">
-			<div class="row tar">
-				<!--main-logo-->
-				<div class="col-lg-3">
-					<a class="main-head__logo" href="./"></a>
-				</div>
-				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
-					<nav class="main-navigation">
-						<!-- (big size nav) -->
-						<ul class="main-navigation__list hidden-sm hidden-xs">
-							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
-							</li>
-							<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a>
-							</li>
-							<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a>
-							</li>
-							<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
-							</li>
-							<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a>
-								</>
-							</li>
-						</ul>
-						<!-- (small size nav) -->
-						<!-- btn -->
-						<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
-						<div class="modal-navigation modal_div" id="modalNav">
-							<ul class="main-navigation__list_small hidden-lg hidden-md">
-								<a class="modal-navigation__close modal_close">Закрыть</a>
+		<!-- header -->
+		<header class="main-head">
+			<div class="container">
+				<div class="row tar">
+					<!--main-logo-->
+					<div class="col-lg-3">
+						<a class="main-head__logo" href="./"></a>
+					</div>
+					<!--main-navigation-->
+					<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
+						<nav class="main-navigation">
+							<!-- (big size nav) -->
+							<ul class="main-navigation__list hidden-sm hidden-xs">
 								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
 								</li>
 								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a>
@@ -189,242 +171,260 @@
 								<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a>
 									</>
 								</li>
-
 							</ul>
-						</div>
-					</nav>
-				</div>
-				<!-- end main-navigation -->
-			</div>
-		</div>
-	</header>
+							<!-- (small size nav) -->
+							<!-- btn -->
+							<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+							<div class="modal-navigation modal_div" id="modalNav">
+								<ul class="main-navigation__list_small hidden-lg hidden-md">
+									<a class="modal-navigation__close modal_close">Закрыть</a>
+									<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a>
+									</li>
+									<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a>
+									</li>
+									<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a>
+									</li>
+									<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a>
+									</li>
+									<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a>
+										</>
+									</li>
 
-	<!-- breadcrumbs -->
-	<section class="breadcrumbs small">
-		<div class="container">
-			<ul class="breadcrumbs__list clearfix">
-				<li class="breadcrumbs__item back hidden-lg hidden-md">
-					<a href="help.html"></a>
-				</li>
-				<li class="breadcrumbs__item first"><a href="./">Главная</a>
-				</li>
-				<li class="breadcrumbs__item"><a href="help.html">Сервис и помощь</a>
-				</li>
-				<li class="breadcrumbs__item active"><a href="#">Письмо директору</a>
-				</li>
-			</ul>
-		</div>
-	</section>
-
-	<main class="help-content">
-		<div class="container">
-			<div class="row">
-				<!-- left-side -->
-				<div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
-					<aside class="help__left">
-						<!--slider-->
-						<div class="slider-container">
-							<ul class="menu-list">
-								<li class="help__left-title help__left-title_order">
-									<a>Как сделать заказ?</a>
-								</li>
-								<div class="help__left-list">
-									<a class="active" href="#">Новый пользователь</a>
-									<a href="#">Зарегистрированный пользователь</a>
-									<a href="#">Как получить логин и пароль?</a>
-								</div>
-								<li class="help__left-title"><a href="catalog.html">Прайс листы</a>
-								</li>
-								<li class="help__left-title"><a href="catalog.html">Способы оплаты</a>
-								</li>
-								<li class="help__left-title"><a href="catalog.html">Доставка</a>
-								</li>
-								<li class="help__left-title active"><a href="catalog.html">Письмо директору</a>
-								</li>
-								<li class="help__left-title"><a href="catalog.html">Возврат товара</a>
-								</li>
-							</ul>
-						</div>
-						<!--//slider-->
-					</aside>
-				</div>
-
-				<!-- right-side-top -->
-				<div class="col-lg-11 col-md-11">
-					<div class="write-us">
-						<div class="container-offset">
-							<div class="row">
-								<!-- title -->
-								<div class="col-lg-15">
-									<h2 class="write-us__title">Письмо директору</h2>
-									<p class="write-us__text">
-										Уважаемый клиент, Вы можете отправить Ваше пожелание или жалобу напрямую Директору PetsProduct.ru. Для нас очень важно услышать Ваше мнение о нашей работе.
-										<br>Спасибо!
-									</p>
-								</div>
+								</ul>
 							</div>
-
-							<!-- right-side-bottom -->
-							<!-- write-us main form -->
-							<form action="#" class="request__form">
-								<!-- first form-block -->
-								<div class="request__form-block clearfix">
-									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-15">
-										<label for="" class="form-label">Как Вас зовут?</label>
-										<input type="text" class="form-input" placeholder="Фамилия Имя Отчество">
-									</div>
-									<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-7 col-sm-offset-1 col-xs-15">
-										<label for="" class="form-label">Тема письма</label>
-										<select type="text" class="request__select" placeholder="Зоомагазин">
-											<option value="wish">Пожелание</option>
-										</select>
-									</div>
-									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-15">
-										<label for="" class="form-label">Название организации</label>
-										<input type="text" class="form-input" placeholder="Краткое наименование организации">
-									</div>
-									<!--  textarea  -->
-									<div class="col-right col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-7 col-sm-offset-1 col-xs-15">
-										<label for="" class="form-label">Сообщение</label>
-										<textarea type="text" class="form-textarea request__input_big" placeholder="Текст сообщения"></textarea>
-									</div>
-									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-15">
-										<label for="" class="form-label">Вид деятельности</label>
-										<select type="text" class="request__select" placeholder="Зоомагазин">
-											<option value="nursery">Питомник</option>
-										</select>
-									</div>
-									<div class="col-lg-7 col-md-7 col-sm-7 col-xs-15">
-										<label for="" class="form-label">Контактный e-mail</label>
-										<input type="text" class="form-input" placeholder="E-mail адрес">
-									</div>
-								</div>
-								<div class="request__submit-block clearfix">
-									<!-- capcha -->
-									<div class="g-recaptcha" style="display: inline-block;" data-sitekey="6LclISEUAAAAAH6ClfkPBXtaEzoVIkgInEdU5vs9"></div>
-									<button class="request__submit btn btn_orange">Отправить</button>
-									<button class="request__clear btn btn_grey">Очистить</button>
-								</div>
-							</form>
-							</section>
-						</div>
+						</nav>
 					</div>
+					<!-- end main-navigation -->
 				</div>
 			</div>
+		</header>
 
-			<!--hidden-slider-->
-			<ul class="help__hidden-nav hidden-lg hidden-md">
-				<li class="">
-					<a>Как сделать заказ?</a>
-				</li>
-				<li class="_"><a href="#">Прайс листы</a>
-				</li>
-				<li class="_"><a href="#">Способы оплаты</a>
-				</li>
-				<li class="_"><a href="#">Доставка</a>
-				</li>
-				<li class="active"><a href="#">Письмо директору</a>
-				</li>
-				<li class="_"><a href="#">Возврат товара</a>
-				</li>
-
-			</ul>
-			<!--//hidden-slider-->
-
-		</div>
-	</main>
-
-	<!--footer-->
-	<footer class="main-foot">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
-					<a href="./">
-						<img class="main-foot__logo" src="images/icons/logo-white.svg" alt="footer-logo">
-					</a>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-4">
-					<p class="main-foot__subtitle">О компании</p>
-					<ul class="main-foot__list">
-						<li><a href="#">О нас</a>
-						</li>
-						<li><a href="#">Каталог</a>
-						</li>
-						<li><a href="#">Акции</a>
-						</li>
-						<li><a href="#">Партнеры</a>
-						</li>
-						<li><a href="#">Вакансии</a>
-						</li>
-						<li><a href="#">Контакты</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-5">
-					<p class="main-foot__subtitle">Сервис и помощь</p>
-					<ul class="main-foot__list">
-						<li><a href="#">Прайс-Листы</a>
-						</li>
-						<li><a href="#">Как сделать заказ</a>
-						</li>
-						<li><a href="#">Способы оплаты</a>
-						</li>
-						<li><a href="#">Доставка</a>
-						</li>
-						<li><a href="#">Письмо директору</a>
-						</li>
-						<li><a href="#">Возврат товара</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 main-foot__cont-wrap">
-					<p class="main-foot__subtitle">Контакты</p>
-					<ul class="main-foot__list main-foot__list_last">
-						<li class="main-foot__address"><a>Санкт-Петербург, улица <br>
-						Всеволода Вишневского 12а</a>
-						</li>
-						<li class="main-foot__tel">
-							<a>8 (812) 424-46-64</a> 
-							<br>
-							<a>8 (495) 640-13-00</a>
-						</li>
-						<li class="main-foot__email"><a>info@petsproduct.ru</a>
-						</li>
-					</ul>
-				</div>
+		<!-- breadcrumbs -->
+		<section class="breadcrumbs small">
+			<div class="container">
+				<ul class="breadcrumbs__list clearfix">
+					<li class="breadcrumbs__item back hidden-lg hidden-md">
+						<a href="help.html"></a>
+					</li>
+					<li class="breadcrumbs__item first"><a href="./">Главная</a>
+					</li>
+					<li class="breadcrumbs__item"><a href="help.html">Сервис и помощь</a>
+					</li>
+					<li class="breadcrumbs__item active"><a href="#">Письмо директору</a>
+					</li>
+				</ul>
 			</div>
-		</div>
-		<div class="main-foot__copyright">
+		</section>
+
+		<main class="help-content">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-5">
-						<span class="main-foot__copy-text"><a href="#">Все права защищены Petsproduct 2017</a></span>
-						<span class="main-foot__copy-text"><a href="#">Публичная оферта</a></span>
+					<!-- left-side -->
+					<div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
+						<aside class="help__left">
+							<!--slider-->
+							<div class="slider-container">
+								<ul class="menu-list">
+									<li class="help__left-title help__left-title_order">
+										<a>Как сделать заказ?</a>
+									</li>
+									<div class="help__left-list">
+										<a class="active" href="#">Новый пользователь</a>
+										<a href="#">Зарегистрированный пользователь</a>
+										<a href="#">Как получить логин и пароль?</a>
+									</div>
+									<li class="help__left-title"><a href="catalog.html">Прайс листы</a>
+									</li>
+									<li class="help__left-title"><a href="catalog.html">Способы оплаты</a>
+									</li>
+									<li class="help__left-title"><a href="catalog.html">Доставка</a>
+									</li>
+									<li class="help__left-title active"><a href="catalog.html">Письмо директору</a>
+									</li>
+									<li class="help__left-title"><a href="catalog.html">Возврат товара</a>
+									</li>
+								</ul>
+							</div>
+							<!--//slider-->
+						</aside>
+					</div>
+
+					<!-- right-side-top -->
+					<div class="col-lg-11 col-md-11">
+						<div class="write-us">
+							<div class="container-offset">
+								<div class="row">
+									<!-- title -->
+									<div class="col-lg-15">
+										<h2 class="write-us__title">Письмо директору</h2>
+										<p class="write-us__text">
+											Уважаемый клиент, Вы можете отправить Ваше пожелание или жалобу напрямую Директору PetsProduct.ru. Для нас очень важно услышать Ваше мнение о нашей работе.
+											<br>Спасибо!
+										</p>
+									</div>
+								</div>
+
+								<!-- right-side-bottom -->
+								<!-- write-us main form -->
+								<form action="#" class="request__form">
+									<!-- first form-block -->
+									<div class="request__form-block clearfix">
+										<div class="col-lg-7 col-md-7 col-sm-7 col-xs-15">
+											<label for="" class="form-label">Как Вас зовут?</label>
+											<input type="text" class="form-input" placeholder="Фамилия Имя Отчество">
+										</div>
+										<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-7 col-sm-offset-1 col-xs-15">
+											<label for="" class="form-label">Тема письма</label>
+											<select type="text" class="request__select" placeholder="Зоомагазин">
+												<option value="wish">Пожелание</option>
+											</select>
+										</div>
+										<div class="col-lg-7 col-md-7 col-sm-7 col-xs-15">
+											<label for="" class="form-label">Название организации</label>
+											<input type="text" class="form-input" placeholder="Краткое наименование организации">
+										</div>
+										<!--  textarea  -->
+										<div class="col-right col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-7 col-sm-offset-1 col-xs-15">
+											<label for="" class="form-label">Сообщение</label>
+											<textarea type="text" class="form-textarea request__input_big" placeholder="Текст сообщения"></textarea>
+										</div>
+										<div class="col-lg-7 col-md-7 col-sm-7 col-xs-15">
+											<label for="" class="form-label">Вид деятельности</label>
+											<select type="text" class="request__select" placeholder="Зоомагазин">
+												<option value="nursery">Питомник</option>
+											</select>
+										</div>
+										<div class="col-lg-7 col-md-7 col-sm-7 col-xs-15">
+											<label for="" class="form-label">Контактный e-mail</label>
+											<input type="text" class="form-input" placeholder="E-mail адрес">
+										</div>
+									</div>
+									<div class="request__submit-block clearfix">
+										<!-- capcha -->
+										<div class="g-recaptcha" style="display: inline-block;" data-sitekey="6LclISEUAAAAAH6ClfkPBXtaEzoVIkgInEdU5vs9"></div>
+										<button class="request__submit btn btn_orange">Отправить</button>
+										<button class="request__clear btn btn_grey">Очистить</button>
+									</div>
+								</form>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--hidden-slider-->
+				<ul class="help__hidden-nav hidden-lg hidden-md">
+					<li class="">
+						<a>Как сделать заказ?</a>
+					</li>
+					<li class="_"><a href="#">Прайс листы</a>
+					</li>
+					<li class="_"><a href="#">Способы оплаты</a>
+					</li>
+					<li class="_"><a href="#">Доставка</a>
+					</li>
+					<li class="active"><a href="#">Письмо директору</a>
+					</li>
+					<li class="_"><a href="#">Возврат товара</a>
+					</li>
+
+				</ul>
+				<!--//hidden-slider-->
+
+			</div>
+		</main>
+
+		<!--footer-->
+		<footer class="main-foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
+						<a href="./">
+							<img class="main-foot__logo" src="images/icons/logo-white.svg" alt="footer-logo">
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4">
+						<p class="main-foot__subtitle">О компании</p>
+						<ul class="main-foot__list">
+							<li><a href="#">О нас</a>
+							</li>
+							<li><a href="#">Каталог</a>
+							</li>
+							<li><a href="#">Акции</a>
+							</li>
+							<li><a href="#">Партнеры</a>
+							</li>
+							<li><a href="#">Вакансии</a>
+							</li>
+							<li><a href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-5">
+						<p class="main-foot__subtitle">Сервис и помощь</p>
+						<ul class="main-foot__list">
+							<li><a href="#">Прайс-Листы</a>
+							</li>
+							<li><a href="#">Как сделать заказ</a>
+							</li>
+							<li><a href="#">Способы оплаты</a>
+							</li>
+							<li><a href="#">Доставка</a>
+							</li>
+							<li><a href="#">Письмо директору</a>
+							</li>
+							<li><a href="#">Возврат товара</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 main-foot__cont-wrap">
+						<p class="main-foot__subtitle">Контакты</p>
+						<ul class="main-foot__list main-foot__list_last">
+							<li class="main-foot__address"><a>Санкт-Петербург, улица <br>
+						Всеволода Вишневского 12а</a>
+							</li>
+							<li class="main-foot__tel">
+								<a>8 (812) 424-46-64</a> 
+								<br>
+								<a>8 (495) 640-13-00</a>
+							</li>
+							<li class="main-foot__email"><a>info@petsproduct.ru</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- overlay -->
-		<div id="overlay" class="overlay"></div>
-		<div id="overlay_dark" class="overlay_dark"></div>
-	</footer>
+			<div class="main-foot__copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5">
+							<span class="main-foot__copy-text"><a href="#">Все права защищены Petsproduct 2017</a></span>
+							<span class="main-foot__copy-text"><a href="#">Публичная оферта</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- overlay -->
+			<div id="overlay" class="overlay"></div>
+			<div id="overlay_dark" class="overlay_dark"></div>
+		</footer>
 
 
-	<!-- scripts (скрипты проекта) -->
-	<!-- styles -->
-	<link rel="stylesheet" type="text/css" href="css/app.min.css?v=1.2">
-	<!-- jquery -->
-	<script src="js/jq.min.js"></script>
-	<!-- всегда в начале -->
-	<script src="js/gallery.min.js"></script>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
-	<script src="js/app.min.js"></script>
-	<!-- всегда в конце -->
+		<!-- scripts (скрипты проекта) -->
+		<!-- styles -->
+		<link rel="stylesheet" type="text/css" href="css/app.min.css?v=1.2">
+		<!-- jquery -->
+		<script src="js/jq.min.js"></script>
+		<!-- всегда в начале -->
+		<script src="js/gallery.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+		<script src="js/app.min.js"></script>
+		<!-- всегда в конце -->
 
-	<!-- plugins js -->
-	<script src="js/modernizr-custom.min.js"></script>
+		<!-- plugins js -->
+		<script src="js/modernizr-custom.min.js"></script>
 
-
+	</div>
 </body>
 
 </html>

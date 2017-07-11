@@ -43,112 +43,111 @@
 
 </head>
 
-<body class="contacts-page">
+<body>
+  <div class="contacts-page">
+    <!-- main topline -->
+    @@include('global/topline.html')
 
-<!-- main topline -->
-@@include('global/topline.html')
-
-<!-- header -->
-<header class="main-head">
-  <div class="container">
-    <div class="row tar">
-      <!--main-logo-->
-      <div class="col-lg-3">
-        <a class="main-head__logo" href="./"></a>
-      </div>
-      <!--main-navigation-->
-      <div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
-        <nav class="main-navigation">
-          <!-- (big size nav) -->
-          <ul class="main-navigation__list hidden-sm hidden-xs">
-            <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-            <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-            <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-            <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-            <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-          </ul>
-          <!-- (small size nav) -->
-          <!-- btn -->
-          <a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
-          <div class="modal-navigation modal_div" id="modalNav">
-            <ul class="main-navigation__list_small hidden-lg hidden-md">
-              <a class="modal-navigation__close modal_close">Закрыть</a>
-              <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-              <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-              <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-              <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-              <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-
-            </ul>
+    <!-- header -->
+    <header class="main-head">
+      <div class="container">
+        <div class="row tar">
+          <!--main-logo-->
+          <div class="col-lg-3">
+            <a class="main-head__logo" href="./"></a>
           </div>
-        </nav>
+          <!--main-navigation-->
+          <div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
+            <nav class="main-navigation">
+              <!-- (big size nav) -->
+              <ul class="main-navigation__list hidden-sm hidden-xs">
+                <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+                <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+                <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+                <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+                <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
+              </ul>
+              <!-- (small size nav) -->
+              <!-- btn -->
+              <a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+              <div class="modal-navigation modal_div" id="modalNav">
+                <ul class="main-navigation__list_small hidden-lg hidden-md">
+                  <a class="modal-navigation__close modal_close">Закрыть</a>
+                  <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+                  <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+                  <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+                  <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+                  <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
+
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <!-- end main-navigation -->
+        </div>
       </div>
-      <!-- end main-navigation -->
-    </div>
-  </div>
-</header>
+    </header>
 
-<!-- breadcrumbs -->
-<section class="breadcrumbs">
-  <div class="container">
-    <ul class="breadcrumbs__list">
-      <li class="breadcrumbs__item"><a href="./">Главная</a></li>
-      <li class="breadcrumbs__item active"><a href="#">Контакты</a></li>
-    </ul>
-  </div>
-</section>
+    <!-- breadcrumbs -->
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="./">Главная</a></li>
+          <li class="breadcrumbs__item active"><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </section>
 
-<section class="contacts">
+    <section class="contacts">
 
-  <!-- map -->
-  <div class="contacts__map">
-    <div id='mapkit-7181'></div>
-  </div>
+      <!-- map -->
+      <div class="contacts__map">
+        <div id='mapkit-7181'></div>
+      </div>
 
-  <!-- contacts-items (address, phone, email) -->
-  <div class="contacts__bottom">
-    <div class="container">
-      <div class="row tac">
+      <!-- contacts-items (address, phone, email) -->
+      <div class="contacts__bottom">
+        <div class="container">
+          <div class="row tac">
 
-        <!-- item-1 -->
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-15">
-          <div class="contacts__item">
-            <img class="contacts__item-image" src="images/icons/contacts1.svg" alt="address">
-            <p class="contacts__item-title">Адрес</p>
-            <p class="contacts__item-text">Санкт-Петербург, улица Всеволода Вишневского 12а</p>
+            <!-- item-1 -->
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-15">
+              <div class="contacts__item">
+                <img class="contacts__item-image" src="images/icons/contacts1.svg" alt="address">
+                <p class="contacts__item-title">Адрес</p>
+                <p class="contacts__item-text">Санкт-Петербург, улица Всеволода Вишневского 12а</p>
+              </div>
+            </div>
+            <!-- item-2 -->
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-15">
+              <div class="contacts__item">
+                <img class="contacts__item-image" src="images/icons/contacts2.svg" alt="phone">
+                <p class="contacts__item-title">Телефон</p>
+                <p class="contacts__item-text">8 (812) 424-46-64 <br> 8 (495) 640-13-00</p>
+              </div>
+            </div>
+            <!-- item-3 -->
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-15">
+              <div class="contacts__item">
+                <img class="contacts__item-image" src="images/icons/contacts3.svg" alt="email">
+                <p class="contacts__item-title">E-mail</p>
+                <p class="contacts__item-text"><a href="#">info@petsproduct.ru</a></p>
+              </div>
+            </div>
+
           </div>
         </div>
-        <!-- item-2 -->
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-15">
-          <div class="contacts__item">
-            <img class="contacts__item-image" src="images/icons/contacts2.svg" alt="phone">
-            <p class="contacts__item-title">Телефон</p>
-            <p class="contacts__item-text">8 (812) 424-46-64 <br> 8 (495) 640-13-00</p>
-          </div>
-        </div>
-        <!-- item-3 -->
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-15">
-          <div class="contacts__item">
-            <img class="contacts__item-image" src="images/icons/contacts3.svg" alt="email">
-            <p class="contacts__item-title">E-mail</p>
-            <p class="contacts__item-text"><a href="#">info@petsproduct.ru</a></p>
-          </div>
-        </div>
-
       </div>
-    </div>
+
+
+    </section>
+
+
+    <!--footer-->
+    @@include('global/footer.html')
+
+    <!-- scripts (скрипты проекта) -->
+    @@include('global/scripts.html')
   </div>
-
-
-</section>
-
-
-<!--footer-->
-@@include('global/footer.html')
-
-<!-- scripts (скрипты проекта) -->
-@@include('global/scripts.html')
-
 </body>
-
 </html>

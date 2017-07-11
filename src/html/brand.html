@@ -44,255 +44,254 @@
 
 </head>
 
-<body class="brand-page">
+<body>
+	<div class="brand-page">
+		<!-- main topline -->
+		@@include('global/topline.html')
 
-	<!-- main topline -->
-	@@include('global/topline.html')
-
-	<!-- header -->
-	<header class="main-head">
-		<div class="container">
-			<div class="row tar">
-				<!--main-logo-->
-				<div class="col-lg-3">
-					<a class="main-head__logo" href="./"></a>
+		<!-- header -->
+		<header class="main-head">
+			<div class="container">
+				<div class="row tar">
+					<!--main-logo-->
+					<div class="col-lg-3">
+						<a class="main-head__logo" href="./"></a>
+					</div>
+					<!--main-navigation-->
+		      <div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
+		        <nav class="main-navigation">
+		          <!-- (big size nav) -->
+		          <ul class="main-navigation__list hidden-sm hidden-xs">
+		            <li class="menu-hover main-navigation__item active"><a href="catalog.html">Каталог</a></li>
+		            <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+		            <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+		            <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+		            <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
+		          </ul>
+		          <!-- (small size nav) -->
+		          <!-- btn -->
+		          <a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+		          <div class="modal-navigation modal_div" id="modalNav">
+		            <ul class="main-navigation__list_small hidden-lg hidden-md">
+		              <a class="modal-navigation__close modal_close">Закрыть</a>
+		              <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+		              <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+		              <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+		              <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+		              <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
+		            </ul>
+		          </div>
+		        </nav>
+		      </div>
+		      <!-- end main-navigation -->
 				</div>
-				<!--main-navigation-->
-	      <div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
-	        <nav class="main-navigation">
-	          <!-- (big size nav) -->
-	          <ul class="main-navigation__list hidden-sm hidden-xs">
-	            <li class="menu-hover main-navigation__item active"><a href="catalog.html">Каталог</a></li>
-	            <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-	            <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-	            <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-	            <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-	          </ul>
-	          <!-- (small size nav) -->
-	          <!-- btn -->
-	          <a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
-	          <div class="modal-navigation modal_div" id="modalNav">
-	            <ul class="main-navigation__list_small hidden-lg hidden-md">
-	              <a class="modal-navigation__close modal_close">Закрыть</a>
-	              <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-	              <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-	              <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-	              <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-	              <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-	            </ul>
-	          </div>
-	        </nav>
-	      </div>
-	      <!-- end main-navigation -->
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<!-- breadcrumbs -->
-	<section class="breadcrumbs small">
-		<div class="container">
-			<ul class="breadcrumbs__list clearfix">
-				<li class="breadcrumbs__item back hidden-lg hidden-md"><a href="./"></a></li>
-				<li class="breadcrumbs__item first"><a href="./">Главная</a></li>
-				<li class="breadcrumbs__item"><a href="catalog.html">Каталог</a></li>
-				<li class="breadcrumbs__item active"><a href="#">Almo Nature</a></li>
-			</ul>
-		</div>
-	</section>
+		<!-- breadcrumbs -->
+		<section class="breadcrumbs small">
+			<div class="container">
+				<ul class="breadcrumbs__list clearfix">
+					<li class="breadcrumbs__item back hidden-lg hidden-md"><a href="./"></a></li>
+					<li class="breadcrumbs__item first"><a href="./">Главная</a></li>
+					<li class="breadcrumbs__item"><a href="catalog.html">Каталог</a></li>
+					<li class="breadcrumbs__item active"><a href="#">Almo Nature</a></li>
+				</ul>
+			</div>
+		</section>
 
-	<main class="brand-content">
-		<div class="container">
-			<div class="row">
-				<div class="brand-info">
-					<div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-5 col-xs-offset-0">
-						<div class="brand-info__logo">
-							<img src="images/brands/brand-1_small.png" alt="almo nature">
+		<main class="brand-content">
+			<div class="container">
+				<div class="row">
+					<div class="brand-info">
+						<div class="col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-5 col-xs-offset-0">
+							<div class="brand-info__logo">
+								<img src="images/brands/brand-1_small.png" alt="almo nature">
+							</div>
 						</div>
+						<div class="col-lg-4 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-9 col-xs-offset-1">
+							<h2 class="brand-info__title">Almo Nature</h2>
+						</div>
+
+						<!-- download price-list -->
+						<div class="col-lg-6 col-lg-offset-1 hidden-md hidden-sm hidden-xs">
+							<div class="brand-info__price">
+								<form>
+									<label class="brand-info__price-label" for="regionSelect">Скачать прайс лист</label>
+									<select class="brand-info__region-select select_small" name="brand-info__region-select" id="regionSelect" placeholder="Выберите регион">
+												<option class="region-select-placeholder" value="">Выберите регион</option>
+												<option value="Санкт-Петербург">Санкт-Петербург</option>
+												<option value="Москва">Москва</option>
+												<option value="Саратов">Саратов</option>
+												<option value="Харьков">Харьков</option>
+											</select>
+								</form>
+							</div>
+						</div>
+						<!-- //download price-list -->
 					</div>
-					<div class="col-lg-4 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-9 col-xs-offset-1">
-						<h2 class="brand-info__title">Almo Nature</h2>
+				</div>
+
+				<div class="row">
+
+					<div class="col-lg-13 col-lg-offset-1 col-md-15 col-md-offset-0">
+						<p class="brand-info__about_top">
+							Компания Almo Nature была основана в Генуе в 2000 году. Almo Nature – первая компания, которая начала использовать полностью натуральные продукты для кошек и собак. Корм этой компании изготавливается с учетом потребностей домашних животных, с заботой
+							об их здоровье и долголетии. Компания стремимся к использованию ингредиентов, обладающих самой высокой биологической и питательной ценностью: свежевыловленная морская рыба, настоящее мясо животных свободного выгула (курица, говядина, телятина) –
+							без гормонов и антибиотиков. Продукция компании подвергается минимальной обработке и производится с учетом всех этических стандартов.
+							<br><br> На сегодняшний момент продукция Almo Nature поступает на рынки Германии, Швейцарии, Франции, Канады, Великобритании через дочерние компании и эксклюзивных импортеров в Восточной и Северной Европе.
+						</p>
+						<br>
+						<p class="brand-info__about_bottom">
+							Все корма Almo Nature, проходят строжайший контроль качества на всех этапах производства, не менее строгий, чем при производстве продуктов для людей. Контроль качества включает в себя серию микробиологических, химических и физических анализов.
+							<br><br> Almo Nature заботится обо всех живых существах. Благополучие животных – прерогатива компании, поэтому продукция не тестируется на животных.
+							<br><br> Перед запуском продукта на рынок, компания предоставляет продукцию тем семьям по всей Европе, которые дали свое согласие на дегустацию нового корма для своих кошек и собак. Хозяева сами в домашних условиях угощают своих четвероногих друзей
+							новинками, и те самостоятельно оценивают вкус, аромат и аппетитность.
+						</p>
 					</div>
 
-					<!-- download price-list -->
-					<div class="col-lg-6 col-lg-offset-1 hidden-md hidden-sm hidden-xs">
-						<div class="brand-info__price">
+				</div>
+
+				<div class="row">
+
+					<!-- hidden price -->
+					<div class="hidden-lg col-md-15">
+						<div class="brand-info__price brand-info__price_hidden">
 							<form>
 								<label class="brand-info__price-label" for="regionSelect">Скачать прайс лист</label>
 								<select class="brand-info__region-select select_small" name="brand-info__region-select" id="regionSelect" placeholder="Выберите регион">
-											<option class="region-select-placeholder" value="">Выберите регион</option>
-											<option value="Санкт-Петербург">Санкт-Петербург</option>
-											<option value="Москва">Москва</option>
-											<option value="Саратов">Саратов</option>
-											<option value="Харьков">Харьков</option>
-										</select>
+												<option class="region-select-placeholder" value="">Выберите регион</option>
+												<option value="Санкт-Петербург">Санкт-Петербург</option>
+												<option value="Москва">Москва</option>
+												<option value="Саратов">Саратов</option>
+												<option value="Харьков">Харьков</option>
+											</select>
 							</form>
 						</div>
 					</div>
-					<!-- //download price-list -->
-				</div>
-			</div>
-
-			<div class="row">
-
-				<div class="col-lg-13 col-lg-offset-1 col-md-15 col-md-offset-0">
-					<p class="brand-info__about_top">
-						Компания Almo Nature была основана в Генуе в 2000 году. Almo Nature – первая компания, которая начала использовать полностью натуральные продукты для кошек и собак. Корм этой компании изготавливается с учетом потребностей домашних животных, с заботой
-						об их здоровье и долголетии. Компания стремимся к использованию ингредиентов, обладающих самой высокой биологической и питательной ценностью: свежевыловленная морская рыба, настоящее мясо животных свободного выгула (курица, говядина, телятина) –
-						без гормонов и антибиотиков. Продукция компании подвергается минимальной обработке и производится с учетом всех этических стандартов.
-						<br><br> На сегодняшний момент продукция Almo Nature поступает на рынки Германии, Швейцарии, Франции, Канады, Великобритании через дочерние компании и эксклюзивных импортеров в Восточной и Северной Европе.
-					</p>
-					<br>
-					<p class="brand-info__about_bottom">
-						Все корма Almo Nature, проходят строжайший контроль качества на всех этапах производства, не менее строгий, чем при производстве продуктов для людей. Контроль качества включает в себя серию микробиологических, химических и физических анализов.
-						<br><br> Almo Nature заботится обо всех живых существах. Благополучие животных – прерогатива компании, поэтому продукция не тестируется на животных.
-						<br><br> Перед запуском продукта на рынок, компания предоставляет продукцию тем семьям по всей Европе, которые дали свое согласие на дегустацию нового корма для своих кошек и собак. Хозяева сами в домашних условиях угощают своих четвероногих друзей
-						новинками, и те самостоятельно оценивают вкус, аромат и аппетитность.
-					</p>
 				</div>
 
-			</div>
 
-			<div class="row">
+					<div class="brand-production">
+							<h2 class="brand-production__title">Продукция</h2>
 
-				<!-- hidden price -->
-				<div class="hidden-lg col-md-15">
-					<div class="brand-info__price brand-info__price_hidden">
-						<form>
-							<label class="brand-info__price-label" for="regionSelect">Скачать прайс лист</label>
-							<select class="brand-info__region-select select_small" name="brand-info__region-select" id="regionSelect" placeholder="Выберите регион">
-											<option class="region-select-placeholder" value="">Выберите регион</option>
-											<option value="Санкт-Петербург">Санкт-Петербург</option>
-											<option value="Москва">Москва</option>
-											<option value="Саратов">Саратов</option>
-											<option value="Харьков">Харьков</option>
-										</select>
-						</form>
+							<div class="brand-production__list clearfix">
+
+								<!-- item-1 -->
+								<a href="#modalBrand1" class="brand-production__item open_modal_dark">
+									<img src="images/products/almo-nature/green-label.png" alt="Green Label">
+									<p class="brand-production__label">Green Label</p>
+								</a>
+
+								<!-- item-2 -->
+									<a href="#modalBrand1" class="brand-production__item open_modal_dark">
+										<img src="images/products/almo-nature/orange-label.png" alt="Orange Label">
+										<p class="brand-production__label">Orange Label</p>
+									</a>
+
+								<!-- item-3 -->
+									<a href="#modalBrand1" class="brand-production__item open_modal_dark">
+										<img src="images/products/almo-nature/classic.png" alt="Orange Label">
+										<p class="brand-production__label">Classic</p>
+									</a>
+
+								<!-- item-4 -->
+								<a href="#" class="brand-production__item">
+									<img src="images/products/almo-nature/azul-label.png" alt="Azul Label">
+									<p class="brand-production__label">Azul Label</p>
+								</a>
+
+								<!-- item-5 -->
+								<a href="#" class="brand-production__item">
+									<img src="images/products/almo-nature/daily-menu.png" alt="Daily Menu">
+									<p class="brand-production__label">Daily Menu</p>
+								</a>
+
+								<!-- item-6 -->
+								<a href="#" class="brand-production__item">
+									<img src="images/products/almo-nature/legend.png" alt="Legend">
+									<p class="brand-production__label">Legend</p>
+								</a>
+
+								<!-- item-7 -->
+								<a href="#" class="brand-production__item">
+									<img src="images/products/almo-nature/functional-line.png" alt="Functional Line">
+									<p class="brand-production__label">Functional Line</p>
+								</a>
+
+								<!-- item-8 -->
+								<a href="#" class="brand-production__item">
+									<img src="images/products/almo-nature/alternative.png" alt="Alternative">
+									<p class="brand-production__label">Alternative</p>
+								</a>
+
+								<!-- item-9 -->
+								<a href="#" class="brand-production__item">
+									<img src="images/products/almo-nature/single-protein.png" alt="Single Protein">
+									<p class="brand-production__label">Single Protein</p>
+								</a>
+
+								<!-- item-10 -->
+								<a href="#" class="brand-production__item">
+									<img src="images/products/almo-nature/holistic.png" alt="Holistic">
+									<p class="brand-production__label">Holistic</p>
+								</a>
+
+							</div>
 					</div>
-				</div>
+
 			</div>
+		</main>
 
+		<!-- modal window -->
 
-				<div class="brand-production">
-						<h2 class="brand-production__title">Продукция</h2>
-
-						<div class="brand-production__list clearfix">
-
-							<!-- item-1 -->
-							<a href="#modalBrand1" class="brand-production__item open_modal_dark">
-								<img src="images/products/almo-nature/green-label.png" alt="Green Label">
-								<p class="brand-production__label">Green Label</p>
-							</a>
-
-							<!-- item-2 -->
-								<a href="#modalBrand1" class="brand-production__item open_modal_dark">
-									<img src="images/products/almo-nature/orange-label.png" alt="Orange Label">
-									<p class="brand-production__label">Orange Label</p>
-								</a>
-
-							<!-- item-3 -->
-								<a href="#modalBrand1" class="brand-production__item open_modal_dark">
-									<img src="images/products/almo-nature/classic.png" alt="Orange Label">
-									<p class="brand-production__label">Classic</p>
-								</a>
-
-							<!-- item-4 -->
-							<a href="#" class="brand-production__item">
-								<img src="images/products/almo-nature/azul-label.png" alt="Azul Label">
-								<p class="brand-production__label">Azul Label</p>
-							</a>
-
-							<!-- item-5 -->
-							<a href="#" class="brand-production__item">
-								<img src="images/products/almo-nature/daily-menu.png" alt="Daily Menu">
-								<p class="brand-production__label">Daily Menu</p>
-							</a>
-
-							<!-- item-6 -->
-							<a href="#" class="brand-production__item">
-								<img src="images/products/almo-nature/legend.png" alt="Legend">
-								<p class="brand-production__label">Legend</p>
-							</a>
-
-							<!-- item-7 -->
-							<a href="#" class="brand-production__item">
-								<img src="images/products/almo-nature/functional-line.png" alt="Functional Line">
-								<p class="brand-production__label">Functional Line</p>
-							</a>
-
-							<!-- item-8 -->
-							<a href="#" class="brand-production__item">
-								<img src="images/products/almo-nature/alternative.png" alt="Alternative">
-								<p class="brand-production__label">Alternative</p>
-							</a>
-
-							<!-- item-9 -->
-							<a href="#" class="brand-production__item">
-								<img src="images/products/almo-nature/single-protein.png" alt="Single Protein">
-								<p class="brand-production__label">Single Protein</p>
-							</a>
-
-							<!-- item-10 -->
-							<a href="#" class="brand-production__item">
-								<img src="images/products/almo-nature/holistic.png" alt="Holistic">
-								<p class="brand-production__label">Holistic</p>
-							</a>
-
+		<div class="modal-brand modal_div" id="modalBrand1">
+			<div class="container-offset">
+				<a class="modal-change-city__close modal_close hidden-sm hidden-xs"></a>
+				<a class="modal-navigation__close modal_close hidden-lg hidden-md">Закрыть</a>
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-15">
+						<p class="modal-brand__title hidden-lg hidden-md hidden-sm">Линейка Classic</p>
+						<p class="modal-brand__subtitle hidden-lg hidden-md hidden-sm">Консервы ждя собак и кошек</p>
+						<div class="modal-brand__left">
+							<img src="images/products/almo-nature/classic.png" alt="#">
 						</div>
-				</div>
-
-		</div>
-	</main>
-
-	<!-- modal window -->
-
-	<div class="modal-brand modal_div" id="modalBrand1">
-		<div class="container-offset">
-			<a class="modal-change-city__close modal_close hidden-sm hidden-xs"></a>
-			<a class="modal-navigation__close modal_close hidden-lg hidden-md">Закрыть</a>
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-15">
-					<p class="modal-brand__title hidden-lg hidden-md hidden-sm">Линейка Classic</p>
-					<p class="modal-brand__subtitle hidden-lg hidden-md hidden-sm">Консервы ждя собак и кошек</p>
-					<div class="modal-brand__left">
-						<img src="images/products/almo-nature/classic.png" alt="#">
+					</div>
+					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-15">
+						<div class="mobile-brand__right tal">
+							<p class="modal-brand__title hidden-xs">Линейка Classic</p>
+							<p class="modal-brand__subtitle hidden-xs">Консервы ждя собак и кошек</p>
+							<p class="modal-brand__text">
+								Консервы Almo Nature Classic содержат 75-55% (для кошек) и 50%(для собак) высококачественного мяса или рыбы, приготовленных в собственном бульоне- именно такой простой и естественный состав привлекает домашних любимцев.
+							</p>
+							<ul class="modal-brand__list">
+								<li>Натуральные продукты, подходящие даже для потребления человеком:</li>
+								<li>Свежевыловленная морская рыба</li>
+								<li>Настоящее мясо животных свободного выгула (курица, говядина, телятина) – без гормонов и антибиотиков</li>
+								<li>Механическая обработка продуктов, с большой осторожностью, без применения химикатов во избежание потери питательных веществ</li>
+								<li>Консервирование продукта происходит в его собственном бульоне – с целью сохранения питательных веществ и первоначального вкуса</li>
+								<li>Без добавок, будь то химические или какие-либо другие ингредиенты, тем не менее – излюбленный всеми кошками продукт, за свою простоту и подлинность.</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-15">
-					<div class="mobile-brand__right tal">
-						<p class="modal-brand__title hidden-xs">Линейка Classic</p>
-						<p class="modal-brand__subtitle hidden-xs">Консервы ждя собак и кошек</p>
-						<p class="modal-brand__text">
-							Консервы Almo Nature Classic содержат 75-55% (для кошек) и 50%(для собак) высококачественного мяса или рыбы, приготовленных в собственном бульоне- именно такой простой и естественный состав привлекает домашних любимцев.
-						</p>
-						<ul class="modal-brand__list">
-							<li>Натуральные продукты, подходящие даже для потребления человеком:</li>
-							<li>Свежевыловленная морская рыба</li>
-							<li>Настоящее мясо животных свободного выгула (курица, говядина, телятина) – без гормонов и антибиотиков</li>
-							<li>Механическая обработка продуктов, с большой осторожностью, без применения химикатов во избежание потери питательных веществ</li>
-							<li>Консервирование продукта происходит в его собственном бульоне – с целью сохранения питательных веществ и первоначального вкуса</li>
-							<li>Без добавок, будь то химические или какие-либо другие ингредиенты, тем не менее – излюбленный всеми кошками продукт, за свою простоту и подлинность.</li>
-						</ul>
-					</div>
+				<div class="row">
+					<button class="modal-brand__btn btn btn_grey btn_back modal_close">Назад</button>
 				</div>
-			</div>
-			<div class="row">
-				<button class="modal-brand__btn btn btn_grey btn_back modal_close">Назад</button>
-			</div>
 
+			</div>
 		</div>
+
+		<!-- // modal window -->
+
+		<!--stores-->
+		@@include('global/stores.html')
+
+		<!--footer-->
+		@@include('global/footer.html')
+
+		<!-- scripts (скрипты проекта) -->
+		@@include('global/scripts.html')
 	</div>
-
-	<!-- // modal window -->
-
-	<!--stores-->
-	@@include('global/stores.html')
-
-	<!--footer-->
-	@@include('global/footer.html')
-
-	<!-- scripts (скрипты проекта) -->
-	@@include('global/scripts.html')
-
 </body>
-
 </html>

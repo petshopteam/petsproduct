@@ -35,155 +35,154 @@
 			<![endif]-->
 	</head>
 
-<body class="request-page">
+<body>
+	<div class="request-page">
+		<!-- main topline -->
+		@@include('global/topline.html')
 
-	<!-- main topline -->
-	@@include('global/topline.html')
-
-	<!-- header -->
-	<header class="main-head">
-		<div class="container">
-			<div class="row tar">
-				<!--main-logo-->
-				<div class="col-lg-3">
-					<a class="main-head__logo" href="./"></a>
-				</div>
-				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
-					<nav class="main-navigation">
-						<!-- (big size nav) -->
-						<ul class="main-navigation__list hidden-sm hidden-xs">
-							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-							<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-							<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-							<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-							<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-						</ul>
-						<!-- (small size nav) -->
-						<!-- btn -->
-						<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
-						<div class="modal-navigation modal_div" id="modalNav">
-							<ul class="main-navigation__list_small hidden-lg hidden-md">
-								<a class="modal-navigation__close modal_close">Закрыть</a>
+		<!-- header -->
+		<header class="main-head">
+			<div class="container">
+				<div class="row tar">
+					<!--main-logo-->
+					<div class="col-lg-3">
+						<a class="main-head__logo" href="./"></a>
+					</div>
+					<!--main-navigation-->
+					<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
+						<nav class="main-navigation">
+							<!-- (big size nav) -->
+							<ul class="main-navigation__list hidden-sm hidden-xs">
 								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
 								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
 								<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
 								<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
 								<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-
 							</ul>
-						</div>
-					</nav>
-				</div>
-				<!-- end main-navigation -->
-			</div>
-		</div>
-	</header>
+							<!-- (small size nav) -->
+							<!-- btn -->
+							<a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+							<div class="modal-navigation modal_div" id="modalNav">
+								<ul class="main-navigation__list_small hidden-lg hidden-md">
+									<a class="modal-navigation__close modal_close">Закрыть</a>
+									<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+									<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+									<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+									<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+									<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
 
-	<!-- breadcrumbs -->
-	<section class="breadcrumbs">
-		<div class="container">
-			<ul class="breadcrumbs__list">
-				<li class="breadcrumbs__item"><a href="./">Главная</a></li>
-				<li class="breadcrumbs__item active"><a href="catalog.html">Оставить заявку</a></li>
-			</ul>
-		</div>
-	</section>
-
-	<section class="request">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-15">
-					<h2 class="request__title">Оформление заявки на сотрудничество</h2>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<!-- end main-navigation -->
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-15">
-					<div class="request__subtitle">
-						<p class="request__subtitle_top">Общая информация</p>
-						<p class="request__subtitle_bottom">Эти поля обязательны к заполнению</p>
-					</div>
-				</div>
+		</header>
+
+		<!-- breadcrumbs -->
+		<section class="breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item"><a href="./">Главная</a></li>
+					<li class="breadcrumbs__item active"><a href="catalog.html">Оставить заявку</a></li>
+				</ul>
 			</div>
+		</section>
 
-			<!-- request main form -->
-			<form action="#" class="request__form">
-
-				<!-- form-block -->
-				<div class="request__form-block clearfix">
-
-				<!-- row-1 -->
-				<div class="row">
-					<div class="col-lg-7 col-md-7 col-sm-15">
-						<label for="" class="form-label">Название организации</label>
-						<input type="text" class="form-input" placeholder="Краткое наименование организации">
-					</div>
-					<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
-						<label for="" class="form-label">Имя контактного лица</label>
-						<input type="text" class="form-input" placeholder="Фамилия Имя Отчество">
-					</div>
-				</div>
-
-				<!-- row-2 -->
-				<div class="row">
-					<div class="col-lg-7 col-md-7 col-sm-15">
-						<label for="" class="form-label">Вид деятельности</label>
-						<select type="text" class="request__select" placeholder="Зоомагазин">
-							<option value="#">Питомник</option>
-						</select>
-					</div>
-					<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
-						<label for="" class="form-label">Номер телефона</label>
-						<input type="text" class="form-input" placeholder="+7(___) ___-__-__">
-					</div>
-				</div>
-
-				<!-- row-3 -->
-				<div class="row">
-					<div class="col-lg-7 col-md-7 col-sm-15">
-						<label for="" class="form-label">Местоположение</label>
-						<input type="text" class="form-input" placeholder="Город / населенный пункт / регион">
-					</div>
-					<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
-						<label for="" class="form-label">Тема письма</label>
-						<select type="text" class="request__select" placeholder="Зоомагазин">
-							<option value="zoomag">Заявка на сотрудничество</option>
-						</select>
-					</div>
-				</div>
-
-				<!-- row-4 -->
+		<section class="request">
+			<div class="container">
 				<div class="row">
 					<div class="col-lg-15">
-						<label for="" class="form-label">Сопроводительное письмо</label>
-						<textarea class="form-textarea request__input_big" placeholder="Текст письма"></textarea>
+						<h2 class="request__title">Оформление заявки на сотрудничество</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-15">
+						<div class="request__subtitle">
+							<p class="request__subtitle_top">Общая информация</p>
+							<p class="request__subtitle_bottom">Эти поля обязательны к заполнению</p>
+						</div>
 					</div>
 				</div>
 
-				</div>
+				<!-- request main form -->
+				<form action="#" class="request__form">
+
+					<!-- form-block -->
+					<div class="request__form-block clearfix">
+
+					<!-- row-1 -->
+					<div class="row">
+						<div class="col-lg-7 col-md-7 col-sm-15">
+							<label for="" class="form-label">Название организации</label>
+							<input type="text" class="form-input" placeholder="Краткое наименование организации">
+						</div>
+						<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
+							<label for="" class="form-label">Имя контактного лица</label>
+							<input type="text" class="form-input" placeholder="Фамилия Имя Отчество">
+						</div>
+					</div>
+
+					<!-- row-2 -->
+					<div class="row">
+						<div class="col-lg-7 col-md-7 col-sm-15">
+							<label for="" class="form-label">Вид деятельности</label>
+							<select type="text" class="request__select" placeholder="Зоомагазин">
+								<option value="#">Питомник</option>
+							</select>
+						</div>
+						<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
+							<label for="" class="form-label">Номер телефона</label>
+							<input type="text" class="form-input" placeholder="+7(___) ___-__-__">
+						</div>
+					</div>
+
+					<!-- row-3 -->
+					<div class="row">
+						<div class="col-lg-7 col-md-7 col-sm-15">
+							<label for="" class="form-label">Местоположение</label>
+							<input type="text" class="form-input" placeholder="Город / населенный пункт / регион">
+						</div>
+						<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-15">
+							<label for="" class="form-label">Тема письма</label>
+							<select type="text" class="request__select" placeholder="Зоомагазин">
+								<option value="zoomag">Заявка на сотрудничество</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- row-4 -->
+					<div class="row">
+						<div class="col-lg-15">
+							<label for="" class="form-label">Сопроводительное письмо</label>
+							<textarea class="form-textarea request__input_big" placeholder="Текст письма"></textarea>
+						</div>
+					</div>
+
+					</div>
 
 
-				<!-- submit block -->
-				<div class="request__submit-block clearfix">
-					<input id="requestCheck" type="checkbox" checked class="request__check">
-					<label for="requestCheck" class="request__check-label">Я согласен с условиями передачи информации</label>
+					<!-- submit block -->
+					<div class="request__submit-block clearfix">
+						<input id="requestCheck" type="checkbox" checked class="request__check">
+						<label for="requestCheck" class="request__check-label">Я согласен с условиями передачи информации</label>
 
-					<button class="request__submit btn btn_orange">Отправить</button>
-					<button class="request__clear btn btn_grey">Очистить</button>
-				</div>
-			</form>
+						<button class="request__submit btn btn_orange">Отправить</button>
+						<button class="request__clear btn btn_grey">Очистить</button>
+					</div>
+				</form>
 
-		</div>
-	</section>
+			</div>
+		</section>
 
 
 
-	 <!--footer-->
-	 @@include('global/footer.html')
+		 <!--footer-->
+		 @@include('global/footer.html')
 
-	<!-- scripts (скрипты проекта) -->
-	@@include('global/scripts.html')
-
+		<!-- scripts (скрипты проекта) -->
+		@@include('global/scripts.html')
+	</div>
 </body>
-
 </html>

@@ -35,331 +35,328 @@
   <![endif]-->
 </head>
 
-<body class="actions-page">
+<body>
+  <div class="actions-page">
+    <!-- main topline -->
+    @@include('global/topline.html')
 
-<!-- main topline -->
-@@include('global/topline.html')
-
-<!-- header -->
-<header class="main-head">
-  <div class="container">
-    <div class="row tar">
-      <!--main-logo-->
-      <div class="col-lg-3">
-        <a class="main-head__logo" href="./"></a>
-      </div>
-      <!--main-navigation-->
-      <div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
-        <nav class="main-navigation">
-          <!-- (big size nav) -->
-          <ul class="main-navigation__list hidden-sm hidden-xs">
-            <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-            <li class="menu-hover main-navigation__item active"><a href="actions.html">Акции</a></li>
-            <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-            <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-            <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-          </ul>
-          <!-- (small size nav) -->
-          <!-- btn -->
-          <a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
-          <div class="modal-navigation modal_div" id="modalNav">
-            <ul class="main-navigation__list_small hidden-lg hidden-md">
-              <a class="modal-navigation__close modal_close">Закрыть</a>
-              <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-              <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-              <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-              <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-              <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-
-            </ul>
+    <!-- header -->
+    <header class="main-head">
+      <div class="container">
+        <div class="row tar">
+          <!--main-logo-->
+          <div class="col-lg-3">
+            <a class="main-head__logo" href="./"></a>
           </div>
-        </nav>
-      </div>
-      <!-- end main-navigation -->
-    </div>
-  </div>
-</header>
+          <!--main-navigation-->
+          <div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
+            <nav class="main-navigation">
+              <!-- (big size nav) -->
+              <ul class="main-navigation__list hidden-sm hidden-xs">
+                <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+                <li class="menu-hover main-navigation__item active"><a href="actions.html">Акции</a></li>
+                <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+                <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+                <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
+              </ul>
+              <!-- (small size nav) -->
+              <!-- btn -->
+              <a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+              <div class="modal-navigation modal_div" id="modalNav">
+                <ul class="main-navigation__list_small hidden-lg hidden-md">
+                  <a class="modal-navigation__close modal_close">Закрыть</a>
+                  <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+                  <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+                  <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+                  <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+                  <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
 
-<!-- breadcrumbs -->
-<section class="breadcrumbs">
-  <div class="container">
-    <ul class="breadcrumbs__list">
-      <li class="breadcrumbs__item"><a href="./">Главная</a></li>
-      <li class="breadcrumbs__item active"><a href="actions.html">Акции</a></li>
-    </ul>
-  </div>
-</section>
-
-<main class="actions-content">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-4 col-sm-15">
-        <aside class="aside-filters news-filters">
-          <!-- time filter form -->
-          <form class="time-filter clearfix">
-            <p class="time-filter__title">Время</p>
-            <select class="time-filter__select">
-              <option value="allPeriod">2017 год</option>
-            </select>
-          </form>
-          <!-- region filter form -->
-          <form class="region-filter clearfix">
-            <p class="region-filter__title">Регион</p>
-            <select class="region-filter__select">
-              <option value="allPeriod">Санкт-Петербург</option>
-            </select>
-          </form>
-          <!-- subscription form -->
-          <form class="actions-newsletter hidden-sm hidden-xs">
-            <p class="actions-newsletter__title">Рассылка</p>
-            <p class="actions-newsletter__text">
-              Подпишитесь на рассылку
-              и получайте новости обо всех акциях первыми!
-            </p>
-            <input type="text" class="actions-newsletter__input" placeholder="Оставьте свой e-mail">
-            <button type="submit" class="actions-newsletter__submit btn btn_orange">Подписаться</button>
-          </form>
-        </aside>
-      </div>
-
-
-      <div class="col-lg-12 col-md-11 col-sm-15">
-
-        <section class="actions-list clearfix">
-
-          <!--  item-1  -->
-          <div class="actions-item clearfix">
-            <img class="actions-item__image" src="images/actions/action-1.jpg">
-            <div class="actions-item__text">
-              <p class="actions-item__title">-10% на наполнитель для лотка <br> Smart Cat</p>
-              <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
-										12.03.2017 - 30.03.2017
-									</span></p>
-              <p class="actions-item__article">Артикулы, участвующие в акции:
-                <span class="actions-item__article-number">28456, 27457, 23458</span>
-              </p>
-              <p class="actions-item__info">
-                Доступно в Санкт-Петербурге.
-                Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
-                в акции
-              </p>
-            </div>
-          </div>
-
-          <!--  item-2  -->
-          <div class="actions-item clearfix">
-            <img class="actions-item__image" src="images/actions/action-2.jpg">
-            <div class="actions-item__text">
-              <p class="actions-item__title">Скидка 3% на пеленки Napkins</p>
-              <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
-										12.03.2017 - 30.03.2017
-									</span></p>
-              <p class="actions-item__article">Артикулы, участвующие в акции:
-                <span class="actions-item__article-number">28456, 27457, 23458</span>
-              </p>
-              <p class="actions-item__info">
-                Доступно в Санкт-Петербурге.
-                Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
-                в акции
-              </p>
-            </div>
-          </div>
-
-          <!--  item-3  -->
-          <div class="actions-item clearfix">
-            <img class="actions-item__image" src="images/actions/action-3.jpg">
-            <div class="actions-item__text">
-              <p class="actions-item__title">-5% на сухие корма Nero Gold <br> для питомников</p>
-              <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
-										12.03.2017 - 30.03.2017
-									</span></p>
-              <p class="actions-item__article">Артикулы, участвующие в акции:
-                <span class="actions-item__article-number">28456, 27457, 23458</span>
-              </p>
-              <p class="actions-item__info">
-                Доступно в Санкт-Петербурге.
-                Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
-                в акции
-              </p>
-            </div>
-          </div>
-
-          <!--  item-4  -->
-          <div class="actions-item clearfix">
-            <img class="actions-item__image" src="images/actions/action-4.jpg">
-            <div class="actions-item__text">
-              <p class="actions-item__title">-5% на всю линейку <br class="hidden-lg hidden-md hidden-sm"> кормов Summit</p>
-              <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
-										12.03.2017 - 30.03.2017
-									</span></p>
-              <p class="actions-item__article">Артикулы, участвующие в акции:
-                <span class="actions-item__article-number">28456, 27457, 23458</span>
-              </p>
-              <p class="actions-item__info">
-                Доступно в Санкт-Петербурге.
-                Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
-                в акции
-              </p>
-            </div>
-          </div>
-
-          <!--  item-5  -->
-          <div class="actions-item clearfix">
-            <img class="actions-item__image" src="images/actions/action-5.jpg">
-            <div class="actions-item__text">
-              <p class="actions-item__title">СКИДКИ! -5% на сухие корма Applaws, -5% Frunk’s Pro Gold, -5% на сухие
-                корма Nero Gold</p>
-              <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
-										12.03.2017 - 30.03.2017
-									</span></p>
-              <p class="actions-item__article">Артикулы, участвующие в акции:
-                <span class="actions-item__article-number">28456, 27457, 23458</span>
-              </p>
-              <p class="actions-item__info">
-                Доступно в Санкт-Петербурге.
-                Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
-                в акции
-              </p>
-            </div>
-          </div>
-
-          <!--  item-6  -->
-          <div class="actions-item clearfix">
-            <img class="actions-item__image" src="images/actions/action-6.jpg">
-            <div class="actions-item__text">
-              <p class="actions-item__title">-3% на всю линейку кормов NOW</p>
-              <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
-										12.03.2017 - 30.03.2017
-									</span></p>
-              <p class="actions-item__article">Артикулы, участвующие в акции:
-                <span class="actions-item__article-number">28456, 27457, 23458</span>
-              </p>
-              <p class="actions-item__info">
-                Доступно в Санкт-Петербурге.
-                Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
-                в акции
-              </p>
-            </div>
-          </div>
-
-          <!--  item-7  -->
-          <div class="actions-item clearfix">
-            <img class="actions-item__image" src="images/actions/action-7.jpg">
-            <div class="actions-item__text">
-              <p class="actions-item__title">- 10% на наполнитель для лотка <br> Smart Cat</p>
-              <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
-										12.03.2017 - 30.03.2017
-									</span></p>
-              <p class="actions-item__article">Артикулы, участвующие в акции:
-                <span class="actions-item__article-number">28456, 27457, 23458</span>
-              </p>
-              <p class="actions-item__info">
-                Доступно в Санкт-Петербурге.
-                Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
-                в акции
-              </p>
-            </div>
-          </div>
-
-          <!--  item-8  -->
-          <div class="actions-item clearfix">
-            <img class="actions-item__image" src="images/actions/action-8.jpg">
-            <div class="actions-item__text">
-              <p class="actions-item__title">Скидка 3% на пеленки Napkins</p>
-              <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
-										12.03.2017 - 30.03.2017
-									</span></p>
-              <p class="actions-item__article">Артикулы, участвующие в акции:
-                <span class="actions-item__article-number">28456, 27457, 23458</span>
-              </p>
-              <p class="actions-item__info">
-                Доступно в Санкт-Петербурге.
-                Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
-                в акции
-              </p>
-            </div>
-          </div>
-
-          <!--  item-9  -->
-          <div class="actions-item clearfix">
-            <img class="actions-item__image" src="images/actions/action-9.jpg">
-            <div class="actions-item__text">
-              <p class="actions-item__title">-5% на сухие корма Nero Gold <br> для питомников</p>
-              <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
-										12.03.2017 - 30.03.2017
-									</span></p>
-              <p class="actions-item__article">Артикулы, участвующие в акции:
-                <span class="actions-item__article-number">28456, 27457, 23458</span>
-              </p>
-              <p class="actions-item__info">
-                Доступно в Санкт-Петербурге.
-                Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
-                в акции
-              </p>
-            </div>
-          </div>
-
-          <!--  item-10  -->
-          <div class="actions-item clearfix">
-            <img class="actions-item__image" src="images/actions/action-10.jpg">
-            <div class="actions-item__text">
-              <p class="actions-item__title">-5% на всю линейку <br class="hidden-lg hidden-md hidden-sm"> кормов Summit</p>
-              <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
-										12.03.2017 - 30.03.2017
-									</span></p>
-              <p class="actions-item__article">Артикулы, участвующие в акции:
-                <span class="actions-item__article-number">28456, 27457, 23458</span>
-              </p>
-              <p class="actions-item__info">
-                Доступно в Санкт-Петербурге.
-                Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
-                в акции
-              </p>
-            </div>
-          </div>
-
-
-          <section class="pagination clearfix">
-            <div class="container-offset">
-              <div class="pagination__left">
-                <span>Показать по:</span>
-                <ul class="pagination__left-list">
-                  <li class="pagination__left-item active"><a href="#">10</a></li>
-                  <li class="pagination__left-item"><a href="#">20</a></li>
-                  <li class="pagination__left-item"><a href="#">ВСЕ</a></li>
                 </ul>
               </div>
-              <div class="pagination__right clearfix">
-                <ul class="pagination__right-list">
-                  <!-- hidden class (optional) for hide left arrow -->
-                  <li class="pagination__right-item pagination__left-arrow hidden"><a href="#">
-                  </a></li>
-                  <li class="pagination__right-item active"><a href="">1</a></li>
-                  <li class="pagination__right-item"><a href="#">2</a></li>
-                  <li class="pagination__right-item"><a href="#">3</a></li>
-                  <li class="pagination__right-item"><a href="...">...</a></li>
-                  <li class="pagination__right-item"><a href="#">7</a></li>
-                  <li class="pagination__right-item pagination__right-arrow"><a href="#">
-                  </a></li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-
-        </section>
+            </nav>
+          </div>
+          <!-- end main-navigation -->
+        </div>
       </div>
-    </div>
+    </header>
+
+    <!-- breadcrumbs -->
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="./">Главная</a></li>
+          <li class="breadcrumbs__item active"><a href="actions.html">Акции</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <main class="actions-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-15">
+            <aside class="aside-filters news-filters">
+              <!-- time filter form -->
+              <form class="time-filter clearfix">
+                <p class="time-filter__title">Время</p>
+                <select class="time-filter__select">
+                  <option value="allPeriod">2017 год</option>
+                </select>
+              </form>
+              <!-- region filter form -->
+              <form class="region-filter clearfix">
+                <p class="region-filter__title">Регион</p>
+                <select class="region-filter__select">
+                  <option value="allPeriod">Санкт-Петербург</option>
+                </select>
+              </form>
+              <!-- subscription form -->
+              <form class="actions-newsletter hidden-sm hidden-xs">
+                <p class="actions-newsletter__title">Рассылка</p>
+                <p class="actions-newsletter__text">
+                  Подпишитесь на рассылку
+                  и получайте новости обо всех акциях первыми!
+                </p>
+                <input type="text" class="actions-newsletter__input" placeholder="Оставьте свой e-mail">
+                <button type="submit" class="actions-newsletter__submit btn btn_orange">Подписаться</button>
+              </form>
+            </aside>
+          </div>
+
+
+          <div class="col-lg-12 col-md-11 col-sm-15">
+
+            <section class="actions-list clearfix">
+
+              <!--  item-1  -->
+              <div class="actions-item clearfix">
+                <img class="actions-item__image" src="images/actions/action-1.jpg">
+                <div class="actions-item__text">
+                  <p class="actions-item__title">-10% на наполнитель для лотка <br> Smart Cat</p>
+                  <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
+    										12.03.2017 - 30.03.2017
+    									</span></p>
+                  <p class="actions-item__article">Артикулы, участвующие в акции:
+                    <span class="actions-item__article-number">28456, 27457, 23458</span>
+                  </p>
+                  <p class="actions-item__info">
+                    Доступно в Санкт-Петербурге.
+                    Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
+                    в акции
+                  </p>
+                </div>
+              </div>
+
+              <!--  item-2  -->
+              <div class="actions-item clearfix">
+                <img class="actions-item__image" src="images/actions/action-2.jpg">
+                <div class="actions-item__text">
+                  <p class="actions-item__title">Скидка 3% на пеленки Napkins</p>
+                  <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
+    										12.03.2017 - 30.03.2017
+    									</span></p>
+                  <p class="actions-item__article">Артикулы, участвующие в акции:
+                    <span class="actions-item__article-number">28456, 27457, 23458</span>
+                  </p>
+                  <p class="actions-item__info">
+                    Доступно в Санкт-Петербурге.
+                    Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
+                    в акции
+                  </p>
+                </div>
+              </div>
+
+              <!--  item-3  -->
+              <div class="actions-item clearfix">
+                <img class="actions-item__image" src="images/actions/action-3.jpg">
+                <div class="actions-item__text">
+                  <p class="actions-item__title">-5% на сухие корма Nero Gold <br> для питомников</p>
+                  <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
+    										12.03.2017 - 30.03.2017
+    									</span></p>
+                  <p class="actions-item__article">Артикулы, участвующие в акции:
+                    <span class="actions-item__article-number">28456, 27457, 23458</span>
+                  </p>
+                  <p class="actions-item__info">
+                    Доступно в Санкт-Петербурге.
+                    Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
+                    в акции
+                  </p>
+                </div>
+              </div>
+
+              <!--  item-4  -->
+              <div class="actions-item clearfix">
+                <img class="actions-item__image" src="images/actions/action-4.jpg">
+                <div class="actions-item__text">
+                  <p class="actions-item__title">-5% на всю линейку <br class="hidden-lg hidden-md hidden-sm"> кормов Summit</p>
+                  <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
+    										12.03.2017 - 30.03.2017
+    									</span></p>
+                  <p class="actions-item__article">Артикулы, участвующие в акции:
+                    <span class="actions-item__article-number">28456, 27457, 23458</span>
+                  </p>
+                  <p class="actions-item__info">
+                    Доступно в Санкт-Петербурге.
+                    Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
+                    в акции
+                  </p>
+                </div>
+              </div>
+
+              <!--  item-5  -->
+              <div class="actions-item clearfix">
+                <img class="actions-item__image" src="images/actions/action-5.jpg">
+                <div class="actions-item__text">
+                  <p class="actions-item__title">СКИДКИ! -5% на сухие корма Applaws, -5% Frunk’s Pro Gold, -5% на сухие
+                    корма Nero Gold</p>
+                  <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
+    										12.03.2017 - 30.03.2017
+    									</span></p>
+                  <p class="actions-item__article">Артикулы, участвующие в акции:
+                    <span class="actions-item__article-number">28456, 27457, 23458</span>
+                  </p>
+                  <p class="actions-item__info">
+                    Доступно в Санкт-Петербурге.
+                    Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
+                    в акции
+                  </p>
+                </div>
+              </div>
+
+              <!--  item-6  -->
+              <div class="actions-item clearfix">
+                <img class="actions-item__image" src="images/actions/action-6.jpg">
+                <div class="actions-item__text">
+                  <p class="actions-item__title">-3% на всю линейку кормов NOW</p>
+                  <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
+    										12.03.2017 - 30.03.2017
+    									</span></p>
+                  <p class="actions-item__article">Артикулы, участвующие в акции:
+                    <span class="actions-item__article-number">28456, 27457, 23458</span>
+                  </p>
+                  <p class="actions-item__info">
+                    Доступно в Санкт-Петербурге.
+                    Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
+                    в акции
+                  </p>
+                </div>
+              </div>
+
+              <!--  item-7  -->
+              <div class="actions-item clearfix">
+                <img class="actions-item__image" src="images/actions/action-7.jpg">
+                <div class="actions-item__text">
+                  <p class="actions-item__title">- 10% на наполнитель для лотка <br> Smart Cat</p>
+                  <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
+    										12.03.2017 - 30.03.2017
+    									</span></p>
+                  <p class="actions-item__article">Артикулы, участвующие в акции:
+                    <span class="actions-item__article-number">28456, 27457, 23458</span>
+                  </p>
+                  <p class="actions-item__info">
+                    Доступно в Санкт-Петербурге.
+                    Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
+                    в акции
+                  </p>
+                </div>
+              </div>
+
+              <!--  item-8  -->
+              <div class="actions-item clearfix">
+                <img class="actions-item__image" src="images/actions/action-8.jpg">
+                <div class="actions-item__text">
+                  <p class="actions-item__title">Скидка 3% на пеленки Napkins</p>
+                  <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
+    										12.03.2017 - 30.03.2017
+    									</span></p>
+                  <p class="actions-item__article">Артикулы, участвующие в акции:
+                    <span class="actions-item__article-number">28456, 27457, 23458</span>
+                  </p>
+                  <p class="actions-item__info">
+                    Доступно в Санкт-Петербурге.
+                    Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
+                    в акции
+                  </p>
+                </div>
+              </div>
+
+              <!--  item-9  -->
+              <div class="actions-item clearfix">
+                <img class="actions-item__image" src="images/actions/action-9.jpg">
+                <div class="actions-item__text">
+                  <p class="actions-item__title">-5% на сухие корма Nero Gold <br> для питомников</p>
+                  <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
+    										12.03.2017 - 30.03.2017
+    									</span></p>
+                  <p class="actions-item__article">Артикулы, участвующие в акции:
+                    <span class="actions-item__article-number">28456, 27457, 23458</span>
+                  </p>
+                  <p class="actions-item__info">
+                    Доступно в Санкт-Петербурге.
+                    Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
+                    в акции
+                  </p>
+                </div>
+              </div>
+
+              <!--  item-10  -->
+              <div class="actions-item clearfix">
+                <img class="actions-item__image" src="images/actions/action-10.jpg">
+                <div class="actions-item__text">
+                  <p class="actions-item__title">-5% на всю линейку <br class="hidden-lg hidden-md hidden-sm"> кормов Summit</p>
+                  <p class="actions-item__date">Даты проведения: <span class="actions-item__date-number">
+    										12.03.2017 - 30.03.2017
+    									</span></p>
+                  <p class="actions-item__article">Артикулы, участвующие в акции:
+                    <span class="actions-item__article-number">28456, 27457, 23458</span>
+                  </p>
+                  <p class="actions-item__info">
+                    Доступно в Санкт-Петербурге.
+                    Уважаемые клиенты, пожалуйста, сообщайте оператору о своем желании участвовать
+                    в акции
+                  </p>
+                </div>
+              </div>
+
+
+              <section class="pagination clearfix">
+                <div class="container-offset">
+                  <div class="pagination__left">
+                    <span>Показать по:</span>
+                    <ul class="pagination__left-list">
+                      <li class="pagination__left-item active"><a href="#">10</a></li>
+                      <li class="pagination__left-item"><a href="#">20</a></li>
+                      <li class="pagination__left-item"><a href="#">ВСЕ</a></li>
+                    </ul>
+                  </div>
+                  <div class="pagination__right clearfix">
+                    <ul class="pagination__right-list">
+                      <!-- hidden class (optional) for hide left arrow -->
+                      <li class="pagination__right-item pagination__left-arrow hidden"><a href="#">
+                      </a></li>
+                      <li class="pagination__right-item active"><a href="">1</a></li>
+                      <li class="pagination__right-item"><a href="#">2</a></li>
+                      <li class="pagination__right-item"><a href="#">3</a></li>
+                      <li class="pagination__right-item"><a href="...">...</a></li>
+                      <li class="pagination__right-item"><a href="#">7</a></li>
+                      <li class="pagination__right-item pagination__right-arrow"><a href="#">
+                      </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--footer-->
+    @@include('global/footer.html')
+    <!-- scripts (скрипты проекта) -->
+    @@include('global/scripts.html')
   </div>
-</main>
-
-
-<!--footer-->
-@@include('global/footer.html')
-
-<!-- scripts (скрипты проекта) -->
-@@include('global/scripts.html')
-
 </body>
 
 </html>

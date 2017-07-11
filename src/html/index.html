@@ -34,327 +34,326 @@
 			<![endif]-->
 	</head>
 
-<body class="main-page">
+<body>
+	<div class="main-page">
+		<!-- main topline -->
+		@@include('global/topline.html')
 
-	<!-- main topline -->
-	@@include('global/topline.html')
-
-	<!-- header -->
-	<header class="main-head">
-		<div class="container">
-			<div class="row tar">
-				<!--main-logo-->
-				<div class="col-lg-3">
-					<a class="main-head__logo" href="./"></a>
-				</div>
-				<!--main-navigation-->
-				<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
-					<nav class="main-navigation">
-						<!-- (big size nav) -->
-						<ul class="main-navigation__list hidden-sm hidden-xs">
-							<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-							<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-							<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-							<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-							<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-						</ul>
-						<!-- (small size nav) -->
-						<!-- btn -->
-						<a class="main-navigation__hidden-btn mnu-white hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
-						<div class="modal-navigation modal_div" id="modalNav">
-							<ul class="main-navigation__list_small hidden-lg hidden-md">
-								<a class="modal-navigation__close modal_close">Закрыть</a>
+		<!-- header -->
+		<header class="main-head">
+			<div class="container">
+				<div class="row tar">
+					<!--main-logo-->
+					<div class="col-lg-3">
+						<a class="main-head__logo" href="./"></a>
+					</div>
+					<!--main-navigation-->
+					<div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
+						<nav class="main-navigation">
+							<!-- (big size nav) -->
+							<ul class="main-navigation__list hidden-sm hidden-xs">
 								<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
 								<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
 								<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
 								<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
 								<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-
 							</ul>
-						</div>
-					</nav>
+							<!-- (small size nav) -->
+							<!-- btn -->
+							<a class="main-navigation__hidden-btn mnu-white hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+							<div class="modal-navigation modal_div" id="modalNav">
+								<ul class="main-navigation__list_small hidden-lg hidden-md">
+									<a class="modal-navigation__close modal_close">Закрыть</a>
+									<li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+									<li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+									<li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+									<li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+									<li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
+
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<!-- end main-navigation -->
 				</div>
-				<!-- end main-navigation -->
-			</div>
-			<div class="row">
-				<div class="col-lg-6 col-sm-11">
-					<h2 class="main-head__title">Оптовая доставка товаров для животных по всей России</h2>
-					<h3 class="main-head__subtitle">Для юридических лиц и питомников</h3>
-					<button class="main-head__btn btn btn_big btn_white btn_big-arrow btn_orange-arrow">Подробнее</button>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- slick slider -->
-	<section class="main-carousel">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-15">
-					<div class="main-carousel__slider">
-						<!--slide-1-->
-						<div class="main-carousel__slide main-carousel__slide-1">
-							<img src="images/main-slider/main-slide-1.jpg" alt="slide-1">
-						</div>
-						<!--slide-1-->
-						<div class="main-carousel__slide main-carousel__slide-1">
-							<img src="images/main-slider/main-slide-1.jpg" alt="slide-2">
-						</div>
-						<!--slide-3-->
-						<div class="main-carousel__slide main-carousel__slide-1">
-							<img src="images/main-slider/main-slide-1.jpg" alt="slide-3">
-						</div>
-						<!--slide-4-->
-						<div class="main-carousel__slide main-carousel__slide-1">
-							<img src="images/main-slider/main-slide-1.jpg" alt="slide-4">
-						</div>
-						<!--slide-5-->
-						<div class="main-carousel__slide main-carousel__slide-1">
-							<img src="images/main-slider/main-slide-1.jpg" alt="slide-5">
-						</div>
-						<!--slide-6-->
-						<div class="main-carousel__slide main-carousel__slide-1">
-							<img src="images/main-slider/main-slide-1.jpg" alt="slide-6">
-						</div>
-						<!--slide-7-->
-						<div class="main-carousel__slide main-carousel__slide-1">
-							<img src="images/main-slider/main-slide-1.jpg" alt="slide-7">
-						</div>
+				<div class="row">
+					<div class="col-lg-6 col-sm-11">
+						<h2 class="main-head__title">Оптовая доставка товаров для животных по всей России</h2>
+						<h3 class="main-head__subtitle">Для юридических лиц и питомников</h3>
+						<button class="main-head__btn btn btn_big btn_white btn_big-arrow btn_orange-arrow">Подробнее</button>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-
-	<!-- О компании -->
-	<section class="main-about">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-0 col-md-8 col-md-offset-0 col-sm-15">
-					<div class="main-about__company">
-						<p class="main-about__company-title tal">
-							О компании
-						</p>
-						<p class="main-about__company-text">
-							В настоящий момент Группа компаний «Пет-Продукт» - крупнейший поставщик зоотоваров в России.
-							Мы предлагаем широкий ассортимент товаров от ведущих мировых производителей: сухие и влажные
-							корма
-							для кошек и собак, пищевые добавки, витамины, груминг, парфюмерию, средства по уходу,
-							аксессуары, игрушки.
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-5 col-sm-offset-2">
-					<div class="main-about__feature">
-						<p class="main-about__feature-title">90 автомобилей</p>
-						<p class="main-about__feature-text">Для ежедневной доставки</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-1">
-					<div class="main-about__feature">
-						<p class="main-about__feature-title">15 грузовиков
-						</p>
-						<p class="main-about__feature-text">Для перевозки крупногабаритных заказов</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-5 col-sm-offset-2">
-					<div class="main-about__feature">
-						<p class="main-about__feature-title">5000 м<sup>2</sup><br> площадь склада </p>
-						<p class="main-about__feature-text">Весь товар хранится в надлежащих условиях</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-1">
-					<div class="main-about__feature">
-						<p class="main-about__feature-title">Качество</p>
-						<p class="main-about__feature-text">Мы тщательно следим за сроком годности и товарным видом продукции</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- suppliers section (suppliers slider) -->
-	<section class="main-suppliers">
-		<div class="container">
-			<div class="row">
-				<p class="main-suppliers__title">Официальный поставщик кормов</p>
-				<div class="col-lg-15">
-
-					<!-- 6 slides per row. 1 row. 6 images at once -->
-					<div class="main-suppliers__slider hidden-sm hidden-xs">
-						<!--slide-1-->
-						<div class="main-suppliers__slide main-suppliers__slide-1">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-1.png" alt="slide-4"></a>
-						</div>
-						<!--slide-2-->
-						<div class="main-suppliers__slide main-suppliers__slide-2">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-2.png" alt="slide-4"></a>
-						</div>
-						<!--slide-3-->
-						<div class="main-suppliers__slide main-suppliers__slide-3">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-3.png" alt="slide-4"></a>
-						</div>
-						<!--slide-4-->
-						<div class="main-suppliers__slide main-suppliers__slide-4">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-4.png" alt="slide-4"></a>
-						</div>
-						<!--slide-5-->
-						<div class="main-suppliers__slide main-suppliers__slide-5">
-							<a href="#"><img class="bark-img" src="images/suppliers-slider/main-supplier-5.svg" alt="slide-4"></a>
-						</div>
-						<!--slide-6-->
-						<div class="main-suppliers__slide main-suppliers__slide-6">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-6.png" alt="slide-4"></a>
-						</div>
-						<!--slide-7-->
-						<div class="main-suppliers__slide main-suppliers__slide-1">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-1.png" alt="slide-4"></a>
-						</div>
-						<!--slide-8-->
-						<div class="main-suppliers__slide main-suppliers__slide-2">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-2.png" alt="slide-4"></a>
-						</div>
-						<!--slide-9-->
-						<div class="main-suppliers__slide main-suppliers__slide-3">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-3.png" alt="slide-4"></a>
-						</div>
-						<!--slide-10-->
-						<div class="main-suppliers__slide main-suppliers__slide-4">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-4.png" alt="slide-4"></a>
-						</div>
-						<!--slide-11-->
-						<div class="main-suppliers__slide main-suppliers__slide-5">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-5.png" alt="slide-4"></a>
-						</div>
-						<!--slide-12-->
-						<div class="main-suppliers__slide main-suppliers__slide-6">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-6.png" alt="slide-4"></a>
-						</div>
-					</div>
-
-					<!-- 3 slides per row. 2 rows. 6 images at once -->
-					<div class="main-suppliers__slider hidden-lg hidden-md hidden-xs">
-						<!--slide-pack-1-->
-						<div class="main-suppliers__slide">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-1.png" alt="#"></a>
-							<a href="#"><img src="images/suppliers-slider/main-supplier-4.png" alt="#"></a>
-						</div>
-						<!--slide-pack-2-->
-						<div class="main-suppliers__slide">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-2.png" alt="#"></a>
-							<a href="#"><img class="bark-img" src="images/suppliers-slider/main-supplier-5.png" alt="#"></a>
-						</div>
-						<!--slide-pack-3-->
-						<div class="main-suppliers__slide">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-3.png" alt="#"></a>
-							<a href="#"><img src="images/suppliers-slider/main-supplier-6.png" alt="#"></a>
-						</div>
-						<!--slide-pack-1-->
-						<div class="main-suppliers__slide">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-1.png" alt="#"></a>
-							<a href="#"><img src="images/suppliers-slider/main-supplier-4.png" alt="#"></a>
-						</div>
-						<!--slide-pack-2-->
-						<div class="main-suppliers__slide">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-2.png" alt="#"></a>
-							<a href="#"><img src="images/suppliers-slider/main-supplier-5.png" alt="#"></a>
-						</div>
-						<!--slide-pack-3-->
-						<div class="main-suppliers__slide">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-3.png" alt="#"></a>
-							<a href="#"><img src="images/suppliers-slider/main-supplier-6.png" alt="#"></a>
-						</div>
-					</div>
-
-					<!-- 2 slides per row. 3 rows. 6 images at once -->
-					<div class="main-suppliers__slider hidden-lg hidden-md hidden-sm">
-						<!--slide-pack-1-->
-						<div class="main-suppliers__slide">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-1.png" alt="#"></a>
-							<a href="#"><img src="images/suppliers-slider/main-supplier-3.png" alt="#"></a>
-							<a href="#"><img class="bark-img" src="images/suppliers-slider/main-supplier-5.png" alt="#"></a>
-						</div>
-						<!--slide-pack-2-->
-						<div class="main-suppliers__slide">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-2.png" alt="#"></a>
-							<a href="#"><img src="images/suppliers-slider/main-supplier-4.png" alt="#"></a>
-							<a href="#"><img src="images/suppliers-slider/main-supplier-6.png" alt="#"></a>
-						</div>
-						<!--slide-pack-1-->
-						<div class="main-suppliers__slide">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-1.png" alt="#"></a>
-							<a href="#"><img src="images/suppliers-slider/main-supplier-4.png" alt="#"></a>
-							<a href="#"><img class="bark-img" src="images/suppliers-slider/main-supplier-5.png" alt="#"></a>
-						</div>
-						<!--slide-pack-2-->
-						<div class="main-suppliers__slide">
-							<a href="#"><img src="images/suppliers-slider/main-supplier-2.png" alt="#"></a>
-							<a href="#"><img src="images/suppliers-slider/main-supplier-3.png" alt="#"></a>
-							<a href="#"><img src="images/suppliers-slider/main-supplier-6.png" alt="#"></a>
+		</header>
+		<!-- slick slider -->
+		<section class="main-carousel">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-15">
+						<div class="main-carousel__slider">
+							<!--slide-1-->
+							<div class="main-carousel__slide main-carousel__slide-1">
+								<img src="images/main-slider/main-slide-1.jpg" alt="slide-1">
+							</div>
+							<!--slide-1-->
+							<div class="main-carousel__slide main-carousel__slide-1">
+								<img src="images/main-slider/main-slide-1.jpg" alt="slide-2">
+							</div>
+							<!--slide-3-->
+							<div class="main-carousel__slide main-carousel__slide-1">
+								<img src="images/main-slider/main-slide-1.jpg" alt="slide-3">
+							</div>
+							<!--slide-4-->
+							<div class="main-carousel__slide main-carousel__slide-1">
+								<img src="images/main-slider/main-slide-1.jpg" alt="slide-4">
+							</div>
+							<!--slide-5-->
+							<div class="main-carousel__slide main-carousel__slide-1">
+								<img src="images/main-slider/main-slide-1.jpg" alt="slide-5">
+							</div>
+							<!--slide-6-->
+							<div class="main-carousel__slide main-carousel__slide-1">
+								<img src="images/main-slider/main-slide-1.jpg" alt="slide-6">
+							</div>
+							<!--slide-7-->
+							<div class="main-carousel__slide main-carousel__slide-1">
+								<img src="images/main-slider/main-slide-1.jpg" alt="slide-7">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="last-news">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-10 col-md-10 col-sm-15">
-					<p class="last-news__title">Последние новости</p>
-				</div>
-				<div class="col-lg-5 col-md-5 col-sm-15">
-					<div class="last-news__read-all-wrap">
-						<a href="#" class="last-news__read-all">Читать все</a>
+		<!-- О компании -->
+		<section class="main-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-0 col-md-8 col-md-offset-0 col-sm-15">
+						<div class="main-about__company">
+							<p class="main-about__company-title tal">
+								О компании
+							</p>
+							<p class="main-about__company-text">
+								В настоящий момент Группа компаний «Пет-Продукт» - крупнейший поставщик зоотоваров в России.
+								Мы предлагаем широкий ассортимент товаров от ведущих мировых производителей: сухие и влажные
+								корма
+								для кошек и собак, пищевые добавки, витамины, груминг, парфюмерию, средства по уходу,
+								аксессуары, игрушки.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-5 col-sm-offset-2">
+						<div class="main-about__feature">
+							<p class="main-about__feature-title">90 автомобилей</p>
+							<p class="main-about__feature-text">Для ежедневной доставки</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-1">
+						<div class="main-about__feature">
+							<p class="main-about__feature-title">15 грузовиков
+							</p>
+							<p class="main-about__feature-text">Для перевозки крупногабаритных заказов</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-5 col-sm-offset-2">
+						<div class="main-about__feature">
+							<p class="main-about__feature-title">5000 м<sup>2</sup><br> площадь склада </p>
+							<p class="main-about__feature-text">Весь товар хранится в надлежащих условиях</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-1">
+						<div class="main-about__feature">
+							<p class="main-about__feature-title">Качество</p>
+							<p class="main-about__feature-text">Мы тщательно следим за сроком годности и товарным видом продукции</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<!-- item-1 -->
-				<div class="col-lg-5 col-md-5 col-sm-15">
+		</section>
+
+		<!-- suppliers section (suppliers slider) -->
+		<section class="main-suppliers">
+			<div class="container">
+				<div class="row">
+					<p class="main-suppliers__title">Официальный поставщик кормов</p>
+					<div class="col-lg-15">
+
+						<!-- 6 slides per row. 1 row. 6 images at once -->
+						<div class="main-suppliers__slider hidden-sm hidden-xs">
+							<!--slide-1-->
+							<div class="main-suppliers__slide main-suppliers__slide-1">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-1.png" alt="slide-4"></a>
+							</div>
+							<!--slide-2-->
+							<div class="main-suppliers__slide main-suppliers__slide-2">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-2.png" alt="slide-4"></a>
+							</div>
+							<!--slide-3-->
+							<div class="main-suppliers__slide main-suppliers__slide-3">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-3.png" alt="slide-4"></a>
+							</div>
+							<!--slide-4-->
+							<div class="main-suppliers__slide main-suppliers__slide-4">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-4.png" alt="slide-4"></a>
+							</div>
+							<!--slide-5-->
+							<div class="main-suppliers__slide main-suppliers__slide-5">
+								<a href="#"><img class="bark-img" src="images/suppliers-slider/main-supplier-5.svg" alt="slide-4"></a>
+							</div>
+							<!--slide-6-->
+							<div class="main-suppliers__slide main-suppliers__slide-6">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-6.png" alt="slide-4"></a>
+							</div>
+							<!--slide-7-->
+							<div class="main-suppliers__slide main-suppliers__slide-1">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-1.png" alt="slide-4"></a>
+							</div>
+							<!--slide-8-->
+							<div class="main-suppliers__slide main-suppliers__slide-2">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-2.png" alt="slide-4"></a>
+							</div>
+							<!--slide-9-->
+							<div class="main-suppliers__slide main-suppliers__slide-3">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-3.png" alt="slide-4"></a>
+							</div>
+							<!--slide-10-->
+							<div class="main-suppliers__slide main-suppliers__slide-4">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-4.png" alt="slide-4"></a>
+							</div>
+							<!--slide-11-->
+							<div class="main-suppliers__slide main-suppliers__slide-5">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-5.png" alt="slide-4"></a>
+							</div>
+							<!--slide-12-->
+							<div class="main-suppliers__slide main-suppliers__slide-6">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-6.png" alt="slide-4"></a>
+							</div>
+						</div>
+
+						<!-- 3 slides per row. 2 rows. 6 images at once -->
+						<div class="main-suppliers__slider hidden-lg hidden-md hidden-xs">
+							<!--slide-pack-1-->
+							<div class="main-suppliers__slide">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-1.png" alt="#"></a>
+								<a href="#"><img src="images/suppliers-slider/main-supplier-4.png" alt="#"></a>
+							</div>
+							<!--slide-pack-2-->
+							<div class="main-suppliers__slide">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-2.png" alt="#"></a>
+								<a href="#"><img class="bark-img" src="images/suppliers-slider/main-supplier-5.png" alt="#"></a>
+							</div>
+							<!--slide-pack-3-->
+							<div class="main-suppliers__slide">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-3.png" alt="#"></a>
+								<a href="#"><img src="images/suppliers-slider/main-supplier-6.png" alt="#"></a>
+							</div>
+							<!--slide-pack-1-->
+							<div class="main-suppliers__slide">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-1.png" alt="#"></a>
+								<a href="#"><img src="images/suppliers-slider/main-supplier-4.png" alt="#"></a>
+							</div>
+							<!--slide-pack-2-->
+							<div class="main-suppliers__slide">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-2.png" alt="#"></a>
+								<a href="#"><img src="images/suppliers-slider/main-supplier-5.png" alt="#"></a>
+							</div>
+							<!--slide-pack-3-->
+							<div class="main-suppliers__slide">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-3.png" alt="#"></a>
+								<a href="#"><img src="images/suppliers-slider/main-supplier-6.png" alt="#"></a>
+							</div>
+						</div>
+
+						<!-- 2 slides per row. 3 rows. 6 images at once -->
+						<div class="main-suppliers__slider hidden-lg hidden-md hidden-sm">
+							<!--slide-pack-1-->
+							<div class="main-suppliers__slide">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-1.png" alt="#"></a>
+								<a href="#"><img src="images/suppliers-slider/main-supplier-3.png" alt="#"></a>
+								<a href="#"><img class="bark-img" src="images/suppliers-slider/main-supplier-5.png" alt="#"></a>
+							</div>
+							<!--slide-pack-2-->
+							<div class="main-suppliers__slide">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-2.png" alt="#"></a>
+								<a href="#"><img src="images/suppliers-slider/main-supplier-4.png" alt="#"></a>
+								<a href="#"><img src="images/suppliers-slider/main-supplier-6.png" alt="#"></a>
+							</div>
+							<!--slide-pack-1-->
+							<div class="main-suppliers__slide">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-1.png" alt="#"></a>
+								<a href="#"><img src="images/suppliers-slider/main-supplier-4.png" alt="#"></a>
+								<a href="#"><img class="bark-img" src="images/suppliers-slider/main-supplier-5.png" alt="#"></a>
+							</div>
+							<!--slide-pack-2-->
+							<div class="main-suppliers__slide">
+								<a href="#"><img src="images/suppliers-slider/main-supplier-2.png" alt="#"></a>
+								<a href="#"><img src="images/suppliers-slider/main-supplier-3.png" alt="#"></a>
+								<a href="#"><img src="images/suppliers-slider/main-supplier-6.png" alt="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="last-news">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 col-md-10 col-sm-15">
+						<p class="last-news__title">Последние новости</p>
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-15">
+						<div class="last-news__read-all-wrap">
+							<a href="#" class="last-news__read-all">Читать все</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<!-- item-1 -->
+					<div class="col-lg-5 col-md-5 col-sm-15">
+							<div class="last-news__article clearfix">
+								<img src="images/news/news-1.jpg" alt="news-article-1" class="last-news__image">
+								<span class="last-news__date">31.01.2017</span>
+								<a href="#"><span class="last-news__category">Новинки</span></a>
+								<p class="last-news__subtitle">Новинка! Профессиональные ресчески TANGLE ANGEL</p>
+								<a class="last-news__read-more">Читать далее</a>
+							</div>
+					</div>
+					<!-- item-2 -->
+					<div class="col-lg-5 col-md-5 col-sm-15">
 						<div class="last-news__article clearfix">
-							<img src="images/news/news-1.jpg" alt="news-article-1" class="last-news__image">
+							<img src="images/news/news-2.jpg" alt="news-article-2" class="last-news__image">
 							<span class="last-news__date">31.01.2017</span>
-							<a href="#"><span class="last-news__category">Новинки</span></a>
-							<p class="last-news__subtitle">Новинка! Профессиональные ресчески TANGLE ANGEL</p>
+							<a href="#"><span class="last-news__category">События</span></a>
+							<p class="last-news__subtitle"># КИБЕРПОНЕДЕЛЬНИК
+								в #ПЕТПРОДУКТ</p>
 							<a class="last-news__read-more">Читать далее</a>
 						</div>
-				</div>
-				<!-- item-2 -->
-				<div class="col-lg-5 col-md-5 col-sm-15">
-					<div class="last-news__article clearfix">
-						<img src="images/news/news-2.jpg" alt="news-article-2" class="last-news__image">
-						<span class="last-news__date">31.01.2017</span>
-						<a href="#"><span class="last-news__category">События</span></a>
-						<p class="last-news__subtitle"># КИБЕРПОНЕДЕЛЬНИК
-							в #ПЕТПРОДУКТ</p>
-						<a class="last-news__read-more">Читать далее</a>
 					</div>
-				</div>
-				<!-- item-3 -->
-				<div class="col-lg-5 col-md-5 col-sm-15">
-					<div class="last-news__article clearfix">
-						<img src="images/news/news-3.jpg" alt="news-article-3" class="last-news__image">
-						<span class="last-news__date">31.01.2017</span>
-						<a href="#"><span class="last-news__category">Новинки</span></a>
-						<p class="last-news__subtitle">Новинка в ассортименте <br>
-							ТМ GO! NaturalHolistic!</p>
-						<a class="last-news__read-more">Читать далее</a>
+					<!-- item-3 -->
+					<div class="col-lg-5 col-md-5 col-sm-15">
+						<div class="last-news__article clearfix">
+							<img src="images/news/news-3.jpg" alt="news-article-3" class="last-news__image">
+							<span class="last-news__date">31.01.2017</span>
+							<a href="#"><span class="last-news__category">Новинки</span></a>
+							<p class="last-news__subtitle">Новинка в ассортименте <br>
+								ТМ GO! NaturalHolistic!</p>
+							<a class="last-news__read-more">Читать далее</a>
+						</div>
 					</div>
-				</div>
 
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
 
 
-	 <!--footer-->
-	 @@include('global/footer.html')
+		 <!--footer-->
+		 @@include('global/footer.html')
 
-	<!-- scripts (скрипты проекта) -->
-	@@include('global/scripts.html')
-
+		<!-- scripts (скрипты проекта) -->
+		@@include('global/scripts.html')
+	</div>
 </body>
-
 </html>

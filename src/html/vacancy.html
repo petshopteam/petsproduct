@@ -34,150 +34,149 @@
   <![endif]-->
 </head>
 
-<body class="vacancy-page">
+<body>
+  <div class="vacancy-page">
+    <!-- main topline -->
+    @@include('global/topline.html')
 
-<!-- main topline -->
-@@include('global/topline.html')
+    <!-- header -->
+    <header class="main-head">
+      <div class="container">
+        <div class="row tar">
+          <!--main-logo-->
+          <div class="col-lg-3">
+            <a class="main-head__logo" href="./"></a>
+          </div>
+          <!--main-navigation-->
+          <div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
+            <nav class="main-navigation">
+              <!-- (big size nav) -->
+              <ul class="main-navigation__list hidden-sm hidden-xs">
+                <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+                <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+                <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+                <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+                <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
+              </ul>
+              <!-- (small size nav) -->
+              <!-- btn -->
+              <a class="main-navigation__hidden-btn mnu-white hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+              <div class="modal-navigation modal_div" id="modalNav">
+                <ul class="main-navigation__list_small hidden-lg hidden-md">
+                  <a class="modal-navigation__close modal_close">Закрыть</a>
+                  <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+                  <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+                  <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+                  <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+                  <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
 
-<!-- header -->
-<header class="main-head">
-  <div class="container">
-    <div class="row tar">
-      <!--main-logo-->
-      <div class="col-lg-3">
-        <a class="main-head__logo" href="./"></a>
-      </div>
-      <!--main-navigation-->
-      <div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
-        <nav class="main-navigation">
-          <!-- (big size nav) -->
-          <ul class="main-navigation__list hidden-sm hidden-xs">
-            <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-            <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-            <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-            <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-            <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-          </ul>
-          <!-- (small size nav) -->
-          <!-- btn -->
-          <a class="main-navigation__hidden-btn mnu-white hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
-          <div class="modal-navigation modal_div" id="modalNav">
-            <ul class="main-navigation__list_small hidden-lg hidden-md">
-              <a class="modal-navigation__close modal_close">Закрыть</a>
-              <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-              <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-              <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-              <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-              <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <!-- end main-navigation -->
+        </div>
 
+        <!-- breadcrumbs -->
+        <section class="breadcrumbs">
+          <div class="container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a href="./">Главная</a></li>
+              <li class="breadcrumbs__item active"><a href="actions.html">Вакансии</a></li>
             </ul>
           </div>
-        </nav>
-      </div>
-      <!-- end main-navigation -->
-    </div>
+        </section>
 
-    <!-- breadcrumbs -->
-    <section class="breadcrumbs">
+
+        <div class="row">
+          <div class="col-xs-6">
+            <h2 class="main-head__title">Работа в PetsProduct</h2>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <section class="vacancy">
       <div class="container">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item"><a href="./">Главная</a></li>
-          <li class="breadcrumbs__item active"><a href="actions.html">Вакансии</a></li>
-        </ul>
+        <div class="row tac">
+          <h2 class="vacancy__title">Открытые вакансии</h2>
+          <p class="vacancy__text">
+            К сожалению, сейчас нет открытых вакансий, но мы всегда ищем новых активных и интересных людей в нашу команду.
+            Если хотите работать у нас напишите нам, и мы рассмотрим Ваше резюме.
+          </p>
+          <a href="#modalVacancy"
+             class="vacancy__button vacancy__button_last btn btn_orange open_modal_dark">Откликнуться</a>
+        </div>
       </div>
     </section>
 
-
-    <div class="row">
-      <div class="col-xs-6">
-        <h2 class="main-head__title">Работа в PetsProduct</h2>
+    <!-- modal window -->
+    <div class="modal-vacancy modal_div" id="modalVacancy">
+      <div class="container-offset">
+        <a class="modal-change-city__close modal_close hidden-sm hidden-xs"></a>
+        <a class="modal-navigation__close modal_close hidden-lg hidden-md">Закрыть</a>
+        <div class="row tac">
+          <p class="modal-vacancy__title">Отклик на вакансию</p>
+        </div>
+        <div class="row">
+          <form action="#" class="request__form">
+            <div class="request__form-block clearfix">
+              <div class="col-lg-15 col-md-15">
+                <label for="" class="form-label">Как вас зовут?</label>
+                <input type="text" class="form-input" placeholder="Фамилия имя и Отчество">
+              </div>
+              <div class="col-lg-5 col-md-5">
+                <label for="" class="form-label">Дата рождения</label>
+                <input type="text" class="form-input" placeholder="дд. мм. гггг">
+              </div>
+              <div class="col-lg-10 col-md-10">
+                <label for="" class="form-label">Место проживания</label>
+                <input type="text" class="form-input" placeholder="Название города  или региона">
+              </div>
+              <div class="col-lg-15 col-md-15">
+                <label for="" class="form-label">Контактный номер телефона</label>
+                <input type="text" class="form-input" placeholder="+7 ( ___ )  ___  -  __ - __">
+              </div>
+              <div class="col-lg-15 col-md-15">
+                <label for="" class="form-label">Прикрепить резюме</label>
+                <!-- file upload input -->
+                <div class="file_upload">
+                  <span class="file_upload__text">Перетащите или</span>
+                  <button type="button">загрузите файл</button>
+                  <div>Файл не выбран</div>
+                  <input type="file">
+                </div>
+              </div>
+              <div class="col-lg-15 col-md-15">
+                <label for="" class="form-label">Сопроводительное письмо</label>
+                <textarea type="text" class="form-textarea request__input_big" placeholder="Текст письма"></textarea>
+              </div>
+            </div>
+            <div class="col-lg-15 col-md-15">
+              <div class="modal-vacancy__agree">
+                <input id="requestCheck" type="checkbox" checked class="request__check">
+                <label for="requestCheck" class="request__check-label">Я согласен с условиями передачи информации</label>
+              </div>
+            </div>
+            <div class="col-lg-15">
+              <div class="modal-vacancy__buttons tac">
+                <button class="request__submit btn btn_orange">Отправить</button>
+                <button class="request__clear btn btn_grey">Очистить</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
+    <!-- end modal -->
 
+
+    <!--footer-->
+    @@include('global/footer.html')
+
+    <!-- scripts (скрипты проекта) -->
+    @@include('global/scripts.html')
   </div>
-</header>
-
-<section class="vacancy">
-  <div class="container">
-    <div class="row tac">
-      <h2 class="vacancy__title">Открытые вакансии</h2>
-      <p class="vacancy__text">
-        К сожалению, сейчас нет открытых вакансий, но мы всегда ищем новых активных и интересных людей в нашу команду.
-        Если хотите работать у нас напишите нам, и мы рассмотрим Ваше резюме.
-      </p>
-      <a href="#modalVacancy"
-         class="vacancy__button vacancy__button_last btn btn_orange open_modal_dark">Откликнуться</a>
-    </div>
-  </div>
-</section>
-
-<!-- modal window -->
-<div class="modal-vacancy modal_div" id="modalVacancy">
-  <div class="container-offset">
-    <a class="modal-change-city__close modal_close hidden-sm hidden-xs"></a>
-    <a class="modal-navigation__close modal_close hidden-lg hidden-md">Закрыть</a>
-    <div class="row tac">
-      <p class="modal-vacancy__title">Отклик на вакансию</p>
-    </div>
-    <div class="row">
-      <form action="#" class="request__form">
-        <div class="request__form-block clearfix">
-          <div class="col-lg-15 col-md-15">
-            <label for="" class="form-label">Как вас зовут?</label>
-            <input type="text" class="form-input" placeholder="Фамилия имя и Отчество">
-          </div>
-          <div class="col-lg-5 col-md-5">
-            <label for="" class="form-label">Дата рождения</label>
-            <input type="text" class="form-input" placeholder="дд. мм. гггг">
-          </div>
-          <div class="col-lg-10 col-md-10">
-            <label for="" class="form-label">Место проживания</label>
-            <input type="text" class="form-input" placeholder="Название города  или региона">
-          </div>
-          <div class="col-lg-15 col-md-15">
-            <label for="" class="form-label">Контактный номер телефона</label>
-            <input type="text" class="form-input" placeholder="+7 ( ___ )  ___  -  __ - __">
-          </div>
-          <div class="col-lg-15 col-md-15">
-            <label for="" class="form-label">Прикрепить резюме</label>
-            <!-- file upload input -->
-            <div class="file_upload">
-              <span class="file_upload__text">Перетащите или</span>
-              <button type="button">загрузите файл</button>
-              <div>Файл не выбран</div>
-              <input type="file">
-            </div>
-          </div>
-          <div class="col-lg-15 col-md-15">
-            <label for="" class="form-label">Сопроводительное письмо</label>
-            <textarea type="text" class="form-textarea request__input_big" placeholder="Текст письма"></textarea>
-          </div>
-        </div>
-        <div class="col-lg-15 col-md-15">
-          <div class="modal-vacancy__agree">
-            <input id="requestCheck" type="checkbox" checked class="request__check">
-            <label for="requestCheck" class="request__check-label">Я согласен с условиями передачи информации</label>
-          </div>
-        </div>
-        <div class="col-lg-15">
-          <div class="modal-vacancy__buttons tac">
-            <button class="request__submit btn btn_orange">Отправить</button>
-            <button class="request__clear btn btn_grey">Очистить</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-<!-- end modal -->
-
-
-<!--footer-->
-@@include('global/footer.html')
-
-<!-- scripts (скрипты проекта) -->
-@@include('global/scripts.html')
-
 </body>
-
 </html>

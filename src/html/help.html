@@ -35,125 +35,124 @@
   <![endif]-->
 </head>
 
-<body class="help-page">
+<body>
+  <div class="help-page">
+    <!-- main topline -->
+    @@include('global/topline.html')
 
-<!-- main topline -->
-@@include('global/topline.html')
-
-<!-- header -->
-<header class="main-head">
-  <div class="container">
-    <div class="row tar">
-      <!--main-logo-->
-      <div class="col-lg-3">
-        <a class="main-head__logo" href="./"></a>
-      </div>
-      <!--main-navigation-->
-      <div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
-        <nav class="main-navigation">
-          <!-- (big size nav) -->
-          <ul class="main-navigation__list hidden-sm hidden-xs">
-            <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-            <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-            <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-            <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-            <li class="main-navigation__item"><button class="btn btn_orange">Оставить заявку</button></li>
-            <li id="line"></li>
-          </ul>
-          <!-- (small size nav) -->
-          <!-- btn -->
-          <a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
-          <div class="modal-navigation modal_div" id="modalNav">
-            <ul class="main-navigation__list_small hidden-lg hidden-md">
-              <a class="modal-navigation__close modal_close">Закрыть</a>
-              <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-              <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-              <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-              <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-              <li class="main-navigation__item"><button class="btn btn_orange">Оставить заявку</button></li>
-
-            </ul>
+    <!-- header -->
+    <header class="main-head">
+      <div class="container">
+        <div class="row tar">
+          <!--main-logo-->
+          <div class="col-lg-3">
+            <a class="main-head__logo" href="./"></a>
           </div>
-        </nav>
+          <!--main-navigation-->
+          <div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
+            <nav class="main-navigation">
+              <!-- (big size nav) -->
+              <ul class="main-navigation__list hidden-sm hidden-xs">
+                <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+                <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+                <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+                <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+                <li class="main-navigation__item"><button class="btn btn_orange">Оставить заявку</button></li>
+                <li id="line"></li>
+              </ul>
+              <!-- (small size nav) -->
+              <!-- btn -->
+              <a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+              <div class="modal-navigation modal_div" id="modalNav">
+                <ul class="main-navigation__list_small hidden-lg hidden-md">
+                  <a class="modal-navigation__close modal_close">Закрыть</a>
+                  <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+                  <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+                  <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+                  <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+                  <li class="main-navigation__item"><button class="btn btn_orange">Оставить заявку</button></li>
+
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <!-- end main-navigation -->
+        </div>
       </div>
-      <!-- end main-navigation -->
-    </div>
+    </header>
+
+    <!-- breadcrumbs -->
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a href="./">Главная</a></li>
+          <li class="breadcrumbs__item active"><a href="partners.html">Сервис и помощь</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="main-help">
+      <div class="container">
+        <div class="main-help__wrap clearfix">
+
+          <!-- item-1 -->
+          <a href="#" class="main-help__item">
+            <img src="images/icons/help1.png" alt="#" class="main-help__image responsive">
+            <p class="main-help__title">
+              Прайс листы
+            </p>
+          </a>
+
+          <!-- item-2 -->
+          <a href="#" class="main-help__item">
+            <img src="images/icons/help2.png" alt="#" class="main-help__image responsive">
+            <p class="main-help__title">
+              Как сделать заказ
+            </p>
+          </a>
+
+          <!-- item-3 -->
+          <a href="#" class="main-help__item">
+            <img src="images/icons/help3.png" alt="#" class="main-help__image responsive">
+            <p class="main-help__title">
+              Cпособы оплаты
+            </p>
+          </a>
+
+          <!-- item-4 -->
+          <a href="#" class="main-help__item">
+            <img src="images/icons/help4.png" alt="#" class="main-help__image responsive">
+            <p class="main-help__title">
+              Доставка
+            </p>
+          </a>
+
+          <!-- item-5 -->
+          <a href="help_3.html" class="main-help__item">
+            <img src="images/icons/help5.png" alt="#" class="main-help__image responsive">
+            <p class="main-help__title">
+              Письмо директору
+            </p>
+          </a>
+
+          <!-- item-6 -->
+          <a href="help_2.html" class="main-help__item">
+            <img src="images/icons/help6.png" alt="#" class="main-help__image responsive">
+            <p class="main-help__title">
+              Возврат товара
+            </p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!--footer-->
+    @@include('global/footer.html')
+
+    <!-- scripts (скрипты проекта) -->
+    @@include('global/scripts.html')
   </div>
-</header>
-
-<!-- breadcrumbs -->
-<section class="breadcrumbs">
-  <div class="container">
-    <ul class="breadcrumbs__list">
-      <li class="breadcrumbs__item"><a href="./">Главная</a></li>
-      <li class="breadcrumbs__item active"><a href="partners.html">Сервис и помощь</a></li>
-    </ul>
-  </div>
-</section>
-
-<section class="main-help">
-  <div class="container">
-    <div class="main-help__wrap clearfix">
-
-      <!-- item-1 -->
-      <a href="#" class="main-help__item">
-        <img src="images/icons/help1.png" alt="#" class="main-help__image responsive">
-        <p class="main-help__title">
-          Прайс листы
-        </p>
-      </a>
-
-      <!-- item-2 -->
-      <a href="#" class="main-help__item">
-        <img src="images/icons/help2.png" alt="#" class="main-help__image responsive">
-        <p class="main-help__title">
-          Как сделать заказ
-        </p>
-      </a>
-
-      <!-- item-3 -->
-      <a href="#" class="main-help__item">
-        <img src="images/icons/help3.png" alt="#" class="main-help__image responsive">
-        <p class="main-help__title">
-          Cпособы оплаты
-        </p>
-      </a>
-
-      <!-- item-4 -->
-      <a href="#" class="main-help__item">
-        <img src="images/icons/help4.png" alt="#" class="main-help__image responsive">
-        <p class="main-help__title">
-          Доставка
-        </p>
-      </a>
-
-      <!-- item-5 -->
-      <a href="help_3.html" class="main-help__item">
-        <img src="images/icons/help5.png" alt="#" class="main-help__image responsive">
-        <p class="main-help__title">
-          Письмо директору
-        </p>
-      </a>
-
-      <!-- item-6 -->
-      <a href="help_2.html" class="main-help__item">
-        <img src="images/icons/help6.png" alt="#" class="main-help__image responsive">
-        <p class="main-help__title">
-          Возврат товара
-        </p>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-
-<!--footer-->
-@@include('global/footer.html')
-
-<!-- scripts (скрипты проекта) -->
-@@include('global/scripts.html')
-
 </body>
-
 </html>

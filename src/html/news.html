@@ -35,257 +35,256 @@
 			<![endif]-->
 	</head>
 
-<body class="news-page">
+<body>
+	<div class="news-page">
+		<!-- main topline -->
+		@@include('global/topline.html')
 
-	<!-- main topline -->
-	@@include('global/topline.html')
+		<!-- header -->
+		<header class="main-head">
+			<div class="container">
+				<div class="row tar">
+					<!--main-logo-->
+					<div class="col-lg-3">
+						<a class="main-head__logo" href="./"></a>
+					</div>
+					<!--main-navigation-->
+		      <div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
+		        <nav class="main-navigation">
+		          <!-- (big size nav) -->
+		          <ul class="main-navigation__list hidden-sm hidden-xs">
+		            <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+		            <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+		            <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+		            <li class="menu-hover main-navigation__item active"><a href="news.html">Новости</a></li>
+		            <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
+		          </ul>
+		          <!-- (small size nav) -->
+		          <!-- btn -->
+		          <a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
+		          <div class="modal-navigation modal_div" id="modalNav">
+		            <ul class="main-navigation__list_small hidden-lg hidden-md">
+		              <a class="modal-navigation__close modal_close">Закрыть</a>
+		              <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
+		              <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
+		              <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
+		              <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
+		              <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
 
-	<!-- header -->
-	<header class="main-head">
-		<div class="container">
-			<div class="row tar">
-				<!--main-logo-->
-				<div class="col-lg-3">
-					<a class="main-head__logo" href="./"></a>
+		            </ul>
+		          </div>
+		        </nav>
+		      </div>
+		      <!-- end main-navigation -->
 				</div>
-				<!--main-navigation-->
-	      <div class="col-lg-11 col-lg-offset-5 col-md-11 col-md-offset-4 col-xs-6 col-xs-offset-9">
-	        <nav class="main-navigation">
-	          <!-- (big size nav) -->
-	          <ul class="main-navigation__list hidden-sm hidden-xs">
-	            <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-	            <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-	            <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-	            <li class="menu-hover main-navigation__item active"><a href="news.html">Новости</a></li>
-	            <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-	          </ul>
-	          <!-- (small size nav) -->
-	          <!-- btn -->
-	          <a class="main-navigation__hidden-btn hidden-lg hidden-md open_modal_dark" href="#modalNav">Меню</a>
-	          <div class="modal-navigation modal_div" id="modalNav">
-	            <ul class="main-navigation__list_small hidden-lg hidden-md">
-	              <a class="modal-navigation__close modal_close">Закрыть</a>
-	              <li class="menu-hover main-navigation__item"><a href="catalog.html">Каталог</a></li>
-	              <li class="menu-hover main-navigation__item"><a href="actions.html">Акции</a></li>
-	              <li class="menu-hover main-navigation__item"><a href="partners.html">Партнеры</a></li>
-	              <li class="menu-hover main-navigation__item"><a href="news.html">Новости</a></li>
-	              <li class="main-navigation__item"><a href="request.html" class="btn btn_orange">Оставить заявку</a></></li>
-
-	            </ul>
-	          </div>
-	        </nav>
-	      </div>
-	      <!-- end main-navigation -->
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<!-- breadcrumbs -->
-	<section class="breadcrumbs">
-		<div class="container">
-			<ul class="breadcrumbs__list">
-				<li class="breadcrumbs__item"><a href="./">Главная</a></li>
-				<li class="breadcrumbs__item active"><a href="actions.html">Новости</a></li>
-			</ul>
-		</div>
-	</section>
+		<!-- breadcrumbs -->
+		<section class="breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item"><a href="./">Главная</a></li>
+					<li class="breadcrumbs__item active"><a href="actions.html">Новости</a></li>
+				</ul>
+			</div>
+		</section>
 
-	<main class="news-content">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-15">
-					<aside class="aside-filters news-filters">
-						<!-- time filter form -->
-						<form class="time-filter clearfix">
-							<p class="time-filter__title">Время</p>
-							<select class="time-filter__select">
-								<option value="allPeriod">2017 год</option>
-							</select>
-						</form>
-						<!-- theme filter form -->
-						<form class="theme-filter clearfix">
-							<p class="theme-filter__title">Темы</p>
-							<div class="theme-filter__themes">
-								<a href="#" class="theme-filter__theme">Новинки</a>
-								<a href="#" class="theme-filter__theme">События</a>
-								<a href="#" class="theme-filter__theme">Выставки</a>
-							</div>
-						</form>
-						<!-- subscription form -->
-						<form class="actions-newsletter hidden-sm hidden-xs">
-							<p class="actions-newsletter__title">Рассылка</p>
-							<p class="actions-newsletter__text">
-								Подпишитесь на рассылку
-								и получайте новости обо всех акциях первыми!
-							</p>
-							<input type="text" class="actions-newsletter__input" placeholder="Оставьте свой e-mail">
-							<button type="submit" class="actions-newsletter__submit btn btn_orange">Подписаться</button>
-						</form>
-					</aside>
-				</div>
-
-				<div class="col-lg-11 col-md-11 col-sm-15">
-
-					<section class="news-list clearfix">
-
-
-							<!--  item-1  -->
-							<div class="news-item">
-								<img class="news-item__image" src="images/news/news-1.jpg">
-								<span class="news-item__date">31.01.2017</span>
-								<a href="#" class="news-item__theme">Новинки</a>
-								<p class="news-item__title">Новинка! Профессиональные расчески TANGLE ANGEL</p>
-								<a href="#" class="news-item__read-more">Читать далее</a>
-							</div>
-
-						<!--  item-2  -->
-							<div class="news-item">
-								<img class="news-item__image" src="images/news/news-2.jpg">
-								<span class="news-item__date">31.01.2017</span>
-								<a href="#" class="news-item__theme">События</a>
-								<p class="news-item__title"># КИБЕРПОНЕДЕЛЬНИК в #ПЕТПРОДУКТ</p>
-								<a href="#" class="news-item__read-more">Читать далее</a>
-							</div>
-
-						<!--  item-3  -->
-							<div class="news-item">
-								<img class="news-item__image" src="images/news/news-3.jpg">
-								<span class="news-item__date">31.01.2017</span>
-								<a href="#" class="news-item__theme">Новинки</a>
-								<p class="news-item__title">Новинка в ассортименте ТМ GO! NaturalHolistic</p>
-								<a href="article.html" class="news-item__read-more">Читать далее</a>
-							</div>
-
-							<!--  item-1  -->
-							<div class="news-item">
-								<img class="news-item__image" src="images/news/news-4.jpg">
-								<span class="news-item__date">31.01.2017</span>
-								<a href="#" class="news-item__theme">Новинки</a>
-								<p class="news-item__title">Новинка из Чехии! Супер-премиум корма Ontario</p>
-								<a href="#" class="news-item__read-more">Читать далее</a>
-							</div>
-
-						<!--  item-2  -->
-							<div class="news-item">
-								<img class="news-item__image" src="images/news/news-5.jpg">
-								<span class="news-item__date">31.01.2017</span>
-								<a href="#" class="news-item__theme">Выставки</a>
-								<p class="news-item__title">Монопородные выставки собак в выставочном центре "Интерио"</p>
-								<a href="article_2.html" class="news-item__read-more">Читать далее</a>
-							</div>
-
-						<!--  item-3  -->
-							<div class="news-item">
-								<img class="news-item__image" src="images/news/news-6.jpg">
-								<span class="news-item__date">31.01.2017</span>
-								<a href="#" class="news-item__theme">Новинки</a>
-								<p class="news-item__title">Новинки в ассортименте <br> ТМ Cliffi</p>
-								<a href="#" class="news-item__read-more">Читать далее</a>
-							</div>
-
-							<!--  item-1  -->
-							<div class="news-item">
-								<img class="news-item__image" src="images/news/news-7.jpg">
-								<span class="news-item__date">31.01.2017</span>
-								<a href="#" class="news-item__theme">Новинки</a>
-								<p class="news-item__title">НОВИНКА! Корма супер-премиум класса Advance!</p>
-								<a href="#" class="news-item__read-more">Читать далее</a>
-							</div>
-
-						<!--  item-2  -->
-							<div class="news-item">
-								<img class="news-item__image" src="images/news/news-8.jpg">
-								<span class="news-item__date">31.01.2017</span>
-								<a href="#" class="news-item__theme">События</a>
-								<p class="news-item__title"># ВЕСЕНЯЯ РАСПРОДАЖА в #ПЕТПРОДУКТ</p>
-								<a href="#" class="news-item__read-more">Читать далее</a>
-							</div>
-
-						<!--  item-3  -->
-							<div class="news-item">
-								<img class="news-item__image" src="images/news/news-9.jpg">
-								<span class="news-item__date">31.01.2017</span>
-								<a href="#" class="news-item__theme">Выставки</a>
-								<p class="news-item__title">Праздник для любителей животных - "ЗооШоу" в Ленэкспо</p>
-								<a href="#" class="news-item__read-more">Читать далее</a>
-							</div>
-
-							<!--  item-1  -->
-							<div class="news-item">
-								<img class="news-item__image" src="images/news/news-10.jpg">
-								<span class="news-item__date">31.01.2017</span>
-								<a href="#" class="news-item__theme">Новинки</a>
-								<p class="news-item__title">Новинки в ассортименте <br> ТМ Beaphar!</p>
-								<a href="#" class="news-item__read-more">Читать далее</a>
-							</div>
-
-						<!--  item-2  -->
-							<div class="news-item">
-								<img class="news-item__image" src="images/news/news-11.jpg">
-								<span class="news-item__date">31.01.2017</span>
-								<a href="#" class="news-item__theme">Новинки</a>
-								<p class="news-item__title">ZOOBALOO - домики из шерсти</p>
-								<a href="#" class="news-item__read-more">Читать далее</a>
-							</div>
-
-						<!--  item-3  -->
-							<div class="news-item">
-								<img class="news-item__image" src="images/news/news-12.jpg">
-								<span class="news-item__date">31.01.2017</span>
-								<a href="#" class="news-item__theme">Выставки</a>
-								<p class="news-item__title">Прошла монопородная выставка кошек Мей Кун</p>
-								<a href="#" class="news-item__read-more">Читать далее</a>
-							</div>
-
-
-							<!-- pagination -->
-
-					<div class="pagination clearfix">
-								<ul class="pagination__right-list">
-									<li class="pagination__right-item pagination__left-arrow hidden">
-										<a href="#"></a>
-									</li>
-									<li class="pagination__right-item active"><a href="">1</a></li>
-									<li class="pagination__right-item"><a href="#">2</a></li>
-									<li class="pagination__right-item"><a href="#">3</a></li>
-									<li class="pagination__right-item"><a href="#">...</a></li>
-									<li class="pagination__right-item"><a href="#">7</a></li>
-									<li class="pagination__right-item pagination__right-arrow">
-										<a href="#"></a>
-									</li>
-								</ul>
+		<main class="news-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-15">
+						<aside class="aside-filters news-filters">
+							<!-- time filter form -->
+							<form class="time-filter clearfix">
+								<p class="time-filter__title">Время</p>
+								<select class="time-filter__select">
+									<option value="allPeriod">2017 год</option>
+								</select>
+							</form>
+							<!-- theme filter form -->
+							<form class="theme-filter clearfix">
+								<p class="theme-filter__title">Темы</p>
+								<div class="theme-filter__themes">
+									<a href="#" class="theme-filter__theme">Новинки</a>
+									<a href="#" class="theme-filter__theme">События</a>
+									<a href="#" class="theme-filter__theme">Выставки</a>
+								</div>
+							</form>
+							<!-- subscription form -->
+							<form class="actions-newsletter hidden-sm hidden-xs">
+								<p class="actions-newsletter__title">Рассылка</p>
+								<p class="actions-newsletter__text">
+									Подпишитесь на рассылку
+									и получайте новости обо всех акциях первыми!
+								</p>
+								<input type="text" class="actions-newsletter__input" placeholder="Оставьте свой e-mail">
+								<button type="submit" class="actions-newsletter__submit btn btn_orange">Подписаться</button>
+							</form>
+						</aside>
 					</div>
 
+					<div class="col-lg-11 col-md-11 col-sm-15">
 
-					</section>
+						<section class="news-list clearfix">
+
+
+								<!--  item-1  -->
+								<div class="news-item">
+									<img class="news-item__image" src="images/news/news-1.jpg">
+									<span class="news-item__date">31.01.2017</span>
+									<a href="#" class="news-item__theme">Новинки</a>
+									<p class="news-item__title">Новинка! Профессиональные расчески TANGLE ANGEL</p>
+									<a href="#" class="news-item__read-more">Читать далее</a>
+								</div>
+
+							<!--  item-2  -->
+								<div class="news-item">
+									<img class="news-item__image" src="images/news/news-2.jpg">
+									<span class="news-item__date">31.01.2017</span>
+									<a href="#" class="news-item__theme">События</a>
+									<p class="news-item__title"># КИБЕРПОНЕДЕЛЬНИК в #ПЕТПРОДУКТ</p>
+									<a href="#" class="news-item__read-more">Читать далее</a>
+								</div>
+
+							<!--  item-3  -->
+								<div class="news-item">
+									<img class="news-item__image" src="images/news/news-3.jpg">
+									<span class="news-item__date">31.01.2017</span>
+									<a href="#" class="news-item__theme">Новинки</a>
+									<p class="news-item__title">Новинка в ассортименте ТМ GO! NaturalHolistic</p>
+									<a href="article.html" class="news-item__read-more">Читать далее</a>
+								</div>
+
+								<!--  item-1  -->
+								<div class="news-item">
+									<img class="news-item__image" src="images/news/news-4.jpg">
+									<span class="news-item__date">31.01.2017</span>
+									<a href="#" class="news-item__theme">Новинки</a>
+									<p class="news-item__title">Новинка из Чехии! Супер-премиум корма Ontario</p>
+									<a href="#" class="news-item__read-more">Читать далее</a>
+								</div>
+
+							<!--  item-2  -->
+								<div class="news-item">
+									<img class="news-item__image" src="images/news/news-5.jpg">
+									<span class="news-item__date">31.01.2017</span>
+									<a href="#" class="news-item__theme">Выставки</a>
+									<p class="news-item__title">Монопородные выставки собак в выставочном центре "Интерио"</p>
+									<a href="article_2.html" class="news-item__read-more">Читать далее</a>
+								</div>
+
+							<!--  item-3  -->
+								<div class="news-item">
+									<img class="news-item__image" src="images/news/news-6.jpg">
+									<span class="news-item__date">31.01.2017</span>
+									<a href="#" class="news-item__theme">Новинки</a>
+									<p class="news-item__title">Новинки в ассортименте <br> ТМ Cliffi</p>
+									<a href="#" class="news-item__read-more">Читать далее</a>
+								</div>
+
+								<!--  item-1  -->
+								<div class="news-item">
+									<img class="news-item__image" src="images/news/news-7.jpg">
+									<span class="news-item__date">31.01.2017</span>
+									<a href="#" class="news-item__theme">Новинки</a>
+									<p class="news-item__title">НОВИНКА! Корма супер-премиум класса Advance!</p>
+									<a href="#" class="news-item__read-more">Читать далее</a>
+								</div>
+
+							<!--  item-2  -->
+								<div class="news-item">
+									<img class="news-item__image" src="images/news/news-8.jpg">
+									<span class="news-item__date">31.01.2017</span>
+									<a href="#" class="news-item__theme">События</a>
+									<p class="news-item__title"># ВЕСЕНЯЯ РАСПРОДАЖА в #ПЕТПРОДУКТ</p>
+									<a href="#" class="news-item__read-more">Читать далее</a>
+								</div>
+
+							<!--  item-3  -->
+								<div class="news-item">
+									<img class="news-item__image" src="images/news/news-9.jpg">
+									<span class="news-item__date">31.01.2017</span>
+									<a href="#" class="news-item__theme">Выставки</a>
+									<p class="news-item__title">Праздник для любителей животных - "ЗооШоу" в Ленэкспо</p>
+									<a href="#" class="news-item__read-more">Читать далее</a>
+								</div>
+
+								<!--  item-1  -->
+								<div class="news-item">
+									<img class="news-item__image" src="images/news/news-10.jpg">
+									<span class="news-item__date">31.01.2017</span>
+									<a href="#" class="news-item__theme">Новинки</a>
+									<p class="news-item__title">Новинки в ассортименте <br> ТМ Beaphar!</p>
+									<a href="#" class="news-item__read-more">Читать далее</a>
+								</div>
+
+							<!--  item-2  -->
+								<div class="news-item">
+									<img class="news-item__image" src="images/news/news-11.jpg">
+									<span class="news-item__date">31.01.2017</span>
+									<a href="#" class="news-item__theme">Новинки</a>
+									<p class="news-item__title">ZOOBALOO - домики из шерсти</p>
+									<a href="#" class="news-item__read-more">Читать далее</a>
+								</div>
+
+							<!--  item-3  -->
+								<div class="news-item">
+									<img class="news-item__image" src="images/news/news-12.jpg">
+									<span class="news-item__date">31.01.2017</span>
+									<a href="#" class="news-item__theme">Выставки</a>
+									<p class="news-item__title">Прошла монопородная выставка кошек Мей Кун</p>
+									<a href="#" class="news-item__read-more">Читать далее</a>
+								</div>
+
+
+								<!-- pagination -->
+
+						<div class="pagination clearfix">
+									<ul class="pagination__right-list">
+										<li class="pagination__right-item pagination__left-arrow hidden">
+											<a href="#"></a>
+										</li>
+										<li class="pagination__right-item active"><a href="">1</a></li>
+										<li class="pagination__right-item"><a href="#">2</a></li>
+										<li class="pagination__right-item"><a href="#">3</a></li>
+										<li class="pagination__right-item"><a href="#">...</a></li>
+										<li class="pagination__right-item"><a href="#">7</a></li>
+										<li class="pagination__right-item pagination__right-arrow">
+											<a href="#"></a>
+										</li>
+									</ul>
+						</div>
+
+
+						</section>
+					</div>
 				</div>
 			</div>
-		</div>
-	</main>
+		</main>
 
-	<!-- hidden-newsletter -->
-	<section class="news__newsletter_hidden">
-		<div class="container">
-			<form class="actions-newsletter actions-newsletter_hidden clearfix hidden-lg hidden-md">
-				<p class="actions-newsletter__title">Рассылка</p>
-				<p class="actions-newsletter__text">
-					Подпишитесь на рассылку
-					и получайте новости обо всех акциях первыми!
-				</p>
-				<input type="text" class="actions-newsletter__input" placeholder="Оставьте свой e-mail">
-				<button type="submit" class="actions-newsletter__submit btn btn_orange">Подписаться</button>
-			</form>
-		</div>
-	</section>
-
+		<!-- hidden-newsletter -->
+		<section class="news__newsletter_hidden">
+			<div class="container">
+				<form class="actions-newsletter actions-newsletter_hidden clearfix hidden-lg hidden-md">
+					<p class="actions-newsletter__title">Рассылка</p>
+					<p class="actions-newsletter__text">
+						Подпишитесь на рассылку
+						и получайте новости обо всех акциях первыми!
+					</p>
+					<input type="text" class="actions-newsletter__input" placeholder="Оставьте свой e-mail">
+					<button type="submit" class="actions-newsletter__submit btn btn_orange">Подписаться</button>
+				</form>
+			</div>
+		</section>
 
 
-	 <!--footer-->
-	 @@include('global/footer.html')
 
-	<!-- scripts (скрипты проекта) -->
-	@@include('global/scripts.html')
+		 <!--footer-->
+		 @@include('global/footer.html')
 
+		<!-- scripts (скрипты проекта) -->
+		@@include('global/scripts.html')
+	</div>
 </body>
-
 </html>
